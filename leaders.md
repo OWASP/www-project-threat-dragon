@@ -1,3 +1,3 @@
 ### Leaders
 
-* [Mike Goodwin](mailto://mike.goodwin@owasp.org)
+* [Mike Goodwin](mailto:mike.goodwin@owasp.org)
