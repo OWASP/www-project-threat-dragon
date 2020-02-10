@@ -1,15 +1,11 @@
-### Project Information
+### Project Classification
 
-[![Incubator Project][inc-proj-logo]{:width="43px"}][inc-proj]
+![Incubator Project](assets/images/common/owasp_level_incubator.svg)
 
-#### Classification
+![Defenders](assets/images/common/owasp_defenders.svg)
+![Builders](assets/images/common/owasp_builders.svg)
 
-* <i class="fas fa-tools" style="color:#233e81;"></i> Tool
-
-#### Audience
-
-* <i class="fas fa-toolbox" style="color:#233e81;"></i> Builder
-* <i class="fas fa-shield-alt" style="color:#233e81;"></i> Defender
+![Tool Project](assets/images/common/owasp_tool_project.svg)
 
 ### Sources
 
