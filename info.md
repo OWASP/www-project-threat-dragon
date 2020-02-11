@@ -13,8 +13,12 @@
 * [Threat Dragon web app](https://github.com/mike-goodwin/owasp-threat-dragon)
 
 ### Documentation
-* [Installation](http://docs.threatdragon.org/)
+* [Install instructions](http://docs.threatdragon.org/)
 * [Demo application](https://threatdragon.org/)
+
+### Downloads
+Desktop for [Linux/MacOS/Windows](https://github.com/mike-goodwin/owasp-threat-dragon-desktop/releases)
+Single page [web app](https://github.com/mike-goodwin/owasp-threat-dragon/archive/master.zip)
 
 ### Licensing
 [Apache 2 License](https://www.apache.org/licenses/LICENSE-2.0)
