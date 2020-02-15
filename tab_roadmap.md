@@ -59,3 +59,9 @@ Following an architecture review the following key changes were made:
 ### Challenges
 * Getting enough usage of the alpha and beta to get the UX and rule engine right
 * Finding a sustainable way to host it, especially to support deeper GitHub/BitBucket/Etc. integration
+
+## Minimum Viable Product
+1. Application source code for a threat modeling tool
+2. End user documentation for the tool
+3. An online hosted version of the tool
+4. An installable, cross-platform desktop version of the tool
