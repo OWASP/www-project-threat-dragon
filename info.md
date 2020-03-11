@@ -12,8 +12,9 @@
 * [Demonstration](https://threatdragon.org/)
 
 ### Downloads
-* Desktop [Linux / Mac / Windows](https://github.com/mike-goodwin/owasp-threat-dragon-desktop/releases) installers
 * Single page [web application](https://github.com/mike-goodwin/owasp-threat-dragon/archive/master.zip)
+* Desktop installers for:
+* [Linux / Mac / Windows](https://github.com/mike-goodwin/owasp-threat-dragon-desktop/releases)
 
 ### Sources
 * [Threat Dragon core](https://github.com/mike-goodwin/owasp-threat-dragon-core)
