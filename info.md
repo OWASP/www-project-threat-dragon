@@ -1,9 +1,9 @@
 ### Project Classification
 
-![Incubator Project](assets/images/common/owasp_level_incubator.svg)
+[![Incubator Project][inc-proj-logo]{:height="66px"}][inc-proj]
 
-![Defenders](assets/images/common/owasp_defenders.svg)
-![Builders](assets/images/common/owasp_builders.svg)
+[![Builders][builders-logo]][builders]
+[![Defenders][defenders-logo]][defenders]
 
 ![Tool Project](assets/images/common/owasp_tool_project.svg)
 
