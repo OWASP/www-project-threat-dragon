@@ -22,6 +22,8 @@ Platform | Browser | Tested on
 -------- | ------- | ---------
 Windows | Edge | Microsoft Edge 38 for Windows 10
 Windows | IE | Internet Explorer 11 for Windows 10
+Windows | Chrome | 
+Windows | Firefox | 
 Linux | Abrowser | Mozilla 68.0.2 for Trisquel / Gnu Linux trisquel 8.0
 MacOS | Firefox | Firefox 73.0.1 for macOS version 10.15
 MacOS | Safari | Safari 13.0.2 for macOS 10.15
