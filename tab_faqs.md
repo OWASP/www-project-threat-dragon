@@ -18,12 +18,14 @@ the future? Who knows?
 Q2: What browsers can be used for Threat Dragon?
 
 A2: Threat Dragon has been tested on these browsers, but there are certainly more.
-Platform | Browser | Tested on
--------- | ------- | ---------
+
+
+Platform | Browser | Tested
+-------- | ------- | ------
 Windows | Edge | Microsoft Edge 38 for Windows 10
 Windows | IE | Internet Explorer 11 for Windows 10
-Windows | Chrome | 
-Windows | Firefox | 
+Windows | Chrome | Windows 10
+Windows | Firefox | Windows 10
 Linux | Abrowser | Mozilla 68.0.2 for Trisquel / Gnu Linux trisquel 8.0
 MacOS | Firefox | Firefox 73.0.1 for macOS version 10.15
 MacOS | Safari | Safari 13.0.2 for macOS 10.15
