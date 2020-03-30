@@ -10,6 +10,7 @@ tags: threatdragon
 
 Release | Date | Location | Comments
 ------- | ---- | -------- | --------
+v1.2 | Estimate <br> April 2020 | Web app <br> Desktop | description for diagram elements <br> label applied to boundaries <br> save button always enabled <br> zoom functionality disabled 
 v1.1 | 15 Mar 2020 | [Web app](https://github.com/mike-goodwin/owasp-threat-dragon/releases/tag/v1.1) | Duplicate element/diagram feature
 v1.1 | 10 Mar 2020 | [Desktop](https://github.com/mike-goodwin/owasp-threat-dragon-desktop/releases/tag/v1.1) | Bug fix for blank screen on new model, <br> and duplicate element/diagram feature
 v1.0 | 22 Feb 2020 | [Desktop](https://github.com/mike-goodwin/owasp-threat-dragon-desktop/releases/tag/v1.0) | First full release for Windows, MacOS and Linux
