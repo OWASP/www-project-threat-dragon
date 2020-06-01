@@ -11,12 +11,22 @@ pitch: OWASP Threat Dragon provides a threat modelling application for teams imp
 ---
 
 ## What is Threat Dragon?
+
+<table cellpadding="10" cellspacing="30" border="0">
+<tr>
+<td>
+<img src="assets/images/cupcake-256x256.png" alt="Cupcake logo"/>
+</td>
+<td>
 OWASP Threat Dragon is a tool used to create threat model diagrams and to record possible threats and decide on their
 mitigations.
 
 TD is both an online threat modelling web application and a desktop application. It includes system diagramming as well
 as a rule engine to auto-generate threats and their mitigations. The focus of TD is on great UX, a powerful rule engine
 and alignment with other development lifecycle tools.
+</td>
+</tr>
+</table>
 
 ## OWASP participation
 The Open Web Application Security Project (OWASP) is a nonprofit foundation that works to improve the security of
