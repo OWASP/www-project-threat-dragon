@@ -22,4 +22,4 @@
 * [Threat Dragon web app](https://github.com/mike-goodwin/owasp-threat-dragon)
 
 ### Licensing
-[Apache 2 License](https://www.apache.org/licenses/LICENSE-2.0)
+* [Apache 2 License](https://www.apache.org/licenses/LICENSE-2.0)
