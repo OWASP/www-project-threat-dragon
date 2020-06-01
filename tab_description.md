@@ -6,6 +6,17 @@ order: 1
 tags: threatdragon
 ---
 
+<style type="text/css">
+.image-left {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  float: right;
+}
+</style>
+
+![logo](/assets/images/cupcake-256x256.png){: .image-left }
+
 ## Description
 Threat modelling is widely regarded as a powerful way to build security into the design of applications early in the development lifecycle. At its best, it is especially good for
 * Ensuring defence-in-depth
