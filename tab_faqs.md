@@ -7,17 +7,6 @@ order: 3
 tags: threatdragon
 ---
 
-<style type="text/css">
-.image-left {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  float: right;
-}
-</style>
-
-![logo](/assets/images/cupcake-256x256.png){: .image-left }
-
 ## FAQs
 Q1: Hold on...isn't this the same as Mozilla's SeaSponge?
 

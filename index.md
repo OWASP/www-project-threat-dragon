@@ -19,7 +19,7 @@ pitch: OWASP Threat Dragon provides a threat modelling application for teams imp
 }
 </style>
 
-![logo](/assets/images/cupcake-256x256.png){: .image-left }
+![cupcake logo](/assets/images/cupcake-256x256.png){: .image-left }
 
 ## What is Threat Dragon?
 

@@ -6,17 +6,6 @@ order: 4
 tags: threatdragon
 ---
 
-<style type="text/css">
-.image-left {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  float: right;
-}
-</style>
-
-![logo](/assets/images/cupcake-256x256.png){: .image-left }
-
 ## Roadmap
 ### Vision for the project:
 
