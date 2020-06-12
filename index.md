@@ -17,12 +17,6 @@ pitch: OWASP Threat Dragon provides a threat modelling application for teams imp
   margin-right: auto;
   float: right;
 }
-.image-right {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  float: left;
-}
 </style>
 
 ![cupcake logo](/assets/images/cupcake-256x256.png){: .image-left }
@@ -44,8 +38,8 @@ and alignment with other development lifecycle tools.
 * [OWASP Threat Model Project (old pages)](https://wiki.owasp.org/index.php/OWASP_Threat_Model_Project#tab=Main)
 
 ## Company Collaborators
-Many thanks to these companies who have donated various projects to Threat Dragon :
-* [ITX](https://www.itx.com) for Integration Threat Modeling with Jira ![itx logo](/assets/images/itx-logo.png){: .image-right }
+Many thanks to companies who donated various projects to Threat Dragon :
+* ![itx logo](/assets/images/itx-logo.png){: .image-left } [ITX](https://www.itx.com) for Integration Threat Modeling with Jira
 
 ## OWASP participation
 The Open Web Application Security Project (OWASP) is a nonprofit foundation that works to improve the security of
