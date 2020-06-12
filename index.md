@@ -37,7 +37,7 @@ and alignment with other development lifecycle tools.
 * [OWASP Threat Model Project](https://owasp.org/www-project-threat-model/)
 * [OWASP Threat Model Project (old pages)](https://wiki.owasp.org/index.php/OWASP_Threat_Model_Project#tab=Main)
 
-## Company Collaborators
+### Company Collaborators
 Many thanks to these companies for donating various projects to Threat Dragon :
 * ![itx logo](/assets/images/itx-logo.png){: .image-left } [ITX](https://www.itx.com) for Integration Threat Modeling with Jira
 
