@@ -37,6 +37,10 @@ and alignment with other development lifecycle tools.
 * [OWASP Threat Model Project](https://owasp.org/www-project-threat-model/)
 * [OWASP Threat Model Project (old pages)](https://wiki.owasp.org/index.php/OWASP_Threat_Model_Project#tab=Main)
 
+### Company Collaborators
+Many thanks to these companies for donating various projects to Threat Dragon :
+* ![itx logo](/assets/images/itx-logo.png){: .image-left } [ITX](https://www.itx.com) for Integration Threat Modeling with Jira
+
 ## OWASP participation
 The Open Web Application Security Project (OWASP) is a nonprofit foundation that works to improve the security of
 software. All of our projects ,tools, documents, forums, and chapters are free and open to anyone interested in
