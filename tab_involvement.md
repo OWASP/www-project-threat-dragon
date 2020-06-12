@@ -27,7 +27,7 @@ If you are still having problems, let us know and we will be pleased to help (mi
 jon.gadsden@owasp.org).
 All feedback is very welcome, so either email us or put an issue on GitHub
 
-https://github.com/mike-goodwin/owasp-threat-dragon/issues
+https://github.com/OWASP/threat-dragon-core/issues
 
 #### Coding
 Coding help of any kind is always welcome. The project builds easily (let us know if you have any problems)
