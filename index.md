@@ -45,7 +45,9 @@ and alignment with other development lifecycle tools.
 
 ### Company Collaborators
 Many thanks to these companies for donating various projects to Threat Dragon :
-* ![itx logo](/assets/images/itx-logo.png){: .image-left } [ITX](https://www.itx.com) for Integration Threat Modeling with Jira
+* ![itx logo](/assets/images/itx-logo.png){: .image-left }
+* [ITX](https://www.itx.com) for Integration [Threat Modeling with Jira](https://github.com/OWASP/threat-dragon-core/blob/main/utils/threat-mvp/README.md)
+
 
 ## OWASP participation
 The Open Web Application Security Project (OWASP) is a nonprofit foundation that works to improve the security of
