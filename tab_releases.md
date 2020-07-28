@@ -10,6 +10,7 @@ tags: threatdragon
 
 Release | Date | Location | Comments
 ------- | ---- | -------- | --------
+v1.3 | Expected <br> August 2020 | Web app <br> Desktop | Will include <br> support for LINDDUN and CIA as well as STRIDE <br> command line interface <br> some bug fixes
 v1.2 | 14 April 2020 | [Web app](https://github.com/mike-goodwin/owasp-threat-dragon/releases/tag/v1.2) <br> [Desktop](https://github.com/mike-goodwin/owasp-threat-dragon-desktop/releases/tag/v1.2) | description for diagram elements <br> label applied to boundaries <br> save button always enabled <br> zoom functionality disabled <br> hot key copy and paste for diagram elements
 v1.1 | 15 Mar 2020 | [Web app](https://github.com/mike-goodwin/owasp-threat-dragon/releases/tag/v1.1) | Duplicate element/diagram feature
 v1.1 | 10 Mar 2020 | [Desktop](https://github.com/mike-goodwin/owasp-threat-dragon-desktop/releases/tag/v1.1) | Bug fix for blank screen on new model, <br> and duplicate element/diagram feature
