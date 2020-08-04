@@ -37,7 +37,8 @@ as a rule engine to auto-generate threats and their mitigations. The focus of TD
 and alignment with other development lifecycle tools.
 
 The [documentation](http://docs.threatdragon.org) is a good starting point, and there is also a recording of Mike Goodwin
-in a [lightning demo](https://www.youtube.com/watch?v=n6JGcZGFq5o) recorded during the OWASP Open Security Summit in June 2020.
+in a [lightning demo](https://open-security-summit.org/tracks/threat-modeling/lightning-demo-threat-model-tool-demos/)
+recorded during the OWASP Open Security Summit in June 2020.
 
 Threat Dragon has a [demonstration page](https://threatdragon.org/login). This is on older version which is due to be
 updated soon, and the notable difference is that we now have a dekstop version that can be installed on linux - along
