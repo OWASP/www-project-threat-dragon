@@ -41,7 +41,7 @@ in a [lightning demo](https://open-security-summit.org/tracks/threat-modeling/li
 recorded during the OWASP Open Security Summit in June 2020.
 
 Threat Dragon has a [demonstration page](https://threatdragon.org/login). This is on older version which is due to be
-updated soon, and the notable difference is that we now have a dekstop version that can be installed on linux - along
+updated soon, and the notable difference is that we now have a desktop version that can be installed on linux - along
 with Windows and MacOS.
 
 ### Related Projects
@@ -53,14 +53,14 @@ with Windows and MacOS.
 * [Threagile - Agile Threat Modeling](https://threagile.io) although it is not OWASP, it is open source
 
 ### Company Collaborators
-Many thanks to these companies for donating various projects to Threat Dragon :
+Many thanks to these companies for donating various projects to Threat Dragon:
 * ![itx logo](/assets/images/itx-logo.png){: .image-left }
 * [ITX](https://www.itx.com) for Integration [Threat Modeling with Jira](https://github.com/OWASP/threat-dragon-core/blob/main/utils/threat-mvp/README.md)
 
 
 ## OWASP participation
 The Open Web Application Security Project (OWASP) is a nonprofit foundation that works to improve the security of
-software. All of our projects ,tools, documents, forums, and chapters are free and open to anyone interested in
+software. All of our projects, tools, documents, forums, and chapters are free and open to anyone interested in
 improving application security. 
 
 Everyone is welcome and encouraged to participate in our [Projects](/projects), [Local Chapters](/chapters),
