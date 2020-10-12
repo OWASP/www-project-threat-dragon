@@ -12,9 +12,9 @@
 * [Demonstration](https://threatdragon.org/)
 
 ### Downloads
-* Single page [web application](https://github.com/mike-goodwin/owasp-threat-dragon/releases)
+* Single page [web application](https://github.com/OWASP/threat-dragon/releases)
 * Desktop installers for:
-* [Linux / Mac / Windows](https://github.com/mike-goodwin/owasp-threat-dragon-desktop/releases)
+* [Linux / Mac / Windows](https://github.com/OWASP/threat-dragon-desktop/releases)
 
 ### Sources
 * [Threat Dragon web app](https://github.com/OWASP/threat-dragon)
