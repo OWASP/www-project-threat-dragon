@@ -36,9 +36,8 @@ TD is both an online threat modelling web application and a desktop application.
 as a rule engine to auto-generate threats and their mitigations. The focus of TD is on great UX, a powerful rule engine
 and alignment with other development lifecycle tools.
 
-The [documentation](http://docs.threatdragon.org) is a good starting point, and there is also a recording of Mike Goodwin
-in a [lightning demo](https://youtu.be/n6JGcZGFq5o)
-recorded during the OWASP Open Security Summit in June 2020.
+The [documentation](https://threatdragon.github.io) is a good starting point, and there is also a recording of Mike Goodwin
+in a [lightning demo](https://youtu.be/n6JGcZGFq5o) recorded during the OWASP Open Security Summit in June 2020.
 
 Threat Dragon has a [demonstration page](https://threatdragon.org/login). This is on older version which is due to be
 updated soon, and the notable difference is that we now have a desktop version that can be installed on linux - along
