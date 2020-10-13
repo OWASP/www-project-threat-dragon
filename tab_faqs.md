@@ -10,7 +10,7 @@ tags: threatdragon
 ## FAQs
 Q1: What browsers can be used for Threat Dragon?
 
-A1: Threat Dragon has been tested on these browsers, but there are certainly more.
+A1: Threat Dragon has been tested on these browsers, and for sure it will work on more than these:
 
 
 Platform | Browser | Tested
@@ -35,5 +35,5 @@ Q3: Why do the earlier releases come from Mike Goodwin's repo, not the OWASP rep
 
 A3: For more than 4 years Mike hosted Threat Dragon on his personal github area, and in mid-2020 he felt that the
 time was right for it to migrate to the OWASP organisation github space. This was done through June and July 2020
-and with version 1.3 (expected August 2020) the migration will be almost complete. The docs and demo pages are still
-sourced from Mike's github space, which gives continuity to the origins of Threat Dragon.
+and with version 1.3 (released September 2020) the migration is almost complete. The demo page is still
+sourced from Mike's github account, which gives continuity to the origins of Threat Dragon.
