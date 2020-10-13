@@ -9,22 +9,20 @@ tags: threatdragon
 
 ### Getting Involved
 #### Testers
-Great user experience is one of the key goals for the project and to get that right it needs some users!
-If you would like to try the tool out, that would be great. A working prototype can be found at:
+Great user experience is one of the key goals for the project and to get that right it needs more users!
+If you would like to try the tool out, that would be great. The working prototype can be found at:
 
 https://threatdragon.org/
 
-The desktop variant installers for borh Windows and OSX, aas well as .rpm / .deb packages for Linux,
-can be downloaded from:
+The desktop installers for Linux, Windows and OSX, as well as .rpm / .deb packages for Linux, can be downloaded from:
 
-https://github.com/mike-goodwin/owasp-threat-dragon-desktop/releases
+https://github.com/OWASP/threat-dragon-desktop/releases
 
-To help you get started, take a look at the (draft) docs:
+To help you get started, take a look at the documewntation:
 
-http://docs.threatdragon.org/
+https://threatdragon.github.io
 
-If you are still having problems, let us know and we will be pleased to help (mike.goodwin@owasp.org and 
-jon.gadsden@owasp.org).
+If you are still having problems, let us know and we will be pleased to help (mike.goodwin@owasp.org and jon.gadsden@owasp.org).
 All feedback is very welcome, so either email us or put an issue on GitHub
 
 https://github.com/OWASP/threat-dragon-core/issues
