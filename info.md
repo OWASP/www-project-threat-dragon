@@ -8,7 +8,7 @@
 ![Tool Project](assets/images/common/owasp_tool_project.svg)
 
 ### Documentation
-* [Installation](https://threatdragon.github.io)
+* [Installation](https://threatdragon.github.io/#downloads)
 * [Demonstration](https://threatdragon.org/)
 
 ### Downloads
