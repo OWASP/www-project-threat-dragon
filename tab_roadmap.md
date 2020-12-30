@@ -6,8 +6,7 @@ order: 4
 tags: threatdragon
 ---
 
-## Roadmap
-### Vision for the project:
+### Mike Goodwin's initial Vision for the project:
 
 The overall vision for the project is to implement a tool that removes as many barriers as possible for
 organisations wanting to embed threat modelling into their development lifecycle. Barriers I have seen are:
