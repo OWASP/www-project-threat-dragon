@@ -10,13 +10,11 @@ tags: threatdragon
 ### Getting Involved
 #### Testers
 Easy user experience is one of the key goals for the project and to get that right it needs more users!
-If you would like to try the tool out, that would be great.
+If you would like to try the tool out, the released version of the web application is at:
 
-The released version of the web application is at:
+https://github.com/OWASP/threat-dragon/releases
 
-https://threatdragon.org/
-
-For the desktop variant, installers for Linux, Windows and MacOS can be downloaded from:
+The desktop variant installers for Linux, Windows and MacOS can be downloaded from:
 
 https://github.com/OWASP/threat-dragon-desktop/releases
 
