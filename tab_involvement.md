@@ -7,7 +7,6 @@ order: 2
 tags: threatdragon
 ---
 
-### Getting Involved
 #### Testers
 Easy user experience is one of the key goals for the project and to get that right it needs more users!
 If you would like to try the tool out, the released versions are
