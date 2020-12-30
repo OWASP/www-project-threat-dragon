@@ -31,7 +31,7 @@ he found out about SeaSponge via the OWASP leaders mailing list. SeaSponge has a
 and Mike based his implementation of the threat model file download feature on theirs. Maybe they could be merged in
 the future? Who knows?
 
-Q3: Why do the earlier releases come from Mike Goodwin's repo, not the OWASP repo?
+* [Why do the earlier releases come from Mike Goodwin's repo, not the OWASP repo?](https://github.com/OWASP/threat-dragon-desktop/wiki/FAQs#why-do-the-earlier-releases-come-from-mike-goodwins-repo-not-the-owasp-repo)
 
 A3: For more than 4 years Mike hosted Threat Dragon on his personal github area, and in mid-2020 he felt that the
 time was right for it to migrate to the OWASP organisation github space. This was done through June and July 2020
