@@ -29,15 +29,16 @@ pitch: OWASP Threat Dragon provides a threat modelling application for teams imp
 
 ## What is Threat Dragon?
 
-OWASP Threat Dragon is a tool used to create threat model diagrams and to record possible threats and decide on their
-mitigations.
+OWASP Threat Dragon is a tool used to create threat model diagrams as part  of a secure development lifecycle.
+It  can be used to record possible threats and decide on their mitigations, as well as giving a visual indication
+of the threat model components and threat surfaces.
 
-TD is both an online threat modelling web application and a desktop application. It includes system diagramming as well
-as a rule engine to auto-generate threats and their mitigations. The focus of TD is on great UX, a powerful rule engine
-and alignment with other development lifecycle tools.
+Threat Dragon runs either as a web application or a desktop application, with both varients based on the same common core.
+This tool includes system diagramming as well as a rule engine to auto-generate threats and their mitigations.
+The focus of Threat Dragon is on great UX, a powerful rule engine and alignment with other development lifecycle tools.
 
 The [documentation](https://threatdragon.github.io) is a good starting point, and there is also a recording of Mike Goodwin
-in a [lightning demo](https://youtu.be/n6JGcZGFq5o) recorded during the OWASP Open Security Summit in June 2020.
+giving a [lightning demo](https://youtu.be/n6JGcZGFq5o) during the OWASP Open Security Summit in June 2020.
 
 Threat Dragon has a [demonstration page](https://threatdragon.org/login). This is on older version which is due to be
 updated soon, and the notable difference is that we now have a desktop version that can be installed on linux - along
