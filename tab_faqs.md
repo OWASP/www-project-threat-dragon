@@ -17,3 +17,5 @@ tags: threatdragon
 * [Why do the earlier releases come from Mike Goodwin's repo, not the OWASP repo?](https://github.com/OWASP/threat-dragon-desktop/wiki/FAQs#why-do-the-earlier-releases-come-from-mike-goodwins-repo-not-the-owasp-repo)
 
 * [Why do I get 'developer can not be verified' errors after installing on MacOS?](https://github.com/OWASP/threat-dragon-desktop/wiki/FAQs#why-do-i-get-developer-can-not-be-verified-errors-after-installing-on-macos)
+
+* [Can I run Threat Dragon from a command line?](https://github.com/OWASP/threat-dragon-desktop/wiki/FAQs#can-i-run-threat--dragon-from-a-command-line)
