@@ -21,7 +21,7 @@ Mike Goodwin's initial vision for the project is [archived here](https://github.
 **Milestone 4**: - Dev lifecycle integration
 * Not yet achieved
 
-# Version 2.0**: planned for late 2021
+# Version 2.0: planned for late 2021
 **create a combined application for both webapp and core**
 1. written in javascript ES6 / ECMAScript 2015 or compatible
 1. run on [node.js](https://nodejs.org/en/) server
