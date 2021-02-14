@@ -31,13 +31,11 @@ pitch: OWASP Threat Dragon provides a threat modelling application for teams imp
 
 OWASP Threat Dragon is a tool used to create threat model diagrams as part  of a secure development lifecycle.
 It  can be used to record possible threats and decide on their mitigations, as well as giving a visual indication
-of the threat model components and threat surfaces.
+of the threat model components and threat surfaces. Threat Dragon runs either as a web application or a desktop application.
 
-Threat Dragon runs either as a web application or a desktop application, with both varients based on the same common core.
-This tool includes system diagramming as well as a rule engine to auto-generate threats and their mitigations.
-The focus of Threat Dragon is on great UX, a powerful rule engine and alignment with other development lifecycle tools.
+Threat Dragon supports STRIDE / LINDDUN / CIA, provides modelling diagrams and implements a rule engine to auto-generate threats and their mitigations.
 
-The [documentation](https://threatdragon.github.io) is a good starting point, and there is also a recording of Mike Goodwin
+Use the [documentation](https://threatdragon.github.io) to get started, along with the recording of Mike Goodwin
 giving a [lightning demo](https://youtu.be/n6JGcZGFq5o) during the OWASP Open Security Summit in June 2020.
 
 Threat Dragon has a [demonstration page](https://threatdragon.org/login). This is on older version which is due to be
@@ -51,12 +49,6 @@ with Windows and MacOS.
 * [OWASP Threat Model Project](https://owasp.org/www-project-threat-model/)
 * [OWASP Threat Model Project (old pages)](https://wiki.owasp.org/index.php/OWASP_Threat_Model_Project#tab=Main)
 * [Threagile - Agile Threat Modeling](https://threagile.io) although it is not OWASP, it is open source
-
-### Company Collaborators
-Many thanks to these companies for donating various projects to Threat Dragon:
-* ![itx logo](/assets/images/itx-logo.png){: .image-left }
-* [ITX](https://www.itx.com) for Integration [Threat Modeling with Jira](https://github.com/OWASP/threat-dragon-core/blob/main/utils/threat-mvp/README.md)
-
 
 ## OWASP participation
 The Open Web Application Security Project (OWASP) is a nonprofit foundation that works to improve the security of
