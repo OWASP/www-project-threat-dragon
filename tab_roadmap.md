@@ -21,19 +21,20 @@ Mike Goodwin's initial vision for the project is [archived here](https://github.
 **Milestone 4**: - Dev lifecycle integration
 * Not yet achieved
 
-**Version 2.0**: planned for late 2021
-#  create a combined application for both webapp and core:
+# Version 2.0**: planned for late 2021
+**create a combined application for both webapp and core**
 1. written in javascript ES6 / ECMAScript 2015 or compatible
 1. run on [node.js](https://nodejs.org/en/) server
 1. use [express](http://expressjs.com/en/starter/installing.html) for backend application
 1. use [Vue](https://v3.vuejs.org/guide/introduction.html#what-is-vue-js) for frontend application
 1. use [mxgraph](https://github.com/jsGraph/mxgraph) for the drawing library
-# create a desktop application
+
+**create a desktop application**
 1. use [electron](https://www.electronjs.org/) to wrap webapp for desktop
 1. incorporates webapp as a git submodule, similar to [drawio](https://github.com/jgraph/drawio) as a submodule for [drawio-desktop](https://github.com/jgraph/drawio-desktop/)
 1. provide auto-update similar to [drawio-desktop](https://github.com/jgraph/drawio-desktop/)
 
-# desktop and webbapp should:
+**desktop and webbapp should**:
 load models from similar sources to draw.io:
 1. github
 1. gitlab
@@ -41,8 +42,10 @@ load models from similar sources to draw.io:
 1. OneDrive
 1. Dropbox
 1. local filesystem device
+
 allow design files to be backwardly compatible to Threat Dragon json:
-1. reads json file and converts to mxgraph native xml
-1. converts from mxgraph native xml and writes as json file
+* reads json file and converts to mxgraph native xml
+* converts from mxgraph native xml and writes as json file
+
 be strictly open source
-1. avoid using languages or frameworks maintained outside the open source community
+* avoid using languages or frameworks maintained outside the open source community
