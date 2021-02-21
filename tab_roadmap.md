@@ -30,11 +30,13 @@ Mike Goodwin's initial vision for the project is [archived here](https://github.
 1. use [mxgraph](https://github.com/jsGraph/mxgraph) for the drawing library
 2. provide a dockerfile for running in docker
 3. use frameworks for unit, component and end-to-end testing
+4. provide an API for CI/CD pipelines
 
 **create a desktop application**
 1. use [electron](https://www.electronjs.org/) to wrap webapp for desktop
 1. incorporates webapp as a git submodule, similar to [drawio](https://github.com/jgraph/drawio) as a submodule for [drawio-desktop](https://github.com/jgraph/drawio-desktop/)
 1. provide auto-update similar to [drawio-desktop](https://github.com/jgraph/drawio-desktop/)
+2. provide a CLI for scripting
 
 **desktop and webbapp should**:
 load models from similar sources to draw.io:
