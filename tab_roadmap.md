@@ -28,6 +28,8 @@ Mike Goodwin's initial vision for the project is [archived here](https://github.
 1. use [express](http://expressjs.com/en/starter/installing.html) for backend application
 1. use [Vue](https://v3.vuejs.org/guide/introduction.html#what-is-vue-js) for frontend application
 1. use [mxgraph](https://github.com/jsGraph/mxgraph) for the drawing library
+2. provide a dockerfile for running in docker
+3. use frameworks for unit, component and end-to-end testing
 
 **create a desktop application**
 1. use [electron](https://www.electronjs.org/) to wrap webapp for desktop
