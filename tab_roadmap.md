@@ -28,15 +28,18 @@ Mike Goodwin's initial vision for the project is [archived here](https://github.
 1. use [express](http://expressjs.com/en/starter/installing.html) for backend application
 1. use [Vue](https://v3.vuejs.org/guide/introduction.html#what-is-vue-js) for frontend application
 1. use [mxgraph](https://github.com/jsGraph/mxgraph) for the drawing library
-2. provide a dockerfile for running in docker
-3. use frameworks for unit, component and end-to-end testing
-4. provide an API for CI/CD pipelines
+1. provide a dockerfile for running in docker, similar to [existing TD](https://github.com/OWASP/threat-dragon/blob/main/Dockerfile)
+1. provide an API for CI/CD pipelines, [see here](https://github.com/bbachi/vuejs-nodejs-example/tree/master/api) for a direct example
+1. use frameworks for unit ([Mocha](https://github.com/mochajs/mocha)), component ([Vue testing library](https://github.com/testing-library/vue-testing-library)) and end-to-end testing
+1. set up ZAP to provide security testing on commit, similar to [existing TD](https://github.com/OWASP/threat-dragon/blob/main/.github/workflows/zap_scan.yaml)
+1. be strictly open source, avoiding using languages or frameworks maintained outside the open source community
 
 **create a desktop application**
 1. use [electron](https://www.electronjs.org/) to wrap webapp for desktop
 1. incorporates webapp as a git submodule, similar to [drawio](https://github.com/jgraph/drawio) as a submodule for [drawio-desktop](https://github.com/jgraph/drawio-desktop/)
 1. provide auto-update similar to [drawio-desktop](https://github.com/jgraph/drawio-desktop/)
-2. provide a CLI for scripting
+1. provide a CLI for scripting based on TD's existing [use of yargs](https://github.com/yargs/yargs)
+1. be strictly open source, avoiding using languages or frameworks maintained outside the open source community
 
 **desktop and webbapp should**:
 load models from similar sources to draw.io:
