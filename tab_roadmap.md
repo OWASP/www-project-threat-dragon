@@ -30,7 +30,7 @@ Mike Goodwin's initial vision for the project is [archived here](https://github.
 1. use [mxgraph](https://github.com/jsGraph/mxgraph) for the drawing library
 1. provide a dockerfile for running in docker, similar to [existing TD](https://github.com/OWASP/threat-dragon/blob/main/Dockerfile)
 1. provide an API for CI/CD pipelines, [see here](https://github.com/bbachi/vuejs-nodejs-example/tree/master/api) for a direct example
-1. use frameworks for unit ([Mocha](https://github.com/mochajs/mocha)), component ([Vue testing library](https://github.com/testing-library/vue-testing-library)) and end-to-end testing
+1. use frameworks for unit ([Mocha](https://github.com/mochajs/mocha)), component ([Vue testing library](https://github.com/testing-library/vue-testing-library)) and end-to-end testing ([nightwatch](https://github.com/nightwatchjs/nightwatch) or [puppeteer](https://github.com/puppeteer/puppeteer))
 1. set up ZAP to provide security testing on commit, similar to [existing TD](https://github.com/OWASP/threat-dragon/blob/main/.github/workflows/zap_scan.yaml)
 1. be strictly open source, avoiding using languages or frameworks maintained outside the open source community
 
@@ -39,7 +39,7 @@ Mike Goodwin's initial vision for the project is [archived here](https://github.
 1. incorporates webapp as a git submodule, similar to [drawio](https://github.com/jgraph/drawio) as a submodule for [drawio-desktop](https://github.com/jgraph/drawio-desktop/)
 1. provide auto-update similar to [drawio-desktop](https://github.com/jgraph/drawio-desktop/)
 1. provide a CLI for scripting based on TD's existing [use of yargs](https://github.com/yargs/yargs)
-1. be strictly open source, avoiding using languages or frameworks maintained outside the open source community
+1. be strictly open source
 
 **desktop and webbapp should**:
 load models from similar sources to draw.io:
@@ -53,6 +53,3 @@ load models from similar sources to draw.io:
 allow design files to be backwardly compatible to Threat Dragon json:
 * reads json file and converts to mxgraph native xml
 * converts from mxgraph native xml and writes as json file
-
-be strictly open source
-* avoid using languages or frameworks maintained outside the open source community
