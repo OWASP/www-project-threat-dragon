@@ -32,6 +32,7 @@ Mike Goodwin's initial vision for the project is [archived here](https://github.
 1. provide an API for CI/CD pipelines, [see here](https://github.com/bbachi/vuejs-nodejs-example/tree/master/api) for a direct example
 1. use test frameworks for unit ([Mocha](https://github.com/mochajs/mocha)), component ([Vue testing library](https://github.com/testing-library/vue-testing-library)) and end-to-end ([nightwatch](https://github.com/nightwatchjs/nightwatch) or [puppeteer](https://github.com/puppeteer/puppeteer))
 1. set up ZAP to provide security testing on commit, similar to [existing TD](https://github.com/OWASP/threat-dragon/blob/main/.github/workflows/zap_scan.yaml)
+1. logging optionally to the console during development, and optionally to file in production and development
 1. be strictly open source, avoiding using languages or frameworks maintained outside the open source community
 
 **create a desktop application**
@@ -39,8 +40,9 @@ Mike Goodwin's initial vision for the project is [archived here](https://github.
 1. incorporates webapp as a git submodule, similar to [drawio](https://github.com/jgraph/drawio) as a submodule for [drawio-desktop](https://github.com/jgraph/drawio-desktop/)
 1. provide auto-update similar to [drawio-desktop](https://github.com/jgraph/drawio-desktop/)
 1. provide a CLI for scripting based on TD's existing [use of yargs](https://github.com/yargs/yargs)
-2. use test framework [electron mocha](https://github.com/jprichardson/electron-mocha)
-3. be strictly open source
+1. use test framework [electron mocha](https://github.com/jprichardson/electron-mocha)
+1. [electron log](https://github.com/megahertz/electron-log) logging level controlled by command line
+1. be strictly open source
 
 **desktop and webbapp should**:
 load models from similar sources to draw.io:
