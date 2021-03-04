@@ -60,7 +60,9 @@ The original roadmap had various milestones, most of which were achieved by late
 * read json file and convert to mxgraph native xml
 * convert from mxgraph native xml and write as json file
 
-**documention and demonstration**:
-1. documentation should be updated at [threat dragon pages](https://threatdragon.github.io/)
-1. online demonstration should also be provided somewhere on the [threat dragon pages](https://threatdragon.github.io/)
+**demonstration pages**:
+* an online demonstration should be provided on [threat dragon's github pages](https://threatdragon.github.io/demo), which should either be a snapshot or a release version ... to be decided
+
+**documention**:
+* documentation should be updated at the [threat dragon github pages](https://threatdragon.github.io/docs), possibky using path /docs/
 
