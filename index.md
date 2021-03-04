@@ -29,11 +29,13 @@ pitch: OWASP Threat Dragon provides a threat modelling application for teams imp
 
 ## What is Threat Dragon?
 
-OWASP Threat Dragon is a tool used to create threat model diagrams as part  of a secure development lifecycle.
-It  can be used to record possible threats and decide on their mitigations, as well as giving a visual indication
+OWASP Threat Dragon is a modeling tool used to create threat model diagrams as part of a secure development lifecycle.
+Threat Dragon follows the values and principles of the [threat modeling manifesto](https://www.threatmodelingmanifesto.org/).
+It can be used to record possible threats and decide on their mitigations, as well as giving a visual indication
 of the threat model components and threat surfaces. Threat Dragon runs either as a web application or a desktop application.
 
-Threat Dragon supports STRIDE / LINDDUN / CIA, provides modelling diagrams and implements a rule engine to auto-generate threats and their mitigations.
+Threat Dragon supports STRIDE / LINDDUN / CIA, provides modelling diagrams and implements a rule engine to auto-generate
+threats and their mitigations.
 
 Use the [documentation](https://threatdragon.github.io) to get started, along with the recording of Mike Goodwin
 giving a [lightning demo](https://youtu.be/n6JGcZGFq5o) during the OWASP Open Security Summit in June 2020.

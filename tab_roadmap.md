@@ -59,3 +59,8 @@ The original roadmap had various milestones, most of which were achieved by late
  2. design files are to be backwardly compatible to Threat Dragon json, along the lines of:
 * read json file and convert to mxgraph native xml
 * convert from mxgraph native xml and write as json file
+
+**documention and demonstration**:
+1. documentation should be updated at [threat dragon pages](https://threatdragon.github.io/)
+1. online demonstration should also be provided somewhere on the [threat dragon pages](https://threatdragon.github.io/)
+
