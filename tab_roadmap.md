@@ -61,8 +61,11 @@ The original roadmap had various milestones, most of which were achieved by late
 * convert from mxgraph native xml and write as json file
 
 **demonstration pages**:
-* an online demonstration should be provided on [threat dragon's github pages](https://threatdragon.github.io/demo), which should either be a snapshot or a release version ... to be decided
+* an online demonstration should be provided on [threat dragon's github pages](https://threatdragon.github.io/demo)
+* demo should either be a snapshot or a release version, to be decided
 
 **documention**:
-* documentation should be updated at the [threat dragon github pages](https://threatdragon.github.io/docs), possibky using path /docs/
+* documentation should be updated at the [threat dragon github pages](https://threatdragon.github.io/docs)
+* version 2.0 docs should initially use path /docs/, so that  version 1.x docs are preserved until version 2.0 is ready
+* docs should be static pages based on [Jekyll](https://jekyllrb.com) and [markdown](https://docs.github.com/en/github/working-with-github-pages/setting-up-a-github-pages-site-with-jekyll)
 
