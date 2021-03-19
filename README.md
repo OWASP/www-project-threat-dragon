@@ -7,3 +7,7 @@ For any improvements to these pages please create an issue or open a pull reques
 Create issues on this repository **only** for content hosted under this subfolder on the OWASP site itself.
 For issues or suggestions related to Threat Dragon itself, please use the core
 [github](https://github.com/OWASP/threat-dragon-core) repository.
+
+### Project leaders
+* Mike Goodwin (mike.goodwin@owasp.org)
+* Jon Gadsden (jon.gadsden@owasp.org)
