@@ -32,14 +32,16 @@ The original roadmap had various milestones, most of which were achieved by late
 1. provide a dockerfile for running in docker, similar to [existing TD](https://github.com/OWASP/threat-dragon/blob/main/Dockerfile)
 1. provide an API for CI/CD pipelines, [see here](https://github.com/bbachi/vuejs-nodejs-example/tree/master/api) for an example
 2. static code analysis using [ESLint](https://eslint.org)
-3. use test runner [Karma](http://karma-runner.github.io/) for [Vue Test Utils](https://vue-test-utils.vuejs.org/installation/#using-other-test-runners)
-4. unit test frameork [Mocha](https://github.com/mochajs/mocha), assertions from [Chai](http://chaijs.com/) and spies from [Sinon](http://sinonjs.org/)
-5. component test ([Vue testing library](https://github.com/testing-library/vue-testing-library)
-6. end-to-end test [nightwatch](https://github.com/nightwatchjs/nightwatch) or [puppeteer](https://github.com/puppeteer/puppeteer)
-7. set up ZAP to provide security testing on commit, similar to [existing TD](https://github.com/OWASP/threat-dragon/blob/main/.github/workflows/zap_scan.yaml)
-8. frontend logging using [bunyan](https://github.com/trentm/node-bunyan) and optional logging to the console during development 
-9. bundle the application and api for production using [webpack](https://webpack.js.org/guides/getting-started/)
-10. be strictly open source, avoiding using languages or frameworks maintained outside the open source community
+3. use test runner [Karma](http://karma-runner.github.io/6.3/intro/installation.html)
+with [Jasmine](https://jasmine.github.io)
+for [Vue Test Utils](https://vue-test-utils.vuejs.org/installation/#using-other-test-runners)
+5. unit test framework [MochaJS](https://mochajs.org), assertions from [Chai](http://chaijs.com/) and spies from [Sinon](http://sinonjs.org/)
+6. component test [Vue testing library](https://github.com/testing-library/vue-testing-library)
+7. end-to-end test [nightwatch](https://github.com/nightwatchjs/nightwatch) or [puppeteer](https://github.com/puppeteer/puppeteer)
+8. set up ZAP to provide security testing on commit, similar to [existing TD](https://github.com/OWASP/threat-dragon/blob/main/.github/workflows/zap_scan.yaml)
+9. frontend logging using [bunyan](https://github.com/trentm/node-bunyan) and optional logging to the console during development 
+10. bundle the application and api for production using [vite](https://vitejs.dev)
+11. be strictly open source, avoiding using languages or frameworks maintained outside the open source community
 
 **provide desktop application as a wrapper**
 1. use [electron](https://www.electronjs.org/) to wrap webapp for desktop
