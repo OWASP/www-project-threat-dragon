@@ -29,10 +29,11 @@ The original roadmap had various milestones, most of which were achieved by late
 1. use [express](http://expressjs.com/en/starter/installing.html) for backend application
 1. use [Vue](https://v3.vuejs.org/guide/introduction.html#what-is-vue-js) for frontend application
 1. use [mxgraph](https://github.com/jsGraph/mxgraph) for the drawing library. Here is [a good example](https://github.com/lanniu/vue-mxgraph-example) for this
-1. provide a dockerfile for running in docker, similar to [existing TD](https://github.com/OWASP/threat-dragon/blob/main/Dockerfile)
-1. provide an API for CI/CD pipelines, [see here](https://github.com/bbachi/vuejs-nodejs-example/tree/master/api) for an example
-1. static code analysis using [ESLint](https://eslint.org)
-1. webapp test runner [Karma](http://karma-runner.github.io/6.3/intro/installation.html)
+2. provide multiple methods of authentication, inn a simlar  way to [draw.io](https://app.diagrams.net)
+3. provide a dockerfile for running in docker, similar to [existing TD](https://github.com/OWASP/threat-dragon/blob/main/Dockerfile)
+4. provide an API for CI/CD pipelines, [see here](https://github.com/bbachi/vuejs-nodejs-example/tree/master/api) for an example
+5. static code analysis using [ESLint](https://eslint.org)
+6. webapp test runner [Karma](http://karma-runner.github.io/6.3/intro/installation.html)
 with [Jasmine](https://jasmine.github.io)
 for [Vue Test Utils](https://vue-test-utils.vuejs.org/installation/#using-other-test-runners)
 5. webapp unit test framework [MochaJS](https://mochajs.org), assertions from [Chai](http://chaijs.com/) and spies from [Sinon](http://sinonjs.org/)
