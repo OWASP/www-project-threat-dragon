@@ -29,7 +29,7 @@ The original roadmap had various milestones, most of which were achieved by late
 1. use [express](http://expressjs.com/en/starter/installing.html) for backend application
 1. use [Vue](https://v3.vuejs.org/guide/introduction.html#what-is-vue-js) for frontend application
 1. use [mxgraph](https://github.com/jsGraph/mxgraph) for the drawing library. Here is [a good example](https://github.com/lanniu/vue-mxgraph-example) for this
-2. provide multiple methods of authentication, inn a simlar  way to [draw.io](https://app.diagrams.net)
+2. provide multiple methods of authentication similar to [draw.io](https://app.diagrams.net) login page
 3. provide a dockerfile for running in docker, similar to [existing TD](https://github.com/OWASP/threat-dragon/blob/main/Dockerfile)
 4. provide an API for CI/CD pipelines, [see here](https://github.com/bbachi/vuejs-nodejs-example/tree/master/api) for an example
 5. static code analysis using [ESLint](https://eslint.org)
