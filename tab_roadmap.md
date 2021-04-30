@@ -17,14 +17,14 @@ The original roadmap had various milestones, most of which were achieved by late
 
 **Milestone 3**: Release 1.0
 * production version released February 2020
-* version 1.3.1 was released October 2020
+* version 1.3.1 released October 2020
 
 **Milestone 4**: - Dev lifecycle integration
 * Still to be completed, some CLI interface available mid 2020
 
 ## Version 2.0: planned for late 2021
 **migrate to a combined application for both webapp and core**
-- [ ]  written in javascript ES6 / ECMAScript 2015 or compatible
+- [x]  written in javascript ES6 / ECMAScript 2015 or compatible
 - [x]  run on [node.js](https://nodejs.org/en/) server
 - [x]  use [express](http://expressjs.com/en/starter/installing.html) for backend application
 - [ ]  use [Vue](https://v3.vuejs.org/guide/introduction.html#what-is-vue-js) for frontend application
@@ -32,17 +32,17 @@ The original roadmap had various milestones, most of which were achieved by late
 - [ ]  provide multiple methods of authentication similar to [draw.io](https://app.diagrams.net) login page
 - [x]  provide a dockerfile for running in docker, similar to [existing TD](https://github.com/OWASP/threat-dragon/blob/main/Dockerfile)
 - [ ]  provide an API for CI/CD pipelines, [see here](https://github.com/bbachi/vuejs-nodejs-example/tree/master/api) for an example
-- [ ]  static code analysis using [ESLint](https://eslint.org)
+- [x]  static code analysis using [ESLint](https://eslint.org)
 - [ ]  webapp test runner [Karma](http://karma-runner.github.io/6.3/intro/installation.html)
 with [Jasmine](https://jasmine.github.io)
 for [Vue Test Utils](https://vue-test-utils.vuejs.org/installation/#using-other-test-runners)
-- [ ]  webapp unit test framework [MochaJS](https://mochajs.org), assertions from [Chai](http://chaijs.com/) and spies from [Sinon](http://sinonjs.org/)
+- [x]  webapp unit test framework [MochaJS](https://mochajs.org), assertions from [Chai](http://chaijs.com/) and spies from [Sinon](http://sinonjs.org/)
 - [ ]  backend unit test framework [MochaJS](https://mochajs.org) and assertions from [supertest](https://github.com/visionmedia/supertest#readme)
 - [ ]  component test [Vue testing library](https://github.com/testing-library/vue-testing-library)
 - [ ]  end-to-end test [nightwatch](https://github.com/nightwatchjs/nightwatch) or [puppeteer](https://github.com/puppeteer/puppeteer)
 - [x]  set up ZAP to provide security testing on commit, similar to [existing TD](https://github.com/OWASP/threat-dragon/blob/main/.github/workflows/zap_scan.yaml)
 - [ ]  frontend logging using [bunyan](https://github.com/trentm/node-bunyan) and optional logging to the console during development 
-- [ ]  bundle the application and api for production using [vite](https://vitejs.dev) or [webpack](https://webpack.js.org/)
+- [x]  bundle the application and api for production using [webpack](https://webpack.js.org/)
 - [x]  be strictly open source, avoiding using languages or frameworks maintained outside the open source community
 
 **provide desktop application as a wrapper**
