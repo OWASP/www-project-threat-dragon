@@ -36,7 +36,7 @@ The original roadmap had various milestones, most of which were achieved by late
 - [ ]  webapp test runner [Karma](http://karma-runner.github.io/6.3/intro/installation.html)
 with [Jasmine](https://jasmine.github.io)
 for [Vue Test Utils](https://vue-test-utils.vuejs.org/installation/#using-other-test-runners)
-- [x]  webapp unit test framework [MochaJS](https://mochajs.org), assertions from [Chai](http://chaijs.com/) and spies from [Sinon](http://sinonjs.org/)
+- [ ]  webapp unit test framework [Jest](https://jestjs.io/) and spies from [Sinon](http://sinonjs.org/)
 - [ ]  backend unit test framework [MochaJS](https://mochajs.org) and assertions from [supertest](https://github.com/visionmedia/supertest#readme)
 - [ ]  component test [Vue testing library](https://github.com/testing-library/vue-testing-library)
 - [ ]  end-to-end test [nightwatch](https://github.com/nightwatchjs/nightwatch) or [puppeteer](https://github.com/puppeteer/puppeteer)
