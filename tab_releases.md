@@ -11,7 +11,7 @@ tags: threatdragon
 Release | Date | Location | Comments
 ------- | ---- | -------- | --------
 v2.0 | Planned late 2021 | Web app <br> Desktop | substantial rewrite for new drawing library [mxgraph](https://github.com/jsGraph/mxgraph)
-v1.3.2 | Planned May 2021 | Web app <br> Desktop | no functional changes, substantial code reorganisation
+v1.4.0 | 5 May 2021 | [Web app](https://github.com/OWASP/threat-dragon/releases/tag/v1.4.0) <br> [Desktop](https://github.com/OWASP/threat-dragon-desktop/releases/tag/v1.3.1) | Provides dotenv for environment variables <br> updates to docker image <br> substantial code reorganisation
 v1.3.1 | 26 Oct 2020 | [Web app](https://github.com/OWASP/threat-dragon/releases/tag/v1.3.1) <br> [Desktop](https://github.com/OWASP/threat-dragon-desktop/releases/tag/v1.3.1) | update documentation link to point to new docs page
 v1.3 | 3 Sep 2020 | [Web app](https://github.com/OWASP/threat-dragon/releases/tag/v1.3) <br> [Desktop](https://github.com/OWASP/threat-dragon-desktop/releases/tag/v1.3) | support for LINDDUN and CIA as well as STRIDE <br> and desktop command line interface
 v1.2 | 14 April 2020 | [Web app](https://github.com/mike-goodwin/owasp-threat-dragon/releases/tag/v1.2) <br> [Desktop](https://github.com/mike-goodwin/owasp-threat-dragon-desktop/releases/tag/v1.2) | description for diagram elements <br> label applied to boundaries <br> save button always enabled <br> zoom functionality disabled <br> hot key copy and paste for diagram elements

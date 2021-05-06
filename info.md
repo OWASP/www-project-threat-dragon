@@ -13,6 +13,7 @@
 
 ### Downloads
 * Single page [web application](https://github.com/OWASP/threat-dragon/releases)
+* Docker [image](https://hub.docker.com/r/threatdragon/owasp-threat-dragon/tags?page=1&ordering=last_updated)
 * Desktop installers for:
 * [Linux / Mac / Windows](https://github.com/OWASP/threat-dragon-desktop/releases)
 
