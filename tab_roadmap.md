@@ -24,15 +24,15 @@ The original roadmap had various milestones, most of which were achieved by late
 
 ## Version 2.0: planned for late 2021
 **migrate to a combined application for both webapp and core**
-- [x]  written in javascript ES6 / ECMAScript 2015 or compatible
-- [x]  run on [node.js](https://nodejs.org/en/) server
-- [x]  use [express](http://expressjs.com/en/starter/installing.html) for backend application
+- [x]  _done in v1.4.0_ written in javascript ES6 / ECMAScript 2015 or compatible
+- [x]  _done in v1.4.0_  run on [node.js](https://nodejs.org/en/) server
+- [x]  _done in v1.4.0_  use [express](http://expressjs.com/en/starter/installing.html) for backend application
 - [ ]  use [Vue](https://v3.vuejs.org/guide/introduction.html#what-is-vue-js) for frontend application
 - [ ]  use [mxgraph](https://github.com/jsGraph/mxgraph) for the drawing library. Here is [a good example](https://github.com/lanniu/vue-mxgraph-example) for this
 - [ ]  provide multiple methods of authentication similar to [draw.io](https://app.diagrams.net) login page
-- [x]  provide a dockerfile for running in docker, similar to [existing TD](https://github.com/OWASP/threat-dragon/blob/main/Dockerfile)
+- [x]  _done in v1.4.0_  provide a dockerfile for running in docker, similar to [existing TD](https://github.com/OWASP/threat-dragon/blob/main/Dockerfile)
 - [ ]  provide an API for CI/CD pipelines, [see here](https://github.com/bbachi/vuejs-nodejs-example/tree/master/api) for an example
-- [x]  static code analysis using [ESLint](https://eslint.org)
+- [x]  _done in v1.4.0_  static code analysis using [ESLint](https://eslint.org)
 - [ ]  webapp test runner [Karma](http://karma-runner.github.io/6.3/intro/installation.html)
 with [Jasmine](https://jasmine.github.io)
 for [Vue Test Utils](https://vue-test-utils.vuejs.org/installation/#using-other-test-runners)
@@ -40,9 +40,9 @@ for [Vue Test Utils](https://vue-test-utils.vuejs.org/installation/#using-other-
 - [ ]  backend unit test framework [MochaJS](https://mochajs.org) and assertions from [supertest](https://github.com/visionmedia/supertest#readme)
 - [ ]  component test [Vue testing library](https://github.com/testing-library/vue-testing-library)
 - [ ]  end-to-end test [nightwatch](https://github.com/nightwatchjs/nightwatch) or [puppeteer](https://github.com/puppeteer/puppeteer)
-- [x]  set up ZAP to provide security testing on commit, similar to [existing TD](https://github.com/OWASP/threat-dragon/blob/main/.github/workflows/zap_scan.yaml)
+- [ ]  set up ZAP to provide security testing on commit, similar to [existing TD](https://github.com/OWASP/threat-dragon/blob/main/.github/workflows/zap_scan.yaml)
 - [ ]  frontend logging using [bunyan](https://github.com/trentm/node-bunyan) and optional logging to the console during development 
-- [x]  bundle the application and api for production using [webpack](https://webpack.js.org/)
+- [x]  _done in v1.4.0_  bundle the application and api for production using [webpack](https://webpack.js.org/)
 - [x]  be strictly open source, avoiding using languages or frameworks maintained outside the open source community
 
 **provide desktop application as a wrapper**
@@ -72,6 +72,6 @@ for [Vue Test Utils](https://vue-test-utils.vuejs.org/installation/#using-other-
 - [ ] demo should either be a snapshot or a release version
 
 **documention**:
-- [x] documentation should be updated at the [threat dragon github pages](https://threatdragon.github.io/docs)
-- [x] version 1.x docs are preserved and migrated to version 2.0
-- [x] docs should be static pages based on [Jekyll](https://jekyllrb.com) and [markdown](https://docs.github.com/en/github/working-with-github-pages/setting-up-a-github-pages-site-with-jekyll)
+- [x] _done in v1.4.0_  documentation should be updated at the [threat dragon github pages](https://threatdragon.github.io/docs)
+- [x] _done in v1.4.0_  version 1.x docs are preserved and migrated to version 2.0
+- [x] _done in v1.4.0_  docs should be static pages based on [Jekyll](https://jekyllrb.com) and [markdown](https://docs.github.com/en/github/working-with-github-pages/setting-up-a-github-pages-site-with-jekyll)
