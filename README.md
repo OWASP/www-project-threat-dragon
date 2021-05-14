@@ -9,5 +9,6 @@ For issues or suggestions related to Threat Dragon itself, please use the core
 [github](https://github.com/OWASP/threat-dragon-core) repository.
 
 ### Project leaders
-* Mike Goodwin (mike.goodwin@owasp.org)
-* Jon Gadsden (jon.gadsden@owasp.org)
+* [Mike Goodwin](mailto:mike.goodwin@owasp.org)
+* [Jon Gadsden](mailto:jon.gadsden@owasp.org)
+* [Leo Reading](mailto:leo.reading@owasp.org)
