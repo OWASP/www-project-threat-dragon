@@ -20,7 +20,6 @@
 ### Sources
 * [Threat Dragon web app](https://github.com/OWASP/threat-dragon)
 * [Threat Dragon desktop](https://github.com/OWASP/threat-dragon-desktop)
-* [Threat Dragon common](https://github.com/OWASP/threat-dragon-core)
 
 ### Licensing
 * [Apache 2 License](https://www.apache.org/licenses/LICENSE-2.0)

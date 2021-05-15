@@ -19,13 +19,13 @@ To help you get started, take a look at the [documentaion area](https://threatdr
 
 If you are still having problems, let us know and we will be pleased to help (mike.goodwin@owasp.org and 
 jon.gadsden@owasp.org). All feedback is very welcome, so either email us or add an issue on the
-[GitHub repo](https://github.com/OWASP/threat-dragon-core/issues).
+[GitHub repo](https://github.com/OWASP/threat-dragon/issues).
 
 #### Coding
 Coding help of any kind is always welcome. The project builds easily (let us know if you have any problems)
 so getting up and running should be simple.  There are some
-[developer notes](https://github.com/OWASP/threat-dragon-core/blob/main/dev-notes.md) in the core
-[threat dragon](https://github.com/OWASP/threat-dragon-core) repo to help get started with this project.
+[developer notes](https://github.com/OWASP/threat-dragon/blob/main/dev-notes.md) in the
+[threat dragon](https://github.com/OWASP/threat-dragon) repo to help get started with this project.
 
 #### Threat rule engine
 If you are not into javascript, you can still help! We want to create a powerful threat generation rule engine

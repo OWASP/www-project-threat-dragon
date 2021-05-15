@@ -33,14 +33,14 @@ The original roadmap had various milestones, most of which were achieved by late
 - [x]  _done in v1.4.0_  provide a dockerfile for running in docker, similar to [existing TD](https://github.com/OWASP/threat-dragon/blob/main/Dockerfile)
 - [ ]  provide an API for CI/CD pipelines, [see here](https://github.com/bbachi/vuejs-nodejs-example/tree/master/api) for an example
 - [x]  _done in v1.4.0_  static code analysis using [ESLint](https://eslint.org)
-- [ ]  webapp test runner [Karma](http://karma-runner.github.io/6.3/intro/installation.html)
+- [x]  webapp test runner [Karma](http://karma-runner.github.io/6.3/intro/installation.html)
 with [Jasmine](https://jasmine.github.io)
 for [Vue Test Utils](https://vue-test-utils.vuejs.org/installation/#using-other-test-runners)
-- [ ]  webapp unit test framework [Jest](https://jestjs.io/) and spies from [Sinon](http://sinonjs.org/)
-- [ ]  backend unit test framework [MochaJS](https://mochajs.org) and assertions from [supertest](https://github.com/visionmedia/supertest#readme)
-- [ ]  component test [Vue testing library](https://github.com/testing-library/vue-testing-library)
-- [ ]  end-to-end test [nightwatch](https://github.com/nightwatchjs/nightwatch) or [puppeteer](https://github.com/puppeteer/puppeteer)
-- [ ]  set up ZAP to provide security testing on commit, similar to [existing TD](https://github.com/OWASP/threat-dragon/blob/main/.github/workflows/zap_scan.yaml)
+- [x]  _v2 branch_ webapp unit test framework [Jest](https://jestjs.io/)
+- [x]  backend unit test framework [MochaJS](https://mochajs.org) and assertions from [chai](https://github.com/chaijs/chai)
+- [x]  _v2 branch_ component test [Vue testing library](https://github.com/testing-library/vue-testing-library)
+- [x]  _v2 branch_ end-to-end test [cypress](https://github.com/cypress-io/cypress) 
+- [x]  _v2 branch_ set up ZAP to provide security testing on commit, similar to [existing TD](https://github.com/OWASP/threat-dragon/blob/main/.github/workflows/zap_scan.yaml)
 - [ ]  frontend logging using [bunyan](https://github.com/trentm/node-bunyan) and optional logging to the console during development 
 - [x]  _done in v1.4.0_  bundle the application and api for production using [webpack](https://webpack.js.org/)
 - [x]  be strictly open source, avoiding using languages or frameworks maintained outside the open source community
