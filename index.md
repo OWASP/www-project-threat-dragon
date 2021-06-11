@@ -48,7 +48,6 @@ with Windows and MacOS.
 * [OWASP PyTM (Pythonic Threat Modeling)](https://owasp.org/www-project-pytm/)
 * [OWASP Threat Model Cookbook](https://owasp.org/www-project-threat-model-cookbook/)
 * [Threat Modeling OWASP Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html)
-* [OWASP Threat Model Project](https://owasp.org/www-project-threat-model/)
 * [OWASP Threat Model Project (old pages)](https://wiki.owasp.org/index.php/OWASP_Threat_Model_Project#tab=Main)
 * [Threagile - Agile Threat Modeling](https://threagile.io) although it is not OWASP, it is open source
 
