@@ -6,7 +6,7 @@ tags: threatdragon
 project: true
 level: 2
 type: tool
-pitch: OWASP Threat Dragon provides a threat modelling application for teams implementing the STRIDE approach, either as a desktop or as a web application. Great for both developers and defenders alike
+pitch: OWASP Threat Dragon provides a threat modeling application for teams implementing the STRIDE approach, either as a desktop or as a web application. Great for both developers and defenders alike
 
 ---
 
@@ -34,7 +34,7 @@ Threat Dragon follows the values and principles of the [threat modeling manifest
 It can be used to record possible threats and decide on their mitigations, as well as giving a visual indication
 of the threat model components and threat surfaces. Threat Dragon runs either as a web application or a desktop application.
 
-Threat Dragon supports STRIDE / LINDDUN / CIA, provides modelling diagrams and implements a rule engine to auto-generate
+Threat Dragon supports STRIDE / LINDDUN / CIA, provides modeling diagrams and implements a rule engine to auto-generate
 threats and their mitigations.
 
 Use the [documentation](https://threatdragon.github.io) to get started, along with the recording of Mike Goodwin
