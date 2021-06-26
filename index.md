@@ -41,7 +41,7 @@ Use the [documentation](https://threatdragon.github.io) to get started, along wi
 giving a [lightning demo](https://youtu.be/n6JGcZGFq5o) during the OWASP Open Security Summit in June 2020.
 
 Threat Dragon has a [demonstration page](https://threatdragon.org/login). This is on older version which is due to be
-updated soon, and the notable difference is that we now have a desktop version that can be installed on linux - along
+updated soon, and the notable difference is that we now have a desktop version that can be installed on Linux - along
 with Windows and MacOS.
 
 ### Related Projects
@@ -59,5 +59,5 @@ Everyone is welcome and encouraged to participate in our [Projects](/projects), 
 [Events](/events), [Online Groups](https://groups.google.com/a/owasp.com/){:target='_blank'},
 and [Community Slack Channel](https://owasp.slack.com/){:target='_blank'}. We especially encourage diversity
 in all our initiatives. OWASP is a fantastic place to learn about application security, to network, and even
-to build your reputation as an expert. We also encourage you to be [become a member](/membership) or consider
+to build your reputation as an expert. We also encourage you to [become a member](/membership) or consider
 a [donation](/donate) to support our ongoing work.
