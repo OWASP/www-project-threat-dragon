@@ -15,7 +15,7 @@ on the [web application github](https://github.com/OWASP/threat-dragon/releases)
 The desktop variant has installers for Linux, Windows and MacOS which be downloaded from the
 [desktop project github](https://github.com/OWASP/threat-dragon-desktop/releases).
 
-To help you get started, take a look at the [documentaion area](https://threatdragon.github.io).
+To help you get started, take a look at the [documentation area](https://threatdragon.github.io).
 
 If you are still having problems, let us know and we will be pleased to help (mike.goodwin@owasp.org and 
 jon.gadsden@owasp.org). All feedback is very welcome, so either email us or add an issue on the

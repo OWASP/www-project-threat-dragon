@@ -57,7 +57,7 @@ for [Vue Test Utils](https://vue-test-utils.vuejs.org/installation/#using-other-
 - [x] bundle the application and api for production using [webpack](https://webpack.js.org/)
 - [x] be strictly open source, avoiding using languages or frameworks maintained outside the open source community
 
-**documention**:
+**documentation**:
 - [x] documentation should be updated at the [threat dragon github pages](https://threatdragon.github.io/docs)
 - [x] version 1.x docs are preserved and migrated to version 2.0
 - [x] docs should be static pages based on [Jekyll](https://jekyllrb.com) and [markdown](https://docs.github.com/en/github/working-with-github-pages/setting-up-a-github-pages-site-with-jekyll)
