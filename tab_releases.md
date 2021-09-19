@@ -10,8 +10,8 @@ tags: threatdragon
 
 Release | Date | Location | Comments
 ------- | ---- | -------- | --------
-v2.0 | Late 2021/2022 | Web app <br> Desktop | substantial rewrite for new drawing library [@antv/g6](https://www.npmjs.com/package/@antv/g6)
-v1.5.5 | Sep 2021 | [Web app](https://github.com/OWASP/threat-dragon/releases/tag/v1.5.5) <br> [Desktop](https://github.com/OWASP/threat-dragon/releases/tag/v1.5.5) | MacOS images are signed and notarized <br> Linux Snap image available as [snapcraft distribution](https://snapcraft.io/threat-dragon)
+v2.0(draft) | Late 2021/2022 | Web app <br> Desktop | in progress: <br> substantial rewrite for new drawing library [@antv/g6](https://www.npmjs.com/package/@antv/g6)
+v1.5.5 | Sep 2021 | [github](https://github.com/OWASP/threat-dragon/releases/tag/v1.5.5) | MacOS images are signed and notarized <br> Linux Snap image available as [snapcraft distribution](https://snapcraft.io/threat-dragon)
 v1.4.0 | 5 May 2021 | [Web app](https://github.com/OWASP/threat-dragon/releases/tag/v1.4.0) <br> [Desktop](https://github.com/OWASP/threat-dragon/releases/tag/v1.4.0) | Provides dotenv for environment variables <br> updates to docker image <br> substantial code reorganisation
 v1.3.1 | 26 Oct 2020 | [Web app](https://github.com/OWASP/threat-dragon/releases/tag/v1.3.1) <br> [Desktop](https://github.com/OWASP/threat-dragon-desktop/releases/tag/v1.3.1) | update documentation link to point to new docs page
 v1.3 | 3 Sep 2020 | [Web app](https://github.com/OWASP/threat-dragon/releases/tag/v1.3) <br> [Desktop](https://github.com/OWASP/threat-dragon-desktop/releases/tag/v1.3) | support for LINDDUN and CIA as well as STRIDE <br> and desktop command line interface
