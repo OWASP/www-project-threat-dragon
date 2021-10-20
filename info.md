@@ -1,6 +1,6 @@
 ### Project Classification
 
-<img src="assets/images/common/owasp_level_incubator.svg" width="66">
+<img src="assets/images/common/owasp_level_lab.svg" width="66">
 
 ![Defenders](assets/images/common/owasp_defenders.svg)
 ![Builders](assets/images/common/owasp_builders.svg)
