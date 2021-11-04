@@ -40,15 +40,14 @@ threats and their mitigations.
 Use the [documentation](https://threatdragon.github.io) to get started, along with the recording of Mike Goodwin
 giving a [lightning demo](https://youtu.be/n6JGcZGFq5o) during the OWASP Open Security Summit in June 2020.
 
-Threat Dragon has a [demonstration page](https://threatdragon.org/login). This is on older version which is due to be
-updated soon, and the notable difference is that we now have a desktop version that can be installed on Linux - along
-with Windows and MacOS.
+An [introduction](https://www.youtube.com/watch?v=hUOAoc6QGJo) to Threat Dragon is provided by
+the [OWASP Spotlight](https://www.youtube.com/playlist?list=PLUKo5k_oSrfOTl27gUmk2o-NBKvkTGw0T) series.
 
 ### Related Projects
-* [OWASP PyTM (Pythonic Threat Modeling)](https://owasp.org/www-project-pytm/)
+* [OWASP pytm (Pythonic Threat Modeling)](https://owasp.org/www-project-pytm/)
 * [OWASP Threat Model Cookbook](https://owasp.org/www-project-threat-model-cookbook/)
 * [Threat Modeling OWASP Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html)
-* [Threagile - Agile Threat Modeling](https://threagile.io) although it is not OWASP, it is open source
+* [Threagile - Agile Threat Modeling](https://threagile.io), although not OWASP it is open source
 
 ## OWASP participation
 The Open Web Application Security Project (OWASP) is a nonprofit foundation that works to improve the security of
