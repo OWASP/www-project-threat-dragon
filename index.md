@@ -41,7 +41,9 @@ Use the [documentation](https://threatdragon.github.io) to get started, along wi
 giving a [lightning demo](https://youtu.be/n6JGcZGFq5o) during the OWASP Open Security Summit in June 2020.
 
 An [introduction](https://www.youtube.com/watch?v=hUOAoc6QGJo) to Threat Dragon is provided by
-the [OWASP Spotlight](https://www.youtube.com/playlist?list=PLUKo5k_oSrfOTl27gUmk2o-NBKvkTGw0T) series.
+the [OWASP Spotlight](https://www.youtube.com/playlist?list=PLUKo5k_oSrfOTl27gUmk2o-NBKvkTGw0T) series,
+and the [Threat Modeling Gamification](https://www.youtube.com/watch?v=u2tmLrwv-nc) seminar by Vlad Styran
+shows how using Threat Dragon can make threat modeling fun.
 
 ### Related Projects
 * [OWASP pytm (Pythonic Threat Modeling)](https://owasp.org/www-project-pytm/)
