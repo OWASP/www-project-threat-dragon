@@ -6,32 +6,31 @@ order: 4
 tags: threatdragon
 ---
 
-## Version 2.0: planned for early 2022
-**migrate to a combined application for both webapp and core**
+## Version 2.0: in development and planned for late 2022
+**migrate to a combined application for both desktop and webapp**
+- [x] be strictly open source
 - [x] use [Vue](https://v3.vuejs.org/guide/introduction.html#what-is-vue-js) for frontend application
 - [x] use [@antv/g6](https://www.npmjs.com/package/@antv/g6) for the drawing library
-- [ ] _in progress_ provide multiple methods of authentication similar to [draw.io](https://app.diagrams.net) login page
-- [ ] _in progress_ provide an API for CI/CD pipelines, [see here](https://github.com/bbachi/vuejs-nodejs-example/tree/master/api) for an example
+- [ ] provide an API for CI/CD pipelines, [see here](https://github.com/bbachi/vuejs-nodejs-example/tree/master/api) for an example
+- [ ] provide a CLI for scripting based on TD's existing [use of yargs](https://github.com/yargs/yargs)
 - [x] frontend logging using [bunyan](https://github.com/trentm/node-bunyan) and optional logging to the console during development 
 - [x] use [electron](https://www.electronjs.org/) to wrap webapp for desktop
-- [ ] provide auto-update using [electron](https://www.electronjs.org/)
-- [ ] provide a CLI for scripting based on TD's existing [use of yargs](https://github.com/yargs/yargs)
-- [ ] expand electron unit tests using [spectron](https://github.com/electron-userland/spectron)
-- [ ] [electron log](https://github.com/megahertz/electron-log) logging level controlled by command line
+- [X] provide auto-update using [electron](https://www.electronjs.org/)
+- [X] expand electron unit tests using [WDIO Electron Service](https://github.com/webdriverio-community/wdio-electron-service)
 - [x] webapp unit test framework [Jest](https://jestjs.io/)
 - [x] component test [Vue testing library](https://github.com/testing-library/vue-testing-library)
 - [x] end-to-end test [cypress](https://github.com/cypress-io/cypress) 
 - [x] set up ZAP to provide security testing on commit, similar to [existing TD](https://github.com/OWASP/threat-dragon/blob/main/.github/workflows/zap_scan.yaml)
-- [x] be strictly open source
+- [ ] _in progress_ provide multiple methods of authentication and access similar to [draw.io](https://app.diagrams.net) login page
 
-**file access for both desktop and web apps**:
+**model access for both desktop and web app**:
 - [ ] load models from various sources similar to [drawio](https://github.com/jgraph/drawio):
     - [x]  github
     - [ ]  gitlab
     - [ ]  Google Drive
     - [ ]  OneDrive
     - [ ]  Dropbox
-    - [ ]  _in progress_ local filesystem device
+    - [X]  local filesystem device
 - [x] design files are to be backwardly compatible to Threat Dragon json
 
 **demonstration pages**:
@@ -60,16 +59,15 @@ for [Vue Test Utils](https://vue-test-utils.vuejs.org/installation/#using-other-
 Mike Goodwin's initial roadmap for the project is [archived here](https://github.com/OWASP/www-project-threat-dragon/wiki/Original-Roadmap).
 The original roadmap had various milestones, most of which were achieved by late 2020.
 
-**Milestone 1**: Alpha release - Basic threat modelling experience
-* achieved October 2015
-
-**Milestone 2**: Beta release - Threat/mitigation rule engine
-* achieved May 2017 with version 0.1.26
+**Milestone 4**: - Dev lifecycle integration
+* Still to be completed, some CLI interface available mid 2020
 
 **Milestone 3**: Release 1.0
 * production version released February 2020
 * version 1.3.1 released October 2020
 
-**Milestone 4**: - Dev lifecycle integration
-* Still to be completed, some CLI interface available mid 2020
+**Milestone 2**: Beta release - Threat/mitigation rule engine
+* achieved May 2017 with version 0.1.26
 
+**Milestone 1**: Alpha release - Basic threat modelling experience
+* achieved October 2015
