@@ -13,7 +13,7 @@ At its best, it is especially good for:
 * Flushing out security requirements and user stories
 
 OWASP Threat Dragon provides a free, open-source, threat modeling application for teams implementing the STRIDE approach.
-It can also be used for categorising threats using LINDDUN and CIA.
+It can also be used for categorising threats using [LINDDUN](https://www.linddun.org/) and CIA.
 The key areas of focus for the tool is:
 * Great UX - using Threat Dragon should be simple, engaging and fun
 * A powerful threat/mitigation rule engine - this lowers the barrier to entry for teams and allow non-specialists to contribute
