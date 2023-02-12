@@ -6,7 +6,7 @@ order: 3
 tags: threatdragon
 ---
 
-## Version 2.0: in development and planned for late 2022
+## Version 2.0: in development and planned for 2023
 **migrate to a combined application for both desktop and webapp**
 - [x] be strictly open source
 - [x] use [Vue](https://v3.vuejs.org/guide/introduction.html#what-is-vue-js) for frontend application
