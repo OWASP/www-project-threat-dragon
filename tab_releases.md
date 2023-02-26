@@ -11,7 +11,8 @@ tags: threatdragon
 Release | Date | Location | Comments
 ------- | ---- | -------- | --------
 v2.0.0 | Feb 2023 | [github](https://github.com/OWASP/threat-dragon/releases/tag/v2.0.0) | substantial rewrite for new drawing library [@antv/g6](https://www.npmjs.com/package/@antv/g6)
-v1.6.0 | Dec 2021 | [github](https://github.com/OWASP/threat-dragon/releases/tag/v1.6.0) | Automated threat and context threat generation<br>Last release of 1.x before version 2.0
+v1.6.1 | Mar 2022 | [github](https://github.com/OWASP/threat-dragon/releases/tag/v1.6.1) | Docs now moved to the new site<br>Last release of 1.x before version 2.0
+v1.6.0 | Dec 2021 | [github](https://github.com/OWASP/threat-dragon/releases/tag/v1.6.0) | Automated threat and context threat generation
 v1.5.8 | Sep 2021 | [github](https://github.com/OWASP/threat-dragon/releases/tag/v1.5.8) | Shows 'NA' threats as completed/ mitigated<br>Fixes bug in threat engine (web app only)<br>Signed binaries for Windows
 v1.5.5 | Sep 2021 | [github](https://github.com/OWASP/threat-dragon/releases/tag/v1.5.5) | MacOS images are signed and notarized <br> Linux Snap image available as [snapcraft distribution](https://snapcraft.io/threat-dragon)
 v1.4.0 | 5 May 2021 | [Web app](https://github.com/OWASP/threat-dragon/releases/tag/v1.4.0) <br> [Desktop](https://github.com/OWASP/threat-dragon/releases/tag/v1.4.0) | Provides dotenv for environment variables <br> updates to docker image <br> substantial code reorganisation

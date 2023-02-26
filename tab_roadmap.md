@@ -10,6 +10,7 @@ tags: threatdragon
 - [ ] provide an API for CI/CD pipelines, [see here](https://github.com/bbachi/vuejs-nodejs-example/tree/master/api) for an example
 - [ ] provide a CLI for scripting based on TD's existing [use of yargs](https://github.com/yargs/yargs)
 - [ ] provide multiple methods of authentication and access similar to [draw.io](https://app.diagrams.net) login page
+
 **model access for both desktop and web app**:
 - [ ] load models from various sources similar to [drawio](https://github.com/jgraph/drawio):
     - [x]  github enterprise
@@ -31,15 +32,6 @@ tags: threatdragon
 - [x] component test [Vue testing library](https://github.com/testing-library/vue-testing-library)
 - [x] end-to-end test [cypress](https://github.com/cypress-io/cypress) 
 - [x] set up ZAP to provide security testing on commit, similar to [existing TD](https://github.com/OWASP/threat-dragon/blob/main/.github/workflows/zap_scan.yaml)
-
-**model access for both desktop and web app**:
-- [ ] load models from various sources similar to [drawio](https://github.com/jgraph/drawio):
-    - [x]  github
-    - [ ]  gitlab
-    - [ ]  Google Drive
-    - [ ]  OneDrive
-    - [ ]  Dropbox
-    - [X]  local filesystem device
 - [x] design files are to be backwardly compatible to Threat Dragon json
 
 **demonstration pages**:
