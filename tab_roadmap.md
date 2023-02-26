@@ -6,13 +6,23 @@ order: 3
 tags: threatdragon
 ---
 
-## Version 2.0: in development and planned for 2023
+### Version 2.1: in progress
+- [ ] provide an API for CI/CD pipelines, [see here](https://github.com/bbachi/vuejs-nodejs-example/tree/master/api) for an example
+- [ ] provide a CLI for scripting based on TD's existing [use of yargs](https://github.com/yargs/yargs)
+- [ ] provide multiple methods of authentication and access similar to [draw.io](https://app.diagrams.net) login page
+**model access for both desktop and web app**:
+- [ ] load models from various sources similar to [drawio](https://github.com/jgraph/drawio):
+    - [x]  github enterprise
+    - [ ]  gitlab
+    - [ ]  Google Drive
+    - [ ]  OneDrive
+    - [ ]  Dropbox
+
+### Version 2.0: released February 2023
 **migrate to a combined application for both desktop and webapp**
 - [x] be strictly open source
 - [x] use [Vue](https://v3.vuejs.org/guide/introduction.html#what-is-vue-js) for frontend application
 - [x] use [@antv/g6](https://www.npmjs.com/package/@antv/g6) for the drawing library
-- [ ] provide an API for CI/CD pipelines, [see here](https://github.com/bbachi/vuejs-nodejs-example/tree/master/api) for an example
-- [ ] provide a CLI for scripting based on TD's existing [use of yargs](https://github.com/yargs/yargs)
 - [x] frontend logging using [bunyan](https://github.com/trentm/node-bunyan) and optional logging to the console during development 
 - [x] use [electron](https://www.electronjs.org/) to wrap webapp for desktop
 - [X] provide auto-update using [electron](https://www.electronjs.org/)
@@ -21,7 +31,6 @@ tags: threatdragon
 - [x] component test [Vue testing library](https://github.com/testing-library/vue-testing-library)
 - [x] end-to-end test [cypress](https://github.com/cypress-io/cypress) 
 - [x] set up ZAP to provide security testing on commit, similar to [existing TD](https://github.com/OWASP/threat-dragon/blob/main/.github/workflows/zap_scan.yaml)
-- [ ] _in progress_ provide multiple methods of authentication and access similar to [draw.io](https://app.diagrams.net) login page
 
 **model access for both desktop and web app**:
 - [ ] load models from various sources similar to [drawio](https://github.com/jgraph/drawio):
