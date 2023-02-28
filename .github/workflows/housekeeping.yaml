@@ -1,0 +1,20 @@
+name: Housekeeping
+on:
+  # Run daily at 7:00
+  schedule:
+    - cron: '0 7 * * *'
+  workflow_dispatch:
+
+jobs:
+  housekeeping:
+    name: housekeeping
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Delete stale workflow runs
+        uses: Mattraks/delete-workflow-runs@v2
+        with:
+          token: ${{ github.token }}
+          repository: ${{ github.repository }}
+          retain_days: 60
+          keep_minimum_runs: 10
