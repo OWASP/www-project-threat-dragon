@@ -12,9 +12,23 @@ jobs:
 
     steps:
       - name: Delete stale workflow runs
-        uses: Mattraks/delete-workflow-runs@v2
+        uses: Mattraks/delete-workflow-runs@v2.0.3
         with:
           token: ${{ github.token }}
           repository: ${{ github.repository }}
           retain_days: 60
           keep_minimum_runs: 10
+
+  link_checker:
+    name: link checker
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3.3.0
+
+      - name: Link Checker
+        uses: lycheeverse/lychee-action@v1.6.1
+        with:
+          fail: true
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
