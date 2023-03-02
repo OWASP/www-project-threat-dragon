@@ -9,7 +9,7 @@
 
 ### Documentation
 * [Installation](https://threatdragon.github.io/install/)
-* [Demonstration](https://www.threatdragon.com/#/)
+* [Demonstration](https://www.threatdragon.com/)
 
 ### Downloads
 * Single page [web application](https://github.com/OWASP/threat-dragon/releases)

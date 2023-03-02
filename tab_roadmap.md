@@ -31,7 +31,7 @@ tags: threatdragon
 - [x] webapp unit test framework [Jest](https://jestjs.io/)
 - [x] component test [Vue testing library](https://github.com/testing-library/vue-testing-library)
 - [x] end-to-end test [cypress](https://github.com/cypress-io/cypress) 
-- [x] set up ZAP to provide security testing on commit, similar to [existing TD](https://github.com/OWASP/threat-dragon/blob/main/.github/workflows/zap_scan.yaml)
+- [x] set up ZAP to provide security testing on commit
 - [x] design files are to be backwardly compatible to Threat Dragon json
 
 **demonstration pages**:
@@ -52,7 +52,7 @@ for [Vue Test Utils](https://vue-test-utils.vuejs.org/installation/#using-other-
 - [x] be strictly open source, avoiding using languages or frameworks maintained outside the open source community
 
 **documentation**:
-- [x] documentation should be updated at the [threat dragon github pages](https://threatdragon.github.io/docs)
+- [x] documentation should be updated at the [threat dragon github pages](https://threatdragon.github.io/)
 - [x] version 1.x docs are preserved and migrated to version 2.0
 - [x] docs should be static pages based on [Jekyll](https://jekyllrb.com) and [markdown](https://docs.github.com/en/github/working-with-github-pages/setting-up-a-github-pages-site-with-jekyll)
 

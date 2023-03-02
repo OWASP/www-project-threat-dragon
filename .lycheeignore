@@ -1,0 +1,5 @@
+# ignore these falae positives from the link checker housekeeper
+
+# for some reason does not like the svg in assets
+*assets/images/common/*.svg
+

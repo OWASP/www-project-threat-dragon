@@ -1,4 +1,14 @@
+# ignore Apple's desktop store files
+**/.DS_Store
+# ignore VS and Eclipse files
+.project
+.vscode/
+.settings/
+# ignore IntelliJ IDEA files
+.idea/
+
+# ignore working files
 __pycache__
 env
-.vscode
 _site/
+
