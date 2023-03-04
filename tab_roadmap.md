@@ -35,7 +35,7 @@ tags: threatdragon
 - [x] design files are to be backwardly compatible to Threat Dragon json
 
 **demonstration pages**:
-- [x] an online demonstration to be provided on [threat dragon's site](https://threatdragon.com)
+- [x] an online demonstration to be provided on [threat dragon's site](https://www.threatdragon.com)
 - [x] demo should either be a snapshot or a release version
 
 ### Version 1.4: released May 2021
