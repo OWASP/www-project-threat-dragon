@@ -1,4 +1,4 @@
-name: Housekeeping
+name: housekeeping
 on:
   # Run daily at 7:00
   schedule:
@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-22.04
 
     steps:
-      - name: Delete stale workflow runs
+      - name: Delete stale runs
         uses: Mattraks/delete-workflow-runs@v2.0.3
         with:
           token: ${{ github.token }}
