@@ -1,2 +1,5 @@
 # ignore these falae positives from the link checker housekeeper
 
+# added by OWASP jekyl page builder, so no control over them:
+https://groups.google.com/a/owasp.com/
+
