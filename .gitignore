@@ -1,14 +1,17 @@
-# ignore Apple's desktop store files
-**/.DS_Store
-# ignore VS and Eclipse files
-.project
-.vscode/
-.settings/
-# ignore IntelliJ IDEA files
-.idea/
+# uses allow-list, so ignore everything
+*
 
-# ignore working files
-__pycache__
-env
-_site/
+# allow github, workflows and templates
+.github/**/*
+.gitignore
+.lycheeignore
+
+# allow markdown and the assets
+./*.md
+assets/images/*
+
+# allow jekyll build files
+404.html
+Gemfile
+_config.yml
 
