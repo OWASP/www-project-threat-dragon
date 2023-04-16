@@ -6,7 +6,7 @@ tags: threatdragon
 project: true
 level: 3
 type: tool
-pitch: OWASP Threat Dragon provides a threat modeling application for teams implementing the STRIDE approach, either as a desktop or as a web application. Great for both developers and defenders alike
+pitch: OWASP Threat Dragon is a threat modeling tool; great for both developers and defenders alike. Use on the desktop or as a web application. 
 
 ---
 
