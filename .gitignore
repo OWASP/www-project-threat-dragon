@@ -15,3 +15,20 @@
 !Gemfile
 !_config.yml
 
+# allow docs files
+!_data
+!_data/*.yaml
+!_includes
+!_includes/*.html
+!docs/
+!docs/version-1.x/
+!docs/version-1.x/*.md
+!docs/version-1.x/install/
+!docs/version-1.x/install/*.md
+!docs/version-1.x/assets/
+!docs/version-1.x/assets/images
+!docs/version-1.x/assets/images/*.png
+!docs/version-1.x/assets/downloads/
+!docs/version-1.x/assets/downloads/*
+!docs/version-2.x/
+!docs/version-2.x/**/*.md
