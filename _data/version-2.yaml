@@ -63,7 +63,7 @@ docs:
 - title: 'Collaboration'
   url: usage/collaboration
 
-- title: 'Development
+- title: 'Development'
 
 - title: 'Environment'
   url: development/environment
@@ -136,4 +136,3 @@ docs:
 
 - title: 'Code of conduct'
   url: development/conduct
-
