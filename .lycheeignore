@@ -1,5 +1,12 @@
-# ignore these falae positives from the link checker housekeeper
+# ignore these false positives from the link checker housekeeper
 
 # added by OWASP jekyl page builder, so no control over them:
 https://groups.google.com/a/owasp.com/
+
+# links referred to in documentation, not intended as actual links
+http://localhost
+http://127.0.0.1
+
+# incorrectly get 'Network error: Forbidden'
+https://www.deviantart.com
 
