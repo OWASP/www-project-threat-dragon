@@ -1,13 +1,13 @@
 ---
 
-title: Licence
+title: License
 layout: col-document
 tags: threatdragon
 author:
 contributors:
 document: Threat Dragon v2.x
 order: 4
-permalink: /docs-2/licence/
+permalink: /docs-2/license/
 
 ---
 

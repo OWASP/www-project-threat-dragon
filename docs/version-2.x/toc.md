@@ -22,7 +22,7 @@ permalink: /docs-2/toc/
 
 #### [Credits](home/about/credits.md)
 
-#### [Licence](home/about/licence.md)
+#### [License](home/about/license.md)
 
 ### Trust
 
