@@ -2,6 +2,7 @@
 *
 
 # allow github, workflows and templates
+!.github/
 !.github/**/*
 !.gitignore
 !.lycheeignore
@@ -15,3 +16,32 @@
 !Gemfile
 !_config.yml
 
+# allow docs files
+!_data
+!_data/*.yaml
+!_includes
+!_includes/*.html
+!docs/
+!docs/version-1.x/
+!docs/version-1.x/install/
+!docs/version-1.x/**/*.md
+!docs/version-1.x/assets/
+!docs/version-1.x/assets/images/
+!docs/version-1.x/assets/images/*.png
+!docs/version-1.x/assets/downloads/
+!docs/version-1.x/assets/downloads/*
+!docs/version-2.x/
+!docs/version-2.x/development/
+!docs/version-2.x/development/actions/
+!docs/version-2.x/development/schema/
+!docs/version-2.x/development/testing/
+!docs/version-2.x/home/
+!docs/version-2.x/home/about/
+!docs/version-2.x/home/trust/
+!docs/version-2.x/usage/
+!docs/version-2.x/usage/install/
+!docs/version-2.x/usage/modeling/
+!docs/version-2.x/**/*.md
+!docs/version-2.x/assets/
+!docs/version-2.x/assets/images/
+!docs/version-2.x/assets/images/*.png

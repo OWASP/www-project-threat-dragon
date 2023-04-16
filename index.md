@@ -6,7 +6,7 @@ tags: threatdragon
 project: true
 level: 3
 type: tool
-pitch: OWASP Threat Dragon provides a threat modeling application for teams implementing the STRIDE approach, either as a desktop or as a web application. Great for both developers and defenders alike
+pitch: OWASP Threat Dragon is a threat modeling tool; great for both developers and defenders alike. Use on your desktop or as a web application.
 
 ---
 
@@ -51,7 +51,7 @@ shows how using Threat Dragon can make threat modeling fun.
 * [Threat Modeling OWASP Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html)
 * [Threagile - Agile Threat Modeling](https://threagile.io), although not OWASP it is open source
 
-## OWASP participation
+### OWASP participation
 The Open Web Application Security Project (OWASP) is a nonprofit foundation that works to improve the security of
 software. All of our projects, tools, documents, forums, and chapters are free and open to anyone interested in
 improving application security. 
