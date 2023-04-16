@@ -2,10 +2,10 @@
 
 title: Table of Contents
 layout: col-document
-tags: Threat Dragon
+tags: threatdragon
 author:
 contributors:
-document: Threat Dragon
+document: Threat Dragon v1.x
 order: 0
 permalink: /docs-1/toc/
 
@@ -18,13 +18,15 @@ permalink: /docs-1/toc/
 
 ## [About](about.md)
 
-## [Install](install/install.md)
+## Installing
 
-### Install [web app](install/install-webapp.md)
+### [Install](install/install.md)
 
-### Install [environment](install/setup-env.md)
+### [Install web app](install/install-webapp.md)
 
-### Install [desktop](install/install-desktop.md)
+### [Install environment](install/setup-env.md)
+
+### [Install desktop](install/install-desktop.md)
 
 ## [Getting started](getting-started.md)
 

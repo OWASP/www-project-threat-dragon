@@ -2,10 +2,10 @@
 
 title: Credits
 layout: col-document
-tags: Threat Dragon
+tags: threatdragon
 author:
 contributors:
-document: Threat Dragon
+document: Threat Dragon v1.x
 order: 15
 permalink: /docs-1/credits/
 

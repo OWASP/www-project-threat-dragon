@@ -2,10 +2,10 @@
 
 title: API
 layout: col-document
-tags: Threat Dragon
+tags: threatdragon
 author:
 contributors:
-document: Threat Dragon
+document: Threat Dragon v1.x
 order: 10
 permalink: /docs-1/api/
 
