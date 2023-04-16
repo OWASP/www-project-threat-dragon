@@ -7,7 +7,7 @@ author:
 contributors:
 document: Threat Dragon
 order: 0
-permalink: /docs/version-1.x/toc/
+permalink: /docs-1/toc/
 
 ---
 

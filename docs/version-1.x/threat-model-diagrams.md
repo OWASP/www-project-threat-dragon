@@ -7,7 +7,7 @@ author:
 contributors:
 document: Threat Dragon
 order: 8
-permalink: /docs/version-1.x/
+permalink: /docs-1/diagrams/
 
 ---
 
@@ -16,7 +16,7 @@ permalink: /docs/version-1.x/
 
 Creating the [Threat Dragon](http://owasp.org/www-project-threat-dragon) diagrams
 
-Once you have [created or opened](/getting-started) an existing threat model file 
+Once you have [created or opened](/docs-1/getting-started) an existing threat model file
 the next step is to edit the threat model diagrams.
 Click on the diagram you wish to edit and you will be taken to the diagram editor.
 

@@ -7,7 +7,7 @@ author:
 contributors:
 document: Threat Dragon
 order: 7
-permalink: /docs/version-1.x/
+permalink: /docs-1/getting-started/
 
 ---
 
@@ -90,7 +90,7 @@ so if you change title of your model it will delete the old model in GitHub
 and replace it with one at the new path.
 
 Congratulations! You have got the basics done. Next step ...
-mapping out your system [in a diagram](/threat-model-diagrams).
+mapping out your system [in a diagram](/docs-1/diagrams/).
 
 ## Loading a demo model
 ![Open demo model](/assets/images/explore-demo-model.png){: .image-left }

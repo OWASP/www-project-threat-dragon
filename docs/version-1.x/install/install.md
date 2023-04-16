@@ -7,7 +7,7 @@ author:
 contributors:
 document: Threat Dragon
 order: 3
-permalink: /docs/version-1.x/
+permalink: /docs-1/install/
 
 ---
 
@@ -21,7 +21,7 @@ desktop application and web application.
 The web application can be run locally or from a server, and is downloaded from the 
 [Threat Dragon repo](https://github.com/OWASP/threat-dragon/releases).
 There is some configuration necessary, so see the
-[install instructions](/install-webapp/) for configuring the application.
+[install instructions](/docs-1/install-webapp/) for configuring the application.
 
 ### Desktop application
 Installers can be downloaded from the
@@ -31,4 +31,4 @@ Installers can be downloaded from the
 * MacOS installer
 * Linux snap, AppImage, debian and rpm installers
 
-See the detailed [install instructions](/install-desktop/).
+See the detailed [install instructions](/docs-1/install-desktop/).
