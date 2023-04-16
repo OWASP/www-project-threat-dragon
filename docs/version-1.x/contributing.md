@@ -20,7 +20,7 @@ Pull requests, feature requests, bug reports and feedback of any kind are very w
 [contributors](https://github.com/OWASP/threat-dragon/blob/main/CONTRIBUTING.md). 
 
 We are trying to keep the test coverage relatively high, so please try to update tests in any pull requests.
-There are some [developer notes](https://github.com/OWASP/threat-dragon/blob/main/dev-notes.md)
+There are some [developer notes](https://github.com/OWASP/threat-dragon/blob/archive-legacy-v1.x/dev-notes.md)
 to help get started with this project.
 
 ### Vulnerability disclosure

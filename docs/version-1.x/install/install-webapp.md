@@ -86,17 +86,8 @@ As [mentioned in the express-session docs](https://github.com/expressjs/session)
 - it is not suitable for production. To remind you of this, Threat Dragon will write a log message at severity ERROR when
 it starts if the in memory session store is used.
 
-For production use, Threat Dragon currently supports Azure Table Storage for the session store via
-[connect-azuretables](https://www.npmjs.com/package/connect-azuretables).
-To make this store work you need to specify an Azure Storage Account
-and key as environment variables `AZURE_STORAGE_ACCOUNT` and `AZURE_STORAGE_ACCESS_KEY`.
-See the [connect-azuretables](https://www.npmjs.com/package/connect-azuretables) documentation for more options.
-
-If you want to use an [alternative session store](https://github.com/expressjs/session#compatible-session-stores) in production,
-install it and edit the [session.config.js](https://github.com/owasp/threat-dragon/blob/master/td/config/session.config.js) file.
-
-Lastly, by default, Threat Dragon will set the `secure` flag on cookies. To override this for development purposes,
-set the `NODE_ENV` environment variable to `development`. 
+By default Threat Dragon will set the `secure` flag on cookies.
+To override this for development purposes set the `NODE_ENV` environment variable to `development`.
 
 ### Running the application
 
