@@ -18,8 +18,8 @@ permalink: /docs-1/downloads/
 The desktop and web application versions of Threat Dragon can be downloaded from the
 [OWASP GitHub area](https://github.com/OWASP/threat-dragon/releases),
 with [version 1.6.1](https://github.com/OWASP/threat-dragon/releases/tag/v1.6.1) being the latest version.
-See the install instructions for the [desktop versions](/docs-1/install-desktop/)
-or the [web application version](/docs-1/install-webapp/).
+See the install instructions for the [desktop versions]({{ '/docs-1/install-desktop/' | relative_url }})
+or the [web application version]({{ '/docs-1/install-webapp/' | relative_url }}).
 
 ### Supplementary materials
 

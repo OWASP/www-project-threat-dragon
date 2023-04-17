@@ -20,7 +20,7 @@ permalink: /docs-2/install-options/
 The web application can be run locally or from a server, and is downloaded from the 
 [Threat Dragon repo](https://github.com/OWASP/threat-dragon/releases).
 There is some configuration necessary, so see the
-[install instructions]({{ '/usage/install/web.html' | relative_url }}) for configuring the application.
+[install instructions]({{ '/docs-2/install-webapp/' | relative_url }}) for configuring the application.
 
 ### Desktop application
 Installable versions are available for download from the
@@ -30,4 +30,4 @@ Installable versions are available for download from the
 * MacOS installer
 * Linux snap, AppImage, debian and rpm installers
 
-See the detailed [install instructions]({{ '/usage/install/desktop.html' | relative_url }}).
+See the detailed [install instructions]({{ '/docs-2/install-desktop/' | relative_url }}).

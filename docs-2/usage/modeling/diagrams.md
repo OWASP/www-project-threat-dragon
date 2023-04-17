@@ -16,7 +16,7 @@ permalink: /docs-2/diagrams/
 
 Creating the [Threat Dragon](http://owasp.org/www-project-threat-dragon) diagrams
 
-Once you have [created or opened]({{ '/usage/modeling/gettingstarted.html' | relative_url }})
+Once you have [created or opened]({{ '/docs-2/getting-started/' | relative_url }})
 a threat model file the next step is to edit the threat model diagrams.
 Click on the diagram you wish to edit and you will be taken to the diagram editor.
 

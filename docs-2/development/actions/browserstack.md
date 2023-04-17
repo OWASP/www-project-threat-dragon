@@ -20,7 +20,7 @@ and has graciously provided Threat Dragon with their services.
 BrowserStack provides automated, cross-browser testing for web and mobile applications.
 
 Thunderhead leverages BrowserStack to check compatability across different browsers.
-The [e2e page]({{ '/e2e/' | relative_url }}) has a complete browser testing matrix.
+The [e2e page]({{ '/docs-2/e2e/' | relative_url }}) has a complete browser testing matrix.
 
 Because cross browser testing has diminishing returns,
 it is only run against the latest deployed version (from main) once per day.

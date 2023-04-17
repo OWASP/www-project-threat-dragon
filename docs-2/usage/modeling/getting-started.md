@@ -89,7 +89,7 @@ and replace it with one at the new path.
 This does not apply to the desktop variant.
 
 Congratulations! You have got the basics done. Next step ...
-mapping out your system [in a diagram]({{ '/usage/modeling/diagrams.html' | relative_url }}).
+mapping out your system [in a diagram]({{ '/docs-2/diagrams/' | relative_url }}).
 
 ## Loading a sample model
 

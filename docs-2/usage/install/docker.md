@@ -21,7 +21,7 @@ The web application can be run from a docker container.
 
 ### Environment variables
 
-See the [environment]({{ 'development/environment.html' | relative_url }}) page for details on what environment variables are expected.
+See the [environment]({{ '/docs-2/development-environment/' | relative_url }}) page for details on what environment variables are expected.
 Threat Dragon currently supports [dotenv](https://github.com/motdotla/dotenv),
 as well as file-based loading by setting environment variables with the `_FILE` postfix, eg: `ENCRYPTION_KEYS_FILE=/run/secrets/td_encryption_keys`
 This is also shown in the docker-compose section of the environment documentation.

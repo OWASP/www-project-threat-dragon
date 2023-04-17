@@ -28,7 +28,7 @@ To obtain a specific version, for example v1.6.0, use a command such as `docker 
 
 **Do not use the latest tag (which may be the default) because it could be a development release.**
 
-The environment variables will need configuration so there is a [step-by-step guide](/docs-1/setup/) to help with this.
+The environment variables will need configuration so there is a [step-by-step guide]({{ '/docs-1/setup/' | relative_url }}) to help with this.
 Once the environment is set up and the docker image is ready, run the docker container using a command such as:
 
 ```
@@ -62,7 +62,7 @@ A `postinstall` script is run that will install dependencies in both the `server
 ### Environment variables
 
 Setting up these environment variables has at times caused some confusion,
-so there is a [step-by-step guide](/docs-1/setup/) to help with this.
+so there is a [step-by-step guide]({{ '/docs-1/setup/' | relative_url }}) to help with this.
 
 Threat Dragon uses GitHub to store threat models, so you need to go to your GitHub account and
 [register it as a GitHub application](https://github.com/settings/applications/new).

@@ -90,7 +90,7 @@ so if you change title of your model it will delete the old model in GitHub
 and replace it with one at the new path.
 
 Congratulations! You have got the basics done. Next step ...
-mapping out your system [in a diagram](/docs-1/diagrams/).
+mapping out your system [in a diagram]({{ '/docs-1/diagrams/' | relative_url }}).
 
 ## Loading a demo model
 ![Open demo model](/assets/images/explore-demo-model.png){: .image-left }

@@ -39,7 +39,7 @@ To install use pnpm (rather than npm):
 
 ### Environment variables
 
-See the [environment]({{ 'development/environment.html' | relative_url }}) page for details on configuring your environment variables.
+See the [environment]({{ '/docs-2/development-environment/' | relative_url }}) page for details on configuring your environment variables.
 
 ### Running the application
 

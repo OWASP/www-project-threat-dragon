@@ -19,7 +19,7 @@ permalink: /docs-1/utilities/
 Threat Dragon has a growing collection of utilities and scripts which can be used to
 convert file formats, interface to bug tracking, and so on.
 If you have scripts of your own that you would like to contribute to the Threat Dragon
-community then this would be most  welcome, see the [contributing guide](/docs-1/contribute/).
+community then this would be most  welcome, see the [contributing guide]({{ '/docs-1/contribute/' | relative_url }}).
 
 ### Conversion from Microsoft Threat Modeling Tool
 

@@ -19,7 +19,7 @@ permalink: /docs-2/local-development/
 1. Clone the repository: `git clone https://github.com/OWASP/threat-dragon.git`
 1. [Install pnpm](https://pnpm.io/installation) and use node 16
 1. Run `pnpm install`
-1. Configure your [environment]({{ 'development/environment.html' | relative_url }}) 
+1. Configure your [environment]({{ '/docs-2/development-environment/' | relative_url }})
 1. Run `pnpm dev:server`
 1. In another terminal, run `pnpm dev:vue`
 1. Visit [http://localhost:8080](http://localhost:8080/)
