@@ -1,125 +1,122 @@
 docs_list_title: Threat Dragon v2.0
 docs:
 
-- title: 'Table of contents'
-  url: toc
-
 - title: 'Introduction'
   url: introduction
 
 - title: 'About'
-  url: home/about/about
+  url: about
 
 - title: 'Credits'
-  url: home/about/credits
+  url: credits
 
-- title: 'Licence'
-  url: home/about/licence
+- title: 'License'
+  url: license
 
-- title: 'Trust: dependencies'
-  url: home/trust/dependencies
+- title: 'Trust: dependency management'
+  url: dependencies
 
 - title: 'Trust: SAST'
-  url: home/trust/sast
+  url: sast
 
 - title: 'Trust: DAST'
-  url: home/trust/dast
+  url: dast
 
 - title: 'Trust: container scanning'
-  url: home/trust/container
+  url: container
 
 - title: 'Trust: incidents'
-  url: home/trust/incidents
+  url: incidents
 
 - title: 'Install: options'
-  url: usage/install/options
+  url: install-options
 
 - title: 'Install: desktop'
-  url: usage/install/desktop
+  url: install-desktop
 
 - title: 'Install: webapp'
-  url: usage/install/web
+  url: install-webapp
 
 - title: 'Install: github access'
-  url: usage/install/environment
+  url: install-environment
 
 - title: 'Install: Docker'
-  url: usage/install/options
+  url: install-docker
 
 - title: 'Modeling: getting started'
-  url: usage/modeling/getting-started
+  url: getting-started
 
 - title: 'Modeling: diagrams'
-  url: usage/modeling/diagrams
+  url: diagrams
 
 - title: 'Modeling: threat generation'
-  url: usage/modeling/threats
+  url: threats
 
 - title: 'Collaboration'
-  url: usage/collaboration
+  url: collaboration
 
 - title: 'Development: environment'
-  url: development/environment
+  url: development-environment
 
 - title: 'Development: contributing'
-  url: development/contributing
+  url: contributing
 
 - title: 'Development: API'
-  url: development/api
+  url: api
 
 - title: 'Development: Local'
-  url: development/local
+  url: local-development
 
 - title: 'Development: CLI'
-  url: development/cli
+  url: cli
 
 - title: 'Development: internationalization'
-  url: development/internationalization
+  url: internationalization
 
 - title: 'Schema'
-  url: development/schema/schema
+  url: schema
 
 - title: 'Schema: Store'
-  url: development/schema/store
+  url: store
 
 - title: 'Schema: Actor'
-  url: development/schema/actor
+  url: actor
 
 - title: 'Schema: Flow'
-  url: development/schema/flow
+  url: flow
 
 - title: 'Schema: Boundary'
-  url: development/schema/boundary
+  url: boundary
 
 - title: 'Schema: Process'
-  url: development/schema/process
+  url: process
 
 - title: 'Testing: unit testing'
-  url: development/testing/unit
+  url: unit
 
 - title: 'Testing: end to end testing'
-  url: development/testing/e2e
+  url: e2e
 
 - title: 'Testing: AdHoc testing'
-  url: development/testing/adhoc
+  url: adhoc
 
 - title: 'Actions: CI pipeline'
-  url: development/actions/ci
+  url: ci-pipeline
 
 - title: 'Actions: BrowserStack'
-  url: development/actions/browserstack
+  url: browserstack
 
 - title: 'Actions: CodeQL'
-  url: development/actions/codeql
+  url: codeql
 
 - title: 'Actions: Trivy scan'
-  url: development/actions/trivy
+  url: trivy
 
 - title: 'Actions: deploy'
-  url: development/actions/deploy
+  url: deploy
 
 - title: 'Release process'
-  url: development/release-process
+  url: release-process
 
 - title: 'Code of conduct'
-  url: development/conduct
+  url: conduct

@@ -7,7 +7,7 @@ author:
 contributors:
 document: Threat Dragon version 2.0
 order: 12
-permalink: /docs-2/web/
+permalink: /docs-2/install-webapp/
 
 ---
 

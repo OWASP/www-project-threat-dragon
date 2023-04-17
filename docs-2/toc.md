@@ -7,7 +7,7 @@ author:
 contributors:
 document: Threat Dragon version 2.0
 order: 0
-permalink: /docs-2/toc/
+permalink: /docs-2/
 
 ---
 
@@ -26,7 +26,7 @@ permalink: /docs-2/toc/
 
 ### Trust
 
-#### [Dependencies](home/trust/dependencies.md)
+#### [Dependency management](home/trust/dependencies.md)
 
 #### [SAST](home/trust/sast.md)
 

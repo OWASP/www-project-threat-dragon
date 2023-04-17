@@ -7,7 +7,7 @@ author:
 contributors:
 document: Threat Dragon version 2.0
 order: 13
-permalink: /docs-2/environment/
+permalink: /docs-2/install-environment/
 
 ---
 
@@ -38,6 +38,6 @@ ___
 
 Example screenshot of registering a new OAuth application:
 
-![Register new OAuth application]({{ /assets/images/register-new-OAuth-application.png }})
+![Register new OAuth application](/assets/images/register-new-OAuth-application.png)
 
 _Threat Dragon: making threat modeling less threatening_

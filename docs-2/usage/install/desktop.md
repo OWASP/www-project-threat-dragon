@@ -7,7 +7,7 @@ author:
 contributors:
 document: Threat Dragon version 2.0
 order: 11
-permalink: /docs-2/desktop/
+permalink: /docs-2/install-desktop/
 
 ---
 

@@ -32,7 +32,7 @@ This is so that the models can stay close to the code they are modelling.
 Future versions will provide a deeper integration so watch this space but for now,
 when you login to Threat Dragon for the first time you will need to access Github.
 
-![New model image]({{ /assets/images/newmodel.png }}){: .image-left }
+![New model image](/assets/images/newmodel.png){: .image-left }
 
 To get started with your threat model access the welcome page and select
 click on the **plus** area of the Welcome page.
@@ -49,7 +49,7 @@ where you can enter general information about your model.
 ### If using the Desktop application
 The Threat Dragon desktop variant stores its threat models on your local filesystem.
 
-![New model image]({{ /assets/images/newmodel.png }}){: .image-left }
+![New model image](/assets/images/newmodel.png){: .image-left }
 
 To get started with your threat model start  the applications and from the welcome page
 select on the **plus** area, or pull down menu 'File -> New Model'. You will then need to save
@@ -93,7 +93,7 @@ mapping out your system [in a diagram]({{ '/usage/modeling/diagrams.html' | rela
 
 ## Loading a sample model
 
-![Sample model image]({{ /assets/images/samplemodel.png }}){: .image-left }
+![Sample model image](/assets/images/samplemodel.png){: .image-left }
 
 If you are wondering how to start you can explore some sample threat models.
 On the welcome page you can open an example model by clicking on the **sample model** area on the Welcome page.
@@ -105,7 +105,7 @@ diagrams, model details and threats as examples.
 
 ### Web application
 
-![Github model image]({{ /assets/images/opengithubmodel.png }}){: .image-left }
+![Github model image](/assets/images/opengithubmodel.png){: .image-left }
 
 If you have a repository that already has threat models, you can open them by
 clicking on the **open** area on the Welcome page.
@@ -117,7 +117,7 @@ The demo models should give you some ideas on how to get started with your own m
 
 ### Desktop application
 
-![Open model image]({{ /assets/images/openmodel.png }}){: .image-left }
+![Open model image](/assets/images/openmodel.png){: .image-left }
 
 If you have an existing model file saved locally, you can open it by clicking on
 the **open** area on the Welcome page.

@@ -7,7 +7,7 @@ author:
 contributors:
 document: Threat Dragon version 1.6.1
 order: 9
-permalink: /docs-1/generation/
+permalink: /docs-1/threat-generation/
 
 ---
 

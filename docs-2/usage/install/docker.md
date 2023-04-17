@@ -7,7 +7,7 @@ author:
 contributors:
 document: Threat Dragon version 2.0
 order: 14
-permalink: /docs-2/docker/
+permalink: /docs-2/install-docker/
 
 ---
 

@@ -1,13 +1,13 @@
 ---
 
-title: Home
+title: Introduction
 layout: col-document
 tags: threatdragon
 author:
 contributors:
 document: Threat Dragon version 2.0
 order: 1
-permalink: /docs-2/home/
+permalink: /docs-2/introduction/
 
 ---
 
@@ -24,4 +24,4 @@ In the future, there will be deeper integration with GitHub (and other code repo
 You can find the source code for Threat Dragon on [GitHub](https://github.com/OWASP/threat-dragon),
 where you can also ask for changes or report any issues.
 
-![OWASP logo]({{ assets/images/owasp.png }}){: .float-right .mr-4 .mt-3 }
+![OWASP logo](/assets/images/owasp.png){: .float-right .mr-4 .mt-3 }

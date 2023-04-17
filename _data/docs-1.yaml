@@ -1,9 +1,6 @@
 docs_list_title: Threat Dragon v1.6.1
 docs:
 
-- title: 'Table of contents'
-  url: toc
-
 - title: 'Introduction'
   url: introduction
 
@@ -11,22 +8,22 @@ docs:
   url: about
 
 - title: 'Install'
-  url: install/install
+  url: install
 
 - title: 'Install: web app'
-  url: install/install-webapp
+  url: install-webapp
 
 - title: 'Install: environment'
-  url: install/setup-env
+  url: setup
 
 - title: 'Install: desktop'
-  url: install/install-desktop
+  url: install-desktop
 
 - title: 'Getting started'
   url: getting-started
 
 - title: 'Threat model diagrams'
-  url: threat-model-diagrams
+  url: diagrams
 
 - title: 'Threat generation'
   url: threat-generation

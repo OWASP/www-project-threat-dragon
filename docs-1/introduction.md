@@ -33,8 +33,8 @@ permalink: /docs-1/introduction/
 ![Cupcake Image](/assets/images/threatdragonx256.png){: .image-left }
 
 Threat Dragon is an open-source threat modelling tool from OWASP.
-It is used both as a [web application](/docs-1/install-webapp/)
-and as a [desktop application](/docs-1/install-desktop/) installed for MacOS, Windows and Linux.
+It is used both as a [web application](/install-webapp/)
+and as a [desktop application](/install-desktop/) installed for MacOS, Windows and Linux.
 
 The desktop application saves your threat models on your local file system,
 and the online version stores its files in GitHub.
@@ -49,5 +49,5 @@ Threat Dragon is an OWASP Lab project but there will still be bugs - if you find
 ![OWASP logo](/assets/images/owasp.png){: .image-right }
 
 [bug]: https://github.com/OWASP/threat-dragon/issues/new?assignees=&labels=bug&template=bug_report.md&title=
-[dragon]: https://github.com/OWASP/threat-dragon)
+[dragon]: https://github.com/OWASP/threat-dragon
 [owasp]: https://github.com/owasp
