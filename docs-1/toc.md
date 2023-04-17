@@ -18,9 +18,7 @@ permalink: /docs-1/toc/
 
 ## [About](about.md)
 
-## Installing
-
-### [Install](install/install.md)
+## [Install](install/install.md)
 
 ### [Install: web app](install/install-webapp.md)
 
