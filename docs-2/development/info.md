@@ -1,1 +1,1 @@
-{% include navigation.html collection="version-2" %}
+{% include navigation.html collection="docs-2" %}
