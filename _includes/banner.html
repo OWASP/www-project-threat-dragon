@@ -1,11 +1,11 @@
 <div role="banner" style="position:sticky;top:0;text-align:center;box-sizing:border-box;font-size:0.875em;width:100%;">
-    {% if page.url contains "/version-1.x/" %}
+    {% if page.url contains "/version-1/" or page.url contains "/docs-1/" %}
     <div style="background-color:#FFBABA;color:#6A0E0E;padding:8px 20px 8px;">
-        You're viewing documentation for Threat Dragon version 1.x
+        You're viewing documentation for Threat Dragon version 1.6.1
     </div>
     {% endif %}
 
-    {% if page.url contains "/version-2.x/" or page.url contains site.stable_version %}
+    {% if page.url contains "/version-2/" or page.url contains "/docs-2/" %}
     <div style="background-color:#9ce37d;color:#344d2a;padding:8px 20px 8px;">
         You're viewing documentation for Threat Dragon version 2.0
     </div>

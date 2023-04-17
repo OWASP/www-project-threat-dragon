@@ -1,24 +1,25 @@
-docs_list_title: Threat Dragon
+docs_list_title: Threat Dragon v1.6.1
 docs:
 
-- title: 'Home'
-  url: home
+- title: 'Table of contents'
+  url: toc
+
+- title: 'Introduction'
+  url: introduction
 
 - title: 'About'
   url: about
 
-- title: 'Installing'
-
 - title: 'Install'
   url: install/install
 
-- title: 'Install web app'
+- title: 'Install: web app'
   url: install/install-webapp
 
-- title: 'Install environment'
+- title: 'Install: environment'
   url: install/setup-env
 
-- title: 'Install desktop'
+- title: 'Install: desktop'
   url: install/install-desktop
 
 - title: 'Getting started'
