@@ -27,7 +27,7 @@ Threat generation for [Threat Dragon](http://owasp.org/www-project-threat-dragon
 
 ## Adding and editing threats
 
-![New threat](/assets/images/newthreat.png){: .image-left }
+![New threat]({{ '/assets/images/newthreat.png' | relative_url }}){: .image-left }
 
 To add threats to elements in your diagram, select an element
 and click on 'New Threat' to the lower right of the diagram editor.

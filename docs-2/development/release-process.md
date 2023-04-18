@@ -50,5 +50,3 @@ All going well then update the release notes for the draft in the
 [Threat Dragon release area](https://github.com/OWASP/threat-dragon/releases) and make public
 
 Finally ensure Threat Dragon announces it on the OWASP slack channels
-
-_Threat Dragon: making threat models less threatening_

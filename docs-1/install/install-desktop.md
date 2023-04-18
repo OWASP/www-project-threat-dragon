@@ -60,7 +60,7 @@ Run the installer and invoke the application from the shortcut.
 Windows may warn you that this is an application downloaded from the internet and ask you if you want to keep it.
 Assuming that you can trust the github download site, agree to keep the file and the installer will then run.
 
-![Windows download warning](/assets/images/win-download.png)
+![Windows download warning]({{ '/assets/images/win-download.png' | relative_url }})
 
 Run the installer either from the file icon in your download area or from a command line:
 

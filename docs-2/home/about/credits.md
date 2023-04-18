@@ -34,7 +34,7 @@ so [Leo Reading](mailto:leo.reading@owasp.org) migrated the project to Vue/Expre
 
 ### Cupcake
 
-![Cupcake Image](/assets/images/threatdragonx128.png){: .image-left }
+![Cupcake Image]({{ '/assets/images/threatdragonx128.png' | relative_url }}){: .image-left }
 
 Our logo is called Cupcake, and provides a friendly face when entering the world of threat modeling.
 We think that Cupcake makes threat modeling less threatening.

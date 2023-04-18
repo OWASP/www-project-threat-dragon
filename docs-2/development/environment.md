@@ -208,6 +208,4 @@ ___
 
 Example screenshot of registering a new OAuth application:
 
-![Register new OAuth application](/assets/images/register-new-OAuth-application.png)
-
-_Threat Dragon: making threat modeling less threatening_
+![Register new OAuth application]({{ '/assets/images/register-new-OAuth-application.png' | relative_url }})
