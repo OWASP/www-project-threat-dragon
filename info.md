@@ -11,7 +11,8 @@
 
 ### Documentation
 
-* [Installation](https://threatdragon.github.io/install/)
+* [Version 1.6.1](/docs-1/)
+* [Version 2.0](/docs-2/)
 * [Demonstration](https://www.threatdragon.com/)
 
 ### Downloads
@@ -19,7 +20,7 @@
 * Single page [web application](https://github.com/OWASP/threat-dragon/releases)
 * Docker [image](https://hub.docker.com/r/owasp/threat-dragon/tags?page=1&ordering=name)
 * Desktop installers for:
-* [Linux / MacOS / Windows](https://github.com/OWASP/threat-dragon/releases)
+* [Linux / MacOS / Windows](https://github.com/OWASP/threat-dragon/releases/tag/v1.6.1)
 
 ### Source
 
