@@ -38,4 +38,4 @@ ___
 
 Example screenshot of registering a new OAuth application:
 
-![Register new OAuth application]({{ '/assets/images/register-new-OAuth-application.png' | relative_url }})
+![Register new OAuth application]({{ '/docs-2/assets/images/register-new-OAuth-application.png' | relative_url }})

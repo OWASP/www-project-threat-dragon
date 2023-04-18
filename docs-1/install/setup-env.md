@@ -86,4 +86,4 @@ and then navigate in a browser to "http://localhost:3000/"
 ### Example OAuth registration
 Example screenshot of registering a new OAuth application:
 
-![Register new OAuth application]({{ '/assets/images/register-new-OAuth-application.png' | relative_url }})
+![Register new OAuth application]({{ '/docs-1/assets/images/register-new-OAuth-application.png' | relative_url }})

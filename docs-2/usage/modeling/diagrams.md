@@ -26,7 +26,7 @@ Add model elements to your diagram by dragging a component from the stencil on t
 Once added they can be selected by clicking them to see their properties and threats and dragged around the diagram.
 To delete an element, first select it and then click on the red icon in the element's top left corner like so:
 
-![the element delete tool]({{ '/assets/images/delete.png' | relative_url }})
+![the element delete tool]({{ '/docs-2/assets/images/delete.png' | relative_url }})
 
 ## Data flows and trust boundaries
 
@@ -44,7 +44,7 @@ Once selected you can edit its properties or add threats to it.
 
 Data flows and trust boundaries can be deleted by clicking the red icon that appears selected.
 
-![flow remove tool]({{ '/assets/images/deleteflow.png' | relative_url }})
+![flow remove tool]({{ '/docs-2/assets/images/deleteflow.png' | relative_url }})
 
 ## Element properties
 To edit the properties of a model element, first select it.
@@ -61,19 +61,19 @@ a reason why elements have been marked out of scope.
 Threat generation is disabled for these elements.
 Out of scope elements are indicated in diagrams with dashed lines:
 
-![out of scope elements with dashed lines]({{ '/assets/images/scope.png' | relative_url }})
+![out of scope elements with dashed lines]({{ '/docs-2/assets/images/scope.png' | relative_url }})
 
 ## Elements with open threats
 
 Processes, data stores, actors and data flows that have open (unmitigated) threats
 are highlighted in red so that you know where to focus your attention:
 
-![elements with open threats are red]({{ '/assets/images/openthreats.png' | relative_url }})
+![elements with open threats are red]({{ '/docs-2/assets/images/openthreats.png' | relative_url }})
 
 ## Editing toolbar
 The toolbar on the diagram editing page supports some general diagramming features:
 
-![Toolbar image]({{ '/assets/images/toolbar.png' | relative_url }})
+![Toolbar image]({{ '/docs-2/assets/images/toolbar.png' | relative_url }})
 
 * Delete the selected element(s)
 * Configure the keyboard shortcuts from the defaults

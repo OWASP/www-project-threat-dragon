@@ -26,4 +26,4 @@ Because cross browser testing has diminishing returns,
 it is only run against the latest deployed version (from main) once per day.
 
 An example of what the results might look like:
-![BrowserStack Results]({{ '/assets/images/browserstack_result.png' | relative_url }}){:.img .img-fluid}
+![BrowserStack Results]({{ '/docs-2/assets/images/browserstack_result.png' | relative_url }}){:.img .img-fluid}
