@@ -14,6 +14,9 @@ permalink: /docs-2/schema/
 {% include breadcrumb.html %}
 # Threat Model Schema
 
+There is a [schema]({{ '/assets/schemas/owasp.threat-dragon.schema.json' | relative_url }}) for Threat Dragon
+that conforms to [JSON Schema](https://json-schema.org/).
+
 ## Summary
 Threat model project meta-data
 

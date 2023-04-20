@@ -44,3 +44,6 @@
 !docs-2/assets/
 !docs-2/assets/images/
 !docs-2/assets/images/*.png
+!docs-2/assets/schemas/
+!docs-2/assets/schemas/*.json
+
