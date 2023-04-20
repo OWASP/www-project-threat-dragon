@@ -1,15 +1,23 @@
-# uses allow-list, so ignore everything
+# uses allow-list, so ignore everything not explicitly allowed
 *
 
 # allow github, workflows and templates
 !.github/
-!.github/**/*
+!.github/*.yaml
+!.github/ISSUE_TEMPLATE/
+!.github/ISSUE_TEMPLATE/*.md
+!.github/workflows/
+!.github/workflows/*.yaml
 !.gitignore
 !.lycheeignore
 
 # allow markdown and the assets
 !./*.md
-!assets/images/*
+!assets/
+!assets/images/
+!assets/images/*.png
+!assets/schemas/
+!assets/schemas/*.json
 
 # allow jekyll build files
 !404.html
@@ -44,6 +52,4 @@
 !docs-2/assets/
 !docs-2/assets/images/
 !docs-2/assets/images/*.png
-!docs-2/assets/schemas/
-!docs-2/assets/schemas/*.json
 
