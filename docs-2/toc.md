@@ -68,7 +68,7 @@ permalink: /docs-2/
 
 ### [API](development/api.md)
 
-### [Local Development](development/local.md)
+### [Local Development](development/local-development.md)
 
 ### [CLI](development/cli.md)
 

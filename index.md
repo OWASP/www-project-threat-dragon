@@ -37,7 +37,7 @@ of the threat model components and threat surfaces. Threat Dragon runs either as
 Threat Dragon supports STRIDE / [LINDDUN](https://www.linddun.org/) / CIA,
 provides modeling diagrams and implements a rule engine to auto-generate threats and their mitigations.
 
-Use the [documentation](https://threatdragon.github.io) to get started, along with the recording of Mike Goodwin
+Use the [https://owasp.org/www-project-threat-dragon/docs-1/) to get started, along with the recording of Mike Goodwin
 giving a [lightning demo](https://youtu.be/n6JGcZGFq5o) during the OWASP Open Security Summit in June 2020.
 
 An [introduction](https://www.youtube.com/watch?v=hUOAoc6QGJo) to Threat Dragon is provided by
