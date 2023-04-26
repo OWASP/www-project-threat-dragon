@@ -114,9 +114,3 @@ docs:
 
 - title: 'Actions: deploy'
   url: deploy
-
-- title: 'Release process'
-  url: release-process
-
-- title: 'Code of conduct'
-  url: conduct

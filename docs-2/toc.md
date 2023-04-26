@@ -107,8 +107,3 @@ permalink: /docs-2/
 #### [Trivy scan](development/actions/trivy.md)
 
 #### [Deploy](development/actions/deploy.md)
-
-### [Release process](development/release-process.md)
-
-### [Code of conduct](development/conduct.md)
-
