@@ -13,25 +13,9 @@ permalink: /docs-2/
 
 ## [Introduction](introduction.md)
 
-### About
+### [About](usage/about.md)
 
-#### [About](home/about/about.md)
-
-#### [Credits](home/about/credits.md)
-
-#### [License](home/about/license.md)
-
-### Trust
-
-#### [Dependency management](home/trust/dependencies.md)
-
-#### [SAST](home/trust/sast.md)
-
-#### [DAST](home/trust/dast.md)
-
-#### [Container scanning](home/trust/container.md)
-
-#### [Incidents](home/trust/incidents.md)
+### [Credits](usage/credits.md)
 
 ## Usage
 
@@ -55,9 +39,9 @@ permalink: /docs-2/
 
 #### [Threat generation](usage/modeling/threats.md)
 
-### [Collaboration](usage/collaboration.md)
-
 ## Development
+
+### [Collaboration](development/collaboration.md)
 
 ### [Environment](development/environment.md)
 
@@ -71,19 +55,7 @@ permalink: /docs-2/
 
 ### [Internationalization](development/internationalization.md)
 
-### Schema
-
-#### [Schema](development/schema/schema.md)
-
-#### [Store](development/schema/store.md)
-
-#### [Actor](development/schema/actor.md)
-
-#### [Flow](development/schema/flow.md)
-
-#### [Boundary](development/schema/boundary.md)
-
-#### [Process](development/schema/process.md)
+### [Schema](development/schema)
 
 ### Testing
 
@@ -93,14 +65,17 @@ permalink: /docs-2/
 
 #### [AdHoc testing](development/testing/adhoc.md)
 
-### Actions
+### [Actions](development/actions.md)
 
-#### [CI pipeline](development/actions/ci.md)
+### Trust
 
-#### [BrowserStack](development/actions/browserstack.md)
+#### [Dependency management](home/trust/dependencies.md)
 
-#### [CodeQL](development/actions/codeql.md)
+#### [SAST](home/trust/sast.md)
 
-#### [Trivy scan](development/actions/trivy.md)
+#### [DAST](home/trust/dast.md)
 
-#### [Deploy](development/actions/deploy.md)
+#### [Container scanning](home/trust/container.md)
+
+#### [Incidents](home/trust/incidents.md)
+

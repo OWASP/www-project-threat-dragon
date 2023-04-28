@@ -10,24 +10,6 @@ docs:
 - title: 'Credits'
   url: credits
 
-- title: 'License'
-  url: license
-
-- title: 'Trust: dependency management'
-  url: dependencies
-
-- title: 'Trust: SAST'
-  url: sast
-
-- title: 'Trust: DAST'
-  url: dast
-
-- title: 'Trust: container scanning'
-  url: container
-
-- title: 'Trust: incidents'
-  url: incidents
-
 - title: 'Install: options'
   url: install-options
 
@@ -52,7 +34,7 @@ docs:
 - title: 'Modeling: threat generation'
   url: threats
 
-- title: 'Collaboration'
+- title: 'Development: Collaboration'
   url: collaboration
 
 - title: 'Development: environment'
@@ -73,23 +55,8 @@ docs:
 - title: 'Development: internationalization'
   url: internationalization
 
-- title: 'Schema'
+- title: 'Development: schema'
   url: schema
-
-- title: 'Schema: Store'
-  url: store
-
-- title: 'Schema: Actor'
-  url: actor
-
-- title: 'Schema: Flow'
-  url: flow
-
-- title: 'Schema: Boundary'
-  url: boundary
-
-- title: 'Schema: Process'
-  url: process
 
 - title: 'Testing: unit testing'
   url: unit
@@ -100,17 +67,20 @@ docs:
 - title: 'Testing: AdHoc testing'
   url: adhoc
 
-- title: 'Actions: CI pipeline'
-  url: ci-pipeline
+- title: 'Actions'
+  url: pipeline-actions
 
-- title: 'Actions: BrowserStack'
-  url: browserstack
+- title: 'Trust: dependency management'
+  url: dependencies
 
-- title: 'Actions: CodeQL'
-  url: codeql
+- title: 'Trust: SAST'
+  url: sast
 
-- title: 'Actions: Trivy scan'
-  url: trivy
+- title: 'Trust: DAST'
+  url: dast
 
-- title: 'Actions: deploy'
-  url: deploy
+- title: 'Trust: container scanning'
+  url: container
+
+- title: 'Trust: incidents'
+  url: incidents

@@ -11,20 +11,10 @@ permalink: /docs-2/unit/
 {% include breadcrumb.html %}
 # Unit Testing
 
-<div class="card">
-  <div class="card-header">
-    What is Unit Testing... and why?
-  </div>
-  <div class="card-body">
-    <p class="card-text">
-        Unit tests are intended to test a single piece of functionality, while mocking away all external dependencies.  The goal of a unit test is to know that a particular function or piece of code works exactly as expected under all of the possible code paths.  <em>Unit tests should not include any external dependencies.</em>
-        <br />
-        <br />
-        We love unit tests because it gives us a high confidence when refactoring code that we understand what might be impacted by our changes.  It gives us early feedback to potential bugs, and the confidence to keep making frequent updates!
-    </p>
-  </div>
-</div>
-
+## What is Unit Testing... and why?
+Unit tests are intended to test a single piece of functionality, while mocking away all external dependencies.
+The goal of a unit test is to know that a particular function or piece of code works exactly as expected under all of the possible code paths.
+Unit tests should not include any external dependencies
 
 ## Running Unit Tests
 

@@ -11,21 +11,14 @@ permalink: /docs-2/e2e/
 {% include breadcrumb.html %}
 # End to End Testing
 
-<div class="card">
-  <div class="card-header">
-    What is End to End Testing... and why?
-  </div>
-  <div class="card-body">
-    <p class="card-text">
-        End to end tests are executed against a full, running instance of the application.
-        They are intended to mock user behavior and asserting that the the application behaves as expected.
-        While it's not practical to cover every possible user interaction,
-        we strive to cover the intended flows that our users would take.
-        Finally, E2E testing is the last step before deploying in our continuous delivery pipeline.
-        We want to make sure that the quality is there before releasing it!
-    </p>
-  </div>
-</div>
+## What is End to End Testing... and why?
+End to end tests are executed against a full, running instance of the application.
+They are intended to mock user behavior and asserting that the the application behaves as expected.
+While it's not practical to cover every possible user interaction,
+we strive to cover the intended flows that our users would take.
+Finally, E2E testing is the last step before deploying in our continuous delivery pipeline.
+We want to make sure that the quality is there before releasing it!
+
 
 ## Running E2E Tests
 End to end testing is done using [cypress](https://www.cypress.io/).

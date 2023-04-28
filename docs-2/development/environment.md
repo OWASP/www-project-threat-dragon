@@ -11,7 +11,6 @@ permalink: /docs-2/development-environment/
 {% include breadcrumb.html %}
 # [OWASP](https://www.owasp.org) Threat Dragon
 
-## Table of Contents
 1. [Quickstart](#quickstart)
 1. [Create A GitHub OAuth Application](#create-a-github-oauth-application)
 1. [Generate Keys](#generating-keys)

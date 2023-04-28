@@ -47,3 +47,75 @@ An array of single or multiple threat data-flow diagrams
 | thumbnail | string | **OPTIONAL** The path to the thumbnail image | "thumbnail": "./public/content/images/thumbnail.stride.jpg" |
 | title | string | **OPTIONAL** The title of the data-flow diagram | "title": "Main Request Data Flow" |
 {:.table .table-striped}
+
+### Actor
+
+{:.table .table-striped}
+| Property | Required | Type | Default |
+|---|---|---|
+| type | yes | `string` | tm.Actor |
+| name | no | `string` | |
+| description | no | `string` | |
+| outOfScope | yes | `boolean` | false |
+| reasonOutOfScope | no | `string` | |
+| providesAuthentication | yes | `boolean` | false |
+| hasOpenThreats | yes | `boolean` | false |
+| threats | no | `object[]` | [] |
+
+
+### Boundary
+
+{:.table .table-striped}
+| Property | Required | Type | Default |
+|---|---|---|
+| type | yes | `string` | tm.Boundary or tm.BoundaryBox |
+| name | no | `string` | |
+| description | no | `string` | |
+
+### Flow
+
+{:.table .table-striped}
+| Property | Required | Type | Default |
+|---|---|---|
+| type | yes | `string` | tm.Flow |
+| name | no | `string` | |
+| description | no | `string` | |
+| outOfScope | yes | `boolean` | false |
+| reasonOutOfScope | no | `string` | |
+| protocol | yes | `string` | |
+| isEncrypted | yes | `boolean` | false |
+| isPublicNetwork | yes | `boolean` | false |
+| hasOpenThreats | yes | `boolean` | false |
+| threats | no | `object[]` | [] |
+
+### Process
+
+{:.table .table-striped}
+| Property | Required | Type | Default |
+|---|---|---|
+| type | yes | `string` | tm.Process |
+| name | no | `string` | |
+| description | no | `string` | |
+| outOfScope | yes | `boolean` | false |
+| reasonOutOfScope | no | `string` | |
+| privilegeLevel | no | `string` | |
+| hasOpenThreats | yes | `boolean` | false |
+| threats | no | `object[]` | [] |
+
+
+### Store
+
+{:.table .table-striped}
+| Property | Required | Type | Default |
+|---|---|---|
+| type | yes | `string` | tm.Store |
+| name | no | `string` | |
+| description | no | `string` | |
+| outOfScope | yes | `boolean` | false |
+| reasonOutOfScope | no | `string` | |
+| isALog | yes | `boolean` | false |
+| storesCredentials | yes | `boolean` | false |
+| isEncrypted | yes | `boolean` | false |
+| isSigned | yes | `boolean` | false |
+| hasOpenThreats | yes | `boolean` | false |
+| threats | no | `object[]` | [] |
