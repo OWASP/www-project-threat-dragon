@@ -3,10 +3,7 @@
 title: Getting started
 layout: col-document
 tags: threatdragon
-author:
-contributors:
 document: Threat Dragon version 1.6.1
-order: 7
 permalink: /docs-1/getting-started/
 
 ---

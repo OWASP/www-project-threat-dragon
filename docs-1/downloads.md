@@ -3,10 +3,7 @@
 title: Downloads
 layout: col-document
 tags: threatdragon
-author:
-contributors:
 document: Threat Dragon version 1.6.1
-order: 13
 permalink: /docs-1/downloads/
 
 ---

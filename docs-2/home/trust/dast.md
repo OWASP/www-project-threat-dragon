@@ -3,10 +3,7 @@
 title: DAST
 layout: col-document
 tags: threatdragon
-author:
-contributors:
 document: Threat Dragon version 2.0
-order: 7
 permalink: /docs-2/dast/
 
 ---

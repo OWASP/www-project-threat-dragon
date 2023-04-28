@@ -3,10 +3,7 @@
 title: Process
 layout: col-document
 tags: threatdragon
-author:
-contributors:
 document: Threat Dragon version 2.0
-order: 30
 permalink: /docs-2/process/
 
 ---

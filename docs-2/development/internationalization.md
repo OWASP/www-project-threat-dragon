@@ -3,10 +3,7 @@
 title: Internationalization
 layout: col-document
 tags: threatdragon
-author:
-contributors:
 document: Threat Dragon version 2.0
-order: 24
 permalink: /docs-2/internationalization/
 
 ---

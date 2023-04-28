@@ -3,10 +3,7 @@
 title: About
 layout: col-document
 tags: threatdragon
-author:
-contributors:
 document: Threat Dragon version 1.6.1
-order: 2
 permalink: /docs-1/about/
 
 ---

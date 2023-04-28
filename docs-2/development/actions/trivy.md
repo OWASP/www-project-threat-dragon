@@ -3,10 +3,7 @@
 title: Trivy scan
 layout: col-document
 tags: threatdragon
-author:
-contributors:
 document: Threat Dragon version 2.0
-order: 37
 permalink: /docs-2/trivy/
 
 ---

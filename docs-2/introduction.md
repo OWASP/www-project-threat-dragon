@@ -3,10 +3,7 @@
 title: Introduction
 layout: col-document
 tags: threatdragon
-author:
-contributors:
 document: Threat Dragon version 2.0
-order: 1
 permalink: /docs-2/introduction/
 
 ---

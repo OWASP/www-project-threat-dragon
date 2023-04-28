@@ -3,10 +3,7 @@
 title: Table of Contents
 layout: col-document
 tags: threatdragon
-author:
-contributors:
 document: Threat Dragon version 2.0
-order: 0
 permalink: /docs-2/
 
 ---

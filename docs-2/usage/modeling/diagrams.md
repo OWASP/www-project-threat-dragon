@@ -3,10 +3,7 @@
 title: Diagrams
 layout: col-document
 tags: threatdragon
-author:
-contributors:
 document: Threat Dragon version 2.0
-order: 16
 permalink: /docs-2/diagrams/
 
 ---

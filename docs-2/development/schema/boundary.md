@@ -3,10 +3,7 @@
 title: Boundary
 layout: col-document
 tags: threatdragon
-author:
-contributors:
 document: Threat Dragon version 2.0
-order: 29
 permalink: /docs-2/boundary/
 
 ---

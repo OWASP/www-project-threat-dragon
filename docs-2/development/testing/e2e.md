@@ -3,10 +3,7 @@
 title: End to end testing
 layout: col-document
 tags: threatdragon
-author:
-contributors:
 document: Threat Dragon version 2.0
-order: 32
 permalink: /docs-2/e2e/
 
 ---

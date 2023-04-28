@@ -3,10 +3,7 @@
 title: Installation Options
 layout: col-document
 tags: threatdragon
-author:
-contributors:
 document: Threat Dragon version 2.0
-order: 10
 permalink: /docs-2/install-options/
 
 ---
