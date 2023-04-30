@@ -11,7 +11,7 @@
 
 ### Documentation
 
-* [Version 1.6.1](docs-1)
+* [Version 1.6](docs-1)
 * [Version 2.0](docs-2)
 * [Demonstration](https://www.threatdragon.com/)
 
@@ -20,7 +20,7 @@
 * Single page [web application](https://github.com/OWASP/threat-dragon/releases)
 * Docker [image](https://hub.docker.com/r/owasp/threat-dragon/tags?page=1&ordering=name)
 * Desktop installers for:
-* [Linux / MacOS / Windows](https://github.com/OWASP/threat-dragon/releases/tag/v1.6.1)
+* [Linux / MacOS / Windows](https://github.com/OWASP/threat-dragon/releases/tag/v2.0.2)
 
 ### Source
 

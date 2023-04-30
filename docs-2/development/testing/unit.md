@@ -17,17 +17,19 @@ The goal of a unit test is to know that a particular function or piece of code w
 Unit tests should not include any external dependencies
 
 ## Running Unit Tests
+The complete suite of unit tests can be run locally using command `npm test` from the top directory.
+
 
 ### Jest (td.vue)
 Unit testing for the vue application is done using [jest](https://jestjs.io/), and lives in the `td.vue/tests/unit` directory.
-To run the tests locally, navigate to the `td.vue` directory and run:
-- `pnpm run test:unit`
 
-If you'd prefer to work in a more TDD fashion, you can have the tests run continuously by running `ppnpm run test:unit -- --watch`.
+If you'd prefer to work in a more TDD fashion, you can have the tests run continuously by
+navigating to the `td.vue` directory and running `pnpm run test:unit -- --watch`
 
 ### Mocha (td.server)
 Unit testing for the server application is done using [Mocha](https://mochajs.org/),
-with a little help from our friends [sinon](https://sinonjs.org/) and [chai](https://www.chaijs.com/).  To run the tests locally, navigate to the `td.server` directory and run:
+with a little help from our friends [sinon](https://sinonjs.org/) and [chai](https://www.chaijs.com/).
+To run the tests locally, navigate to the `td.server` directory and run:
 - `pnpm run test:unit`
 
 ## Code Coverage

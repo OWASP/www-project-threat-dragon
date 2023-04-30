@@ -55,7 +55,7 @@ permalink: /docs-2/
 
 ### [Internationalization](development/internationalization.md)
 
-### [Schema](development/schema)
+### [Schema](development/schema.md)
 
 ### Testing
 
@@ -69,13 +69,13 @@ permalink: /docs-2/
 
 ### Trust
 
-#### [Dependency management](home/trust/dependencies.md)
+#### [Dependency management](development/trust/dependencies.md)
 
-#### [SAST](home/trust/sast.md)
+#### [SAST](development/trust/sast.md)
 
-#### [DAST](home/trust/dast.md)
+#### [DAST](development/trust/dast.md)
 
-#### [Container scanning](home/trust/container.md)
+#### [Container scanning](development/trust/container.md)
 
-#### [Incidents](home/trust/incidents.md)
+#### [Incidents](development/trust/incidents.md)
 
