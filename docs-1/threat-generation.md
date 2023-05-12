@@ -19,8 +19,10 @@ and click on 'Edit Threats' to the left side of the diagram editor.
 This will collapse the model element stencil and show the threats for the selected element.
 To add a new threat select '**+** Add a new threat ...'
 
-Enter the details for your threat in the threat dialog.
+Enter the details for your threat in the threat dialog,
+such as the remediation applied or the reason it has been marked N/A.
 Values for 'Title' and 'Threat Type' are mandatory.
+
 When you are done hit **Save** and your new threat should appear.
 To edit it again click on the threat title.
 

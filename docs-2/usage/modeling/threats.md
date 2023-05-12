@@ -30,8 +30,10 @@ To add threats to elements in your diagram, select an element
 and click on 'New Threat' to the lower right of the diagram editor.
 Note that this button will be disabled if an out-of-scope element is selected.
 
-Enter the details for your threat in the threat dialog.
+Enter the details for your threat in the threat dialog,
+such as the remediation applied or the reason it has been marked N/A.
 Values for 'Title' and 'Threat Type' are always required.
+
 When you are done hit **Apply** and the new threat will be appear lower right.
 
 Click on the threat in the lower right collection to edit again or edit an existing threat.

@@ -13,8 +13,8 @@ permalink: /docs-1/diagrams/
 
 Creating the [Threat Dragon](http://owasp.org/www-project-threat-dragon) diagrams
 
-Once you have [created or opened]({{ '/docs-1/getting-started' | relative_url }}) an existing threat model file
-the next step is to edit the threat model diagrams.
+Once you have [created or opened]({{ '/docs-1/getting-started' | relative_url }})
+an existing threat model file the next step is to edit the threat model diagrams.
 Click on the diagram you wish to edit and you will be taken to the diagram editor.
 
 ### Diagram title
@@ -83,7 +83,8 @@ Out of scope elements are indicated in diagrams with dashed lines:
 
 ## Elements with open threats
 
-Processes, data stores, actors and data flows that have open (unmitigated) threats are highlighted in red so that you know where to focus your attention:
+Processes, data stores, actors and data flows that have open (unmitigated) threats
+are highlighted in red so that you know where to focus your attention:
 
 ![elements with open threats are red](/assets/images/openthreats.png)
 
@@ -101,5 +102,4 @@ The toolbar on the diagram editing page supports some general diagramming featur
 ## Element properties
 To edit the properties of a model element, first select it.
 The element properties are shown on the right side of the diagram editor.
-In a future version of Threat Dragon, these properties will be used by the
-threat generation engine to suggest threats and mitigations for your model.
+These properties are used as context by the threat generation engine to suggest threats and mitigations for your model.
