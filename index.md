@@ -11,12 +11,6 @@ pitch: OWASP Threat Dragon is a threat modeling tool; great for both developers 
 ---
 
 <style type="text/css">
-.image-left {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  float: left;
-}
 .image-right {
   display: block;
   margin-left: auto;
@@ -37,6 +31,7 @@ of the threat model components and threat surfaces. Threat Dragon runs either as
 Threat Dragon supports STRIDE / [LINDDUN](https://www.linddun.org/) / CIA,
 provides modeling diagrams and implements a rule engine to auto-generate threats and their mitigations.
 
+### Resources
 Use the [documentation](https://owasp.org/www-project-threat-dragon/docs-1/) to get started, along with the recording of Mike Goodwin
 giving a [lightning demo](https://youtu.be/n6JGcZGFq5o) during the OWASP Open Security Summit in June 2020.
 
@@ -45,20 +40,12 @@ the [OWASP Spotlight](https://www.youtube.com/playlist?list=PLUKo5k_oSrfOTl27gUm
 and the [Threat Modeling Gamification](https://www.youtube.com/watch?v=u2tmLrwv-nc) seminar by Vlad Styran
 shows how using Threat Dragon can make threat modeling fun.
 
+There are a couple of OWASP community pages that give good overviews and how to get started:
+[Threat Modeling](https://owasp.org/www-community/Threat_Modeling)
+and [Threat Modeling Process](https://owasp.org/www-community/Threat_Modeling_Process).
+
+
 ### Related Projects
 * [OWASP pytm (Pythonic Threat Modeling)](https://owasp.org/www-project-pytm/)
-* [OWASP Threat Model Cookbook](https://owasp.org/www-project-threat-model-cookbook/)
 * [Threat Modeling OWASP Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html)
 * [Threagile - Agile Threat Modeling](https://threagile.io), although not OWASP it is open source
-
-### OWASP participation
-The Open Web Application Security Project (OWASP) is a nonprofit foundation that works to improve the security of
-software. All of our projects, tools, documents, forums, and chapters are free and open to anyone interested in
-improving application security. 
-
-Everyone is welcome and encouraged to participate in our [Projects](/projects), [Local Chapters](/chapters),
-[Events](/events), [Online Groups](https://groups.google.com/a/owasp.com/){:target='_blank'},
-and [Community Slack Channel](https://owasp.slack.com/){:target='_blank'}. We especially encourage diversity
-in all our initiatives. OWASP is a fantastic place to learn about application security, to network, and even
-to build your reputation as an expert. We also encourage you to [become a member](/membership) or consider
-a [donation](/donate) to support our ongoing work.
