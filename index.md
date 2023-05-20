@@ -40,10 +40,12 @@ the [OWASP Spotlight](https://www.youtube.com/playlist?list=PLUKo5k_oSrfOTl27gUm
 and the [Threat Modeling Gamification](https://www.youtube.com/watch?v=u2tmLrwv-nc) seminar by Vlad Styran
 shows how using Threat Dragon can make threat modeling fun.
 
-There are a couple of OWASP community pages that give good overviews and how to get started:
+There are a couple of OWASP community pages that give overviews on Threat Modeling and how to get started:
 [Threat Modeling](https://owasp.org/www-community/Threat_Modeling)
 and [Threat Modeling Process](https://owasp.org/www-community/Threat_Modeling_Process).
 
+The easiest way to get in contact with the Threat Dragon community is via the OWASP Slack
+[#project-threat-dragon](https://owasp.slack.com/messages/CURE8PQ68) project channel.
 
 ### Related Projects
 * [OWASP pytm (Pythonic Threat Modeling)](https://owasp.org/www-project-pytm/)

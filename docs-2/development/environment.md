@@ -177,7 +177,7 @@ ___
 {:.table .table-striped}
 | Back-end specific variables | Description | Default |
 | --- | ----------- | ------- |
-| ENCRYPTION_KEYS | The encryption keys used to encrypt any sensitive data | |
+| ENCRYPTION_KEYS | The encryption keys used to encrypt any high risk data | |
 | ENCRYPTION_JWT_SIGNING_KEY | The key used to sign JWTs | |
 | ENCRYPTION_JWT_REFRESH_SIGNING_KEY | The key used to sign refresh tokens. See below for rationale | |
 | GITHUB_CLIENT_ID | The client_id value for the GitHub OAuth app used for authentication | |

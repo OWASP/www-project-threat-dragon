@@ -7,7 +7,7 @@ tags: threatdragon
 ---
 
 ### Version 2.1: in progress
-- [ ] provide an API for CI/CD pipelines, [see here](https://github.com/bbachi/vuejs-nodejs-example/tree/master/api) for an example
+- [ ] provide an API for CI/CD pipelines
 - [ ] provide a CLI for scripting based on TD's existing [use of yargs](https://github.com/yargs/yargs)
 - [ ] provide multiple methods of authentication and access similar to [draw.io](https://app.diagrams.net) login page
 
