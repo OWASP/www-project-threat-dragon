@@ -9,6 +9,7 @@ permalink: /docs-2/diagrams/
 ---
 
 {% include breadcrumb.html %}
+
 ## [OWASP](https://www.owasp.org) Threat Dragon
 
 Creating the [Threat Dragon](http://owasp.org/www-project-threat-dragon) diagrams
@@ -47,6 +48,12 @@ Data flows and trust boundaries can be deleted by clicking the red icon that app
 To edit the properties of a model element, first select it.
 The element properties will then be shown on the lower left side of the diagram editor.
 
+![select dataflow]({{ '/docs-2/assets/images/select-dataflow.png' | relative_url }})
+
+The dataflow elements are not easy to select once they are in place,
+this is a issue with the drawing package used for the diagrams and we are working to fix this.
+Until we do then click on the dataflow arrowhead to select it.
+
 ## Out of scope elements
 
 Processes, data stores, actors and data flows can be marked as out of scope.
@@ -68,6 +75,7 @@ are highlighted in red so that you know where to focus your attention:
 ![elements with open threats are red]({{ '/docs-2/assets/images/openthreats.png' | relative_url }})
 
 ## Editing toolbar
+
 The toolbar on the diagram editing page supports some general diagramming features:
 
 ![Toolbar image]({{ '/docs-2/assets/images/toolbar.png' | relative_url }})
