@@ -11,7 +11,7 @@ on:
 # for security reasons the github actions are pinned to specific release versions
 jobs:
   link_checker:
-    name: link checker
+    name: Link checker
     runs-on: ubuntu-22.04
 
     steps:
