@@ -23,7 +23,7 @@ to help get started with this project.
 ### Vulnerability disclosure
 
 If you find a vulnerability in this project please let us know ASAP and we will fix it as a priority.
-For secure disclosure, please see the [security policy](https://github.com/OWASP/threat-dragon/blob/main/SECURITY.md).
+For secure disclosure, please see the [security policy](https://github.com/OWASP/threat-dragon/blob/main/security.md).
 
 ### Project leaders
 

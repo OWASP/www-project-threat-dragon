@@ -21,5 +21,5 @@ not necessarily a real-time feed of incident response.
 Because Threat Dragon is maintained by a community of volunteers,
 it will not always be possible to immediately investigate or respond to incidents immediately.
 Please only report security vulnerabilities found within Threat Dragon by following the process in
-the [Security Policy](https://github.com/OWASP/threat-dragon/blob/main/SECURITY.md).
+the [Security Policy](https://github.com/OWASP/threat-dragon/blob/main/security.md).
 Every effort will be made to resolve security concerns as they arise.
