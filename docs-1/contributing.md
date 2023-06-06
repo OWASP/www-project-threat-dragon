@@ -14,7 +14,7 @@ permalink: /docs-1/contributing/
 ### Contributing
 
 Pull requests, feature requests, bug reports and feedback of any kind are very welcome, please refer to the page for
-[contributors](https://github.com/OWASP/threat-dragon/blob/main/CONTRIBUTING.md). 
+[contributors](https://github.com/OWASP/threat-dragon/blob/main/contributing.md). 
 
 We are trying to keep the test coverage relatively high, so please try to update tests in any pull requests.
 There are some [developer notes](https://github.com/OWASP/threat-dragon/blob/archive-legacy-v1.x/dev-notes.md)

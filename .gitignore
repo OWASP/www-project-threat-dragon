@@ -4,15 +4,16 @@
 # allow github, workflows and templates
 !.github/
 !.github/*.yaml
-!.github/ISSUE_TEMPLATE/
-!.github/ISSUE_TEMPLATE/*.md
+!.github/issue_template/
+!.github/issue_template/*.md
 !.github/workflows/
 !.github/workflows/*.yaml
 !.gitignore
 !.lycheeignore
 
 # allow markdown and the assets
-!./*.md
+!*.md
+!license.txt
 !assets/
 !assets/images/
 !assets/images/*.png
