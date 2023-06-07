@@ -9,8 +9,11 @@ permalink: /docs-2/dependencies/
 ---
 
 {% include breadcrumb.html %}
-# Dependency Management
+
+## Dependency Management
+
 The following controls are in place to assist with dependency management of the web application:
+
 - pnpm for dependency resolution and auditing
 - Trivy scanning per commit for SCA and OS dependency management within docker
 - Trivy scanning daily on the latest build in the default branch
@@ -19,6 +22,7 @@ The following controls are in place to assist with dependency management of the 
 The documentation pages are scanned on every commit using [OWASP ZAP](https://www.zaproxy.org/docs/) (Zed Attack Proxy).
 
 ## Fixing a vulnerable dependency
+
 If your build fails due to a trivy alert, try to find the part of the application that has the vulnerable component.
 In the root directory of that component (where the package.json lives), run `pnpm audit`.
 If there is a dependency with a known vulnerability, it should show you.
@@ -27,4 +31,5 @@ This follows the standard versioning format used in package.json dependencies.
 _After_ running pnpm audit fix, the `pnpm-lock.yaml` file will need to be updated.
 To update it, run `pnpm install`.
 
-This should be done at the package level and the root level when possible to protect developers as well as production environments.
+This should be done at the package level and the root level when possible to protect developers
+as well as production environments.

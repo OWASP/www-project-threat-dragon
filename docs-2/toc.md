@@ -9,7 +9,8 @@ permalink: /docs-2/
 ---
 
 {% include breadcrumb.html %}
-# OWASP Threat Dragon
+
+## OWASP Threat Dragon
 
 ## [Introduction](introduction.md)
 
@@ -78,4 +79,3 @@ permalink: /docs-2/
 #### [Container scanning](development/trust/container.md)
 
 #### [Incidents](development/trust/incidents.md)
-

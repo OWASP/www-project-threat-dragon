@@ -29,6 +29,6 @@ tags: threatdragon
 
 * [What browsers can be used for Threat Dragon?](https://github.com/OWASP/threat-dragon/wiki/FAQs#what-browsers-can-be-used-for-threat-dragon)
 
-* [Hold on...isn't this the same as Mozilla's](https://github.com/OWASP/threat-dragon/wiki/FAQs#hold-onisnt-this-the-same-as-mozillas-seasponge) SeaSponge?
+* [Hold on...isn't this the same as Mozilla's SeaSponge?](https://github.com/OWASP/threat-dragon/wiki/FAQs#hold-onisnt-this-the-same-as-mozillas-seasponge)
 
 * [When is Threat Dragon's birthday? And does Threat Dragon have a theme tune?](https://github.com/OWASP/threat-dragon/wiki/FAQs#when-is-threat-dragons-birthday-and-does-threat-dragon-have-a-theme-tune)

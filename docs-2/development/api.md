@@ -9,6 +9,7 @@ permalink: /docs-2/api/
 ---
 
 {% include breadcrumb.html %}
+
 ## [OWASP](https://www.owasp.org) Threat Dragon
 
 At present it there is a minimal application programming interface for
@@ -26,9 +27,8 @@ APIs protected by authorisation, including threat model Create, Read, Update (bu
 | `/api/threatmodel/:organisation/:repo/branches` | GET | List branches for a given repository |
 | `/api/threatmodel/:organisation/:repo/:branch/models` | GET | List models for a given branch and repository |
 | `/api/threatmodel/:organisation/:repo/:branch/:model/data` | GET | Reads the threat model contents for a given model |
-| `/api/threatmodel/:organisation/:repo/:branch/:model/create` | PUT | Creates a new model in the given branch and repository |
-| `/api/threatmodel/:organisation/:repo/:branch/:model/update` | PUT | Update a model in the given branch and repository |
-
+| `/api/threatmodel/:organisation/:repo/:branch/:model/create` | PUT | Create a new model in the branch and repository |
+| `/api/threatmodel/:organisation/:repo/:branch/:model/update` | PUT | Update a model in the branch and repository |
 
 APIs with no authorisation:
 
@@ -44,6 +44,7 @@ APIs with no authorisation:
 | `/api/threatmodel/organization` | GET | Provides github organisation hostname |
 
 Support for CI/CD pipelines is being worked on, and this API may include:
+
 * project status
 * pdf report output
 * threat diagram provider (for embedding in other reports)

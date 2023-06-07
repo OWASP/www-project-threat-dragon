@@ -9,6 +9,7 @@ permalink: /docs-1/diagrams/
 ---
 
 {% include breadcrumb.html %}
+
 ## [OWASP](https://www.owasp.org) Threat Dragon
 
 Creating the [Threat Dragon](http://owasp.org/www-project-threat-dragon) diagrams
@@ -34,7 +35,6 @@ and also to see their properties and threats.
 
 To delete an element, first select it and then click on the red icon in the
 element's top left corner like so:
-
 
 ![the element delete tool](/assets/images/processelement.png)
 
@@ -89,6 +89,7 @@ are highlighted in red so that you know where to focus your attention:
 ![elements with open threats are red](/assets/images/openthreats.png)
 
 ## Editing toolbar
+
 The toolbar on the diagram editing page supports some general diagramming features:
 
 * Toggle gridlines on/off. When gridlines are on, elements snap to them for neater models
@@ -100,6 +101,7 @@ The toolbar on the diagram editing page supports some general diagramming featur
 * Save the threat model to your local browser storage
 
 ## Element properties
+
 To edit the properties of a model element, first select it.
 The element properties are shown on the right side of the diagram editor.
 These properties are used as context by the threat generation engine to suggest threats and mitigations for your model.

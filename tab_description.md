@@ -9,6 +9,7 @@ tags: threatdragon
 Threat modeling is widely regarded as a powerful way to build security into the design of applications and systems
 early in a secure development lifecycle.
 At its best, threat modeling is especially good for:
+
 * Ensuring defence-in-depth
 * Establishing consistent security design patterns across an application
 * Flushing out security requirements and user stories

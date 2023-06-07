@@ -26,3 +26,18 @@ jobs:
           fail: true
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+  md_linter:
+    name: Lint markdown
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout markdown
+        uses: actions/checkout@v3.5.2
+
+      - name: Lint markdown
+        uses: DavidAnson/markdownlint-cli2-action@v10.0.1
+        with:
+          command: config
+          globs: |
+            .markdownlint.yaml
+            **/*.md

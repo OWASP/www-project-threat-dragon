@@ -7,7 +7,7 @@ on:
 
 # for security reasons the github actions are pinned to specific release versions
 jobs:
-  chores:
+  workflow_cleaner:
     name: Tidy workflows
     runs-on: ubuntu-22.04
 

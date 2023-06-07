@@ -9,6 +9,7 @@ permalink: /docs-2/cli/
 ---
 
 {% include breadcrumb.html %}
+
 ## [OWASP](https://www.owasp.org) Threat Dragon
 
 With the desktop version of [Threat Dragon](http://owasp.org/www-project-threat-dragon) installed,
@@ -49,7 +50,7 @@ or the './' if the file is in the working directory.
 
 Here is the help contents for version 1.3.1 :
 
-```
+```text
 OWASP-Threat-Dragon --help
 Usage: OWASP-Threat-Dragon <command> [options]
 

@@ -9,17 +9,21 @@ permalink: /docs-2/install-options/
 ---
 
 {% include breadcrumb.html %}
+
 ## [OWASP](https://www.owasp.org) Threat Dragon
 
-[Threat Dragon](http://owasp.org/www-project-threat-dragon) comes in two variants, a desktop application and a web application.
+[Threat Dragon](http://owasp.org/www-project-threat-dragon) comes in two variants,
+a desktop application and a web application.
 
 ### Web application
-The web application can be run locally or from a server, and is downloaded from the 
+
+The web application can be run locally or from a server, and is downloaded from the
 [Threat Dragon repo](https://github.com/OWASP/threat-dragon/releases).
 There is some configuration necessary, so see the
 [install instructions]({{ '/docs-2/install-webapp/' | relative_url }}) for configuring the application.
 
 ### Desktop application
+
 Installable versions are available for download from the
 [OWASP GitHub area](https://github.com/OWASP/threat-dragon/releases):
 

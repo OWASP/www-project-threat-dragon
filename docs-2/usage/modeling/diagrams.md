@@ -45,6 +45,7 @@ Data flows and trust boundaries can be deleted by clicking the red icon that app
 ![flow remove tool]({{ '/docs-2/assets/images/deleteflow.png' | relative_url }})
 
 ## Element properties
+
 To edit the properties of a model element, first select it.
 The element properties will then be shown on the lower left side of the diagram editor.
 

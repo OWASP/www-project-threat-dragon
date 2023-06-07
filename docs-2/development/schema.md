@@ -9,12 +9,14 @@ permalink: /docs-2/schema/
 ---
 
 {% include breadcrumb.html %}
-# Threat Model Schema
+
+## Threat Model Schema
 
 There is a [schema]({{ '/assets/schemas/owasp.threat-dragon.schema.json' | relative_url }}) for Threat Dragon
 that conforms to [JSON Schema](https://json-schema.org/).
 
 ## Summary
+
 Threat model project meta-data
 
 | Field  | Type  | Description  | Example  |
@@ -27,6 +29,7 @@ Threat model project meta-data
 {:.table .table-striped}
 
 ## Detail
+
 Threat model definition
 
 | Field  | Type  | Description  | Example  |
@@ -37,6 +40,7 @@ Threat model definition
 {:.table .table-striped}
 
 ## Diagrams
+
 An array of single or multiple threat data-flow diagrams
 
 | Field  | Type  | Description  | Example  |
@@ -61,7 +65,6 @@ An array of single or multiple threat data-flow diagrams
 | providesAuthentication | yes | `boolean` | false |
 | hasOpenThreats | yes | `boolean` | false |
 | threats | no | `object[]` | [] |
-
 
 ### Boundary
 
@@ -101,7 +104,6 @@ An array of single or multiple threat data-flow diagrams
 | privilegeLevel | no | `string` | |
 | hasOpenThreats | yes | `boolean` | false |
 | threats | no | `object[]` | [] |
-
 
 ### Store
 

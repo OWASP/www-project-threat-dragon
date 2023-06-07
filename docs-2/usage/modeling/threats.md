@@ -39,6 +39,7 @@ When you are done hit **Apply** and the new threat will be appear lower right.
 Click on the threat in the lower right collection to edit again or edit an existing threat.
 
 ### Threats by element
+
 Some threat categories are associated with some diagram elements more than others.
 For example an Actor element is more likely to have Spoofing and Repudiation threats
 associated with it, and less likely to be vulnerable to
@@ -51,10 +52,11 @@ and this will allow you to select any threat type for any type of element;
 you can always change the diagram back to STRIDE, LINDDUN or CIA later on.
 
 ## STRIDE, LINDDUN, CIA and Generic
+
 The threat model can have different types of threats added to it according to the diagram methodology.
 Currently the supported methodologies are STRIDE, LINDDUN and CIA;
 these are selected as part of the diagram attributes when editing the model.
-A 'Generic' methodology is provided so that you can select any type of threat. 
+A 'Generic' methodology is provided so that you can select any type of threat.
 
 Note that it is OK to select one methodology, enter some threats into the model,
 and then change the model methodology. No threats are removed when you do this,
@@ -65,4 +67,3 @@ then the CIA threat is still in the model and can be edited as before.
 In addition if LINDDUN threats are added and then the model is changed back to CIA
 then both LINDDUN and CIA threats are in the model and both types can be edited.
 Of course, same goes for STRIDE and so on.
-
