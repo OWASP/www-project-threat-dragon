@@ -9,11 +9,14 @@ permalink: /docs-2/collaboration/
 ---
 
 {% include breadcrumb.html %}
-# Deep Links
+
+## Deep Links
+
 Threat Dragon supports the concept of deep linking.  The deep links have changed from v1 due to
 the addition of identity providers. Please take note of the new structure.
 
 ## Provider Types
+
 Threat Dragon supports multiple provider types.  Each provider "type" can have multiple providers,
 but they fall under the same category as far as deep linking is concerned.
 More providers and provider types will be added in the future.
@@ -31,6 +34,7 @@ Variables will need to be URLEncoded.
 |Edit Diagram|`/git/:provider/:repository/:branch/:threatmodel/:diagram/edit` *(not implemented)|
 
 ### Local
+
 While you might not be able to collaborate by sharing deep links when using the local session,
 this can still be helpful for reference:
 

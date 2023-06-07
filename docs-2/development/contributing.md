@@ -9,20 +9,23 @@ permalink: /docs-2/contributing/
 ---
 
 {% include breadcrumb.html %}
+
 ## [OWASP](https://www.owasp.org) Threat Dragon
 
 ### Contributing
 
 Pull requests, feature requests, bug reports and feedback of any kind are very welcome, please refer to the page for
-[contributors](https://github.com/OWASP/threat-dragon/blob/main/contributing.md). 
+[contributors](https://github.com/OWASP/threat-dragon/blob/main/contributing.md).
 
 We are trying to keep the test coverage relatively high, so please try to update tests in any PRs.
-There are some [developer notes]({{ '/docs-2/local-development/' | relative_url }}) to help you get started with this project.
+There are some [developer notes]({{ '/docs-2/local-development/' | relative_url }})
+to help you get started with this project.
 
 ### Quick start
+
 Clone and install the Threat Dragon repo:
 
-```
+```text
 git clone git@github.com:OWASP/threat-dragon.git
 cd threat-dragon
 pnpm install
@@ -30,12 +33,11 @@ pnpm install
 
 After making any changes be sure to test them:
 
-```
+```text
 npm start
 npm test
 npm run test:vue
 ```
-
 
 ### Vulnerability disclosure
 

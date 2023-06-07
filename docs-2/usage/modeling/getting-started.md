@@ -19,11 +19,13 @@ permalink: /docs-2/getting-started/
 </style>
 
 ## [OWASP](https://www.owasp.org) Threat Dragon
+
 Getting started with [Threat Dragon](http://owasp.org/www-project-threat-dragon) models
 
 ## Create a new model
 
 ### If using the Web application
+
 The Threat Dragon web variant stores its threat models in your GitHub repos.
 This is so that the models can stay close to the code they are modelling.
 Future versions will provide a deeper integration so watch this space but for now,
@@ -44,6 +46,7 @@ When you pick a branch you will be taken to the threat model edit page
 where you can enter general information about your model.
 
 ### If using the Desktop application
+
 The Threat Dragon desktop variant stores its threat models on your local filesystem.
 
 ![New model image]({{ '/docs-2/assets/images/newmodel.png' | relative_url }}){: .image-left }
@@ -56,6 +59,7 @@ You will then be taken straight to the threat model edit page where you
 can enter general information about your model.
 
 ## Threat model edit page
+
 The Title field is mandatory. All the rest are optional, but they provide context for your model.
 This can be useful if someone else has to pick the model up in the future.
 Click on the **Edit** button to start editing the threat model details.
@@ -79,7 +83,7 @@ You can also **Cancel** to exit without saving,
 or **Reload** to undo any changes and revert to your last save.
 
 In the web variant of Threat Dragon, models are saved in your chosen branch at a path like
-`ThreatDragonModels/[model name]/[model title].json`, 
+`ThreatDragonModels/[model name]/[model title].json`,
 Look at the [Demo Threat Model](https://github.com/mike-goodwin/owasp-threat-dragon-demo) for an example.
 Because of this, if you change title of your model it will delete the old model in GitHub
 and replace it with one at the new path.
@@ -124,10 +128,12 @@ You will then be able to navigate to the model file in your local file system an
 The demo models should give you some ideas on how to get started with your own model.
 
 ## Threat model report
+
 From the Threat Model details view you can see a summary report of your model listing the diagrams,
 elements and threats. Towards the bottom right of the page click on the **Report** button.
 
 You can then customise the report to show or hide:
+
 * Out of scope model elements
 * Mitigated threats
 * Threat model diagrams

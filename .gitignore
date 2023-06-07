@@ -10,6 +10,7 @@
 !.github/workflows/*.yaml
 !.gitignore
 !.lycheeignore
+!.markdownlint.yaml
 
 # allow markdown and the assets
 !*.md

@@ -35,13 +35,15 @@ and as a [desktop application](/install-desktop/) installed for MacOS, Windows a
 
 The desktop application saves your threat models on your local file system,
 and the online version stores its files in GitHub.
-This means that to use web application you have to sign in with a GitHub account and give it write access to your public repos.
+This means that to use web application you have to sign in with a GitHub account and give it
+write access to your public repos.
 Other than that, the user experience is currently almost identical between the web and desktop variants.
 In the future, there should be deeper integration with GitHub and other code repositories.
 
 You can find the source code for Threat Dragon on GitHub
 [OWASP][owasp] / [threat-dragon][dragon] where you can also ask for changes or report any issues.
-Threat Dragon is an OWASP Lab project but there will still be bugs - if you find one then please [raise a bug report][bug].
+Threat Dragon is an OWASP Lab project but there will still be bugs,
+if you find one then please [raise a bug report][bug].
 
 ![OWASP logo](/assets/images/owasp.png){: .image-right }
 

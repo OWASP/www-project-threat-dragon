@@ -13,7 +13,7 @@ You can contact the Threat Dragon community via the OWASP Slack
 [#project-threat-dragon](https://owasp.slack.com/messages/CURE8PQ68) project channel,
 you may need to [subscribe](https://owasp.org/slack/invite) first.
 
-### Project leaders
+## Project leaders
 
 * [Mike Goodwin](mailto:mike.goodwin@owasp.org)
 * [Jon Gadsden](mailto:jon.gadsden@owasp.org)

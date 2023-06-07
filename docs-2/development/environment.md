@@ -9,100 +9,116 @@ permalink: /docs-2/development-environment/
 ---
 
 {% include breadcrumb.html %}
-# [OWASP](https://www.owasp.org) Threat Dragon
+
+## [OWASP](https://www.owasp.org) Threat Dragon
 
 1. [Quickstart](#quickstart)
-1. [Create A GitHub OAuth Application](#create-a-github-oauth-application)
-1. [Generate Keys](#generating-keys)
-1. [Config Via DotEnv](#config-via-dotenv)
-1. [Environment Errors](#environment-errors)
-1. [Command Line](#command-line)
-1. [All Variables (and what they do)](#all-variables)
-1. [Example Github OAuth Screenshot](#github-oauth-app-screenshot)
+2. [Create A GitHub OAuth Application](#create-a-github-oauth-application)
+3. [Generate Keys](#generating-keys)
+4. [Config Via DotEnv](#config-via-dotenv)
+5. [Environment Errors](#environment-errors)
+6. [Command Line](#command-line)
+7. [Example Github OAuth Screenshot](#github-oauth-app-screenshot)
 
 ___
 
 ## Quickstart
+
 1. [Create A GitHub OAuth Application](#create-a-github-oauth-application)
-1. [Generate Keys](#generating-keys) for encryption and JWT signing
-1. Copy `example.env` to `.env`
-1. Update the values in `.env`
-1. `pnpm install`
-1. `pnpm run serve`
+2. [Generate Keys](#generating-keys) for encryption and JWT signing
+3. Copy `example.env` to `.env`
+4. Update the values in `.env`
+5. `pnpm install`
+6. `pnpm run serve`
 
 ___
 
 ## Create A GitHub OAuth Application
+
 This web application uses GitHub OAuth applications as the authentication mechanism.
-There is [work](https://github.com/OWASP/threat-dragon/issues/1) [planned](https://github.com/OWASP/threat-dragon/issues/9)
+There is [work](https://github.com/OWASP/threat-dragon/issues/1)
+[planned](https://github.com/OWASP/threat-dragon/issues/9)
 to add [additional](https://github.com/OWASP/threat-dragon/issues/61) authentication providers in the future.
 
 There is an [open issue](https://github.com/OWASP/threat-dragon/issues/14) with regards to GitHub and OAuth permissions.
 
 To create a GitHub OAuth Application:
+
 1. Log into your GitHub account, go to `Settings -> 'Developer settings' -> 'OAuth Apps' -> 'New OAuth App'`
 2. Fill out the form with the following:
-- **Application name**: A unique identifier for the application.  This is not critical, we suggest something like 'Threat Dragon'
-- **Homepage URL**: For local development, use `http://localhost:8080`
-  - If you configure Threat Dragon to listen on another port, use that port here instead of 8080
-- **Application description**: A description for your OAuth app.  This is not critical, we suggest something like 'Threat Dragon for local development'
-- **Authorization callback URL**: `http://localhost:3000/api/oauth/return`
-  - If you configure Threat Dragon's server away from the default port 3000, be sure to use that port for the auth callback url
+    - **Application name**: A unique identifier for the application.
+        This is not critical, we suggest something like 'Threat Dragon'
+    - **Homepage URL**: For local development, use `http://localhost:8080`
+        - If you configure Threat Dragon to listen on another port, use that port here instead of 8080
+    - **Application description**: A description for your OAuth app.
+        This is not critical, we suggest something like 'Threat Dragon for local development'
+    - **Authorization callback URL**: `http://localhost:3000/api/oauth/return`
+      - If you configure Threat Dragon's server away from the default port 3000,
+          be sure to use that port for the auth callback url
 3. Register the application, an [example screenshot](#github-oauth-app-screenshot) is at the bottom of this document
 4. Create a client_secret
 5. Note the values for Client ID and Client Secret. **Save these somewhere safe**
-- Client ID will look similar to `01234567890123456789`
-- Client Secret will look similar to `0123456789abcdef0123456789abcdef01234567`
-- Treat these values like you would a password.  If these values get out, someone could gain full access to your GitHub account
+    - Client ID will look similar to `01234567890123456789`
+    - Client Secret will look similar to `0123456789abcdef0123456789abcdef01234567`
+    - Treat these values like you would a password, these values provide full access to your GitHub account
 
 ___
 
 ## Generating Keys
+
 A random 32 bit hexidecimal string should be used for encryption.
 
 You want this to be randomly generated, and keep it a secret.
 
 If you have openssl installed, you can use this command to generate a new secret: `openssl rand -hex 16`
-[express-session](https://github.com/expressjs/session#readme) has some good advice on managing and rotating encryption keys.
+[express-session](https://github.com/expressjs/session#readme)
+has some good advice on managing and rotating encryption keys.
 
 A similar method could be used to generate JWT signing keys.
-
 ___
 
 ## Config Via DotEnv
+
 Environment variables are configured via [dotenv](https://github.com/motdotla/dotenv#readme).
 By default, Threat Dragon attempts to read key/value pairs from a `.env` file at the root of this repository.
 This can be configured by exporting a file path in your terminal.
 For example, on MacOS/Linux: `export ENV_FILE=/home/myawesomeuser/mydir/somefile.env`
 
-To get started, copy `example.env` to `.env` at the root of the project and update the variables as appropriate. 
+To get started, copy `example.env` to `.env` at the root of the project and update the variables as appropriate.
 
-**Note**: Do not use the `export` or `set` keywords inside your `.env` file, as this will not work from within a docker context.
+**Note**: Do not use the `export` or `set` keywords inside your `.env` file,
+as this will not work from within a docker context.
 The `dotenv` package will automatically export the variables for you.
 
 Alternatively, you can also set your environment variables via [command line](#command-line) if you'd prefer.
-
 ___
 
 ## Environment Errors
 
 The application will throw an error if a required environment variable is missing during application start:
 
-`GITHUB_CLIENT_ID is a required property.  Threat Dragon server cannot start without it.  Please see docs/development/environment.md for more information`
+```text
+GITHUB_CLIENT_ID is a required property.  Threat Dragon server cannot start without it.
+Please see docs/development/environment.md for more information
+```
 
 ___
 
 ## File Based Secrets
+
 If using file based secrets, add `_FILE` to the end of the secret name, and the value should point to the file location.
-This is particularly useful if you are running Threat Dragon in docker context, as you can use docker secrets or orchestrator such as kubernetes.
+This is particularly useful if you are running Threat Dragon in docker context,
+as you can use docker secrets or orchestrator such as kubernetes.
 
 An example using docker secrets:
+
 - Create your secrets, for example: `echo "01234567890123456789" | docker secret create github_client_id -`
 - Create a docker compose file (example below)
 - Deploy to your docker swarm, for example: `docker stack deploy --compose-file docker-compose.yaml owasp-threatdragon`
 
 Example compose file:
-```
+
+```text
 version: '3.1'
 services:
   threatdragon:
@@ -145,21 +161,24 @@ secrets:
   protocol:
     external: true
 ```
+
 ___
 
 ## Command Line
+
 Export all of the your variables from the terminal where you will start Threat dragon.  
 
 ### MacOS / Linux
+
 `export GITHUB_CLIENT_ID=01234567890123456789`
 
 `export ...`
 
 ### Windows
+
 `set GITHUB_CLIENT_ID=01234567890123456789`
 
 `set ...`
-
 ___
 
 ## Environment variable reference
@@ -187,19 +206,19 @@ ___
 | GITHUB_ENTERPRISE_PORT | Optional if your github enterprise instance uses a nonstandard port | `443` |
 | GITHUB_ENTERPRISE_PROTOCOL | Optional if your github enterprise instance uses a nonstandard protocol | `https` |
 
-**Note:** the JWT refresh signing key should be different from the JWT signing key as they are different tokens.
+**Note**: the JWT refresh signing key should be different from the JWT signing key as they are different tokens.
 A JWT is used as a refresh token because it is tamper resistant and provides user context.
 
 {:.table .table-striped}
 | Desktop specific variables | Description | Default |
 | --- | ----------- | ------- |
 | IS_TEST | Enabled during automated testing | false |
-| WEBPACK_DEV_SERVER_URL | Electron load URL when in development mode | http://localhost:3000/ |
+| WEBPACK_DEV_SERVER_URL | Electron load URL when in development mode | `http://localhost:3000/` |
 
-**Note:** the desktop environment variable WEBPACK_DEV_SERVER_URL determines the mode;
+**Note**: the desktop environment variable WEBPACK_DEV_SERVER_URL determines the mode;
 either development/test mode if defined or production mode if not defined
-
 ___
+
 ## Github OAuth App Screenshot
 
 Example screenshot of registering a new OAuth application:

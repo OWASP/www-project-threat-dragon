@@ -9,22 +9,26 @@ permalink: /docs-2/install-webapp/
 ---
 
 {% include breadcrumb.html %}
+
 ## [OWASP](https://www.owasp.org) Threat Dragon
 
-[Threat Dragon](http://owasp.org/www-project-threat-dragon) comes in two variants, a desktop application and a web application.
+[Threat Dragon](http://owasp.org/www-project-threat-dragon) comes in two variants,
+a desktop application and a web application.
 
 ## Web application install instructions
+
 The web application can be run locally or from a server.
 
 ### Installing
 
-Threat Dragon is a Single Page Application (SPA) using Angular on the client and node.js on the server. To build and run locally follow these steps:
+Threat Dragon is a Single Page Application (SPA) using Angular on the client and node.js on the server.
+To build and run locally follow these steps:
 
 Install [node.js](https://nodejs.org/en/download/), which includes the node package manager `npm`,
 and also install [git](https://git-scm.com/downloads).
 To get the code, navigate to where you want your code to be located and run
 
-```
+```text
 git init
 git clone https://github.com/owasp/threat-dragon.git
 ```
@@ -36,7 +40,8 @@ To install use pnpm (rather than npm):
 
 ### Environment variables
 
-See the [environment]({{ '/docs-2/development-environment/' | relative_url }}) page for details on configuring your environment variables.
+See the [environment]({{ '/docs-2/development-environment/' | relative_url }}) page
+for details on configuring your environment variables.
 
 ### Running the application
 
@@ -44,6 +49,7 @@ Once your environment variables are set up, if running on Linux or MacOS start t
 
 `npm start`
 
-When running on Windows the front-end and back-end are started separately using commands: `npm run dev:server` and `npm run dev:vue`.
+When running on Windows the front-end and back-end are started separately using commands:
+`npm run dev:server` and `npm run dev:vue`.
 
 If you then browse to `http://localhost:8080` you should see the running application.
