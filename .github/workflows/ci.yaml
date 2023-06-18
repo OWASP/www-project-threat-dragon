@@ -37,7 +37,5 @@ jobs:
       - name: Lint markdown
         uses: DavidAnson/markdownlint-cli2-action@v11.0.0
         with:
-          command: config
-          globs: |
-            .markdownlint.yaml
-            **/*.md
+          config: '.markdownlint.yaml'
+          globs: '**/*.md'
