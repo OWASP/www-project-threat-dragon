@@ -1,9 +1,7 @@
-# OWASP Foundation Threat Dragon Homepage
+## OWASP Foundation Threat Dragon Homepage
 
-This repo is the source for the [OWASP Threat Dragon project web pages](https://owasp.org/www-project-threat-dragon/)
-
-For any improvements to these pages please create an issue or open a pull request
-and we will make sure to respond quickly.
+This repo is the source for the OWASP Threat Dragon project [web pages](https://owasp.org/www-project-threat-dragon/)
+and the Threat Dragon documentation for [version 1.x][docs1] and for [version 2.x][docs2].
 
 Create issues on this repository only for content hosted on the OWASP project site, including the documentation.
 For issues or suggestions related to the Threat Dragon tool itself use the
@@ -11,10 +9,13 @@ For issues or suggestions related to the Threat Dragon tool itself use the
 
 You can contact the Threat Dragon community via the OWASP Slack
 [#project-threat-dragon](https://owasp.slack.com/messages/CURE8PQ68) project channel,
-you may need to [subscribe](https://owasp.org/slack/invite) first.
+and you may need to [subscribe](https://owasp.org/slack/invite) first.
 
-## Project leaders
+### Project leaders
 
 * [Mike Goodwin](mailto:mike.goodwin@owasp.org)
 * [Jon Gadsden](mailto:jon.gadsden@owasp.org)
 * [Leo Reading](mailto:leo.reading@owasp.org)
+
+[docs1]: https://owasp.org/www-project-threat-dragon/docs-1/
+[docs2]: https://owasp.org/www-project-threat-dragon/docs-2/
