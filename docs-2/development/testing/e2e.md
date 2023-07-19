@@ -10,9 +10,9 @@ permalink: /docs-2/e2e/
 
 {% include breadcrumb.html %}
 
-## End to End Testing
+## End to End testing
 
-## What is End to End Testing... and why?
+## What is End to End testing... and why?
 
 End to end tests are executed against a full, running instance of the application.
 They are intended to mock user behavior and asserting that the the application behaves as expected.
@@ -21,7 +21,7 @@ we strive to cover the intended flows that our users would take.
 Finally, E2E testing is the last step before deploying in our continuous delivery pipeline.
 We want to make sure that the quality is there before releasing it!
 
-## Running E2E Tests
+## Running e2e tests
 
 End to end testing is done using [cypress](https://www.cypress.io/).
 The full test suite is in `td.vue/tests/e2e/specs`
@@ -34,22 +34,22 @@ Smoke tests should be quick and only check the bare basics.
 
 You may need to install `vue-cli-service` if you are running some of the tests locally.
 If you get errors such as `vue-cli-service: command not found`
-then run command `pnpm install -g @vue/cli` from the root directory.
+then run command `npm install -g @vue/cli` from the root directory.
 
 ### Run test:e2e
 
 To run the e2e tests locally, navigate to the `td.vue` directory and run:
 
 ```text
-pnpm install
-pnpm test:e2e
+npm install
+npm run test:e2e
 ```
 
 This will open the cypress runner application and load the suite of tests from `tests/e2e/specs`.
 From the cypress window you can select individual tests to run, or run all tests at once.
 This suite of tests uses cypress configuration file `e2e.local.config.js`.
 
-A quick test can be done using command `pnpm test:vue`,
+A quick test can be done using command `npm run test:vue`,
 from either the root directory or the `td.vue` directory.
 This runs the same suite of tests but in headless mode using an electron server back-end.
 
@@ -59,10 +59,10 @@ This suite of tests is identical to `test:e2e`
 but the target is an application already running at `http://localhost:8080/`.
 To run these tests there first has to be a running web application, for example:
 
-- from directory `td.vue` invoke `pnpm dev`
+- from directory `td.vue` invoke `npm run dev`
 - wait for the web app to be accessible on `http://localhost:8080/`
 
-From a separate terminal in directory `td.vue` invoke: `pnpm test:e2e:local`
+From a separate terminal in directory `td.vue` invoke: `npm run test:e2e:local`
 
 A cypress runner application is opened as above, loading the suite of tests from `tests/e2e/specs`.
 This suite of tests uses cypress configuration file `e2e.local.config.js`.
@@ -78,7 +78,7 @@ using port 3000 rather than 8080.
 For local testing of this script, an instance of the docker file can be used to map port 3000:
 
 - from top directory run `docker run -it --rm -p 3000:3000 -v $(pwd)/.env:/app/.env owasp-threat-dragon:dev`
-- from directory `td.vue` invoke `pnpm test:e2e-ci`
+- from directory `td.vue` invoke `npm run test:e2e-ci`
 
 These tests are run by the CI pipeline after a successful deploy.
 
@@ -91,7 +91,7 @@ and the suite of tests from is loaded from `tests/e2e/specs`.
 
 The e2e nightly tests rely on the demo server to be running at `https://www.threatdragon.com/`.
 
-These tests are run by the `browserstack` github nightly action using command `pnpm test:e2e-nightly`.
+These tests are run by the `browserstack` github nightly action using command `npm run test:e2e-nightly`.
 Test and debug these pipelines using github rather than from the local command line.
 
 To check the configuration file `e2e.nightly.config.js` run this command from directory `td.vue` :
@@ -101,7 +101,7 @@ To check the configuration file `e2e.nightly.config.js` run this command from di
 ### BrowserStack test:e2e-smokes
 
 The e2e pipeline Browserstack smoke tests rely on the demo server
-running at `https://www.threatdragon.com/` and the scripts use command `pnpm test:e2e-smokes`.
+running at `https://www.threatdragon.com/` and the scripts use command `npm run test:e2e-smokes`.
 Test and debug these pipelines using github rather than from the local command line.
 
 The browserstack configuration file is `browserstack.smokes.json`
@@ -122,10 +122,10 @@ along with the documentation pages at `http://localhost:8080/docs/`.
 
 To run these tests there first has to be a running web application, for example:
 
-- from directory `td.vue` invoke `pnpm dev`
+- from directory `td.vue` invoke `npm run dev`
 - wait for the web app to be accessible on `http://localhost:8080/`
 
-From a separate terminal in directory `td.vue` run command `pnpm test:e2e-smokes:local` .
+From a separate terminal in directory `td.vue` run command `npm run test:e2e-smokes:local` .
 
 This will open the cypress runner application.
 This suite of tests uses cypress configuration file `e2e.smokes.local.config.js`,
@@ -146,7 +146,7 @@ For local testing of this script, an instance of the docker file can be used to 
 - from top directory run `docker run -it --rm -p 3000:3000 -v $(pwd)/.env:/app/.env owasp-threat-dragon:dev`
 - check the web app is accessible on `http://localhost:3000/`
 - check docs pages are on `http://localhost:3000/docs/`
-- from directory `td.vue` invoke `pnpm test:e2e-ci-smokes`
+- from directory `td.vue` invoke `npm run test:e2e-ci-smokes`
 
 These tests are used by the CI pipeline to determine if the deploy was successful or not.
 
@@ -159,7 +159,7 @@ and that some scripts that run in headless mode specify a different browser (suc
 
 This is not a problem with the BrowserStack tests because here a specific browser is configured for each test run.
 
-## Writing E2E Tests
+## Writing e2e tests
 
 If you are new to cypress, we strongly suggest reading through the
 [Introduction to Cypress](https://docs.cypress.io/guides/core-concepts/introduction-to-cypress).
@@ -172,3 +172,7 @@ Note that
 - `td.vue/e2e.smokes.config.js` is used by the CI pipeline on merge/deploy
 - `td.vue/e2e.nightly.config.js` is for the scheduled daily tests
 - `td.vue/e2e.local.config.js` and `td.vue/e2e.smokes.local.config.js` are useful in a local development environment
+
+## Running Desktop e2e tests
+
+The desktop application has end-to-end tests that can be run using `npm run test:e2e:desktop` from `td.vue` directory.
