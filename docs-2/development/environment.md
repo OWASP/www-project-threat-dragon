@@ -183,7 +183,6 @@ ___
 
 ## Environment variable reference
 
-{:.table .table-striped}
 | Threat Dragon general variables | Description | Default |
 | --- | ----------- | ------- |
 | ENV_FILE | The location of a dotenv file, if dotenv is used. Exported as it needs to be accessed before the dotenv file is read | `.env` |
@@ -193,7 +192,6 @@ ___
 | PORT | Defines the listening port for Threat Dragon's server, and used by Heroku | `3000`|
 | SERVER_API_PROTOCOL | The protocol used between Threat Dragon's server and frontend, used by Heroku: `http` / `https` | `https` |
 
-{:.table .table-striped}
 | Back-end specific variables | Description | Default |
 | --- | ----------- | ------- |
 | ENCRYPTION_KEYS | The encryption keys used to encrypt any high risk data | |
@@ -209,7 +207,6 @@ ___
 **Note**: the JWT refresh signing key should be different from the JWT signing key as they are different tokens.
 A JWT is used as a refresh token because it is tamper resistant and provides user context.
 
-{:.table .table-striped}
 | Desktop specific variables | Description | Default |
 | --- | ----------- | ------- |
 | IS_TEST | Enabled during automated testing | false |

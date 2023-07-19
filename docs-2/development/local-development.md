@@ -49,7 +49,6 @@ The following run scripts have been standardized across all sub-projects.
 From the top level, each command should have a corresponding project-specific command
 in the format `<command>:<vue|server|desktop>`. As an example run from top-level:
 
-{:.table .table-striped}
 | Command | Description |
 | ------- | ----------- |
 | `npm build` | Builds the web-based project(s). |

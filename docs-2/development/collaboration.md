@@ -26,7 +26,6 @@ Variables will need to be URLEncoded.
 
 ### Git
 
-{:.table .table-striped}
 | Action | Link |
 |---|---|
 |View Threat Model|`/git/:provider/:repository/:branch/:threatmodel`|
@@ -38,7 +37,6 @@ Variables will need to be URLEncoded.
 While you might not be able to collaborate by sharing deep links when using the local session,
 this can still be helpful for reference:
 
-{:.table .table-striped}
 | Action | Link |
 |View Threat Model|`/local/:threatmodel`|
 |Edit Threat Model|`/local/:threatmodel/edit`|
