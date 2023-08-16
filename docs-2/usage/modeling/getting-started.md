@@ -26,28 +26,30 @@ Getting started with [Threat Dragon](http://owasp.org/www-project-threat-dragon)
 
 ### Using the Web application
 
-The Threat Dragon web variant stores its threat models in your GitHub repos.
-This is so that the models can stay close to the code they are modelling.
-Future versions will provide a deeper integration so watch this space but for now,
-when you login to Threat Dragon for the first time you will need to access Github.
-
 ![Login image]({{ '/docs-2/assets/images/start.png' | relative_url }}){: .image-left }
 
-Alternatively you can login to a local session which will store the models on yoiur local drive.
+The Threat Dragon web variant stores its threat models in your GitHub repos.
+This is so that the models can stay close to the code they are modelling.
+Alternatively you can login to a local session which will store the models on your local drive.
+
+Future versions will provide a deeper integration but for now
+when you login to Threat Dragon only Github access or local access is provided.
+
+![New model image]({{ '/docs-2/assets/images/newmodel.png' | relative_url }}){: .image-left }
 
 To get started with your threat model access the welcome page and select
 click on the **plus** area of the Welcome page.
-
-![New model image]({{ '/docs-2/assets/images/newmodel.png' | relative_url }}){: .image-left }
 
 You will then be presented with a list of your GitHub repositories.
 Pick the one where you want to store your new model.
 If you have more than 30 repos you might have to page through them until you find the one you want.
 
 Once you have picked your target repo, you will be asked to pick a branch.
-Again, if you have more than 30 branches you might need to page.
+Again, if you have more than 30 branches you might need to page through.
+
 When you pick a branch you will be taken to the threat model edit page
 where you can enter general information about your model.
+The name that you provide for the model will be used as the file name within the repository.
 
 ### Using the Desktop application
 
@@ -118,11 +120,11 @@ clicking on the **open** area on the Welcome page.
 You will be able to select a github repository and branch,
 and then presented with a list of models to make your selection.
 
+![Directory image]({{ '/docs-2/assets/images/directory.png' | relative_url }}){: .image-left }
+
 Note that Threat Dragon is fairly strict on where the threat models can be stored.
 The threat models must be under a parent directory called 'ThreatDragonModels'
 and the JSON file must then be stored in a sub-directory with the same name as the model.
-
-![Directory image]({{ '/docs-2/assets/images/directory.png' | relative_url }}){: .image-left }
 
 As an example, shown is a directory containing two models 'test-reports' and 'New Threat Model'
 under the directory 'ThreatDragonModels'.
@@ -149,10 +151,12 @@ elements and threats. Towards the bottom right of the page click on the **Report
 
 You can then customise the report to show or hide:
 
-* Out of scope model elements
 * Mitigated threats
 * Threat model diagrams
+* Out of scope model elements
+* Empty model elements
+* Threat Dragon logo
 
 On the desktop variant of Threat Dragon you can **Print** the report or **Save** it as a PDF.
-On the web variant, you can **Print** the report and then, on most browsers,
+On the web variant, you can **Print** the report and then on most browsers
 the print dialog allows you to save the report as a PDF.
