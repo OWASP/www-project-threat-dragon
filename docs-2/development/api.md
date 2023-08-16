@@ -20,6 +20,7 @@ APIs protected by authorisation, including threat model Create, Read, Update (bu
 
 | Path | Action | Description |
 | ---- | ---- | ---- |
+|      |      |      |
 | `/api/logout` | POST | Logout from provider when already authorised |
 | `/api/token/refresh` | POST | Refresh the access token |
 | `/api/threatmodel/repos` | GET | List repositories for the authorised user |
