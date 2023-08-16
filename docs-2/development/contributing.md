@@ -28,7 +28,7 @@ Clone and install the Threat Dragon repo:
 ```text
 git clone git@github.com:OWASP/threat-dragon.git
 cd threat-dragon
-pnpm install
+npm install
 ```
 
 After making any changes be sure to test them:

@@ -15,12 +15,10 @@ permalink: /docs-2/local-development/
 ## Quickstart
 
 1. Clone the repository: `git clone https://github.com/OWASP/threat-dragon.git`
-2. [Install pnpm](https://pnpm.io/installation) and use node 16
-3. Run `pnpm install`
-4. Configure your [environment]({{ '/docs-2/development-environment/' | relative_url }})
-5. Run `pnpm dev:server`
-6. In another terminal, run `pnpm dev:vue`
-7. Visit [http://localhost:8080](http://localhost:8080/)
+2. Configure your [environment]({{ '/docs-2/development-environment/' | relative_url }})
+3. Run `npm run dev:server`
+4. In another terminal, run `npm run dev:vue`
+5. Visit [http://localhost:8080](http://localhost:8080/)
 
 ## Coding style
 
@@ -30,22 +28,6 @@ We thought about using adopting [JavaScript Standard Style](https://github.com/s
 but the dropping of unnecessary semicolons was too strict for us.
 
 Indents are set to 4 for now, but this may change and we might go to a 2 space indentation sometime soon.
-
-## Dependencies
-
-### Pnpm
-
-Threat Dragon uses pnpm as a package manager.  You can install it by running `npm install -g pnpm`,
-or by following any of the [alternative installation methods](https://pnpm.io/installation).
-
-### NodeJs
-
-Threat Dragon uses nodejs and is developed against version 16.
-If you already have pnpm installed and do not have a node version manager,
-you can easily manage your node environment (version) commands from [pnpm](https://pnpm.io/cli/env).
-
-There are multiple ways of installing and managing versions of node,
-including [nvm](https://github.com/nvm-sh/nvm) and some others, the choice is yours!
 
 ## Running Locally
 
@@ -67,15 +49,14 @@ The following run scripts have been standardized across all sub-projects.
 From the top level, each command should have a corresponding project-specific command
 in the format `<command>:<vue|server|desktop>`. As an example run from top-level:
 
-{:.table .table-striped}
 | Command | Description |
 | ------- | ----------- |
-| `pnpm build` | Builds the web-based project(s). |
-| `pnpm dev` | Starts the development version of the project and watches for changes. *This requires using two different terminals.* Run `pnpm dev:vue` and in another terminal, `pnpm dev:server`. |
-| `pnpm start` | Starts the development version of the project(s) using [pm2](https://github.com/Unitech/pm2). *This only requires a single terminal*. |
-| `pnpm start:desktop` | Starts the development desktop version. |
-| `pnpm test:vue` | Runs the end-to-end tests in headless mode. |
-| `pnpm test` | Runs the unit tests for the project(s). |
+| `npm build` | Builds the web-based project(s). |
+| `npm run dev` | Starts the development version of the project and watches for changes. *This requires using two different terminals.* Run `npm run dev:vue` and in another terminal, `npm run dev:server`. |
+| `npm start` | Starts the development version of the project(s) using [pm2](https://github.com/Unitech/pm2). *This only requires a single terminal*. |
+| `npm run start:desktop` | Starts the development desktop version. |
+| `npm run test:vue` | Runs the end-to-end tests in headless mode. |
+| `npm test` | Runs the unit tests for the project(s). |
 
 ## Logs
 
@@ -84,9 +65,9 @@ Server logs `app.log` and  `audit.log` can be accessed from directory `td.server
 ## Desktop
 
 Threat Dragon uses electron to build install images for the desktop application, supporting Linux, MacOS and Windows.
-Build these using `pnpm build:desktop` from the top directory.
+Build these using `npm run build:desktop` from the top directory.
 
-During development launch the electron-based desktop application from the top directory: `pnpm start:desktop`.
+During development launch the electron-based desktop application from the top directory: `npm run start:desktop`.
 This runs the desktop application in development mode that will relaunch the application as changes are made.
 
 ## Docker

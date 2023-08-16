@@ -18,7 +18,6 @@ This API is used to access to threat models stored by repository providers, gith
 
 APIs protected by authorisation, including threat model Create, Read, Update (but no Delete):
 
-{:.table .table-light}
 | Path | Action | Description |
 | ---- | ---- | ---- |
 |      |      |      |
@@ -33,7 +32,6 @@ APIs protected by authorisation, including threat model Create, Read, Update (bu
 
 APIs with no authorisation:
 
-{:.table .table-light}
 | Path | Action | Description |
 | ---- | ---- | ---- |
 | `/` | GET | Provides the Threat Dragon Single Page Application |

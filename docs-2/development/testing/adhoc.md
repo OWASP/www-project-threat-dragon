@@ -15,9 +15,9 @@ permalink: /docs-2/adhoc/
 During development it can be convenient to check functionality of the front and back ends
 in an ad-hoc way which is not part of the unit and end-to-end tests.
 
-## Back-end server
+### Back-end server
 
-The web application express server can be run locally using command `pnpm start:server` from the top level directory.
+The web application express server can be run locally using command `npm run start:server` from the top level directory.
 The server will need access to environment variables as shown in
 [environment setup]({{ '/docs-2/development-environment/' | relative_url }}).
 
@@ -36,13 +36,13 @@ curl -v http://localhost:3000/api/threatmodel/organisation  \
      -H "Accept: application/json"
 ```
 
-## Desktop server
+### Desktop server
 
 The desktop application uses electron as the back-end server.
-Use command `pnpm start:desktop` to run the application in development mode,
+Use command `npm run start:desktop` to run the application in development mode,
 it will rebuild and launch when source files are changed.
 
-## Front-end application
+### Front-end application
 
 The front end application can be tested in most browsers along with the browser supplied developer tools.
 If the application is being tested in the desktop environment then electron uses
