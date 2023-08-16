@@ -24,17 +24,21 @@ Getting started with [Threat Dragon](http://owasp.org/www-project-threat-dragon)
 
 ## Create a new model
 
-### If using the Web application
+### Using the Web application
 
 The Threat Dragon web variant stores its threat models in your GitHub repos.
 This is so that the models can stay close to the code they are modelling.
 Future versions will provide a deeper integration so watch this space but for now,
 when you login to Threat Dragon for the first time you will need to access Github.
 
-![New model image]({{ '/docs-2/assets/images/newmodel.png' | relative_url }}){: .image-left }
+![Login image]({{ '/docs-2/assets/images/start.png' | relative_url }}){: .image-left }
+
+Alternatively you can login to a local session which will store the models on yoiur local drive.
 
 To get started with your threat model access the welcome page and select
 click on the **plus** area of the Welcome page.
+
+![New model image]({{ '/docs-2/assets/images/newmodel.png' | relative_url }}){: .image-left }
 
 You will then be presented with a list of your GitHub repositories.
 Pick the one where you want to store your new model.
@@ -45,7 +49,7 @@ Again, if you have more than 30 branches you might need to page.
 When you pick a branch you will be taken to the threat model edit page
 where you can enter general information about your model.
 
-### If using the Desktop application
+### Using the Desktop application
 
 The Threat Dragon desktop variant stores its threat models on your local filesystem.
 
@@ -111,8 +115,19 @@ diagrams, model details and threats as examples.
 If you have a repository that already has threat models, you can open them by
 clicking on the **open** area on the Welcome page.
 
-You will then be able to select a github repository and branch,
-then you will be presented with a list of models to make your selection.
+You will be able to select a github repository and branch,
+and then presented with a list of models to make your selection.
+
+Note that Threat Dragon is fairly strict on where the threat models can be stored.
+The threat models must be under a parent directory called 'ThreatDragonModels'
+and the JSON file must then be stored in a sub-directory with the same name as the model.
+
+![Directory image]({{ '/docs-2/assets/images/directory.png' | relative_url }}){: .image-left }
+
+As an example, shown is a directory containing two models 'test-reports' and 'New Threat Model'
+under the directory 'ThreatDragonModels'.
+This directory structure has been carried over from Threat Dragon versions 1.x,
+and in future it may become less strict.
 
 The demo models should give you some ideas on how to get started with your own model.
 
