@@ -64,7 +64,7 @@ permalink: /docs-2/
 
 #### [End to end testing](development/testing/e2e.md)
 
-#### [AdHoc testing](development/testing/adhoc.md)
+#### [Ad hoc testing](development/testing/adhoc.md)
 
 ### [Actions](development/actions.md)
 

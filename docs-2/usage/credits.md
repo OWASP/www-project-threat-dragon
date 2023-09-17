@@ -24,7 +24,7 @@ permalink: /docs-2/credits/
 
 [Mike Goodwin](mailto:mike.goodwin@owasp.org) is the originator, founder and leader of OWASP Threat Dragon.
 The [first commit](https://github.com/mike-goodwin/owasp-threat-dragon/commit/942bdff78191ef0eae40f7610b8397739749d8b8)
-to the original Threat Dragon repository was made on 9th October 2015, so that is Threat Dragon's birthday.
+to the original Threat Dragon repository was made on ninth October 2015, so that is Threat Dragon's birthday.
 
 Some years later we found that using JointJS for the diagramming library was not proving sustainable,
 so [Leo Reading](mailto:leo.reading@owasp.org) migrated the project to Vue/Express using the drawing library antv/x6.
@@ -41,4 +41,4 @@ We are very grateful to the talented artist
 DЯΣΛMƧVΣЯƧΣ has allowed use of the
 [original artwork](https://www.deviantart.com/thelonelyqueen/art/HW-Lil-Baby-Dragon-Lineart-300502156)
 on condition that it used only for 'not for profit' purposes - perfect for our open source project.
-Cupcake has a birthday as well: DЯΣΛMƧVΣЯƧΣ uploaded the original artwork on 7th May 2012.
+Cupcake has a birthday as well: DЯΣΛMƧVΣЯƧΣ uploaded the original artwork on seventh May 2012.

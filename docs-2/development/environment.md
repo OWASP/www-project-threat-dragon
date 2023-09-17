@@ -66,7 +66,7 @@ ___
 
 ## Generating Keys
 
-A random 32 bit hexidecimal string should be used for encryption.
+A random 32 bit hexadecimal string should be used for encryption.
 
 You want this to be randomly generated, and keep it a secret.
 
@@ -185,32 +185,34 @@ ___
 
 | Threat Dragon general variables | Description | Default |
 | --- | ----------- | ------- |
-| ENV_FILE | The location of a dotenv file, if dotenv is used. Exported as it needs to be accessed before the dotenv file is read | `.env` |
-| LOG_LEVEL | The server logging level: `audit` / `error` / `warn` / `info` / `debug` / `silly` | `info` |
-| LOG_MAX_FILE_SIZE | Maximum size of the back-end express server log file, in MB | `24` |
-| NODE_ENV | The node environment, typically `test`, `production` or `development`.  The 'secure' cookie flag is set only if running in `production` mode | |
-| PORT | Defines the listening port for Threat Dragon's server, and used by Heroku | `3000`|
-| SERVER_API_PROTOCOL | The protocol used between Threat Dragon's server and frontend, used by Heroku: `http` / `https` | `https` |
+| `ENV_FILE` | The location of a dotenv file, if dotenv is used. Exported as it needs to be accessed before the dotenv file is read | `.env` |
+| `LOG_LEVEL` | The server logging level: `audit` / `error` / `warn` / `info` / `debug` / `silly` | `info` |
+| `LOG_MAX_FILE_SIZE` | Maximum size of the back-end express server log file, in MB | `24` |
+| `NODE_ENV` | The node environment, typically `test`, `production` or `development`.  The 'secure' cookie flag is set only if running in `production` mode | |
+| `PORT` | Defines the listening port for Threat Dragon's server, and used by Heroku | `3000`|
+| `SERVER_API_PROTOCOL` | The protocol used between Threat Dragon's server and frontend, used by Heroku: `http` / `https` | `https` |
 
 | Back-end specific variables | Description | Default |
 | --- | ----------- | ------- |
-| ENCRYPTION_KEYS | The encryption keys used to encrypt any high risk data | |
-| ENCRYPTION_JWT_SIGNING_KEY | The key used to sign JWTs | |
-| ENCRYPTION_JWT_REFRESH_SIGNING_KEY | The key used to sign refresh tokens. See below for rationale | |
-| GITHUB_CLIENT_ID | The client_id value for the GitHub OAuth app used for authentication | |
-| GITHUB_CLIENT_SECRET | The client_secret generated for the GitHub OAuth app used for authentication | |
-| GITHUB_SCOPE | Defines the github scope: `repo` to access both private and public repos or `public_repo` to access public repos only | `public_repo` |
-| GITHUB_ENTERPRISE_HOSTNAME | The fully qualified github enterprise instance hostname, e.g. github.example.com | |
-| GITHUB_ENTERPRISE_PORT | Optional if your github enterprise instance uses a nonstandard port | `443` |
-| GITHUB_ENTERPRISE_PROTOCOL | Optional if your github enterprise instance uses a nonstandard protocol | `https` |
+| `ENCRYPTION_KEYS` | The encryption keys used to encrypt any high risk data | |
+| `ENCRYPTION_JWT_SIGNING_KEY` | The key used to sign JWTs | |
+| `ENCRYPTION_JWT_REFRESH_SIGNING_KEY` | The key used to sign refresh tokens. See below for rationale | |
+| `GITHUB_CLIENT_ID` | The client_id value for the GitHub OAuth app used for authentication | |
+| `GITHUB_CLIENT_SECRET` | The client_secret generated for the GitHub OAuth app used for authentication | |
+| `GITHUB_SCOPE` | Defines the github scope: `repo` to access both private and public repos or `public_repo` to access public repos only | `public_repo` |
+| `GITHUB_ENTERPRISE_HOSTNAME` | The fully qualified github enterprise instance hostname, e.g. github.example.com | |
+| `GITHUB_ENTERPRISE_PORT` | Optional if your github enterprise instance uses a nonstandard port | `443` |
+| `GITHUB_ENTERPRISE_PROTOCOL` | Optional if your github enterprise instance uses a nonstandard protocol | `https` |
+| `GITHUB_USE_SEARCH` | Optional, if true it will only display the github repos matching the search query below| `false`|
+| `GITHUB_SEARCH_QUERY` | Optionally specifies the search query to use when searching for github repos for Threat Dragon | |
 
 **Note**: the JWT refresh signing key should be different from the JWT signing key as they are different tokens.
 A JWT is used as a refresh token because it is tamper resistant and provides user context.
 
 | Desktop specific variables | Description | Default |
 | --- | ----------- | ------- |
-| IS_TEST | Enabled during automated testing | false |
-| WEBPACK_DEV_SERVER_URL | Electron load URL when in development mode | `http://localhost:3000/` |
+| `IS_TEST` | Enabled during automated testing | false |
+| `WEBPACK_DEV_SERVER_URL` | Electron load URL when in development mode | `http://localhost:3000/` |
 
 **Note**: the desktop environment variable WEBPACK_DEV_SERVER_URL determines the mode;
 either development/test mode if defined or production mode if not defined

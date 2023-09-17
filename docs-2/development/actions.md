@@ -37,7 +37,7 @@ it is only run against the latest deployed version (from main) once per day.
 
 ## Housekeeping
 
-The house-keeping workflow runsa nightly, and will:
+The house-keeping workflow runs a nightly workflow, and will:
 
 * delete stale actions
 * check links across the documentation
