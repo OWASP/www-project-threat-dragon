@@ -30,7 +30,7 @@ This is also shown in the docker-compose section of the environment documentatio
 
 ### Running the application
 
-Once your environment variables are set up, you can either build the image yourself or pull from Dockerhub.
+Once your environment variables are set up, you can either build the image yourself or pull from dockerhub.
 
 #### Building
 
@@ -67,7 +67,7 @@ Here we have mapped the container to port 8080, so Threat Dragon is accessible f
 
 #### Debugging
 
-Console output can be displayed usig the `-it` options instead of `-d`,
+Console output can be displayed using the `-it` options instead of `-d`,
 for example `docker run -it -p 8080:3000 -v $(pwd)/.env:/app/.env owasp-threat-dragon:local`.
 
 If the application is not loading from the expected address and port,

@@ -11,6 +11,8 @@
 !.gitignore
 !.lycheeignore
 !.markdownlint.yaml
+!.spellcheck.yaml
+!.wordlist.txt
 
 # allow markdown and the assets
 !*.md

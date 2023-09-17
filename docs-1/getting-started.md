@@ -56,7 +56,7 @@ where you can enter general information about your model.
 The Threat Dragon desktop variant stores its threat models on your local filesystem.
 To get started with your threat model start  the applications and from the welcome page
 select on the **plus** area, or pull down menu 'New'. You will then need to save
-the model file - we did ot this way so that you can nbe sure your model can be saved.
+the model file - we did to this way so that you can be sure your model can be saved.
 
 You will then be taken straight to the threat model edit page where you
 can enter general information about your model.

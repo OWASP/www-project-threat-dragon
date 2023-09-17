@@ -100,11 +100,11 @@ To check the configuration file `e2e.nightly.config.js` run this command from di
 
 ### BrowserStack test:e2e-smokes
 
-The e2e pipeline Browserstack smoke tests rely on the demo server
+The e2e pipeline BrowserStack smoke tests rely on the demo server
 running at `https://www.threatdragon.com/` and the scripts use command `npm run test:e2e-smokes`.
 Test and debug these pipelines using github rather than from the local command line.
 
-The browserstack configuration file is `browserstack.smokes.json`
+The BrowserStack configuration file is `browserstack.smokes.json`
 which uses cypress configuration file `e2e.smokes.config.js`
 and the suite of tests is loaded from `tests/e2e/specs/smokes`.
 
@@ -116,7 +116,7 @@ To check the configuration file `e2e.smokes.config.js` run this command from dir
 ### Run test:e2e-smokes:local
 
 This suite of tests is similar to `test:e2e-smokes`
-but does not use browserstack for various browser tests - just chrome.
+but does not use BrowserStack for various browser tests - just chrome.
 The target is an existing application running at `http://localhost:8080/`
 along with the documentation pages at `http://localhost:8080/docs/`.
 

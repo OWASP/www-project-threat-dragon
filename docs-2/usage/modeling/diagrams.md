@@ -26,21 +26,25 @@ To delete an element, first select it and then click on the red icon in the elem
 
 ![the element delete tool]({{ '/docs-2/assets/images/delete.png' | relative_url }})
 
+These components can be resized and can be dragged to change the aspect ratio.
+Multiple components can be selected using a mouse control-click or by dragging a selection box.
+
 ## Data flows and trust boundaries
 
 Data flows and trust boundaries can be added to the diagram by clicking their shape
 in the stencil on the left side of the diagram editor.
+Trust boundaries can be in the form of a box or a curve.
 
-Once added, the data flow end points can be dragged around the diagram.
+A data flow or a trust boundary can be selected by double clicking, or by clicking on the end arrows.
+Once selected you can edit its properties and add threats to it.
+
+The data flow defaults to unidirectional and can be changed to bidirectional by editing the properties.
 To connect the end of a data flow to a diagram element drag one of its ends onto the element.
 
 Extra vertices can be added by clicking at some point on the line.
 These new vertices can also be dragged to position the data flow or trust boundary.
 
-A data flow can be selected by clicking the Link options tool that appears when you select the link.
-Once selected you can edit its properties or add threats to it.
-
-Data flows and trust boundaries can be deleted by clicking the red icon that appears selected.
+Both data flows and trust boundaries can be deleted by clicking the red icon that appears after it has been selected.
 
 ![flow remove tool]({{ '/docs-2/assets/images/deleteflow.png' | relative_url }})
 
