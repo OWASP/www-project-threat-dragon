@@ -203,6 +203,8 @@ ___
 | `GITHUB_ENTERPRISE_HOSTNAME` | The fully qualified github enterprise instance hostname, e.g. github.example.com | |
 | `GITHUB_ENTERPRISE_PORT` | Optional if your github enterprise instance uses a nonstandard port | `443` |
 | `GITHUB_ENTERPRISE_PROTOCOL` | Optional if your github enterprise instance uses a nonstandard protocol | `https` |
+| `GITHUB_USE_SEARCH` | Optional, if true it will only display the github repos matching the search query below| `false`|
+| `GITHUB_SEARCH_QUERY` | Optionally specifies the search query to use when searching for github repos for Threat Dragon | |
 
 **Note**: the JWT refresh signing key should be different from the JWT signing key as they are different tokens.
 A JWT is used as a refresh token because it is tamper resistant and provides user context.
