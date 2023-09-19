@@ -10,7 +10,9 @@ tags: threatdragon
 
 Release | Date | Location | Comments
 ------- | ---- | -------- | --------
-v2.0.2 | Apr 2023 | [github](https://github.com/OWASP/threat-dragon/releases/tag/v2.0.1) | collection of bug fixes; PDF report button, threat IDs fixed, reporting expanded
+v2.0.6 | Sep 2023 | [github](https://github.com/OWASP/threat-dragon/releases/tag/v2.0.6) | ability to filter Github repos; translation for Finnish; improve data flow selection and handling
+v2.0.4 | Aug 2023 | [github](https://github.com/OWASP/threat-dragon/releases/tag/v2.0.4) | various bug fixes;
+v2.0.2 | Apr 2023 | [github](https://github.com/OWASP/threat-dragon/releases/tag/v2.0.2) | collection of bug fixes; PDF report button, threat IDs fixed, reporting expanded
 v2.0.0 | Feb 2023 | [github](https://github.com/OWASP/threat-dragon/releases/tag/v2.0.0) | substantial rewrite for new drawing library [@antv/g6](https://www.npmjs.com/package/@antv/g6)
 v1.6.1 | Mar 2022 | [github](https://github.com/OWASP/threat-dragon/releases/tag/v1.6.1) | Docs now moved to the new site<br>Last release of 1.x before version 2.0
 v1.6.0 | Dec 2021 | [github](https://github.com/OWASP/threat-dragon/releases/tag/v1.6.0) | Automated threat and context threat generation
