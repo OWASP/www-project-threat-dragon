@@ -10,7 +10,7 @@ tags: threatdragon
 
 Release | Date | Location | Comments
 ------- | ---- | -------- | --------
-v2.0.8 | Oct 2023 | [github][208] | diagram component properties correctly displayed when selecting new component 
+v2.0.8 | Oct 2023 | [github][208] | diagram component properties correctly displayed when selecting new component
 v2.0.7 | Sep 2023 | [github][207] | fix bug when selecting trust boundary curves
 v2.0.6 | Sep 2023 | [github][206] | ability to filter Github repos; translation for Finnish; improve data flow selection and handling
 v2.0.4 | Aug 2023 | [github][204] | various bug fixes;
