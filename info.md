@@ -16,10 +16,10 @@
 
 ### Downloads
 
-* Single page [web application](https://github.com/OWASP/threat-dragon/releases)
+* Single page [web application]https://github.com/OWASP/threat-dragon/releases/tag/v2.0.9
 * Docker [image](https://hub.docker.com/r/owasp/threat-dragon/tags?page=1&ordering=name)
 * Desktop installers for:
-* [Linux / MacOS / Windows](https://github.com/OWASP/threat-dragon/releases/tag/v2.0.8)
+* [Linux / MacOS / Windows](https://github.com/OWASP/threat-dragon/releases/tag/v2.0.9)
 
 ### Source
 
