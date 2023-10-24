@@ -9,6 +9,8 @@ tags: threatdragon
 
 ## FAQs
 
+* [Where are the arrows that allow me to create data flows?](https://github.com/OWASP/threat-dragon/wiki/FAQs#where-are-the-arrows-that-allow-me-to-create-dataflows)
+
 * [Why do the earlier releases come from Mike Goodwin's repo, not the OWASP repo?](https://github.com/OWASP/threat-dragon/wiki/FAQs#why-do-the-earlier-releases-come-from-mike-goodwins-repo-not-the-owasp-repo)
 
 * [I get failures when installing from source code](https://github.com/OWASP/threat-dragon/wiki/FAQs#i-get-failures-when-installing-from-source-code)
