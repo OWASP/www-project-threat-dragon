@@ -6,7 +6,7 @@ order: 3
 tags: threatdragon
 ---
 
-### Version 2.1: in progress
+### Version 2.2: in progress
 
 - [ ] provide an API for CI/CD pipelines
 - [ ] provide a CLI for scripting based on TD's existing [use of yargs](https://github.com/yargs/yargs)
@@ -20,6 +20,13 @@ tags: threatdragon
   - [ ]  Google Drive
   - [ ]  OneDrive
   - [ ]  Dropbox
+
+### Version 2.1: released October 2023
+
+Stable version of 2.x.x with bug fixes and usable diagram tools. Still not feature complete:
+
+* missing CLI for scripting based
+* missing automated threats (both by element and by OATS)
 
 ### Version 2.0: released February 2023
 

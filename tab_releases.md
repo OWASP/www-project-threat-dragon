@@ -10,6 +10,7 @@ tags: threatdragon
 
 Release | Date | Location | Comments
 ------- | ---- | -------- | --------
+v2.1.0 | Oct 2023 | [github][210] | desktop version provides guard advising of overwriting changes
 v2.0.9 | Oct 2023 | [github][209] | names for diagram data flow and trust boundary curves preserved when unselected
 v2.0.8 | Oct 2023 | [github][208] | diagram component properties correctly displayed when selecting new component
 v2.0.7 | Sep 2023 | [github][207] | fix bug when selecting trust boundary curves
@@ -58,3 +59,4 @@ v0.1.1-alpha | 14 Mar 2016 | [Web app][011] | alpha release
 [207]: https://github.com/OWASP/threat-dragon/releases/tag/v2.0.7
 [208]: https://github.com/OWASP/threat-dragon/releases/tag/v2.0.8
 [209]: https://github.com/OWASP/threat-dragon/releases/tag/v2.0.9
+[210]: https://github.com/OWASP/threat-dragon/releases/tag/v2.1.0
