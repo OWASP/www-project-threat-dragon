@@ -25,8 +25,8 @@ tags: threatdragon
 
 Stable version of 2.x.x with bug fixes and usable diagram tools. Still not feature complete:
 
-* missing CLI for scripting based
-* missing automated threats (both by element and by OATS)
+- missing CLI for scripting based
+- missing automated threats (both by element and by OATS)
 
 ### Version 2.0: released February 2023
 
