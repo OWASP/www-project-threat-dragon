@@ -157,6 +157,7 @@ Jira
 Libre
 LINDDUN
 PLOT4ai
+ai
 Linkability
 mitigations
 OpenDocument
