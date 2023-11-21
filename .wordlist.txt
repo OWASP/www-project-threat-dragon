@@ -156,6 +156,7 @@ ini
 Jira
 Libre
 LINDDUN
+PLOT4ai
 Linkability
 mitigations
 OpenDocument
