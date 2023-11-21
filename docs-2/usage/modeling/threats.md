@@ -45,16 +45,16 @@ For example an Actor element is more likely to have Spoofing and Repudiation thr
 associated with it, and less likely to be vulnerable to
 Tampering, Information disclosure, Denial of service or Elevation of privileges.
 
-According to the type of diagram (STRIDE, LINDDUN and CIA),
+According to the type of diagram (STRIDE, LINDDUN, CIA, DIE and PLOT4ai),
 Threat Dragon will restrict the threat type according to  the element chosen.
 If you find this too restrictive then change the diagram type to 'Generic'
 and this will allow you to select any threat type for any type of element;
-you can always change the diagram back to STRIDE, LINDDUN or CIA later on.
+you can always change the diagram back to STRIDE, LINDDUN, CIA, DIE or PLOT4ai later on.
 
-## STRIDE, LINDDUN, CIA and Generic
+## STRIDE, LINDDUN, CIA, DIE, PLOT4ai and Generic
 
 The threat model can have different types of threats added to it according to the diagram methodology.
-Currently the supported methodologies are STRIDE, LINDDUN and CIA;
+Currently the supported methodologies are STRIDE, LINDDUN, CIA, DIE and PLOT4ai;
 these are selected as part of the diagram attributes when editing the model.
 A 'Generic' methodology is provided so that you can select any type of threat.
 

@@ -15,7 +15,8 @@ At its best, threat modeling is especially good for:
 * Flushing out security requirements and user stories
 
 OWASP Threat Dragon provides a free, open-source, threat modeling application that is powerful and easy to use.
-It can be used for categorising threats using STRIDE, [LINDDUN](https://www.linddun.org/) and CIA.
+It can be used for categorising threats using STRIDE, [LINDDUN](https://www.linddun.org/) CIA, DIE and
+[PLOT4ai](https://plot4.ai/).
 The key areas of focus for the tool is:
 
 * Simplicity - you can install and start using Threat Dragon very quickly
