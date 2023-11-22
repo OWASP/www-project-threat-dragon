@@ -34,22 +34,12 @@ Enter the details for your threat in the threat dialog,
 such as the remediation applied or the reason it has been marked N/A.
 Values for 'Title' and 'Threat Type' are always required.
 
+Note that some threat categorization methodologies restrict the threats that can be selected;
+see [Threats by Element](#threats-by-element) for a description of this feature.
+
 When you are done hit **Apply** and the new threat will be appear lower right.
 
 Click on the threat in the lower right collection to edit again or edit an existing threat.
-
-### Threats by element
-
-Some threat categories are associated with some diagram elements more than others.
-For example an Actor element is more likely to have Spoofing and Repudiation threats
-associated with it, and less likely to be vulnerable to
-Tampering, Information disclosure, Denial of service or Elevation of privileges.
-
-According to the type of diagram (STRIDE, LINDDUN, CIA, DIE and PLOT4ai),
-Threat Dragon will restrict the threat type according to  the element chosen.
-If you find this too restrictive then change the diagram type to 'Generic'
-and this will allow you to select any threat type for any type of element;
-you can always change the diagram back to STRIDE, LINDDUN, CIA, DIE or PLOT4ai later on.
 
 ## STRIDE, LINDDUN, CIA, DIE, PLOT4ai and Generic
 
@@ -67,3 +57,46 @@ then the CIA threat is still in the model and can be edited as before.
 In addition if LINDDUN threats are added and then the model is changed back to CIA
 then both LINDDUN and CIA threats are in the model and both types can be edited.
 Of course, same goes for STRIDE and so on.
+
+### Threats by element
+
+Some threat categories are associated with some diagram elements more than others.
+For example an Actor element is more likely to have Spoofing and Repudiation threats
+associated with it, and less likely to be vulnerable to
+Tampering, Information disclosure, Denial of service or Elevation of privileges.
+
+According to the type of diagram (STRIDE, LINDDUN, CIA, DIE and PLOT4ai),
+Threat Dragon will restrict the threat type according to  the element chosen.
+If you find this too restrictive then change the diagram type to 'Generic'
+and this will allow you to select any threat type for any type of element;
+you can always change the diagram back to STRIDE, LINDDUN, CIA, DIE or PLOT4ai later on.
+
+#### STRIDE threats by element
+
+```
+          S | T | R | I | D | E
+ACTOR   | X |   | X |   |   |
+STORE   |   | X | X | X | X |
+PROCESS | X | X | X | X | X | X
+FLOW    |   | X |   | X | X |
+```
+
+#### LINDDUN threats by element
+
+```
+          L | I | N | D | D | U | N
+ACTOR   | X | X |   |   |   | X |
+STORE   | X | X | X | X | X |   | X
+FLOW    | X | X | X | X | X |   | X
+PROCESS | X | X | X | X | X |   | X
+```
+
+#### PLOT4ai threats by element
+
+```
+          T | A | I | S | S | U | E | N
+ACTOR   |   | X | X | X | X | X | X |
+STORE   | X | X | X | X |   |   |   | X
+FLOW    | X |   | X | X |   |   |   | X
+PROCESS | X | X | X | X |   |   |   | X
+```
