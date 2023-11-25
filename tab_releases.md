@@ -10,6 +10,7 @@ tags: threatdragon
 
 Release | Date | Location | Comments
 ------- | ---- | -------- | --------
+v2.1.2 | Nov 2023 | [github][212] | add Bitbucket access, PLOT4ai threats and bug-fix for data-flows overwriting properties
 v2.1.1 | Oct 2023 | [github][211] | desktop version provides guard advising of overwriting threats changes
 v2.1.0 | Oct 2023 | [github][210] | desktop version provides guard advising of overwriting diagram changes
 v2.0.9 | Oct 2023 | [github][209] | names for diagram data flow and trust boundary curves preserved when unselected
@@ -62,3 +63,4 @@ v0.1.1-alpha | 14 Mar 2016 | [Web app][011] | alpha release
 [209]: https://github.com/OWASP/threat-dragon/releases/tag/v2.0.9
 [210]: https://github.com/OWASP/threat-dragon/releases/tag/v2.1.0
 [211]: https://github.com/OWASP/threat-dragon/releases/tag/v2.1.1
+[212]: https://github.com/OWASP/threat-dragon/releases/tag/v2.1.2

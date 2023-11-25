@@ -73,7 +73,7 @@ you can always change the diagram back to STRIDE, LINDDUN, CIA, DIE or PLOT4ai l
 
 #### STRIDE threats by element
 
-```
+```text
           S | T | R | I | D | E
 ACTOR   | X |   | X |   |   |
 STORE   |   | X | X | X | X |
@@ -83,7 +83,7 @@ FLOW    |   | X |   | X | X |
 
 #### LINDDUN threats by element
 
-```
+```text
           L | I | N | D | D | U | N
 ACTOR   | X | X |   |   |   | X |
 STORE   | X | X | X | X | X |   | X
@@ -93,7 +93,7 @@ PROCESS | X | X | X | X | X |   | X
 
 #### PLOT4ai threats by element
 
-```
+```text
           T | A | I | S | S | U | E | N
 ACTOR   |   | X | X | X | X | X | X |
 STORE   | X | X | X | X |   |   |   | X
