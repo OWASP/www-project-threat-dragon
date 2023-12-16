@@ -14,33 +14,35 @@ permalink: /docs-2/install-environment/
 
 ### Create A GitHub OAuth Application
 
-This web application uses GitHub OAuth applications as the authentication mechanism.
+The Threat Dragon web application uses [GitHub OAuth Applications][githuboauth] as the mechanism to access
+the GitHub API of the users repositories.
+A GitHub OAuth Application needs to be created for use by the web app to access github,
+and the GitHub OAuth Application provides the values `GITHUB_CLIENT_ID` and `GITHUB_CLIENT_SECRET`.
 
-To create a GitHub OAuth Application:
+To create a GitHub OAuth Application you need to know the port number and domain of the Threat Dragon application.
+Here port number 8080 is being used along with 'localhost'.
 
-1. Log into your GitHub account, go to `Settings -> 'Developer settings' -> 'OAuth Apps' -> 'New OAuth App'`
-2. Fill out the form with the following:
-    1. **Application name**: A unique identifier for the application.
-        This is not critical, we suggest something like 'Threat Dragon'
-    2. **Homepage URL**: For local development, use `http://localhost:8080`
-        If you configure Threat Dragon to listen on another port, use that port here instead of 8080
-    3. **Application description**: A description for your OAuth app.
-        This is not critical, we suggest something like 'Threat Dragon for local development'
-    4. **Authorization callback URL**: `http://localhost:3000/api/oauth/return`
-        If you configure Threat Dragon's server away from the default port 3000,
-        be sure to use that port for the auth callback url
-3. Register the application, an [example screenshot](#github-oauth-app-screenshot) is at the bottom of this document
-4. Create a client_secret
-5. Note the values for Client ID and Client Secret. **Save these somewhere safe**
-    - Client ID will look similar to `01234567890123456789`
-    - Client Secret will look similar to `0123456789abcdef0123456789abcdef01234567`
-    - Treat these values like you would a password.
-        If these values get out, someone could gain full access to your GitHub account
+1. Log into your GitHub account and navigate to 'Settings' -> 'Developer settings' -> 'OAuth Apps' -> 'New OAuth App'
+2. Fill out the form with the following suggested content:
+    1. Application name: a unique identifier for the application.
+        This is not critical, something like 'Threat Dragon tests' will do
+    2. Homepage URL: local development so use `http://localhost:8080/#`
+    3. Application description: for example 'Threat Dragon testing for local development'
+    4. Authorization callback URL: for localhost and port 8080 use `http://localhost:8080/api/oauth/return`
+3. Proceed by agreeing to Register the application
+4. Initially there will be no Client secret; create a client secret via the 'Generate a new client secret' button
+5. Note the values for both the Client ID and the Client Secret, **save these somewhere safe**
+    1. Client ID will be 20 hexadecimal (10 byte) characters, for example `deadbeef0123456789aa`
+    2. Client Secret will be 40 hexadecimal characters, for example `deadbeef0123456789abcdef01234567deadbeef`
+    3. Treat these values with the same security as a password; they provide access to your GitHub account
 
-___
+The Threat Dragon server can now be supplied with the values:
 
-### Github OAuth App Screenshot
+- `GITHUB_CLIENT_ID='deadbeef0123456789aa'`
+- `GITHUB_CLIENT_SECRET='deadbeef0123456789abcdef01234567deadbeef'`
 
-Example screenshot of registering a new OAuth application:
+Example of registering a new OAuth application:
 
-![Register new OAuth application]({{ '/docs-2/assets/images/register-new-OAuth-application.png' | relative_url }})
+![New GitHub OAuth Application]({{ '/docs-2/assets/images/github-oauth-app.png' | relative_url }})
+
+[githuboauth]: https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app
