@@ -237,6 +237,6 @@ ___
 
 ## Github OAuth App Screenshot
 
-Example screenshot of registering a new OAuth application:
+Example of registering a new OAuth application:
 
-![Register new OAuth application]({{ '/docs-2/assets/images/register-new-OAuth-application.png' | relative_url }})
+![New GitHub OAuth Application]({{ '/docs-2/assets/images/github-oauth-app.png' | relative_url }})
