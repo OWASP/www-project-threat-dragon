@@ -33,7 +33,7 @@ ___
 
 ___
 
-## Create A GitHub OAuth Application
+### Create A GitHub OAuth Application
 
 This web application uses GitHub OAuth applications as the authentication mechanism.
 There is [work](https://github.com/OWASP/threat-dragon/issues/1)
@@ -64,17 +64,17 @@ To create a GitHub OAuth Application:
 
 ___
 
-## Generating Keys
+### Generating Keys
 
-A random 32 bit hexadecimal string should be used for encryption.
+A random 16 byte (32 character, 256 bit) hexadecimal string should be used for encryption,
+which needs to be randomly generated and kept secret.
+With openssl installed use this command to generate a new 256 bit key: `openssl rand -hex 16`
 
-You want this to be randomly generated, and keep it a secret.
+This command can also be used to generate JWT signing keys.
 
-If you have openssl installed, you can use this command to generate a new secret: `openssl rand -hex 16`
-[express-session](https://github.com/expressjs/session#readme)
-has some good advice on managing and rotating encryption keys.
+The Express server documentation on [express-session](https://github.com/expressjs/session#readme)
+has advice on managing and rotating encryption keys.
 
-A similar method could be used to generate JWT signing keys.
 ___
 
 ## Config Via DotEnv
@@ -98,8 +98,8 @@ ___
 The application will throw an error if a required environment variable is missing during application start:
 
 ```text
-GITHUB_CLIENT_ID is a required property.  Threat Dragon server cannot start without it.
-Please see docs/development/environment.md for more information
+ENCRYPTION_KEYS is a required property.  Threat Dragon server cannot start without it.
+Refer to development/environment.md for more information
 ```
 
 ___
@@ -184,38 +184,55 @@ ___
 ## Environment variable reference
 
 | Threat Dragon general variables | Description | Default |
-| --- | ----------- | ------- |
+| --- | --- | --- |
 | `ENV_FILE` | The location of a dotenv file, if dotenv is used. Exported as it needs to be accessed before the dotenv file is read | `.env` |
-| `LOG_LEVEL` | The server logging level: `audit` / `error` / `warn` / `info` / `debug` / `silly` | `info` |
+| `LOG_LEVEL` | The server logging level: `audit` / `error` / `warn` / `info` / `debug` / `silly` | `warn` |
 | `LOG_MAX_FILE_SIZE` | Maximum size of the back-end express server log file, in MB | `24` |
-| `NODE_ENV` | The node environment, typically `test`, `production` or `development`.  The 'secure' cookie flag is set only if running in `production` mode | |
+| `NODE_ENV` | Optional run mode; typically 'test', 'production' or 'development' | `production` |
 | `PORT` | Defines the listening port for Threat Dragon's server, and used by Heroku | `3000`|
 | `SERVER_API_PROTOCOL` | The protocol used between Threat Dragon's server and frontend, used by Heroku: `http` / `https` | `https` |
 
+The secure cookie flag is set only if running in 'production' mode.
+
+| Desktop specific variables | Description | Default |
+| --- | --- | --- |
+| `IS_TEST` | Enabled during automated testing | false |
+| `WEBPACK_DEV_SERVER_URL` | Electron load URL when in development mode | |
+
+The desktop environment variable WEBPACK_DEV_SERVER_URL determines the mode for webpack;
+either development/test mode if defined (for example `http://localhost:3000/`) or production mode if not defined.
+
 | Back-end specific variables | Description | Default |
-| --- | ----------- | ------- |
+| --- | --- | --- |
 | `ENCRYPTION_KEYS` | The encryption keys used to encrypt any high risk data | |
 | `ENCRYPTION_JWT_SIGNING_KEY` | The key used to sign JWTs | |
-| `ENCRYPTION_JWT_REFRESH_SIGNING_KEY` | The key used to sign refresh tokens. See below for rationale | |
-| `GITHUB_CLIENT_ID` | The client_id value for the GitHub OAuth app used for authentication | |
-| `GITHUB_CLIENT_SECRET` | The client_secret generated for the GitHub OAuth app used for authentication | |
-| `GITHUB_SCOPE` | Defines the github scope: `repo` to access both private and public repos or `public_repo` to access public repos only | `public_repo` |
-| `GITHUB_ENTERPRISE_HOSTNAME` | The fully qualified github enterprise instance hostname, e.g. github.example.com | |
+| `ENCRYPTION_JWT_REFRESH_SIGNING_KEY` | The key used to sign refresh tokens | |
+
+**Note**: the JWT refresh signing key should be different from the JWT signing key as they are different tokens.
+A JWT is used as a refresh token because it is tamper resistant and provides user context.
+
+| Github specific variables | Description | Default |
+| --- | --- | --- |
+| `GITHUB_CLIENT_ID` | Optional client_id value for the GitHub OAuth app used for authentication | |
+| `GITHUB_CLIENT_SECRET` | Optional client_secret generated for the GitHub OAuth app used for authentication | |
+| `GITHUB_SCOPE` | Optional definition of scope: `repo` to access both private and public repos or `public_repo` to access public repos only | `public_repo` |
+| `GITHUB_ENTERPRISE_HOSTNAME` | Optional fully qualified github enterprise instance hostname, e.g. github.example.com | |
 | `GITHUB_ENTERPRISE_PORT` | Optional if your github enterprise instance uses a nonstandard port | `443` |
 | `GITHUB_ENTERPRISE_PROTOCOL` | Optional if your github enterprise instance uses a nonstandard protocol | `https` |
 | `GITHUB_USE_SEARCH` | Optional, if true it will only display the github repos matching the search query below| `false`|
 | `GITHUB_SEARCH_QUERY` | Optionally specifies the search query to use when searching for github repos for Threat Dragon | |
 
-**Note**: the JWT refresh signing key should be different from the JWT signing key as they are different tokens.
-A JWT is used as a refresh token because it is tamper resistant and provides user context.
+| Bitbucket specific variables | Description | Default |
+| --- | --- | --- |
+| `BITBUCKET_CLIENT_ID` | Optional client_id value for the GitHub OAuth app used for authentication | |
+| `BITBUCKET_CLIENT_SECRET` | Optional client_secret generated for the GitHub OAuth app used for authentication | |
+| `BITBUCKET_SCOPE` | Optional definition of scope: `repo` to access both private and public repos or `public_repo` to access public repos only | `public_repo` |
+| `BITBUCKET_ENTERPRISE_HOSTNAME` | Optional fully qualified github enterprise instance hostname, e.g. github.example.com | |
+| `BITBUCKET_ENTERPRISE_PORT` | Optional if your github enterprise instance uses a nonstandard port | `443` |
+| `BITBUCKET_ENTERPRISE_PROTOCOL` | Optional if your github enterprise instance uses a nonstandard protocol | `https` |
+| `BITBUCKET_USE_SEARCH` | Optional, if true it will only display the github repos matching the search query below| `false`|
+| `BITBUCKET_SEARCH_QUERY` | Optionally specifies the search query to use when searching for github repos for Threat Dragon | |
 
-| Desktop specific variables | Description | Default |
-| --- | ----------- | ------- |
-| `IS_TEST` | Enabled during automated testing | false |
-| `WEBPACK_DEV_SERVER_URL` | Electron load URL when in development mode | `http://localhost:3000/` |
-
-**Note**: the desktop environment variable WEBPACK_DEV_SERVER_URL determines the mode;
-either development/test mode if defined or production mode if not defined
 ___
 
 ## Github OAuth App Screenshot

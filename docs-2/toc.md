@@ -66,6 +66,8 @@ permalink: /docs-2/
 
 #### [Ad hoc testing](development/testing/adhoc.md)
 
+#### [Github repo access](development/testing/github.md)
+
 ### [Actions](development/actions.md)
 
 ### Trust

@@ -67,6 +67,9 @@ docs:
 - title: 'Testing: AdHoc testing'
   url: adhoc
 
+- title: 'Testing: Github repo access'
+  url: github-repo
+
 - title: 'Actions'
   url: pipeline-actions
 
