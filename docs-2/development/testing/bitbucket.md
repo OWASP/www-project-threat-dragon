@@ -1,10 +1,10 @@
 ---
 
-title: Github repo testing
+title: Bitbucket repo testing
 layout: col-document
 tags: threatdragon
 document: Threat Dragon version 2.0
-permalink: /docs-2/github-repo/
+permalink: /docs-2/bitbucket-repo/
 
 ---
 
@@ -12,12 +12,14 @@ permalink: /docs-2/github-repo/
 
 ## [OWASP](https://www.owasp.org) Threat Dragon
 
-### Github repository access
+### Bitbucket repository access
 
-This page is a step by step explanation of how to configure the Threat Dragon Web App for github access.
+This page is a step by step explanation of how to configure the Threat Dragon Web App for access to Atlassian Bitbucket.
 Most of these steps assume that the Threat Dragon web application is being used for learning
 or testing purposes, if it is in a production environment then ensure that full security controls are in place
 for any public accessible or sensitive use.
+
+Note that Bitbucket access is for a specific workspace, in contrast to the much wider GitHub access.
 
 #### Decide on configuration
 
@@ -36,6 +38,14 @@ Server API protocol - this would be set to HTTPS in production, but during devel
 
 - `SERVER_API_PROTOCOL='http'`
 
+Decide which Bitbucket repository workspace is to be accessed, and what scope to apply.
+For the purposes of this testing a bitbucket repo has been created at `https://bitbucket.org/threat-dragon-test/`,
+which gives the workspace name as 'threat-dragon-test'.
+Set the workspace name to 'threat-dragon-test' and the scope to 'repository:write' using:
+
+- `BITBUCKET_SCOPE='repository:write'`
+- `BITBUCKET_WORKSPACE='threat-dragon-test'`
+
 Create three new and different keys for encryption, JWT and JWT-refresh using `openssl rand -hex 16` for 256 bit keys.
 Do not actually use these keys as shown, but here are examples:
 
@@ -43,39 +53,46 @@ Do not actually use these keys as shown, but here are examples:
 - `ENCRYPTION_JWT_SIGNING_KEY='deadbeef112233445566778899aabbcc'`
 - `ENCRYPTION_KEYS='[{"isPrimary": true, "id": 0, "value": "deadbeef2233445566778899aabbccdd"}]'`
 
-#### Web App GitHub Access
+#### Web App Bitbucket Access
 
-The Threat Dragon web application uses [GitHub OAuth Applications][githuboauth] as the mechanism to access
-the GitHub API of the users repositories.
-A GitHub OAuth Application needs to be created for use by the web app to access github,
-and the GitHub OAuth Application provides the values `GITHUB_CLIENT_ID` and `GITHUB_CLIENT_SECRET`.
+The Threat Dragon web application uses an [Atlassian OAuth consumer][githuboauth] as the mechanism to access
+the Bitbucket API for the given repository workspace.
+An OAuth consumer needs to be created for use by the web app to access Bitbucket,
+and this consumer provides the values `BITBUCKET_CLIENT_ID` and `BITBUCKET_CLIENT_SECRET`.
 
 To create a GitHub OAuth Application you need to know the port number and domain of the Threat Dragon application.
 Here port number 8080 is being used (a decision made in the previous section) and as it is being run locally
 then the domain will probably be 'localhost'.
 
-1. Log into your GitHub account and navigate to 'Settings' -> 'Developer settings' -> 'OAuth Apps' -> 'New OAuth App'
-2. Fill out the form with the following suggested content:
-    1. Application name: a unique identifier for the application.
-        This is not critical, something like 'Threat Dragon tests' will do
-    2. Homepage URL: local development so use `http://localhost:8080/#`
-    3. Application description: for example 'Threat Dragon testing for local development'
-    4. Authorization callback URL: for localhost and port 8080 use `http://localhost:8080/api/oauth/return`
-3. Proceed by agreeing to Register the application
-4. Initially there will be no Client secret; create a client secret via the 'Generate a new client secret' button
-5. Note the values for both the Client ID and the Client Secret, **save these somewhere secure**
-    1. Client ID will be 20 hexadecimal (10 byte) characters, for example `deadbeef0123456789aa`
-    2. Client Secret will be 40 hexadecimal characters, for example `deadbeef0123456789abcdef01234567deadbeef`
-    3. Treat these values with the same security as a password; they provide access to your GitHub account
+Log into your Bitbucket account and within the  workspace navigate to
+'Settings' (the cog) -> 'Workspace Settings' -> 'Apps and Features' -> 'OAuth consumers' -> 'Add consumer'
 
-The GitHub OAuth Application is now ready for use by the Threat Dragon server with values:
+Fill out the form with the following suggested content:
 
-- `GITHUB_CLIENT_ID='deadbeef0123456789aa'`
-- `GITHUB_CLIENT_SECRET='deadbeef0123456789abcdef01234567deadbeef'`
+- Name: a unique identifier for the application. This is not critical, something like 'Threat Dragon testing' will do
+- Description: for example 'Threat Dragon testing for local development'
+- Callback URL: for localhost and port 8080 use `http://localhost:8080/api/oauth/return`
+- Permissions: as a minimum Read-Only for the Account and Read/Write for Repositories, Projects and Workplace Membership
+- Proceed by saving the OAuth consumer
 
-Example of registering a new OAuth application:
+Note the displayed values for both the Key and the Secret and **save these somewhere secure**.
+Treat these values with the same security as a password; they provide access to your Bitbucket account
 
-![New GitHub OAuth Application]({{ '/docs-2/assets/images/github-oauth-app.png' | relative_url }})
+- Key will be 20 hexadecimal (10 byte) characters, for example `deadbeef0123456789aa` used for `BITBUCKET_CLIENT_ID`
+- Secret will be 32 hexadecimal characters, for example `deadbeef0123456789abcdefdeadbeef` used for `BITBUCKET_CLIENT_SECRET`
+
+The Bitbucket OAuth consumer is now ready for use by the Threat Dragon server with values:
+
+- `BITBUCKET_CLIENT_ID='deadbeef0123456789aa'`
+- `BITBUCKET_CLIENT_SECRET='deadbeef0123456789abcdefdeadbeef'`
+
+Example of registering a new OAuth consumer:
+
+![New Bitbucket OAuth consumer]({{ '/docs-2/assets/images/bitbucket-oauth-consumer.png' | relative_url }})
+
+And providing a set of minimal permissions for the OAuth consumer:
+
+![Bitbucket OAuth permissions]({{ '/docs-2/assets/images/bitbucket-oauth-permissions.png' | relative_url }})
 
 #### Run from command line
 
@@ -99,8 +116,10 @@ and also have the server logs printed to the console, so the docker parameters `
 ```text
 docker run -it --rm \
 -p 8080:3000 \
--e GITHUB_CLIENT_ID='deadbeef0123456789aa' \
--e GITHUB_CLIENT_SECRET='deadbeef0123456789abcdef01234567deadbeef' \
+-e BITBUCKET_CLIENT_ID='deadbeef0123456789aa' \
+-e BITBUCKET_CLIENT_SECRET='deadbeef0123456789abcdefdeadbeef' \
+-e BITBUCKET_SCOPE='repository:write' \
+-e BITBUCKET_WORKSPACE='threat-dragon-test' \
 -e ENCRYPTION_JWT_REFRESH_SIGNING_KEY='deadbeef00112233445566778899aabb' \
 -e ENCRYPTION_JWT_SIGNING_KEY='deadbeef112233445566778899aabbcc' \
 -e ENCRYPTION_KEYS='[{"isPrimary": true, "id": 0, "value": "deadbeef2233445566778899aabbccdd"}]' \
@@ -112,7 +131,7 @@ threatdragon/owasp-threat-dragon:stable
 Note that values for the keys need to be replaced with the values obtained in the previous sections.
 
 If the server container starts up correctly then navigate to `http://localhost:8080/#/` to get the main page.
-With a `GITHUB_CLIENT_ID` set then the 'Login with GitHub' button is made visible.
+With a `BITBUCKET_CLIENT_ID` set then the 'Login with Bitbucket' button is made visible.
 
 If the container does not start then view the logs being dumped to the console,
 for example if `ENCRYPTION_JWT_REFRESH_SIGNING_KEY` has not been defined then there will be a log entry:
@@ -123,16 +142,15 @@ Please see docs/development/environment.md for more information
 2023-12-16 08:08:18 OWASP Threat Dragon failed to start
 ```
 
-#### Accessing github
+#### Accessing Bitbucket
 
-From the main Threat Dragon page click on the 'Login with GitHub' button.
-If you are not logged in already then GitHub will prompt for the user account credentials before allowing access to the repo:
+From the main Threat Dragon page click on the 'Login with Bitbucket' button.
+If you are not logged in already then Bitbucket will prompt for the user account credentials
+before allowing access to the workspace.
 
-![Sign in to GitHub]({{ '/docs-2/assets/images/github-sign-in.png' | relative_url }})
+Once you are logged in then Bitbucket will ask if the Threat Dragon OAuth consumer is allowed to access the repo:
 
-Once you are logged in then github will ask if the Threat Dragon GitHub OAuth Application is allowed to access the repo:
-
-![Authorize GitHub OAuth Application]({{ '/docs-2/assets/images/github-authorize.png' | relative_url }})
+![Authorize Bitbucket OAuth consumer]({{ '/docs-2/assets/images/bitbucket-authorize.png' | relative_url }})
 
 If access is permitted then the main Threat Dragon page is displayed and threat models can be
 read from and written to the user's public repositories.
@@ -145,8 +163,10 @@ Once the parameters are correct for running the Threat Dragon server,
 it is useful to provide a file for (most) of the parameters. Here a test environment file `test.env` has been created:
 
 ```text
-GITHUB_CLIENT_ID='deadbeef0123456789aa'
-GITHUB_CLIENT_SECRET='deadbeef0123456789abcdef01234567deadbeef'
+BITBUCKET_CLIENT_ID='deadbeef0123456789aa'
+BITBUCKET_CLIENT_SECRET='deadbeef0123456789abcdefdeadbeef'
+BITBUCKET_SCOPE='repository:write'
+BITBUCKET_WORKSPACE='threat-dragon-test'
 ENCRYPTION_JWT_REFRESH_SIGNING_KEY='deadbeef00112233445566778899aabb'
 ENCRYPTION_JWT_SIGNING_KEY='deadbeef112233445566778899aabbcc'
 ENCRYPTION_KEYS='[{"isPrimary": true, "id": 0, "value": "deadbeef2233445566778899aabbccdd"}]'
@@ -163,7 +183,8 @@ or if using Windows:
 
 - `docker run -it --rm -p 8080:3000 -v %CD%/test.env:/app/.env threatdragon/owasp-threat-dragon:stable`
 
-Ensure that Threat Dragon is running on `http://localhost:8080/#/` as expected, and that the GitHub repos are accessible.
+Ensure that Threat Dragon is running on `http://localhost:8080/#/` as expected,
+and that the Bitbucket workspace is accessible.
 
 #### Logging to Docker desktop
 
