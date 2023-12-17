@@ -70,6 +70,9 @@ docs:
 - title: 'Testing: Github repo access'
   url: github-repo
 
+- title: 'Testing: Bitbucket repo access'
+  url: bitbucket-repo
+
 - title: 'Actions'
   url: pipeline-actions
 

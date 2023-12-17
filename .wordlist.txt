@@ -174,3 +174,5 @@ unselected
 Bitbucket
 DockerHub
 linux
+bitbucket
+Atlassian
