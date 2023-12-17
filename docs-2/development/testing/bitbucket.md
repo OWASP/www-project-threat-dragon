@@ -78,8 +78,8 @@ Fill out the form with the following suggested content:
 Note the displayed values for both the Key and the Secret and **save these somewhere secure**.
 Treat these values with the same security as a password; they provide access to your Bitbucket account
 
-- Key will be 20 hexadecimal (10 byte) characters, for example `deadbeef0123456789aa`, used for `BITBUCKET_CLIENT_ID`
-- Secret will be 32 hexadecimal characters, for example `deadbeef0123456789abcdefdeadbeef`, used for `BITBUCKET_CLIENT_SECRET`
+- Key will be 20 hexadecimal (10 byte) characters, for example `deadbeef0123456789aa` used for `BITBUCKET_CLIENT_ID`
+- Secret will be 32 hexadecimal characters, for example `deadbeef0123456789abcdefdeadbeef` used for `BITBUCKET_CLIENT_SECRET`
 
 The Bitbucket OAuth consumer is now ready for use by the Threat Dragon server with values:
 
@@ -150,7 +150,7 @@ before allowing access to the workspace.
 
 Once you are logged in then Bitbucket will ask if the Threat Dragon OAuth consumer is allowed to access the repo:
 
-![Authorize Bitbucket OAuth consumer]({{ '/docs-2/assets/images/github-authorize.png' | relative_url }})
+![Authorize Bitbucket OAuth consumer]({{ '/docs-2/assets/images/bitbucket-authorize.png' | relative_url }})
 
 If access is permitted then the main Threat Dragon page is displayed and threat models can be
 read from and written to the user's public repositories.
