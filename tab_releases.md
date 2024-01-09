@@ -10,7 +10,7 @@ tags: threatdragon
 
 Release | Date | Location | Comments
 ------- | ---- | -------- | --------
-v2.1.3 | Jan 2024 | [github][213] | fix bug where desktop menu can discard dagram edits, add support for Open Threat Modeling (OTM)
+v2.1.3 | Jan 2024 | [github][213] | fix bug where desktop menu can discard diagram edits, add support for Open Threat Modeling (OTM)
 v2.1.2 | Nov 2023 | [github][212] | add Bitbucket access, PLOT4ai threats and bug-fix for data-flows overwriting properties
 v2.1.1 | Oct 2023 | [github][211] | desktop version provides guard advising of overwriting threats changes
 v2.1.0 | Oct 2023 | [github][210] | desktop version provides guard advising of overwriting diagram changes
