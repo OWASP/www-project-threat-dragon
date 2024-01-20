@@ -177,3 +177,6 @@ linux
 bitbucket
 Atlassian
 OTM
+Validator
+ajv
+sudo

@@ -1,13 +1,13 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://owasp.org/www-project-threat-dragon/assets/schemas/owasp.threat-dragon.schema.json",
+  "$id": "https://owasp.org/www-project-threat-dragon/assets/schemas/owasp.threat-dragon.schema.V1.json",
   "title": "Threat Dragon model schema",
   "description": "The threat models used by OWASP Threat Dragon",
   "type": "object",
   "properties": {
     "version": {
       "description": "Threat Dragon version used in the model",
-      "type": "string"
+      "type": "string",
+      "maxLength": 5
     },
     "summary": {
       "description": "Threat model project meta-data",
@@ -94,7 +94,7 @@
               "version": {
                 "description": "Threat Dragon version used in the diagram",
                 "type": "string",
-                "minLength": 5
+                "maxLength": 5
               },
               "diagramJson": {
                 "description": "The data-flow diagram components",
@@ -238,11 +238,11 @@
                           "properties": {
                             "x": {
                               "description": "The component horizontal position",
-                              "type": "integer"
+                              "type": "number"
                             },
                             "y": {
                               "description": "The component vertical position",
-                              "type": "integer"
+                              "type": "number"
                             }
                           },
                           "required": [ "x", "y" ]
@@ -261,12 +261,12 @@
                           "properties": {
                             "height": {
                               "description": "The component height",
-                              "type": "integer",
+                              "type": "number",
                               "minimum": 10
                             },
                             "width": {
                               "description": "The component width",
-                              "type": "integer",
+                              "type": "number",
                               "minimum": 10
                             }
                           },
