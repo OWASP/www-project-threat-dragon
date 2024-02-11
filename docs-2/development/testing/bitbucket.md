@@ -55,12 +55,12 @@ Do not actually use these keys as shown, but here are examples:
 
 #### Web App Bitbucket Access
 
-The Threat Dragon web application uses an [Atlassian OAuth consumer][githuboauth] as the mechanism to access
+The Threat Dragon web application uses an [Atlassian OAuth consumer][bitbucketoauth] as the mechanism to access
 the Bitbucket API for the given repository workspace.
 An OAuth consumer needs to be created for use by the web app to access Bitbucket,
 and this consumer provides the values `BITBUCKET_CLIENT_ID` and `BITBUCKET_CLIENT_SECRET`.
 
-To create a GitHub OAuth Application you need to know the port number and domain of the Threat Dragon application.
+To create the OAuth consumer you need to know the port number and domain of the Threat Dragon application.
 Here port number 8080 is being used (a decision made in the previous section) and as it is being run locally
 then the domain will probably be 'localhost'.
 
@@ -200,4 +200,4 @@ or if using Windows:
 
 [dockerhub]: https://hub.docker.com/r/threatdragon/owasp-threat-dragon
 [dockerinstall]: https://docs.docker.com/engine/install/
-[githuboauth]: https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app
+[bitbucketoauth]: https://developer.atlassian.com/server/jira/platform/oauth/
