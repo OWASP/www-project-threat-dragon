@@ -56,6 +56,7 @@ you may need to [subscribe](https://owasp.org/slack/invite) first.
 * [OWASP pytm (Pythonic Threat Modeling)](https://owasp.org/www-project-pytm/)
 * [Threat Modeling OWASP Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html)
 * [Threagile - Agile Threat Modeling](https://threagile.io), it is open source although not from OWASP
+* [TaaC-AI](https://github.com/yevh/TaaC-AI), it is open source although not from OWASP
 
 [demo]: https://youtu.be/n6JGcZGFq5o
 [docs-1]: https://owasp.org/www-project-threat-dragon/docs-1/
