@@ -1,6 +1,6 @@
 ---
 
-title: Webapp github access
+title: Install Environment
 layout: col-document
 tags: threatdragon
 document: Threat Dragon version 2.0
@@ -12,37 +12,63 @@ permalink: /docs-2/install-environment/
 
 ## [OWASP](https://www.owasp.org) Threat Dragon
 
-### Create A GitHub OAuth Application
+Refer to the various [environment variable]({{ '/docs-2/development-environment/' | relative_url }})
+that are available to configure the web application.
 
-The Threat Dragon web application uses [GitHub OAuth Applications][githuboauth] as the mechanism to access
-the GitHub API of the users repositories.
-A GitHub OAuth Application needs to be created for use by the web app to access github,
-and the GitHub OAuth Application provides the values `GITHUB_CLIENT_ID` and `GITHUB_CLIENT_SECRET`.
+A minimal set of environment variables, that will provide local file access, is:
 
-To create a GitHub OAuth Application you need to know the port number and domain of the Threat Dragon application.
-Here port number 8080 is being used along with 'localhost'.
+* NODE_ENV
+* ENCRYPTION_KEYS
+* ENCRYPTION_JWT_SIGNING_KEY
+* ENCRYPTION_JWT_REFRESH_SIGNING_KEY
+* SERVER_API_PROTOCOL
 
-1. Log into your GitHub account and navigate to 'Settings' -> 'Developer settings' -> 'OAuth Apps' -> 'New OAuth App'
-2. Fill out the form with the following suggested content:
-    1. Application name: a unique identifier for the application.
-        This is not critical, something like 'Threat Dragon tests' will do
-    2. Homepage URL: local development so use `http://localhost:8080/#`
-    3. Application description: for example 'Threat Dragon testing for local development'
-    4. Authorization callback URL: for localhost and port 8080 use `http://localhost:8080/api/oauth/return`
-3. Proceed by agreeing to Register the application
-4. Initially there will be no Client secret; create a client secret via the 'Generate a new client secret' button
-5. Note the values for both the Client ID and the Client Secret, **save these somewhere safe**
-    1. Client ID will be 20 hexadecimal (10 byte) characters, for example `deadbeef0123456789aa`
-    2. Client Secret will be 40 hexadecimal characters, for example `deadbeef0123456789abcdef01234567deadbeef`
-    3. Treat these values with the same security as a password; they provide access to your GitHub account
+### Generating Keys
 
-The Threat Dragon server can now be supplied with the values:
+A random 16 byte (32 character, 256 bit) hexadecimal string should be used for encryption,
+which needs to be randomly generated and kept secret.
+With openssl installed use this command to generate a new 256 bit key: `openssl rand -hex 16`
 
-- `GITHUB_CLIENT_ID='deadbeef0123456789aa'`
-- `GITHUB_CLIENT_SECRET='deadbeef0123456789abcdef01234567deadbeef'`
+This command can also be used to generate JWT signing keys.
 
-Example of registering a new OAuth application:
+The Express server documentation on [express-session](https://github.com/expressjs/session#readme)
+has advice on managing and rotating encryption keys.
 
-![New GitHub OAuth Application]({{ '/docs-2/assets/images/github-oauth-app.png' | relative_url }})
+### Webapp environment variables
 
-[githuboauth]: https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app
+Export all of the your variables from the terminal where you will start Threat dragon.  
+
+### MacOS / Linux
+
+`export GITHUB_CLIENT_ID=01234567890123456789`
+
+`export ...`
+
+### Windows
+
+`set GITHUB_CLIENT_ID=01234567890123456789`
+
+`set ...`
+
+### Config via DotEnv
+
+Environment variables are configured via [dotenv](https://github.com/motdotla/dotenv#readme).
+By default, Threat Dragon attempts to read key/value pairs from a `.env` file at the root of this repository.
+This can be configured by exporting a file path in your terminal.
+For example, on MacOS/Linux: `export ENV_FILE=/home/myawesomeuser/mydir/somefile.env`
+
+To get started, copy `example.env` to `.env` at the root of the project and update the variables as appropriate.
+
+**Note**: Do not use the `export` or `set` keywords inside your `.env` file,
+as this will not work from within a docker context.
+The `dotenv` package will automatically export the variables for you.
+
+Here is an example of a minimal DotEnv file, note that keys would need to be generated :
+
+```text
+NODE_ENV=development
+ENCRYPTION_KEYS='[{"isPrimary": true, "id": 0, "value": "deadbeef2233445566778899aabbccdd"}]'
+ENCRYPTION_JWT_SIGNING_KEY=deadbeef112233445566778899aabbcc
+ENCRYPTION_JWT_REFRESH_SIGNING_KEY=deadbeef00112233445566778899aabb
+SERVER_API_PROTOCOL='http'
+```

@@ -28,19 +28,14 @@ Getting started with [Threat Dragon](http://owasp.org/www-project-threat-dragon)
 
 ![Login image]({{ '/docs-2/assets/images/start.png' | relative_url }}){: .image-left }
 
-The Threat Dragon web variant stores its threat models in your GitHub repos.
-This is so that the models can stay close to the code they are modelling.
-Alternatively you can login to a local session which will store the models on your local drive.
-
-Future versions will provide a deeper integration but for now
-when you login to Threat Dragon only Github access or local access is provided.
+The Threat Dragon web applications stores its threat models in the configured repository or on your local drive.
 
 ![New model image]({{ '/docs-2/assets/images/newmodel.png' | relative_url }}){: .image-left }
 
-To get started with your threat model access the welcome page and select
-click on the **plus** area of the Welcome page.
+To get started with your threat model access the welcome page and start a new model by
+clicking on the **plus** area of the Welcome page.
 
-You will then be presented with a list of your GitHub repositories.
+You will then be presented with a list of your repositories.
 Pick the one where you want to store your new model.
 If you have more than 30 repos you might have to page through them until you find the one you want.
 
@@ -91,8 +86,7 @@ or **Reload** to undo any changes and revert to your last save.
 In the web variant of Threat Dragon, models are saved in your chosen branch at a path like
 `ThreatDragonModels/[model name]/[model title].json`,
 Look at the [Demo Threat Model](https://github.com/mike-goodwin/owasp-threat-dragon-demo) for an example.
-Because of this, if you change title of your model it will delete the old model in GitHub
-and replace it with one at the new path.
+Because of this, if you change title of your model it will delete the old model and replace it with one at the new path.
 This does not apply to the desktop variant.
 
 Congratulations! You have got the basics done. Next step ...
@@ -117,8 +111,7 @@ diagrams, model details and threats as examples.
 If you have a repository that already has threat models, you can open them by
 clicking on the **open** area on the Welcome page.
 
-You will be able to select a github repository and branch,
-and then presented with a list of models to make your selection.
+You will be able to select a repository and branch, and then presented with a list of models to make your selection.
 
 ![Directory image]({{ '/docs-2/assets/images/directory.png' | relative_url }}){: .image-left }
 

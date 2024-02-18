@@ -68,5 +68,5 @@ v0.1.1-alpha | 14 Mar 2016 | [Web app][011] | alpha release
 [212]: https://github.com/OWASP/threat-dragon/releases/tag/v2.1.2
 [213]: https://github.com/OWASP/threat-dragon/releases/tag/v2.1.3
 [220]: https://github.com/OWASP/threat-dragon/releases/tag/v2.2.0
-[ant]: (https://www.npmjs.com/package/@antv/g6)
-[snap]: (https://snapcraft.io/threat-dragon)
+[ant]: https://www.npmjs.com/package/@antv/g6
+[snap]: https://snapcraft.io/threat-dragon

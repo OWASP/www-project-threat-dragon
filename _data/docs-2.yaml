@@ -19,7 +19,7 @@ docs:
 - title: 'Install: webapp'
   url: install-webapp
 
-- title: 'Install: github access'
+- title: 'Install: environment'
   url: install-environment
 
 - title: 'Install: Docker'

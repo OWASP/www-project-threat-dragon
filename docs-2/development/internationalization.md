@@ -25,9 +25,12 @@ To add a new language:
 
 The following translations are available:
 
+- العربية (ara)
+- Deutsch (deu-DE)
 - English (eng-US)
 - Ελληνικά (ell-GR)
 - español (spa-ES)
+- Suomi; (fin-FI)
 - français (fra-CA)
 - मानक हिन्दी (hin-IN)
 - português (por-BR)

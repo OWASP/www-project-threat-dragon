@@ -28,7 +28,7 @@ permalink: /docs-2/
 
 #### [Webapp installation](usage/install/web.md)
 
-#### [Webapp github access](usage/install/environment.md)
+#### [Webapp environment variables](usage/install/environment.md)
 
 #### [Docker installation](usage/install/options.md)
 

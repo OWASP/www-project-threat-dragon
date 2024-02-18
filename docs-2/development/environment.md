@@ -10,57 +10,13 @@ permalink: /docs-2/development-environment/
 
 {% include breadcrumb.html %}
 
-## [OWASP](https://www.owasp.org) Threat Dragon
-
-1. [Quickstart](#quickstart)
-2. [Create A GitHub OAuth Application](#create-a-github-oauth-application)
-3. [Generate Keys](#generating-keys)
-4. [Config Via DotEnv](#config-via-dotenv)
-5. [Environment Errors](#environment-errors)
-6. [Command Line](#command-line)
-7. [Example Github OAuth Screenshot](#github-oauth-app-screenshot)
-
-___
-
 ## Quickstart
 
-1. [Create A GitHub OAuth Application](#create-a-github-oauth-application)
-2. [Generate Keys](#generating-keys) for encryption and JWT signing
-3. Copy `example.env` to `.env`
-4. Update the values in `.env`
-5. `npm install`
-6. `npm run serve`
-
-___
-
-### Create A GitHub OAuth Application
-
-This web application uses GitHub OAuth applications as the authentication mechanism.
-There is [work](https://github.com/OWASP/threat-dragon/issues/1)
-[planned](https://github.com/OWASP/threat-dragon/issues/9)
-to add [additional](https://github.com/OWASP/threat-dragon/issues/61) authentication providers in the future.
-
-There is an [open issue](https://github.com/OWASP/threat-dragon/issues/14) with regards to GitHub and OAuth permissions.
-
-To create a GitHub OAuth Application:
-
-1. Log into your GitHub account, go to `Settings -> 'Developer settings' -> 'OAuth Apps' -> 'New OAuth App'`
-2. Fill out the form with the following:
-    - **Application name**: A unique identifier for the application.
-        This is not critical, we suggest something like 'Threat Dragon'
-    - **Homepage URL**: For local development, use `http://localhost:8080`
-        - If you configure Threat Dragon to listen on another port, use that port here instead of 8080
-    - **Application description**: A description for your OAuth app.
-        This is not critical, we suggest something like 'Threat Dragon for local development'
-    - **Authorization callback URL**: `http://localhost:3000/api/oauth/return`
-      - If you configure Threat Dragon's server away from the default port 3000,
-          be sure to use that port for the auth callback url
-3. Register the application, an [example screenshot](#github-oauth-app-screenshot) is at the bottom of this document
-4. Create a client_secret
-5. Note the values for Client ID and Client Secret. **Save these somewhere safe**
-    - Client ID will look similar to `01234567890123456789`
-    - Client Secret will look similar to `0123456789abcdef0123456789abcdef01234567`
-    - Treat these values like you would a password, these values provide full access to your GitHub account
+1. [Generate Keys](#generating-keys) for encryption and JWT signing
+2. Copy `example.env` to `.env`
+3. Update the values in `.env`
+4. `npm install`
+5. `npm run serve`
 
 ___
 
@@ -91,6 +47,17 @@ as this will not work from within a docker context.
 The `dotenv` package will automatically export the variables for you.
 
 Alternatively, you can also set your environment variables via [command line](#command-line) if you'd prefer.
+
+Here is an example of a minimal DotEnv file, note that keys would need to be generated :
+
+```text
+NODE_ENV=development
+ENCRYPTION_KEYS='[{"isPrimary": true, "id": 0, "value": "deadbeef2233445566778899aabbccdd"}]'
+ENCRYPTION_JWT_SIGNING_KEY=deadbeef112233445566778899aabbcc
+ENCRYPTION_JWT_REFRESH_SIGNING_KEY=deadbeef00112233445566778899aabb
+SERVER_API_PROTOCOL='http'
+```
+
 ___
 
 ## Environment Errors
@@ -224,19 +191,19 @@ A JWT is used as a refresh token because it is tamper resistant and provides use
 
 | Bitbucket specific variables | Description | Default |
 | --- | --- | --- |
-| `BITBUCKET_CLIENT_ID` | Optional client_id value for the GitHub OAuth app used for authentication | |
-| `BITBUCKET_CLIENT_SECRET` | Optional client_secret generated for the GitHub OAuth app used for authentication | |
+| `BITBUCKET_CLIENT_ID` | Optional client_id value for the Bitbucket OAuth app used for authentication | |
+| `BITBUCKET_CLIENT_SECRET` | Optional client_secret generated for the Bitbucket OAuth app used for authentication | |
 | `BITBUCKET_SCOPE` | Optional definition of scope: `repo` to access both private and public repos or `public_repo` to access public repos only | `public_repo` |
-| `BITBUCKET_ENTERPRISE_HOSTNAME` | Optional fully qualified github enterprise instance hostname, e.g. github.example.com | |
-| `BITBUCKET_ENTERPRISE_PORT` | Optional if your github enterprise instance uses a nonstandard port | `443` |
-| `BITBUCKET_ENTERPRISE_PROTOCOL` | Optional if your github enterprise instance uses a nonstandard protocol | `https` |
-| `BITBUCKET_USE_SEARCH` | Optional, if true it will only display the github repos matching the search query below| `false`|
-| `BITBUCKET_SEARCH_QUERY` | Optionally specifies the search query to use when searching for github repos for Threat Dragon | |
+| `BITBUCKET_ENTERPRISE_HOSTNAME` | Optional fully qualified Bitbucket enterprise instance hostname, e.g. bitbucket.example.com | |
+| `BITBUCKET_ENTERPRISE_PORT` | Optional if your Bitbucket enterprise instance uses a nonstandard port | `443` |
+| `BITBUCKET_ENTERPRISE_PROTOCOL` | Optional if your Bitbucket enterprise instance uses a nonstandard protocol | `https` |
 
-___
-
-## Github OAuth App Screenshot
-
-Example of registering a new OAuth application:
-
-![New GitHub OAuth Application]({{ '/docs-2/assets/images/github-oauth-app.png' | relative_url }})
+| GitLab specific variables | Description | Default |
+| --- | --- | --- |
+| `GITLAB_CLIENT_ID` | | |
+| `GITLAB_CLIENT_SECRET` | | |
+| `GITLAB_SCOPE` | | |
+| `GITLAB_ENTERPRISE_HOSTNAME` | | |
+| `GITLAB_ENTERPRISE_PORT` | | |
+| `GITLAB_ENTERPRISE_PROTOCOL` | | |
+| `GITLAB_REDIRECT_URI` | | |

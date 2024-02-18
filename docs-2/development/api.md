@@ -14,7 +14,7 @@ permalink: /docs-2/api/
 
 At present it there is a minimal application programming interface for
 [Threat Dragon](http://owasp.org/www-project-threat-dragon) .
-This API is used to access to threat models stored by repository providers, github being the first.
+This API is used to access to threat models stored by repository providers such as github, bitbucket or gitlab.
 
 APIs protected by authorisation, including threat model Create, Read, Update (but no Delete):
 
@@ -36,11 +36,11 @@ APIs with no authorisation:
 | ---- | ---- | ---- |
 | `/` | GET | Provides the Threat Dragon Single Page Application |
 | `/healthz` | GET | Health check that provides server statistics such as uptime |
-| `/api/login/:provider` | GET | Login to a repository provider, such as github |
+| `/api/login/:provider` | GET | Login to a repository provider|
 | `/api/logout` | GET | Logout that will always succeed |
 | `/api/oauth/return` | GET | OAuth return request |
 | `/api/oauth/:provider` | GET | Provides access and refresh tokens if authorised |
-| `/api/threatmodel/organization` | GET | Provides github organisation hostname |
+| `/api/threatmodel/organization` | GET | Provides repository provider hostname |
 
 Support for CI/CD pipelines is being worked on, and this API may include:
 

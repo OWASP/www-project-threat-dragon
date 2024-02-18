@@ -36,18 +36,27 @@ from OWASP, and this expands on what the Threat Dragon project aims for:
 
 The application comes in two variants:
 
-1. [**A desktop application**](https://github.com/owasp/threat-dragon/releases): This uses
-    [Electron](https://electron.atom.io/) to run the application, with model files stored on the local filesystem.
-    There are installers available for Windows, Mac OSX and Linux.
+1. **Desktop application**: This uses[Electron][electron] to run the application,
+    with model files stored on the local filesystem.
+    There are [installers][releases] available for Windows, Mac OSX and Linux.
 
-2. [**A web application**](https://github.com/owasp/threat-dragon/releases): For the web application model files
-    are stored in GitHub, with other storage methods to follow.
-
+2. **Web application**: The web application can be run from the [source][releases]
+    or as a container using the [docker image][docker].
+    Depending on the configuration the web application can store threat model files on :
+    * local filesystem
+    * GitHub
+    * Bitbucket
+    * GitLab
+    * Github Enterprise
+  
 The following translations are built into the Threat Dragon application:
 
+* العربية (ara)
+* Deutsch (deu-DE)
 * English (eng-US)
 * Ελληνικά (ell-GR)
 * español (spa-ES)
+* Suomi; (fin-FI)
 * français (fra-CA)
 * मानक हिन्दी (hin-IN)
 * português (por-BR)
@@ -58,8 +67,6 @@ The following translations are built into the Threat Dragon application:
 Threat Dragon maintains a [Demo Instance](https://www.threatdragon.com/)
 that is hosted on [Heroku](https://www.heroku.com/).
 We strongly recommend using a self-hosted instance or the desktop application as the most secure options.
-Threat Dragon can authenticate to GitHub repositories using a GitHub OAuth application
-as noted in the [environment setup]({{ '/docs-2/development-environment/' | relative_url }}) page.
 ____
 <p>
 <sup><a name="footnote1">1</a>: Spoofing, Tampering, Repudiation, Information disclosure,
@@ -78,3 +85,7 @@ ____
 <p>
 <sup><a name="footnote5">5</a>: Privacy Library Of Threats 4 Artificial Intelligence</sup>
 </p>
+
+[docker]: https://hub.docker.com/r/owasp/threat-dragon/tags
+[electron]: https://electron.atom.io/
+[releases]: https://github.com/owasp/threat-dragon/releases
