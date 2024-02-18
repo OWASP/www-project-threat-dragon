@@ -29,4 +29,4 @@ where you can also ask for changes or report any issues.
 
 ![OWASP logo](/assets/images/owasp.png){: .float-right .mr-4 .mt-3 }
 
-[repo]: (https://github.com/OWASP/threat-dragon)
+[repo]: https://github.com/OWASP/threat-dragon
