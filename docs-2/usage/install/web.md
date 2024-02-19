@@ -21,7 +21,7 @@ The web application can be run locally or from a server.
 
 ### Installing
 
-Threat Dragon is a Single Page Application (SPA) using Angular on the client and node.js on the server.
+Threat Dragon is a node.js single page application using Vue on the client and Express on the server.
 To build and run locally follow these steps:
 
 Install [node.js](https://nodejs.org/en/download/), which includes the node package manager `npm`,

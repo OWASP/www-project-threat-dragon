@@ -17,7 +17,29 @@ a desktop application and a web application.
 
 ## Docker installation instructions
 
-The web application can be run from a docker container.
+The web application can be run from a docker container which can either be downloaded or built locally.
+
+### Downloading
+
+The Docker image can either be pulled from dockerhub or built locally.
+
+#### Pulling/Downloading
+
+The released docker images are stored in
+[Docker Hub](https://hub.docker.com/r/owasp/threat-dragon/tags?page=1&ordering=name)
+and can be accessed using docker `pull`.
+For example to download the `v1.6.0` release build from Docker hub use command :
+
+`docker pull owasp/threat-dragon:v2.2.0`
+
+#### Building
+
+Once the project has been cloned the docker image can be built from the top directory of the project,
+which contains the `Dockerfile`. Use a command such as :
+
+`docker build -t owasp-threat-dragon:local .`
+
+Note that here we have used a tag `local`, but it could be almost anything such as `dev`.
 
 ### Environment variables
 
@@ -29,28 +51,6 @@ eg: `ENCRYPTION_KEYS_FILE=/run/secrets/td_encryption_keys`
 This is also shown in the docker-compose section of the environment documentation.
 
 ### Running the application
-
-Once your environment variables are set up, you can either build the image yourself or pull from dockerhub.
-
-#### Building
-
-You can build a local docker image from the top directory of the project, which contains the `Dockerfile`.
-Use a command such as:
-`docker build -t owasp-threat-dragon:local .`
-Note that here we have used a tag `local`, but it could be almost anything such as `dev`.
-
-#### Pulling/Downloading
-
-The released docker images are stored in
-[Docker Hub](https://hub.docker.com/r/owasp/threat-dragon/tags?page=1&ordering=name)
-and can be accessed using docker `pull`.
-For example to download the `v1.6.0` release build from Docker hub use command :
-`docker pull owasp/threat-dragon:v1.6.0`.
-
-Note that `latest` is the very latest docker image from the main branch on the repository,
-so it may contain transitory bugs etc.
-
-#### Running
 
 Running a locally built image or a downloaded image are very similar,
 just substitute the correct name in the command to run a detached container:
@@ -65,7 +65,7 @@ so just substitute an absolute path instead of `$(pwd)`.
 
 Here we have mapped the container to port 8080, so Threat Dragon is accessible from `http://localhost:8080` .
 
-#### Debugging
+### Debugging
 
 Console output can be displayed using the `-it` options instead of `-d`,
 for example `docker run -it -p 8080:3000 -v $(pwd)/.env:/app/.env owasp-threat-dragon:local`.

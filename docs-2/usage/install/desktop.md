@@ -33,8 +33,8 @@ Alternatively a platform independent snap installer can be downloaded, or use th
 ### MacOS installer
 
 Download the .dmg MacOS installer from the [releases folder](https://github.com/OWASP/threat-dragon/releases/).
-Open the download and drag 'OWASP Threat  Dragon' to the application directory. When the copy has
-finished then Threat  Dragon can be run from launchpad or from Finder -> Applications.
+Open the download and drag 'OWASP Threat  Dragon' to the application directory. When the install has
+finished run Threat  Dragon from launchpad or from Finder / Applications.
 
 ### Windows installer
 

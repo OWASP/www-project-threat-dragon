@@ -25,7 +25,7 @@ To add a new language:
 
 The following translations are available:
 
-- العربية (ara)
+- العربية (ara-SY)
 - Deutsch (deu-DE)
 - English (eng-US)
 - Ελληνικά (ell-GR)
@@ -36,4 +36,4 @@ The following translations are available:
 - português (por-BR)
 - 中文 (zho-CN)
 
-By default, if a translation key cannot be found, it will fall-back to the default locale (`eng`).
+By default, if a translation key cannot be found, it will fall-back to the default locale (`eng-US`).

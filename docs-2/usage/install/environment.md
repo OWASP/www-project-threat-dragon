@@ -63,7 +63,7 @@ To get started, copy `example.env` to `.env` at the root of the project and upda
 as this will not work from within a docker context.
 The `dotenv` package will automatically export the variables for you.
 
-Here is an example of a minimal DotEnv file, note that keys would need to be generated :
+Here is an example of a minimal DotEnv file, note that keys would need to be generated for it :
 
 ```text
 NODE_ENV=development

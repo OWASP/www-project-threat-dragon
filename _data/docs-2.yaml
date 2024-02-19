@@ -16,14 +16,14 @@ docs:
 - title: 'Install: desktop'
   url: install-desktop
 
+- title: 'Install: Docker'
+  url: install-docker
+
 - title: 'Install: webapp'
   url: install-webapp
 
 - title: 'Install: environment'
   url: install-environment
-
-- title: 'Install: Docker'
-  url: install-docker
 
 - title: 'Modeling: getting started'
   url: getting-started

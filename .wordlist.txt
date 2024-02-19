@@ -91,6 +91,7 @@ dotenv
 
 ThreatDragonModels
 ara
+SY
 Deutsch
 FI
 Suomi
