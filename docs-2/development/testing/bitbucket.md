@@ -98,12 +98,12 @@ And providing a set of minimal permissions for the OAuth consumer:
 
 With a minimal set of configuration now available, download the docker image from [DockerHub][dockerhub]:
 
-- `docker pull threatdragon/owasp-threat-dragon:stable`
+- `docker pull owasp/threat-dragon:stable`
 
 or if you are running on a MacOS M1 and get "no matching manifest for linux/arm64/v8 in the manifest list entries"
 then try:
 
-- `docker pull --platform linux/x86_64  threatdragon/owasp-threat-dragon:stable`
+- `docker pull --platform linux/x86_64  owasp/threat-dragon:stable`
 
 All the information is now ready to try running the server from the command line.
 Defining the environment variables on the command line is handy for development and debugging,
@@ -125,7 +125,7 @@ docker run -it --rm \
 -e ENCRYPTION_KEYS='[{"isPrimary": true, "id": 0, "value": "deadbeef2233445566778899aabbccdd"}]' \
 -e NODE_ENV='development' \
 -e SERVER_API_PROTOCOL='http' \
-threatdragon/owasp-threat-dragon:stable
+owasp/threat-dragon:stable
 ```
 
 Note that values for the keys need to be replaced with the values obtained in the previous sections.
@@ -177,11 +177,11 @@ SERVER_API_PROTOCOL='http'
 This has the added benefit of keeping secrets out of the command line history.
 The command to run the docker container now becomes:
 
-- `docker run -it --rm -p 8080:3000 -v $(pwd)/test.env:/app/.env threatdragon/owasp-threat-dragon:stable`
+- `docker run -it --rm -p 8080:3000 -v $(pwd)/test.env:/app/.env owasp/threat-dragon:stable`
 
 or if using Windows:
 
-- `docker run -it --rm -p 8080:3000 -v %CD%/test.env:/app/.env threatdragon/owasp-threat-dragon:stable`
+- `docker run -it --rm -p 8080:3000 -v %CD%/test.env:/app/.env owasp/threat-dragon:stable`
 
 Ensure that Threat Dragon is running on `http://localhost:8080/#/` as expected,
 and that the Bitbucket workspace is accessible.
@@ -192,12 +192,12 @@ Once the container is successfully configured it is useful to to run the docker 
 and inspect the logs using Docker desktop, rather than have the server logs printed to the console.
 This is achieved using docker parameter `-d` :
 
-- `docker run -d -p 8080:3000 -v $(pwd)/test.env:/app/.env threatdragon/owasp-threat-dragon:stable`
+- `docker run -d -p 8080:3000 -v $(pwd)/test.env:/app/.env owasp/threat-dragon:stable`
 
 or if using Windows:
 
-- `docker run -d -p 8080:3000 -v %CD%/test.env:/app/.env threatdragon/owasp-threat-dragon:stable`
+- `docker run -d -p 8080:3000 -v %CD%/test.env:/app/.env owasp/threat-dragon:stable`
 
-[dockerhub]: https://hub.docker.com/r/threatdragon/owasp-threat-dragon
+[dockerhub]: https://hub.docker.com/r/owasp/threat-dragon
 [dockerinstall]: https://docs.docker.com/engine/install/
 [bitbucketoauth]: https://developer.atlassian.com/server/jira/platform/oauth/
