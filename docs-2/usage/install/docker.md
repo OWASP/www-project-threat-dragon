@@ -28,18 +28,23 @@ The Docker image can either be pulled from dockerhub or built locally.
 The released docker images are stored in
 [Docker Hub](https://hub.docker.com/r/owasp/threat-dragon/tags?page=1&ordering=name)
 and can be accessed using docker `pull`.
-For example to download the `v1.6.0` release build from Docker hub use command :
+For example to download the latest stable release from Docker hub use command :
 
-`docker pull owasp/threat-dragon:v2.2.0`
+`docker pull owasp/threat-dragon:stable`
+
+There are step-by-step instructions for [Bitbucket access]({{ '/docs-2/bitbucket-repo/' | relative_url }})
+and also for [github access]({{ '/docs-2/github-repo/' | relative_url }})
+which explain the configuration needed to provide the environment variables for the docker container.
 
 #### Building
 
-Once the project has been cloned the docker image can be built from the top directory of the project,
+If the docker image needs to be rebuilt then start by cloning the Threat Dragon github project.
+The docker image can then be built from the top directory of the project
 which contains the `Dockerfile`. Use a command such as :
 
 `docker build -t owasp-threat-dragon:local .`
 
-Note that here we have used a tag `local`, but it could be almost anything such as `dev`.
+Note that here tag `local` has been used, but it could be almost anything such as `dev`.
 
 ### Environment variables
 
@@ -50,7 +55,7 @@ as well as file-based loading by setting environment variables with the `_FILE` 
 eg: `ENCRYPTION_KEYS_FILE=/run/secrets/td_encryption_keys`
 This is also shown in the docker-compose section of the environment documentation.
 
-### Running the application
+### Running the docker container
 
 Running a locally built image or a downloaded image are very similar,
 just substitute the correct name in the command to run a detached container:
@@ -63,7 +68,8 @@ is on the directory from where you run the command.
 Windows users may not have access to the PWD environment variable,
 so just substitute an absolute path instead of `$(pwd)`.
 
-Here we have mapped the container to port 8080, so Threat Dragon is accessible from `http://localhost:8080` .
+Here the container internal port is mapped to external port 8080,
+therefore Threat Dragon is accessible from `http://localhost:8080` .
 
 ### Debugging
 
