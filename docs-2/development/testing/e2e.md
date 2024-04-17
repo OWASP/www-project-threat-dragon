@@ -12,14 +12,11 @@ permalink: /docs-2/e2e/
 
 ## End to End testing
 
-## What is End to End testing... and why?
-
-End to end tests are executed against a full, running instance of the application.
-They are intended to mock user behavior and asserting that the the application behaves as expected.
+End to end tests are executed against a full, running instance of Threat Dragon.
+They are intended to mock user behavior and assert that the the application behaves as expected.
 While it's not practical to cover every possible user interaction,
-we strive to cover the intended flows that our users would take.
-Finally, E2E testing is the last step before deploying in our continuous delivery pipeline.
-We want to make sure that the quality is there before releasing it!
+the testing covers most of the intended flows.
+E2E testing is the last step before deploying in the continuous delivery pipeline.
 
 ## Running e2e tests
 
@@ -32,9 +29,9 @@ Smoke tests are run against a deployment as a sanity check to ensure that the de
 and there are no glaring issues in the deployment.
 Smoke tests should be quick and only check the bare basics.
 
-You may need to install `vue-cli-service` if you are running some of the tests locally.
-If you get errors such as `vue-cli-service: command not found`
-then run command `npm install -g @vue/cli` from the root directory.
+To run end-to-end tests locally `vue-cli-service` will have to available on the command line.
+If there are errors such as `vue-cli-service: command not found`
+then run command `npm install -g @vue/cli` from the root directory of the Threat Dragon source tree.
 
 ### Run test:e2e
 
@@ -141,23 +138,40 @@ with the suite of tests loaded from `tests/e2e/specs/smokes`.
 It is run against an existing application on `http://localhost:3000/`,
 using port 3000 rather than 8080.
 
-For local testing of this script, an instance of the docker file can be used to map ports 3000:
+For local testing of this script, an instance of the docker file can be used to map ports 3000.
+Decide on the docker image to test,
+for example `owasp/threat-dragon:stable` or `threatdragon/owasp-threat-dragon:PR-943`.
 
 - from top directory run `docker run -it --rm -p 3000:3000 -v $(pwd)/.env:/app/.env owasp-threat-dragon:dev`
+or if not using an environment variable file then run a docker container using:
+
+```text
+docker run -d --rm \
+    -p 3000:3000 \
+    -e ENCRYPTION_JWT_REFRESH_SIGNING_KEY='***' \
+    -e ENCRYPTION_JWT_SIGNING_KEY='***' \
+    -e ENCRYPTION_KEYS='***' \
+    -e GITHUB_CLIENT_ID='***' \
+    -e GITHUB_CLIENT_SECRET='***' \
+    -e NODE_ENV='development' \
+    --platform linux/x86_64 \
+    -e SERVER_API_PROTOCOL='http' \
+    threatdragon/owasp-threat-dragon:PR-943
+```
+
 - check the web app is accessible on `http://localhost:3000/`
-- check docs pages are on `http://localhost:3000/docs/`
 - from directory `td.vue` invoke `npm run test:e2e-ci-smokes`
 
-These tests are used by the CI pipeline to determine if the deploy was successful or not.
+These tests are used by the CI pipeline to determine if the deploy to Heroku was successful or not.
 
 ## Cypress use of Electron
 
 Cypress uses the Electron server as a backend server, and has the Electron browser/renderer built in.
 When running locally some tests do not (as of Cypress version 12.x) run correctly.
 This means that it is good to choose a browser that is not Electron from the UI,
-and that some scripts that run in headless mode specify a different browser (such as Firefox).
+and that those scripts that run in headless mode specify a different browser (such as Firefox).
 
-This is not a problem with the BrowserStack tests because here a specific browser is configured for each test run.
+This is not a problem with the BrowserStack tests because a specific browser is configured for each test run.
 
 ## Writing e2e tests
 
