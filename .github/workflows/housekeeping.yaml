@@ -9,7 +9,7 @@ on:
 jobs:
   workflow_cleaner:
     name: Tidy workflows
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     permissions:
       actions: write
 
@@ -29,14 +29,14 @@ jobs:
 
   link_checker:
     name: Link checker
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
 
     steps:
       - name: Checkout markdown
         uses: actions/checkout@v4.1.1
 
       - name: Link Checker
-        uses: lycheeverse/lychee-action@v1.9.1
+        uses: lycheeverse/lychee-action@v1.10.0
         with:
           # skip the jekyll files
           args: --verbose --no-progress --max-retries 5 --exclude-path './_includes/*.html' '**/*.md' '*.md'
