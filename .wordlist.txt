@@ -184,3 +184,6 @@ Validator
 ajv
 sudo
 GitLab
+githubusercontent
+nvm
+LTS

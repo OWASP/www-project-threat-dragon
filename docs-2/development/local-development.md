@@ -24,10 +24,37 @@ permalink: /docs-2/local-development/
 
 The coding style is not strict, and follows generally accepted styles such as
 [Javascript Info](https://javascript.info/coding-style).
-We thought about using adopting [JavaScript Standard Style](https://github.com/standard/standard),
-but the dropping of unnecessary semicolons was too strict for us.
+Adopting [JavaScript Standard Style](https://github.com/standard/standard) is too strict for this project,
+for example the dropping of 'unnecessary' semicolons will not be adopted.
 
-Indents are set to 4 for now, but this may change and we might go to a 2 space indentation sometime soon.
+Indents are generally set to 4, but this may change and it might go to a 2 space indentation sometime in the future.
+
+## Node and npm
+
+The project is built on Node.js (node) and uses the Node Package Manager (npm).
+The version of node is LTS 20.14.0 and the pipelines use Ubuntu Linux LTS version 24.04.
+Local development will need node installed :
+
+Use Node Version Manager (nvm) to get to the right version for Linux:
+
+```text
+# Download and install nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+# follow the on-screen instructions, usually just restart the terminal
+# then use nvm to
+nvm install 20.14.0
+nvm use 20.14.0
+node --version
+```
+
+Alternatively for MacOS:
+
+```text
+brew install nvm
+nvm install 20.12.2
+nvm use 20.12.2
+node --version
+```
 
 ## Running Locally
 
