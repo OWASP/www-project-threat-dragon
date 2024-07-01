@@ -21,7 +21,8 @@ Most of steps are the same as the GitHub Guide, but there are several parts diff
 
 #### Web App GitLab Access
 
-It's recommended to follow the [gitlab official guide](https://docs.gitlab.com/ee/integration/oauth_provider.html) to set up the OAuth Application.
+It's recommended to follow the [gitlab official guide](https://docs.gitlab.com/ee/integration/oauth_provider.html)
+to set up the OAuth Application.
 
 The recommended configs are like bellow:
 
@@ -30,7 +31,8 @@ The recommended configs are like bellow:
 
 For other options like `Trusted`, you could decide it by yourself.
 
-After finishing the application, you will get `Application ID` and `Application Secret`, they will be useful in the next part.
+After finishing the application, you will get `Application ID` and `Application Secret`, 
+they will be useful in the next part.
 
 #### Example Environment variables
 
@@ -48,8 +50,10 @@ GITLAB_HOST=http://gitlab-instance
 - GITLAB_CLIENT_SECRET: the `Application Secret` you got from Gitlab
 - GITLAB_SCOPE: the functionalities you allow the threat dragon to use
 - GITLAB_REDIRECT_URI: set it like this pattern ``{BaseURL of your Threat Dragon Instance}/api/oauth/return``
-- GITLAB_HOST: it is the BaseURL of your GitLab Instance, if you're using official GitLab instance, it remove this variable or set it to `https://gitlab.com/`
+- GITLAB_HOST: it is the BaseURL of your GitLab Instance, if you're using official GitLab instance,
+it remove this variable or set it to `https://gitlab.com/`
 
 #### The End
 
-Now you have successfully configured the GitLab Access for your Threat Dragon instance, for anything not mentioned in this guide, you can check [the Guide of GitHub one](/docs-2/github-repo/)
+Now you have successfully configured the GitLab Access for your Threat Dragon instance,
+for anything not mentioned in this guide, you can check [the Guide of GitHub one](/docs-2/github-repo/)
