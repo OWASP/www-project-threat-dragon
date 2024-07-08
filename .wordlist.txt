@@ -187,3 +187,7 @@ GitLab
 githubusercontent
 nvm
 LTS
+
+configs
+URI
+BaseURL
