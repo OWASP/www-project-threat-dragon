@@ -41,7 +41,7 @@ Use Node Version Manager (nvm) to get to the right version for Linux:
 # Download and install nvm
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 # follow the on-screen instructions, usually just restart the terminal
-# then use nvm to
+# then use nvm to select the correct version of node, eg 20.14.0
 nvm install 20.14.0
 nvm use 20.14.0
 node --version
@@ -96,6 +96,11 @@ Build these using `npm run build:desktop` from the top directory.
 
 During development launch the electron-based desktop application from the top directory: `npm run start:desktop`.
 This runs the desktop application in development mode that will relaunch the application as changes are made.
+
+### Image signing
+
+The notarization status of the MacOS `.app` file can be checked with command:
+`spctl --assess -vv --type install /Applications/Threat-Dragon-ng.app` .
 
 ## Docker
 

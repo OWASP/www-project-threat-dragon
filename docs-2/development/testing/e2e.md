@@ -93,7 +93,7 @@ Test and debug these pipelines using github rather than from the local command l
 
 To check the configuration file `e2e.nightly.config.js` run this command from directory `td.vue` :
 
-- `vue-cli-service test:e2e -C e2e.nightly.config.js --browser firefox --headless --url 'https://www.threatdragon.com/'`
+- `vue-cli-service test:e2e -C e2e.nightly.config.js --browser chromium --headless --url 'https://www.threatdragon.com/'`
 
 ### BrowserStack test:e2e-smokes
 
@@ -108,7 +108,7 @@ and the suite of tests is loaded from `tests/e2e/specs/smokes`.
 These tests are run by the `deploy` github action.
 To check the configuration file `e2e.smokes.config.js` run this command from directory `td.vue` :
 
-- `vue-cli-service test:e2e -C e2e.smokes.config.js --browser firefox --headless --url 'https://www.threatdragon.com/'`
+- `vue-cli-service test:e2e -C e2e.smokes.config.js --browser chromium --headless --url 'https://www.threatdragon.com/'`
 
 ### Run test:e2e-smokes:local
 
