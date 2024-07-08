@@ -31,7 +31,7 @@ The recommended configs are like bellow:
 
 For other options like `Trusted`, you could decide it by yourself.
 
-After finishing the application, you will get `Application ID` and `Application Secret`, 
+After finishing the application, you will get `Application ID` and `Application Secret`,
 they will be useful in the next part.
 
 #### Example Environment variables
