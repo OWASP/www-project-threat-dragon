@@ -32,6 +32,12 @@ permalink: /docs-2/
 
 #### [Docker installation](usage/install/options.md)
 
+#### [Github repo access](development/testing/github.md)
+
+#### [Bitbucket repo access](development/testing/bitbucket.md)
+
+#### [GitLab repo access](development/testing/gitlab.md)
+
 ### Modeling
 
 #### [Getting started](usage/modeling/getting-started.md)
@@ -65,8 +71,6 @@ permalink: /docs-2/
 #### [End to end testing](development/testing/e2e.md)
 
 #### [Ad hoc testing](development/testing/adhoc.md)
-
-#### [Github repo access](development/testing/github.md)
 
 ### [Actions](development/actions.md)
 

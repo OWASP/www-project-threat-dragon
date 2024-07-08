@@ -22,8 +22,17 @@ docs:
 - title: 'Install: webapp'
   url: install-webapp
 
-- title: 'Install: environment'
+- title: 'Install: environment variables'
   url: install-environment
+
+- title: 'Configure: Github repo access'
+  url: github-repo
+
+- title: 'Configure: Bitbucket repo access'
+  url: bitbucket-repo
+
+- title: 'Configure: GitLab repo access'
+  url: gitlab-repo
 
 - title: 'Modeling: getting started'
   url: getting-started
@@ -34,7 +43,7 @@ docs:
 - title: 'Modeling: threat generation'
   url: threats
 
-- title: 'Development: Collaboration'
+- title: 'Development: collaboration'
   url: collaboration
 
 - title: 'Development: environment'
@@ -66,12 +75,6 @@ docs:
 
 - title: 'Testing: AdHoc testing'
   url: adhoc
-
-- title: 'Testing: Github repo access'
-  url: github-repo
-
-- title: 'Testing: Bitbucket repo access'
-  url: bitbucket-repo
 
 - title: 'Actions'
   url: pipeline-actions
