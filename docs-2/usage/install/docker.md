@@ -32,9 +32,16 @@ For example to download the latest stable release from Docker hub use command :
 
 `docker pull owasp/threat-dragon:stable`
 
-There are step-by-step instructions for [Bitbucket access]({{ '/docs-2/bitbucket-repo/' | relative_url }})
-and also for [github access]({{ '/docs-2/github-repo/' | relative_url }})
-which explain the configuration needed to provide the environment variables for the docker container.
+There are step-by-step instructions for [Bitbucket]({{ '/docs-2/bitbucket-repo/' | relative_url }}),
+[Gitlab]({{ '/docs-2/gitlab-repo/' | relative_url }}), and [github ]({{ '/docs-2/github-repo/' | relative_url }})
+access which explain the configuration needed to provide the environment variables for the docker container.
+
+'Stable' is built for OS linux and architecture amd64 and in future there will be builds for architecture arm64.
+
+The latest builds are available on the [threatdragon-repo], for example:
+
+* `docker pull threatdragon/owasp-threat-dragon:latest-arm64` for architecture arm64
+* `docker pull threatdragon/owasp-threat-dragon:latest` for amd64
 
 #### Building
 
@@ -90,3 +97,5 @@ Express server listening at :: on port 3000
 debug: controllers/homecontroller.js: API index request,
 sendFile /app/dist/index.html {"service":"threat-dragon","timestamp":""}
 ```
+
+[threatdragon-repo]: https://hub.docker.com/repository/docker/threatdragon/owasp-threat-dragon/tags
