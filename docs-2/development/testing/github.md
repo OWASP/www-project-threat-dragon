@@ -68,10 +68,12 @@ then the domain will probably be 'localhost'.
     2. Client Secret will be 40 hexadecimal characters, for example `deadbeef0123456789abcdef01234567deadbeef`
     3. Treat these values with the same security as a password; they provide access to your GitHub account
 
-The GitHub OAuth Application is now ready for use by the Threat Dragon server with values:
+The GitHub OAuth Application is now ready for use by the Threat Dragon server with example values:
 
 - `GITHUB_CLIENT_ID='deadbeef0123456789aa'`
 - `GITHUB_CLIENT_SECRET='deadbeef0123456789abcdef01234567deadbeef'`
+
+Clearly these values are *not to be used* for a real application.
 
 Example of registering a new OAuth application:
 
