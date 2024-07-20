@@ -74,7 +74,7 @@ Click on the **Edit** button to start editing the threat model details.
 You can add new contributors by entering their name and clicking on the 'Add' in the tag box.
 You can also add the contributor by entering their name and hitting the 'enter' or ',' or ';' keys.
 
-![Add Contributor image]({{ '/docs-2/assets/images/addcontributor.png' | relative_url }}){: .image-left }
+![Add Contributor image]({{ '/docs-2/assets/images/addcontributors.png' | relative_url }}){: .image-left }
 
 Add some diagrams to your model by clicking on 'Add a new diagram ...'
 
