@@ -30,10 +30,10 @@ Getting started with [Threat Dragon](http://owasp.org/www-project-threat-dragon)
 
 The Threat Dragon web applications stores its threat models in the configured repository or on your local drive.
 
-![New model image]({{ '/docs-2/assets/images/newmodel.png' | relative_url }}){: .image-left }
-
 To get started with your threat model access the welcome page and start a new model by
 clicking on the **plus** area of the Welcome page.
+
+![New model image]({{ '/docs-2/assets/images/newmodel.png' | relative_url }}){: .image-left }
 
 You will then be presented with a list of your repositories.
 Pick the one where you want to store your new model.
