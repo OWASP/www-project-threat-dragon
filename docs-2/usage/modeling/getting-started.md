@@ -71,7 +71,10 @@ Click on the **Edit** button to start editing the threat model details.
 * High level system description - provides context for your model
 * Contributors - giving credit where it is due
 
-You can add new contributors by clicking on 'Add a new contributor ...'.
+You can add new contributors by entering their name and clicking on the 'Add' in the tag box.
+You can also add the contributor by entering their name and hitting the 'enter' or ',' or ';' keys.
+
+![Add Contributor image]({{ '/docs-2/assets/images/addcontributor.png' | relative_url }}){: .image-left }
 
 Add some diagrams to your model by clicking on 'Add a new diagram ...'
 
