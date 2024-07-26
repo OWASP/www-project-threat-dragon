@@ -15,7 +15,7 @@ permalink: /docs-2/local-development/
 ## Quickstart
 
 1. Clone the repository: `git clone https://github.com/OWASP/threat-dragon.git`
-2. Configure your [environment]({{ '/docs-2/development-environment/' | relative_url }})
+2. Configure your [environment]({{ '/docs-2/install-environment/' | relative_url }})
 3. Run `npm run dev:server`
 4. In another terminal, run `npm run dev:vue`
 5. Visit [http://localhost:8080](http://localhost:8080/)

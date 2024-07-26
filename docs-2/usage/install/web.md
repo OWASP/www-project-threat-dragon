@@ -40,7 +40,7 @@ To install use npm (or pnpm if that is installed) :
 
 ### Environment variables
 
-See the [environment]({{ '/docs-2/development-environment/' | relative_url }}) page
+See the [environment]({{ '/docs-2/install-environment/' | relative_url }}) page
 for details on configuring your environment variables.
 
 ### Running the application

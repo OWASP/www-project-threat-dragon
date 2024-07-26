@@ -55,7 +55,7 @@ Note that here tag `local` has been used, but it could be almost anything such a
 
 ### Environment variables
 
-See the [environment]({{ '/docs-2/development-environment/' | relative_url }}) page
+See the [environment]({{ '/docs-2/install-environment/' | relative_url }}) page
 for details on what environment variables are expected.
 Threat Dragon currently supports [dotenv](https://github.com/motdotla/dotenv),
 as well as file-based loading by setting environment variables with the `_FILE` postfix,

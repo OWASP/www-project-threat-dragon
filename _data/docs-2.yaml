@@ -25,6 +25,9 @@ docs:
 - title: 'Install: environment variables'
   url: install-environment
 
+- title: 'Configure: Local file access'
+  url: local-file
+
 - title: 'Configure: Github repo access'
   url: github-repo
 

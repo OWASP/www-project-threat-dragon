@@ -10,9 +10,7 @@ permalink: /docs-2/bitbucket-repo/
 
 {% include breadcrumb.html %}
 
-## [OWASP](https://www.owasp.org) Threat Dragon
-
-### Bitbucket repository access
+## Bitbucket repository access
 
 This page is a step by step explanation of how to configure the Threat Dragon Web App for access to Atlassian Bitbucket.
 Most of these steps assume that the Threat Dragon web application is being used for learning
@@ -21,7 +19,7 @@ for any public accessible or sensitive use.
 
 Note that Bitbucket access is for a specific workspace, in contrast to the much wider GitHub access.
 
-#### Decide on configuration
+### Decide on configuration
 
 There are various configuration parameters that need to be determined at the outset.
 
@@ -49,11 +47,11 @@ Set the workspace name to 'threat-dragon-test' and the scope to 'repository:writ
 Create three new and different keys for encryption, JWT and JWT-refresh using `openssl rand -hex 16` for 256 bit keys.
 Do not actually use these keys as shown, but here are examples:
 
-- `ENCRYPTION_JWT_REFRESH_SIGNING_KEY='deadbeef00112233445566778899aabb'`
+- `ENCRYPTION_JWT_REFRESH_SIGNING_KEY='00112233445566778899aabbccddeeff'`
 - `ENCRYPTION_JWT_SIGNING_KEY='deadbeef112233445566778899aabbcc'`
-- `ENCRYPTION_KEYS='[{"isPrimary": true, "id": 0, "value": "deadbeef2233445566778899aabbccdd"}]'`
+- `ENCRYPTION_KEYS='[{"isPrimary": true, "id": 0, "value": "0123456789abcdef0123456789abcdef"}]'`
 
-#### Web App Bitbucket Access
+### Web App Bitbucket Access
 
 The Threat Dragon web application uses an [Atlassian OAuth consumer][bitbucketoauth] as the mechanism to access
 the Bitbucket API for the given repository workspace.
@@ -78,12 +76,12 @@ Fill out the form with the following suggested content:
 Note the displayed values for both the Key and the Secret and **save these somewhere secure**.
 Treat these values with the same security as a password; they provide access to your Bitbucket account
 
-- Key will be 20 hexadecimal (10 byte) characters, for example `deadbeef0123456789aa` used for `BITBUCKET_CLIENT_ID`
+- Key will be 20 hexadecimal (10 byte) characters, for example `deadbeef0123456789ab` used for `BITBUCKET_CLIENT_ID`
 - Secret will be 32 hexadecimal characters, for example `deadbeef0123456789abcdefdeadbeef` used for `BITBUCKET_CLIENT_SECRET`
 
 The Bitbucket OAuth consumer is now ready for use by the Threat Dragon server with values:
 
-- `BITBUCKET_CLIENT_ID='deadbeef0123456789aa'`
+- `BITBUCKET_CLIENT_ID='deadbeef0123456789ab'`
 - `BITBUCKET_CLIENT_SECRET='deadbeef0123456789abcdefdeadbeef'`
 
 Clearly these values are *not to be used* for a real application.
@@ -118,13 +116,13 @@ and also have the server logs printed to the console, so the docker parameters `
 ```text
 docker run -it --rm \
 -p 8080:3000 \
--e BITBUCKET_CLIENT_ID='deadbeef0123456789aa' \
+-e BITBUCKET_CLIENT_ID='deadbeef0123456789ab' \
 -e BITBUCKET_CLIENT_SECRET='deadbeef0123456789abcdefdeadbeef' \
 -e BITBUCKET_SCOPE='repository:write' \
 -e BITBUCKET_WORKSPACE='threat-dragon-test' \
--e ENCRYPTION_JWT_REFRESH_SIGNING_KEY='deadbeef00112233445566778899aabb' \
+-e ENCRYPTION_JWT_REFRESH_SIGNING_KEY='00112233445566778899aabbccddeeff' \
 -e ENCRYPTION_JWT_SIGNING_KEY='deadbeef112233445566778899aabbcc' \
--e ENCRYPTION_KEYS='[{"isPrimary": true, "id": 0, "value": "deadbeef2233445566778899aabbccdd"}]' \
+-e ENCRYPTION_KEYS='[{"isPrimary": true, "id": 0, "value": "0123456789abcdef0123456789abcdef"}]' \
 -e NODE_ENV='development' \
 -e SERVER_API_PROTOCOL='http' \
 owasp/threat-dragon:stable
@@ -144,7 +142,7 @@ Please see docs/development/environment.md for more information
 2023-12-16 08:08:18 OWASP Threat Dragon failed to start
 ```
 
-#### Accessing Bitbucket
+### Accessing Bitbucket
 
 From the main Threat Dragon page click on the 'Login with Bitbucket' button.
 If you are not logged in already then Bitbucket will prompt for the user account credentials
@@ -157,21 +155,21 @@ Once you are logged in then Bitbucket will ask if the Threat Dragon OAuth consum
 If access is permitted then the main Threat Dragon page is displayed and threat models can be
 read from and written to the user's public repositories.
 
-The Threat Dragon web server is now correctly running.
+The Threat Dragon web server is now running correctly.
 
-#### Use environment file
+### Use environment file
 
 Once the parameters are correct for running the Threat Dragon server,
 it is useful to provide a file for (most) of the parameters. Here a test environment file `test.env` has been created:
 
 ```text
-BITBUCKET_CLIENT_ID='deadbeef0123456789aa'
+BITBUCKET_CLIENT_ID='deadbeef0123456789ab'
 BITBUCKET_CLIENT_SECRET='deadbeef0123456789abcdefdeadbeef'
 BITBUCKET_SCOPE='repository:write'
 BITBUCKET_WORKSPACE='threat-dragon-test'
-ENCRYPTION_JWT_REFRESH_SIGNING_KEY='deadbeef00112233445566778899aabb'
+ENCRYPTION_JWT_REFRESH_SIGNING_KEY='00112233445566778899aabbccddeeff'
 ENCRYPTION_JWT_SIGNING_KEY='deadbeef112233445566778899aabbcc'
-ENCRYPTION_KEYS='[{"isPrimary": true, "id": 0, "value": "deadbeef2233445566778899aabbccdd"}]'
+ENCRYPTION_KEYS='[{"isPrimary": true, "id": 0, "value": "0123456789abcdef0123456789abcdef"}]'
 NODE_ENV='development'
 SERVER_API_PROTOCOL='http'
 ```
@@ -188,7 +186,7 @@ or if using Windows:
 Ensure that Threat Dragon is running on `http://localhost:8080/#/` as expected,
 and that the Bitbucket workspace is accessible.
 
-#### Logging to Docker desktop
+### Logging to Docker desktop
 
 Once the container is successfully configured it is useful to to run the docker container as a background process
 and inspect the logs using Docker desktop, rather than have the server logs printed to the console.
