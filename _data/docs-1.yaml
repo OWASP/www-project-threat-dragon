@@ -34,9 +34,6 @@ docs:
 - title: 'CLI'
   url: cli
 
-- title: 'Utilities'
-  url: utilities
-
 - title: 'Downloads'
   url: downloads
 
