@@ -6,20 +6,22 @@ order: 3
 tags: threatdragon
 ---
 
-### Version 2.2: in progress
+### Version 2.3: in progress
 
 - [ ] provide an API for CI/CD pipelines
 - [ ] provide a CLI for scripting based on TD's existing [use of yargs](https://github.com/yargs/yargs)
 - [ ] provide multiple methods of authentication and access similar to [draw.io](https://app.diagrams.net) login page
+- [x] automated threats (both by element and by OATS)
 
-**model access for both desktop and web app**:
+### Version 2.2: released February 2024
 
-- [ ] load models from various sources similar to [drawio](https://github.com/jgraph/drawio):
+Threat model access for web app:
+
+- [x] load models from various repos :
   - [x]  github enterprise
-  - [ ]  gitlab
-  - [ ]  Google Drive
-  - [ ]  OneDrive
-  - [ ]  Dropbox
+  - [x]  gitlab
+  - [x]  github enterprise
+  - [x]  BitBucket
 
 ### Version 2.1: released October 2023
 
