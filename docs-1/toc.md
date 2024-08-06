@@ -34,8 +34,6 @@ permalink: /docs-1/
 
 ## [CLI](cli.md)
 
-## [Utilities](utilities.md)
-
 ## [Downloads](downloads.md)
 
 ## [Contributing](contributing.md)
