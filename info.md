@@ -1,12 +1,12 @@
 ### Classification
 
 * <i class="fas fa-flask" style="color:#FFA500;"></i> Lab Project
-* <i class="fas fa-tools" style="color:#233e81;"></i> Tool
+* <i class="fas fa-tools fa-2x" style="color:#233e81;"></i> Tool
 
 ### Audience
 
-* <i class="fas fa-toolbox" style="color:#233e81;"></i> Builder
-* <i class="fas fa-shield-alt" style="color:#233e81;"></i> Defender
+* <i class="fas fa-toolbox fa-2x" style="color:#233e81;"></i> Builder
+* <i class="fas fa-shield-alt fa-2x" style="color:#233e81;"></i> Defender
 
 ### Documentation
 
