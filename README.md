@@ -1,3 +1,12 @@
+<p align="center">
+  <img src="https://raw.githubusercontent.com/owasp/threat-dragon/main/td.vue/src/assets/threatdragon_logo_solid_image.svg"
+  width="200" alt="Threat Dragon Logo"/>
+</p>
+
+[![Build status](https://github.com/OWASP/www-project-threat-dragon/actions/workflows/ci.yaml/badge.svg)](https://github.com/OWASP/www-project-threat-dragon/actions/workflows/ci.yaml)
+[![GitHub license](https://img.shields.io/github/license/owasp/www-project-threat-dragon.svg)](license.txt)
+[![OWASP Lab](https://img.shields.io/badge/owasp-lab%20project-f7b73c.svg)](https://www.owasp.org/projects)
+
 ## OWASP Foundation Threat Dragon Homepage
 
 This repo is the source for the OWASP Threat Dragon project [web pages](https://owasp.org/www-project-threat-dragon/)
