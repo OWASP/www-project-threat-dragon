@@ -6,6 +6,7 @@
 [![Build status](https://github.com/OWASP/www-project-threat-dragon/actions/workflows/ci.yaml/badge.svg?event=push)][build]
 [![GitHub license](https://img.shields.io/github/license/owasp/www-project-threat-dragon.svg)](license.txt)
 [![OWASP Lab](https://img.shields.io/badge/owasp-lab%20project-f7b73c.svg)](https://www.owasp.org/projects)
+[![OpenSSF Best Practices](https://www.bestpractices.dev/projects/9266/badge)](https://www.bestpractices.dev/projects/9266)
 
 ## OWASP Foundation Threat Dragon Homepage
 
@@ -25,6 +26,8 @@ and you may need to [subscribe](https://owasp.org/slack/invite) first.
 * [Mike Goodwin](mailto:mike.goodwin@owasp.org)
 * [Jon Gadsden](mailto:jon.gadsden@owasp.org)
 * [Leo Reading](mailto:leo.reading@owasp.org)
+
+----
 
 Threat Dragon: _making threat modeling less threatening_
 
