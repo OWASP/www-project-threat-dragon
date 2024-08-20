@@ -44,7 +44,7 @@ Set the workspace name to 'threat-dragon-test' and the scope to 'repository:writ
 - `BITBUCKET_SCOPE='repository:write'`
 - `BITBUCKET_WORKSPACE='threat-dragon-test'`
 
-Create three new and different keys for encryption, JWT and JWT-refresh using `openssl rand -hex 16` for 256 bit keys.
+Create three new and different keys for encryption, JWT and JWT-refresh using `openssl rand -hex 16` for 128 bit keys.
 Do not actually use these keys as shown, but here are examples:
 
 - `ENCRYPTION_JWT_REFRESH_SIGNING_KEY='00112233445566778899aabbccddeeff'`

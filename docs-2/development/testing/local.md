@@ -35,7 +35,7 @@ Server API protocol: this would be set to HTTPS in production, but as we are in 
 
 - `SERVER_API_PROTOCOL='http'`
 
-Create three new and different keys for encryption, JWT and JWT-refresh using `openssl rand -hex 16` for 256 bit keys.
+Create three new and different keys for encryption, JWT and JWT-refresh using `openssl rand -hex 16` for 128 bit keys.
 Do not actually use these keys as shown, but here are examples:
 
 - `ENCRYPTION_JWT_REFRESH_SIGNING_KEY='00112233445566778899aabbccddeeff'`
