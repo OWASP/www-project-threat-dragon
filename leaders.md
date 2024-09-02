@@ -1,8 +1,8 @@
 ### Leaders
 
-* [Mike Goodwin](https://github.com/mike-goodwin)
-* [Jon Gadsden](https://github.com/jgadsden)
-* [Leo Reading](https://github.com/lreading)
+* [Mike Goodwin](mailto:mike.goodwin@owasp.org)
+* [Jon Gadsden](mailto:jon.gadsden@owasp.org)
+* [Leo Reading](mailto:leo.reading@owasp.org)
 
 ### Main Contributors
 
