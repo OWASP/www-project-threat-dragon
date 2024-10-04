@@ -48,10 +48,10 @@ and Libre Office [OpenDocument Presentation](/assets/downloads/enter-the-dragon.
 
 ##### [OWASP Bristol chapter](https://owasp.org/www-chapter-bristol-uk/)
 
-Presentation at the Bristol chapter [meeting November 2019](https://www.meetup.com/OWASP-Bristol/events/261525682/)
+Presentation at the Bristol chapter [meeting November 2019](https://www.meetup.com/OWASP-Bristol/events/261525682/?eventOrigin=)
 in [OpenDocument Presentation format](/assets/downloads/OWASP_threat_dragon.odp)
 
-Presentation at the Bristol chapter [meeting September 2017](https://www.meetup.com/OWASP-Bristol/events/240114497/),
+Presentation at the Bristol chapter [meeting September 2017](https://www.meetup.com/OWASP-Bristol/events/240114497/?eventOrigin=),
 OpenDocument Presentation format
 [abbreviated version](/assets/downloads/OWASP_introduction_threat_modeling_short.odp)
 and [longer version](/assets/downloads/OWASP_introduction_threat_modeling.odp).

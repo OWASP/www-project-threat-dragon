@@ -156,7 +156,7 @@ docker run -d --rm \
     -e NODE_ENV='development' \
     --platform linux/x86_64 \
     -e SERVER_API_PROTOCOL='http' \
-    threatdragon/owasp-threat-dragon:PR-943
+    owasp-threat-dragon:dev
 ```
 
 - check the web app is accessible on `http://localhost:3000/`
