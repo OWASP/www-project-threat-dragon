@@ -14,7 +14,7 @@ permalink: /docs-2/api/
 
 At present it there is a minimal application programming interface for
 [Threat Dragon](http://owasp.org/www-project-threat-dragon) .
-This API is used to access to threat models stored by repository providers such as github, bitbucket or gitlab.
+This API is used to access threat models stored by repository providers such as github, bitbucket or gitlab.
 
 APIs protected by authorisation, including threat model Create, Read, Update (but no Delete):
 

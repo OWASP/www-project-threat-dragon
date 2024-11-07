@@ -148,6 +148,7 @@ Export all of the your variables from the terminal where you will start Threat d
 `set GITHUB_CLIENT_ID=deadbeef0123456789ab`
 
 `set ...`
+
 ___
 
 ## Environment variable reference
