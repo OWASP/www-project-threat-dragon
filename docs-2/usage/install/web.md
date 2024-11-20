@@ -24,7 +24,7 @@ The web application can be run locally or from a server.
 Threat Dragon is a node.js single page application using Vue on the client and Express on the server.
 To build and run locally follow these steps:
 
-Install [node.js](https://nodejs.org/en/download/), which includes the node package manager `npm`,
+Install [node.js][download], which includes the node package manager `npm`,
 and also install [git](https://git-scm.com/downloads).
 To get the code, navigate to where you want your code to be located and run
 
@@ -53,3 +53,5 @@ When running on Windows the front-end and back-end are started separately using 
 `npm run dev:server` and `npm run dev:vue`.
 
 If you then browse to `http://localhost:8080` you should see the running application.
+
+[download]: https://nodejs.org/en/download/package-manager
