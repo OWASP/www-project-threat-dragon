@@ -43,6 +43,7 @@ To connect the end of a data flow to a diagram element drag one of its ends onto
 
 Extra vertices can be added by clicking at some point on the line.
 These new vertices can also be dragged to position the data flow or trust boundary.
+Drag an existing vertex onto another to remove it.
 
 Both data flows and trust boundaries can be deleted by clicking the red icon that appears after it has been selected.
 
