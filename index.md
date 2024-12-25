@@ -53,11 +53,14 @@ you may need to [subscribe](https://owasp.org/slack/invite) first.
 
 ### Related Projects
 
-* [OWASP pytm (Pythonic Threat Modeling)](https://owasp.org/www-project-pytm/)
-* [Threat Modeling OWASP Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html)
-* [Threagile - Agile Threat Modeling](https://threagile.io), it is open source although not from OWASP
+* [OWASP pytm (Pythonic Threat Modeling)][pytm]
+* [Threat Modeling OWASP Cheat Sheet][tmcs]
+* [Threagile - Agile Threat Modeling][threagile], an (non-OWASP) open source project
 
 [demo]: https://youtu.be/n6JGcZGFq5o
 [docs-1]: https://owasp.org/www-project-threat-dragon/docs-1/
 [docs-2]: https://owasp.org/www-project-threat-dragon/docs-2/
 [manifesto]: https://www.threatmodelingmanifesto.org/
+[pytm]: https://owasp.org/www-project-pytm/
+[threagile]: https://threagile.io
+[tmcs]: https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html

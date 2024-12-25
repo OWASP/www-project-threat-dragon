@@ -1,5 +1,4 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://owasp.org/www-project-threat-dragon/assets/schemas/threat.model.format.schema.json",
   "title": "Threat Model Format",
   "description": "An open Threat Model Format (TMF) for threat models",
@@ -43,6 +42,7 @@
               "description": "A technical overview of the threat model",
               "type": "string"
             }
+          }
         },
         "owner": {
           "description": "The owner of the threat model project",
@@ -55,8 +55,7 @@
             "contact": {
               "description": "Contact details for the owner",
               "type": "string"
-            },
-            "required": [ "name" ]
+            }
           }
         },
         "reviewers": {
@@ -73,8 +72,7 @@
               "contact": {
                 "description": "Contact details for the reviewer",
                 "type": "string"
-              },
-              "required": [ "name" ]
+              }
             }
           }
         },
@@ -92,11 +90,11 @@
               "contact": {
                 "description": "Contact details for the contributor",
                 "type": "string"
-              },
-              "required": [ "name" ]
+              }
+            }
           }
         },
-        "required": [ "name" ]
+        "required": [ "title" ]
       }
     },
     "representations": {
@@ -113,7 +111,7 @@
             "type": "string"
           }
         },
-        "required": [ "name", "id" ]
+        "required": [ "title", "id" ]
       }
     },
     "requirements": {
@@ -130,7 +128,7 @@
             "type": "string"
           }
         },
-        "required": [ "name", "id" ]
+        "required": [ "title", "id" ]
       }
     },
     "actors": {
@@ -147,7 +145,7 @@
             "type": "string"
           }
         },
-        "required": [ "name", "id" ]
+        "required": [ "title", "id" ]
       }
     },
     "assets": {
@@ -164,7 +162,7 @@
             "type": "string"
           }
         },
-        "required": [ "name", "id" ]
+        "required": [ "title", "id" ]
       }
     },
     "assumptions": {
@@ -181,7 +179,7 @@
             "type": "string"
           }
         },
-        "required": [ "name", "id" ]
+        "required": [ "title", "id" ]
       }
     },
     "boundaries": {
@@ -198,7 +196,7 @@
             "type": "string"
           }
         },
-        "required": [ "name", "id" ]
+        "required": [ "title", "id" ]
       }
     },
     "data": {
@@ -215,7 +213,7 @@
             "type": "string"
           }
         },
-        "required": [ "name", "id" ]
+        "required": [ "title", "id" ]
       }
     },
     "findings": {
@@ -246,7 +244,7 @@
             "type": "string"
           }
         },
-        "required": [ "name", "id" ]
+        "required": [ "title", "id" ]
       }
     },
     "flows": {
@@ -263,7 +261,7 @@
             "type": "string"
           }
         },
-        "required": [ "name", "id" ]
+        "required": [ "title", "id" ]
       }
     },
     "elements": {
@@ -280,7 +278,7 @@
             "type": "string"
           }
         },
-        "required": [ "name", "id" ]
+        "required": [ "title", "id" ]
       }
     },
     "remediations": {
@@ -297,7 +295,7 @@
             "type": "string"
           }
         },
-        "required": [ "name", "id" ]
+        "required": [ "title", "id" ]
       }
     },
     "threats": {
@@ -314,7 +312,7 @@
             "type": "string"
           }
         },
-        "required": [ "name", "id" ]
+        "required": [ "title", "id" ]
       }
     }
   },
