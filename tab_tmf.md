@@ -1,5 +1,5 @@
 ---
-title: Threat Model File format
+title: TMF
 layout: null
 tab: true
 order: 4
