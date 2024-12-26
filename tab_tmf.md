@@ -2,7 +2,7 @@
 title: TMF
 layout: null
 tab: true
-order: 4
+order: 2
 tags: threatdragon
 ---
 
@@ -20,10 +20,10 @@ such as pytm, Threagile and Open Threat Model.
 The intention is to change the model file format in Threat Dragon version 3.x onwards.
 The goal will be to define a schema that is flexible enough to easily convert from the existing:
 
-* [OWASP Threat Dragon] versions 1.x and 2.x
+* OWASP Threat Dragon versions 1.x and 2.x
 * [OWASP pytm][pytm] pythonic threat modeling
-* [Threagile][threagile]
-* [Open Threat Model][otm] (OTM)
+* [Threagile][threagile] open-source toolkit for agile threat modeling
+* [Open Threat Model][otm] (OTM) file format
 
 There is an [open discussion][discussion] for suggestions and debate on this subject.
 
