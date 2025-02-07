@@ -10,3 +10,5 @@ http://127.0.0.1
 # incorrectly get 'Network error: Forbidden'
 https://www.deviantart.com
 
+# Too many redirects: error following redirect for docker tags
+https://hub.docker.com/repository/docker/threatdragon/owasp-threat-dragon/tags
