@@ -15,46 +15,51 @@ a desktop application and a web application.
 
 ## Desktop application install instructions
 
-Installable versions are available for download from the
-[OWASP GitHub area](https://github.com/OWASP/threat-dragon/releases):
+Installable versions are available for download from the [OWASP GitHub area][releases]:
 
-* Windows (64 bit) installer
-* MacOS installer
+* Windows (64 bit) executable / installer
+* MacOS installers (.dmg) for X86 and Apple silicon
 * Linux snap, AppImage, debian and rpm installers
-
-The builds are for architecture amd64, with additional arm64 builds scheduled for version 2.3 and above.
 
 ### Linux installer and AppImage
 
-Packages for both Debian and Fedora Linux on AMD64 and X86-64bit platforms can be downloaded from the
-[releases folder](https://github.com/OWASP/threat-dragon/releases/).
-Alternatively a platform independent snap installer can be downloaded or use the platform independent AppImage.
+Packages for both Debian and Fedora Linux on AMD64 and X86-64bit platforms
+can be downloaded from the [releases area][releases].
+Platform independent application installers Snap and AppImage are also provided.
 
 ### MacOS installer
 
-Download the `.dmg` MacOS installer from the [releases folder](https://github.com/OWASP/threat-dragon/releases/).
-Open the download and drag 'OWASP Threat  Dragon' to the application directory. When the install has
-finished run Threat  Dragon from launchpad or from Finder / Applications.
+Download the `.dmg` MacOS installer from the [releases area][releases].
+Open the download and drag 'OWASP Threat  Dragon' to the application directory.
+When the install has finished, run Threat  Dragon from launchpad or from Finder / Applications.
 
 ### Windows installer
 
-Download the Windows `.exe` installer from the [releases folder](https://github.com/OWASP/threat-dragon/releases/).
+Download the Windows `.exe` installer from the [releases area][releases].
 Run the installer and invoke the application from the shortcut.
 
-### Command line using npm
+### Desktop application build instructions
 
-For the latest versions of code between releases `npm` can be used to install and run Threat Dragon locally:
+As an alternative to using a released version of the the Threat Dragon desktop application,
+`npm` can be used to install and run Threat Dragon locally:
 
 ```text
 git clone https://github.com/owasp/threat-dragon
 cd threat-dragon
 npm install
 ```
+This allows access to the latest code updates between releases,
 
-To run Threat Dragon in development mode:
+To run the Threat Dragon desktop application in development mode:
 
 `npm run start:desktop`
 
 To build an installer:
 
 `npm run build:desktop`
+
+----
+
+Threat Dragon: _making threat modeling less threatening_
+
+[releases]: https://github.com/OWASP/threat-dragon/releases/

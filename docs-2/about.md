@@ -10,6 +10,23 @@ permalink: /docs-2/about/
 
 {% include breadcrumb.html %}
 
+<style type="text/css">
+.image-left {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+}
+.image-right {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  float: right;
+}
+</style>
+
+![cupcake logo](/assets/images/cupcake-128x128.png){: .image-right }
+
 [Threat Dragon](http://owasp.org/www-project-threat-dragon) is a free, open-source,
 cross-platform [threat modeling](https://owasp.org/www-community/Threat_Modeling) application.
 This tool provides for the creation of threat model data-flow diagrams
@@ -46,7 +63,8 @@ The application comes in two variants:
     * Github Enterprise
   
 2. **Desktop application**: There are [installers][releases] available for Windows, Mac OSX and Linux.
-    The model files are stored on the local file system only; repository access for the desktop variant could be a future enhancement.
+    The model files are stored on the local file system only;
+    repository access for the desktop variant could be a future enhancement.
 
 ### Internationalization
 
@@ -72,7 +90,8 @@ Threat Dragon maintains a [Demo Instance](https://www.threatdragon.com/)
 that is hosted on [Heroku](https://www.heroku.com/).
 We strongly recommend using a self-hosted instance or the desktop application as the most secure options.
 
-____
+----
+
 <p>
 <sup><a name="footnote1">1</a>: Spoofing, Tampering, Repudiation, Information disclosure,
     DoS, Elevation of privilege</sup><br>

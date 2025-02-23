@@ -51,8 +51,6 @@ Threat Dragon seeks to provide:
 - Flexibility - the diagramming and threat entry allows many types of threat to be described
 - Accessibility - different types of teams can benefit from Threat Dragon's simplicity and flexibility
 
-![OWASP logo](/assets/images/owasp.png){: .image-left }
-
 You can find the source code for Threat Dragon on [GitHub][repo],
 where you can also ask for changes or report any issues.
 

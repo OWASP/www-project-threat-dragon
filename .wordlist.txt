@@ -3,6 +3,7 @@ AdHoc
 AntV
 AppImage
 Atlassian
+Bahasa
 BaseURL
 BitBucket
 Bitbucket
@@ -137,6 +138,7 @@ installable
 io
 javascript
 jpg
+jpn
 js
 json
 jwt

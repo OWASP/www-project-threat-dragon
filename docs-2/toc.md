@@ -22,7 +22,7 @@ permalink: /docs-2/
 
 #### [Install Web Application](usage/install/web.md)
 
-#### [Install Docker](usage/install/options.md)
+#### [Install Docker](usage/install/installation.md)
 
 #### [Configure environment](usage/config/environment.md)
 

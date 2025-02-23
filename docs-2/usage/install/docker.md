@@ -10,23 +10,17 @@ permalink: /docs-2/install-docker/
 
 {% include breadcrumb.html %}
 
-[Threat Dragon](http://owasp.org/www-project-threat-dragon) comes in two variants,
-a desktop application and a web application.
+The [Threat Dragon](http://owasp.org/www-project-threat-dragon) web application can be run as a Docker container.
 
-## Docker installation instructions
+## Running the Docker container
 
-The web application can be run from a docker container which can either be downloaded or built locally.
-
-### Downloading
-
-The Docker image can either be pulled from dockerhub or built locally.
+The web application can be run from a docker container which can either be pulled from [Docker Hub][docker] or built locally.
 
 #### Pulling/Downloading
 
-The released docker images are stored in
-[Docker Hub](https://hub.docker.com/r/owasp/threat-dragon/tags?page=1&ordering=name)
-and can be accessed using docker `pull`.
-For example to download the latest stable release from Docker hub use command :
+The released docker images are provided by the [OWASP Docker Hub][docker]
+and can be accessed using `docker pull`.
+For example to download the latest stable release from the OWASP Docker Hub :
 
 `docker pull owasp/threat-dragon:stable`
 
@@ -34,16 +28,26 @@ There are step-by-step instructions for [Bitbucket]({{ '/docs-2/bitbucket-repo/'
 [Gitlab]({{ '/docs-2/gitlab-repo/' | relative_url }}), and [github ]({{ '/docs-2/github-repo/' | relative_url }})
 access which explain the configuration needed to provide the environment variables for the docker container.
 
-'Stable' is built for OS linux and architecture amd64 and in future there will be builds for architecture arm64.
+'Stable' is built for OS linux and architectures amd64 (X86) and arm64 (Apple silicon).
 
-The latest builds are available on the [threatdragon-repo], for example:
+The very latest builds are available from the [Threat Dragon Docker Hub][td-docker]:
 
-* `docker pull threatdragon/owasp-threat-dragon:latest-arm64` for architecture arm64
-* `docker pull threatdragon/owasp-threat-dragon:latest` for amd64
+* `docker pull threatdragon/owasp-threat-dragon:latest-arm64` for arm64
+* `docker pull threatdragon/owasp-threat-dragon:latest` for amd64 (X86)
+
+Note that these 'latest' builds are not guaranteed to be stable.
 
 #### Building
 
 If the docker image needs to be rebuilt then start by cloning the Threat Dragon github project.
+Note that this provides the latest source code, rather than a released version:
+
+```text
+git init
+git clone https://github.com/owasp/threat-dragon.git
+cd threat-dragon
+```
+
 The docker image can then be built from the top directory of the project
 which contains the `Dockerfile`. Use a command such as :
 
@@ -55,26 +59,29 @@ Note that here tag `local` has been used, but it could be almost anything such a
 
 See the [environment]({{ '/docs-2/install-environment/' | relative_url }}) page
 for details on what environment variables are expected.
-Threat Dragon currently supports [dotenv](https://github.com/motdotla/dotenv),
+
+Threat Dragon supports [dotenv](https://github.com/motdotla/dotenv),
 as well as file-based loading by setting environment variables with the `_FILE` postfix,
 eg: `ENCRYPTION_KEYS_FILE=/run/secrets/td_encryption_keys`
-This is also shown in the docker-compose section of the environment documentation.
+This is described in the docker-compose section of the environment documentation.
 
 ### Running the docker container
 
-Running a locally built image or a downloaded image are very similar,
-just substitute the correct name in the command to run a detached container:
+Running a locally built image or a downloaded image use the same commands,
+substitute the correct name in the command to run a detached container:
 
 `docker run -d -p 8080:3000 -v $(pwd)/.env:/app/.env owasp-threat-dragon:local`
 
 Note that the container will need access to various environment variables, this can be done using the
 `-v $(pwd)/.env:/app/.env` part of the command - assuming that the `.env` file
 is on the directory from where you run the command.
-Windows users may not have access to the PWD environment variable,
-so just substitute an absolute path instead of `$(pwd)`.
 
-Here the container internal port is mapped to external port 8080,
-therefore Threat Dragon is accessible from `http://localhost:8080` .
+Windows users may not have access to the PWD environment variable,
+and may need to substitute an absolute path instead of `$(pwd)`.
+
+In the example above the container internal port 3000 is mapped to external port 8080,
+and so Threat Dragon is accessible within a browser using URL `http://localhost:8080` .
+The external port number can be changed to suit the system environment.
 
 ### Debugging
 
@@ -96,4 +103,9 @@ debug: controllers/homecontroller.js: API index request,
 sendFile /app/dist/index.html {"service":"threat-dragon","timestamp":""}
 ```
 
-[threatdragon-repo]: https://hub.docker.com/repository/docker/threatdragon/owasp-threat-dragon/tags
+----
+
+Threat Dragon: _making threat modeling less threatening_
+
+[docker]: https://hub.docker.com/r/owasp/threat-dragon/tags
+[td-docker]: https://hub.docker.com/repository/docker/threatdragon/owasp-threat-dragon/tags
