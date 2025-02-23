@@ -7,92 +7,92 @@ docs:
 - title: 'About'
   url: about
 
-- title: 'Credits'
-  url: credits
-
-- title: 'Install: options'
+- title: 'Installation'
   url: install-options
 
-- title: 'Install: desktop'
+- title: 'Install Desktop'
   url: install-desktop
 
-- title: 'Install: Docker'
-  url: install-docker
-
-- title: 'Install: webapp'
+- title: 'Install Web App'
   url: install-webapp
 
-- title: 'Install: environment variables'
+- title: 'Install Docker'
+  url: install-docker
+
+- title: 'Configure environment'
   url: install-environment
 
-- title: 'Configure: Local file access'
+- title: 'Configure Local access'
   url: local-file
 
-- title: 'Configure: Github repo access'
+- title: 'Configure Github access'
   url: github-repo
 
-- title: 'Configure: Bitbucket repo access'
+- title: 'Configure Bitbucket access'
   url: bitbucket-repo
 
-- title: 'Configure: GitLab repo access'
+- title: 'Configure GitLab access'
   url: gitlab-repo
 
-- title: 'Modeling: getting started'
+- title: 'Getting started'
   url: getting-started
 
-- title: 'Modeling: diagrams'
+- title: 'Diagrams'
   url: diagrams
 
-- title: 'Modeling: threat generation'
+- title: 'Threat generation'
   url: threats
 
-- title: 'Development: collaboration'
-  url: collaboration
-
-- title: 'Development: environment'
-  url: development-environment
-
-- title: 'Development: contributing'
-  url: contributing
-
-- title: 'Development: API'
-  url: api
-
-- title: 'Development: Local'
+- title: 'Development'
   url: local-development
 
-- title: 'Development: CLI'
+- title: 'Development environment'
+  url: development-environment
+
+- title: 'Contributing'
+  url: contributing
+
+- title: 'API'
+  url: api
+
+- title: 'CLI'
   url: cli
 
-- title: 'Development: internationalization'
+- title: 'Translations'
   url: internationalization
 
-- title: 'Development: schema'
+- title: 'Schema'
   url: schema
 
-- title: 'Testing: unit testing'
-  url: unit
+- title: 'Collaboration'
+  url: collaboration
 
-- title: 'Testing: end to end testing'
-  url: e2e
-
-- title: 'Testing: AdHoc testing'
+- title: 'Testing'
   url: adhoc
 
-- title: 'Actions'
+- title: 'Unit testing'
+  url: unit
+
+- title: 'End to end testing'
+  url: e2e
+
+- title: 'CI pipeline'
   url: pipeline-actions
 
-- title: 'Trust: dependency management'
+- title: 'Trust'
+  url: incidents
+
+- title: 'Dependency management'
   url: dependencies
 
-- title: 'Trust: SAST'
+- title: 'SAST'
   url: sast
 
-- title: 'Trust: DAST'
+- title: 'DAST'
   url: dast
 
-- title: 'Trust: container scanning'
+- title: 'Container scanning'
   url: container
 
-- title: 'Trust: incidents'
-  url: incidents
+- title: 'Credits'
+  url: credits

@@ -3,7 +3,7 @@
 title: Table of Contents
 layout: col-document
 tags: threatdragon
-document: Threat Dragon version 2.4
+document: OAWSP Threat Dragon version 2.x
 permalink: /docs-2/
 
 ---
@@ -14,25 +14,25 @@ permalink: /docs-2/
 
 ### [Introduction](introduction.md)
 
-#### [About](usage/about.md)
-
-#### [Credits](usage/credits.md)
+### [About](about.md)
 
 ### [Installation](usage/install/options.md)
 
-#### [Desktop installation](usage/install/desktop.md)
+#### [Install Desktop](usage/install/desktop.md)
 
-#### [Webapp installation](usage/install/web.md)
+#### [Install Web App](usage/install/web.md)
 
-#### [Webapp environment variables](usage/install/environment.md)
+#### [Install Docker](usage/install/options.md)
 
-#### [Docker installation](usage/install/options.md)
+#### [Configure environment](usage/config/environment.md)
 
-#### [Github repo access](development/testing/github.md)
+#### [Configure Local access](usage/config/local.md)
 
-#### [Bitbucket repo access](development/testing/bitbucket.md)
+#### [Configure Github access](usage/config/github.md)
 
-#### [GitLab repo access](development/testing/gitlab.md)
+#### [Configure Bitbucket access](usage/config/bitbucket.md)
+
+#### [Configure GitLab access](usage/config/gitlab.md)
 
 ### [Getting started](usage/modeling/getting-started.md)
 
@@ -40,45 +40,41 @@ permalink: /docs-2/
 
 #### [Threat generation](usage/modeling/threats.md)
 
-## Development
+### [Development](development/local-development.md)
 
-### [Collaboration](development/collaboration.md)
+#### [Development environment](development/environment.md)
 
-### [Environment](development/environment.md)
+#### [Contributing](development/contributing.md)
 
-### [Contributing](development/contributing.md)
+#### [API](development/api.md)
 
-### [API](development/api.md)
+#### [CLI](development/cli.md)
 
-### [Local Development](development/local-development.md)
+#### [Translations](development/internationalization.md)
 
-### [CLI](development/cli.md)
+#### [Schema](development/schema.md)
 
-### [Internationalization](development/internationalization.md)
+#### [Collaboration](development/collaboration.md)
 
-### [Schema](development/schema.md)
+### [Testing](testing/adhoc.md)
 
-### Testing
+#### [Unit testing](testing/unit.md)
 
-#### [Unit testing](development/testing/unit.md)
+#### [End to end testing](testing/e2e.md)
 
-#### [End to end testing](development/testing/e2e.md)
+#### [CI pipeline](testing/actions.md)
 
-#### [Ad hoc testing](development/testing/adhoc.md)
+### [Trust](trust/incidents.md)
 
-### [Actions](development/actions.md)
+#### [Dependency management](trust/dependencies.md)
 
-### Trust
+#### [SAST](trust/sast.md)
 
-#### [Dependency management](development/trust/dependencies.md)
+#### [DAST](trust/dast.md)
 
-#### [SAST](development/trust/sast.md)
+#### [Container scanning](trust/container.md)
 
-#### [DAST](development/trust/dast.md)
-
-#### [Container scanning](development/trust/container.md)
-
-#### [Incidents](development/trust/incidents.md)
+### [Credits](credits.md)
 
 ----
 

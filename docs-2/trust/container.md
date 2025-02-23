@@ -1,6 +1,6 @@
 ---
 
-title: Container Scanning
+title: Container scanning
 layout: col-document
 tags: threatdragon
 document: Threat Dragon version 2.4
@@ -9,8 +9,6 @@ permalink: /docs-2/container/
 ---
 
 {% include breadcrumb.html %}
-
-## Container Scanning
 
 [Trivy](https://github.com/aquasecurity/trivy) identifies known vulnerable packages inside the container,
 and scans the built container as part of each commit and pull-request.

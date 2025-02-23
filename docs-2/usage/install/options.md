@@ -1,16 +1,14 @@
 ---
 
-title: Installation Options
+title: Installation
 layout: col-document
 tags: threatdragon
-document: Threat Dragon version 2.4
+document: OAWSP Threat Dragon version 2.x
 permalink: /docs-2/install-options/
 
 ---
 
 {% include breadcrumb.html %}
-
-## [OWASP](https://www.owasp.org) Threat Dragon
 
 [Threat Dragon](http://owasp.org/www-project-threat-dragon) comes in two variants,
 a desktop application and a web application.

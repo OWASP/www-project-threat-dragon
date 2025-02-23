@@ -10,15 +10,6 @@ permalink: /docs-2/unit/
 
 {% include breadcrumb.html %}
 
-## Unit Testing
-
-## What is Unit Testing... and why?
-
-Unit tests are intended to test a single piece of functionality, while mocking away all external dependencies.
-The goal of a unit test is to know that a particular function or piece of code works exactly as expected
-under all of the possible code paths.
-Unit tests should not include any external dependencies.
-
 ## Running Unit Tests
 
 The complete suite of unit tests can be run locally using command `npm test` from the top directory.

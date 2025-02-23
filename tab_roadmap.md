@@ -12,6 +12,7 @@ tags: threatdragon
 - [ ] provide a CLI for scripting based on TD's existing [use of yargs](https://github.com/yargs/yargs)
 
 ### Version 2.3: released December 2024
+
 - [x] automated threats (both by element and by OATS)
 
 ### Version 2.2: released February 2024

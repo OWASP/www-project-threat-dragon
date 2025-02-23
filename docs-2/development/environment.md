@@ -3,14 +3,12 @@
 title: Development environment
 layout: col-document
 tags: threatdragon
-document: Threat Dragon version 2.4
+document: OAWSP Threat Dragon version 2.x
 permalink: /docs-2/development-environment/
 
 ---
 
 {% include breadcrumb.html %}
-
-## Development environment
 
 Refer to the various [environment variables]({{ '/docs-2/install-environment/' | relative_url }})
 that are available to configure the web application.

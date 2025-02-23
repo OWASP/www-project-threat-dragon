@@ -1,6 +1,6 @@
 ---
 
-title: Incidents
+title: Trust
 layout: col-document
 tags: threatdragon
 document: Threat Dragon version 2.4

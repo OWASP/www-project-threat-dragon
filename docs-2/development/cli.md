@@ -3,7 +3,7 @@
 title: CLI
 layout: col-document
 tags: threatdragon
-document: Threat Dragon version 2.4
+document: OAWSP Threat Dragon version 2.x
 permalink: /docs-2/cli/
 
 ---

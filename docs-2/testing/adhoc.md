@@ -1,6 +1,6 @@
 ---
 
-title: Ad hoc testing
+title: Testing
 layout: col-document
 tags: threatdragon
 document: Threat Dragon version 2.4
@@ -9,8 +9,6 @@ permalink: /docs-2/adhoc/
 ---
 
 {% include breadcrumb.html %}
-
-## Ad hoc Testing
 
 During development it can be convenient to check functionality of the front and back ends
 in an ad hoc way which is not part of the unit and end-to-end tests.

@@ -1,16 +1,14 @@
 ---
 
-title: Internationalization
+title: Translations
 layout: col-document
 tags: threatdragon
-document: Threat Dragon version 2.4
+document: OAWSP Threat Dragon version 2.x
 permalink: /docs-2/internationalization/
 
 ---
 
 {% include breadcrumb.html %}
-
-## [OWASP](https://www.owasp.org) Threat Dragon
 
 Internationalization is enabled by [vue-i18n](https://kazupon.github.io/vue-i18n/).
 This feature enables our community members to translate Threat Dragon,

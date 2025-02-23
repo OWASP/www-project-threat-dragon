@@ -1,26 +1,28 @@
 ---
 
-title: Github repo testing
+title: Configure Github access
 layout: col-document
 tags: threatdragon
 document: Threat Dragon version 2.4
-permalink: /docs-2/local-file/
+permalink: /docs-2/github-repo/
 
 ---
 
 {% include breadcrumb.html %}
 
-## Local file access
+[Threat Dragon](http://owasp.org/www-project-threat-dragon) can be run as a web application.
+If Github repository access is required then some configuration is necessary.
 
-This page is a step by step explanation of how to configure the Threat Dragon Web Application
-for local file system access only.
+## Github repository access
+
+This page is a step by step explanation of how to configure the Threat Dragon Web App for github access.
 Most of these steps assume that the Threat Dragon web application is being used for learning
 or testing purposes, if it is in a production environment then ensure that full security controls are in place
 for any public accessible or sensitive use.
 
 ### Decide on configuration
 
-There are a couple of configuration parameters that need to be determined at the outset.
+There are various configuration parameters that need to be determined at the outset.
 
 The Node environment - is it 'test', 'production' or 'development'?
 Going with 'development' because using 'production' enforces secure cookies that is not needed here,
@@ -28,10 +30,10 @@ and 'test' alters the functionality from what is being tested.
 
 - `NODE_ENV='development'`
 
-Application port number: this defaults to 3000 and can be mapped to another port when running the docker command.
+Application port number - this defaults to 3000, and it can be mapped to another port when running the docker command.
 So leave the port at 3000 by not defining it, and then map it to port 8080 using docker.
 
-Server API protocol: this would be set to HTTPS in production, but as we are in development mode define it as HTTP.
+Server API protocol - this would be set to HTTPS in production, but during development define it as HTTP.
 
 - `SERVER_API_PROTOCOL='http'`
 
@@ -42,9 +44,45 @@ Do not actually use these keys as shown, but here are examples:
 - `ENCRYPTION_JWT_SIGNING_KEY='deadbeef112233445566778899aabbcc'`
 - `ENCRYPTION_KEYS='[{"isPrimary": true, "id": 0, "value": "0123456789abcdef0123456789abcdef"}]'`
 
+### Web App GitHub Access
+
+The Threat Dragon web application uses [GitHub OAuth Applications][githuboauth] as the mechanism to access
+the GitHub API of the users repositories.
+A GitHub OAuth Application needs to be created for use by the web app to access github,
+and the GitHub OAuth Application provides the values `GITHUB_CLIENT_ID` and `GITHUB_CLIENT_SECRET`.
+
+To create a GitHub OAuth Application you need to know the port number and domain of the Threat Dragon application.
+Here port number 8080 is being used (a decision made in the previous section) and as it is being run locally
+then the domain will probably be 'localhost'.
+
+1. Log into your GitHub account and navigate to 'Settings' -> 'Developer settings' -> 'OAuth Apps' -> 'New OAuth App'
+2. Fill out the form with the following suggested content:
+    1. Application name: a unique identifier for the application.
+        This is not critical, something like 'Threat Dragon tests' will do
+    2. Homepage URL: local development so use `http://localhost:8080/#`
+    3. Application description: for example 'Threat Dragon testing for local development'
+    4. Authorization callback URL: for localhost and port 8080 use `http://localhost:8080/api/oauth/return`
+3. Proceed by agreeing to Register the application
+4. Initially there will be no Client secret; create a client secret via the 'Generate a new client secret' button
+5. Note the values for both the Client ID and the Client Secret, **save these somewhere secure**
+    1. Client ID will be 20 hexadecimal (10 byte) characters, for example `deadbeef0123456789aa`
+    2. Client Secret will be 40 hexadecimal characters, for example `deadbeef0123456789abcdef01234567deadbeef`
+    3. Treat these values with the same security as a password; they provide access to your GitHub account
+
+The GitHub OAuth Application is now ready for use by the Threat Dragon server with example values:
+
+- `GITHUB_CLIENT_ID='deadbeef0123456789ab'`
+- `GITHUB_CLIENT_SECRET='deadbeef0123456789abcdef01234567deadbeef'`
+
+Clearly these values are *not to be used* for a real application.
+
+Example of registering a new OAuth application:
+
+![New GitHub OAuth Application]({{ '/docs-2/assets/images/github-oauth-app.png' | relative_url }})
+
 ### Run from command line
 
-With this minimal set of configuration now available, download the docker image from [DockerHub][dockerhub]:
+With a minimal set of configuration now available, download the docker image from [DockerHub][dockerhub]:
 
 - `docker pull owasp/threat-dragon:stable`
 
@@ -64,6 +102,8 @@ and also have the server logs printed to the console, so the docker parameters `
 ```text
 docker run -it --rm \
 -p 8080:3000 \
+-e GITHUB_CLIENT_ID='deadbeef0123456789ab' \
+-e GITHUB_CLIENT_SECRET='deadbeef0123456789abcdef01234567deadbeef' \
 -e ENCRYPTION_JWT_REFRESH_SIGNING_KEY='00112233445566778899aabbccddeeff' \
 -e ENCRYPTION_JWT_SIGNING_KEY='deadbeef112233445566778899aabbcc' \
 -e ENCRYPTION_KEYS='[{"isPrimary": true, "id": 0, "value": "0123456789abcdef0123456789abcdef"}]' \
@@ -75,7 +115,7 @@ owasp/threat-dragon:stable
 Note that values for the keys need to be replaced with the values obtained in the previous sections.
 
 If the server container starts up correctly then navigate to `http://localhost:8080/#/` to get the main page.
-The 'Login to Local Session' button should be present.
+With a `GITHUB_CLIENT_ID` set then the 'Login with GitHub' button is made visible.
 
 If the container does not start then view the logs being dumped to the console,
 for example if `ENCRYPTION_JWT_REFRESH_SIGNING_KEY` has not been defined then there will be a log entry:
@@ -86,7 +126,21 @@ Please see docs/development/environment.md for more information
 2023-12-16 08:08:18 OWASP Threat Dragon failed to start
 ```
 
-Login to Threat Dragon and access files to and from the local filesystem to ensure the web server is running correctly.
+### Accessing github
+
+From the main Threat Dragon page click on the 'Login with GitHub' button.
+If you are not logged in already then GitHub will prompt for the user account credentials before allowing access to the repo:
+
+![Sign in to GitHub]({{ '/docs-2/assets/images/github-sign-in.png' | relative_url }})
+
+Once you are logged in then github will ask if the Threat Dragon GitHub OAuth Application is allowed to access the repo:
+
+![Authorize GitHub OAuth Application]({{ '/docs-2/assets/images/github-authorize.png' | relative_url }})
+
+If access is permitted then the main Threat Dragon page is displayed and threat models can be
+read from and written to the user's public repositories.
+
+The Threat Dragon web server is now running correctly.
 
 ### Use environment file
 
@@ -94,6 +148,8 @@ Once the parameters are correct for running the Threat Dragon server,
 it is useful to provide a file for (most) of the parameters. Here a test environment file `test.env` has been created:
 
 ```text
+GITHUB_CLIENT_ID='deadbeef0123456789ab'
+GITHUB_CLIENT_SECRET='deadbeef0123456789abcdef01234567deadbeef'
 ENCRYPTION_JWT_REFRESH_SIGNING_KEY='00112233445566778899aabbccddeeff'
 ENCRYPTION_JWT_SIGNING_KEY='deadbeef112233445566778899aabbcc'
 ENCRYPTION_KEYS='[{"isPrimary": true, "id": 0, "value": "0123456789abcdef0123456789abcdef"}]'
@@ -110,7 +166,7 @@ or if using Windows:
 
 - `docker run -it --rm -p 8080:3000 -v %CD%/test.env:/app/.env owasp/threat-dragon:stable`
 
-Ensure that Threat Dragon is running on `http://localhost:8080/#/` as expected, and that the filesystem is accessible.
+Ensure that Threat Dragon is running on `http://localhost:8080/#/` as expected, and that the GitHub repos are accessible.
 
 ### Logging to Docker desktop
 
@@ -126,3 +182,4 @@ or if using Windows:
 
 [dockerhub]: https://hub.docker.com/r/owasp/threat-dragon
 [dockerinstall]: https://docs.docker.com/engine/install/
+[githuboauth]: https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/creating-an-oauth-app

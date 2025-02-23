@@ -10,8 +10,8 @@
 
 ### Documentation
 
-* [Version 1.6](docs-1)
-* [Version 2.0](docs-2)
+* [Version 1.6.x](docs-1)
+* [Version 2.x](docs-2)
 * [Demonstration](https://www.threatdragon.com/)
 
 ### Downloads

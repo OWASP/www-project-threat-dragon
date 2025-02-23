@@ -1,6 +1,6 @@
 ---
 
-title: Install Environment
+title: Configure environment
 layout: col-document
 tags: threatdragon
 document: Threat Dragon version 2.4
@@ -9,6 +9,10 @@ permalink: /docs-2/install-environment/
 ---
 
 {% include breadcrumb.html %}
+
+[Threat Dragon](http://owasp.org/www-project-threat-dragon) comes in two variants,
+a desktop application and a web application.
+If the web application variant is being used then some configuration is necessary.
 
 ## Quickstart
 

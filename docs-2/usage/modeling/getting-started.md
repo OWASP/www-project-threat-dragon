@@ -3,7 +3,7 @@
 title: Getting started
 layout: col-document
 tags: threatdragon
-document: Threat Dragon version 2.4
+document: OAWSP Threat Dragon version 2.x
 permalink: /docs-2/getting-started/
 
 ---
@@ -18,9 +18,7 @@ permalink: /docs-2/getting-started/
 }
 </style>
 
-## [OWASP](https://www.owasp.org) Threat Dragon
-
-Getting started with [Threat Dragon](http://owasp.org/www-project-threat-dragon) models
+Getting started with [Threat Dragon](http://owasp.org/www-project-threat-dragon) models.
 
 ## Create a new model
 

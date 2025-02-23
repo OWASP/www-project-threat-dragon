@@ -10,8 +10,6 @@ permalink: /docs-2/dependencies/
 
 {% include breadcrumb.html %}
 
-## Dependency Management
-
 The following controls are in place to assist with dependency management of the web application:
 
 - Trivy scanning per commit for SCA and OS dependency management within docker

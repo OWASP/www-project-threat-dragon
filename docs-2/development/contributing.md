@@ -3,16 +3,12 @@
 title: Contributing
 layout: col-document
 tags: threatdragon
-document: Threat Dragon version 2.4
+document: OAWSP Threat Dragon version 2.x
 permalink: /docs-2/contributing/
 
 ---
 
 {% include breadcrumb.html %}
-
-## [OWASP](https://www.owasp.org) Threat Dragon
-
-### Contributing
 
 Pull requests, feature requests, bug reports and feedback of any kind are very welcome, please refer to the page for
 [contributors](https://github.com/OWASP/threat-dragon/blob/main/contributing.md).

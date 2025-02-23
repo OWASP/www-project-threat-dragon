@@ -3,7 +3,7 @@
 title: Introduction
 layout: col-document
 tags: threatdragon
-document: Threat Dragon version 2.4
+document: OAWSP Threat Dragon version 2.x
 permalink: /docs-2/introduction/
 
 ---
@@ -25,15 +25,13 @@ permalink: /docs-2/introduction/
 }
 </style>
 
-## OWASP Threat Dragon
-
 [Threat Dragon][td] is an open-source threat modelling tool from [OWASP][owasp].
 Threat Dragon provides an environment to create threat models as
 data-flow diagrams, along with associated threats and remediations.
 The threats threats can be categorized using STRIDE, [LINDDUN][linddun],
 CIA, DIE and [PLOT4ai][plot4ai].
 
-It can be run as a containerized web application or as a desktop application.
+Threat Dragon can be run as a containerized web application or as a desktop application.
 
 The web application can store threat model files on the local file system; in addition access can be configured for :
 
@@ -42,20 +40,20 @@ The web application can store threat model files on the local file system; in ad
 - GitLab
 - Github Enterprise
 
-The desktop app saves the threat model files locally
+The desktop application saves the threat model files locally
 with installers provided for MacOS, Windows and Linux.
 
 Threat Dragon seeks to provide:
 
-* Simplicity - you can install and start using Threat Dragon very quickly
-* Flexibility - the diagramming and threat entry allows many types of threat to be described
-* Accessibility - different types of teams can benefit from Threat Dragon's simplicity and flexibility
-
-You can find the source code for Threat Dragon on [GitHub][repo],
-where you can also ask for changes or report any issues.
+- Simplicity - you can install and start using Threat Dragon very quickly
+- Flexibility - the diagramming and threat entry allows many types of threat to be described
+- Accessibility - different types of teams can benefit from Threat Dragon's simplicity and flexibility
 
 ![OWASP logo](/assets/images/owasp.png){: .image-left }
 ![cupcake logo](/assets/images/cupcake-128x128.png){: .image-right }
+
+You can find the source code for Threat Dragon on [GitHub][repo],
+where you can also ask for changes or report any issues.
 
 ----
 

@@ -1,6 +1,6 @@
 ---
 
-title: GitLab repo testing
+title: Configure GitLab access
 layout: col-document
 tags: threatdragon
 document: Threat Dragon version 2.4
@@ -9,6 +9,10 @@ permalink: /docs-2/gitlab-repo/
 ---
 
 {% include breadcrumb.html %}
+
+
+[Threat Dragon](http://owasp.org/www-project-threat-dragon) can be run as a web application.
+If GitLab repository access is required then some configuration is necessary.
 
 ## GitLab repository access
 

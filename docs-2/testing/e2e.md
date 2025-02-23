@@ -10,14 +10,6 @@ permalink: /docs-2/e2e/
 
 {% include breadcrumb.html %}
 
-## End to End testing
-
-End to end tests are executed against a full, running instance of Threat Dragon.
-They are intended to mock user behavior and assert that the the application behaves as expected.
-While it's not practical to cover every possible user interaction,
-the testing covers most of the intended flows.
-E2E testing is the last step before deploying in the continuous delivery pipeline.
-
 ## Running e2e tests
 
 End to end testing is done using [cypress](https://www.cypress.io/).

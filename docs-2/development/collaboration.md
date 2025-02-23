@@ -3,17 +3,12 @@
 title: Collaboration
 layout: col-document
 tags: threatdragon
-document: Threat Dragon version 2.4
+document: OAWSP Threat Dragon version 2.x
 permalink: /docs-2/collaboration/
 
 ---
 
 {% include breadcrumb.html %}
-
-## Deep Links
-
-Threat Dragon supports the concept of deep linking.  The deep links have changed from v1 due to
-the addition of identity providers. Please take note of the new structure.
 
 ## Provider Types
 
@@ -23,6 +18,11 @@ More providers and provider types will be added in the future.
 
 Any word with a preceding colon (`:`) is a variable.  Substitute the variables where appropriate.
 Variables will need to be URLEncoded.
+
+## Deep Links
+
+Threat Dragon supports the concept of deep linking.  The deep links have changed from v1 due to
+the addition of identity providers. Please take note of the new structure.
 
 ### Git
 
