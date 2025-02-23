@@ -19,7 +19,9 @@ The web application can be run locally or from a server, and is downloaded from 
 There is some configuration necessary, so see the
 [install instructions]({{ '/docs-2/install-webapp/' | relative_url }}) for configuring the application.
 
-The web application is also provided as a docker image, and this is available for download from [Docker Hub][docker].
+The web application is also provided in a Docker image, and this is provided by [dockerhub][docker].
+Follow the Docker [instructions]({{ '/docs-2/install-docker/' | relative_url }})
+to download, configure and run a Docker container.
 
 ### Desktop application
 

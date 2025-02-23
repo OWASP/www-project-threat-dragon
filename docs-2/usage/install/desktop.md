@@ -48,6 +48,7 @@ git clone https://github.com/owasp/threat-dragon
 cd threat-dragon
 npm install
 ```
+
 This allows access to the latest code updates between releases,
 
 To run the Threat Dragon desktop application in development mode:

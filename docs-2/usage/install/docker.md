@@ -14,13 +14,13 @@ The [Threat Dragon](http://owasp.org/www-project-threat-dragon) web application 
 
 ## Running the Docker container
 
-The web application can be run from a docker container which can either be pulled from [Docker Hub][docker] or built locally.
+The web application can be run from a Docker container which can either be pulled from [dockerhub][docker] or built locally.
 
-#### Pulling/Downloading
+### Pulling/Downloading
 
-The released docker images are provided by the [OWASP Docker Hub][docker]
+The released docker images are provided by the [OWASP dockerhub[docker]
 and can be accessed using `docker pull`.
-For example to download the latest stable release from the OWASP Docker Hub :
+For example to download the latest stable release from the OWASP dockerhub :
 
 `docker pull owasp/threat-dragon:stable`
 
@@ -30,14 +30,14 @@ access which explain the configuration needed to provide the environment variabl
 
 'Stable' is built for OS linux and architectures amd64 (X86) and arm64 (Apple silicon).
 
-The very latest builds are available from the [Threat Dragon Docker Hub][td-docker]:
+The very latest builds are available from the [Threat Dragon dockerhub][td-docker]:
 
 * `docker pull threatdragon/owasp-threat-dragon:latest-arm64` for arm64
 * `docker pull threatdragon/owasp-threat-dragon:latest` for amd64 (X86)
 
 Note that these 'latest' builds are not guaranteed to be stable.
 
-#### Building
+### Building
 
 If the docker image needs to be rebuilt then start by cloning the Threat Dragon github project.
 Note that this provides the latest source code, rather than a released version:

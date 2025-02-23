@@ -16,13 +16,13 @@ permalink: /docs-2/
 
 ### [About](about.md)
 
-### [Installation](usage/install/options.md)
+### [Installation](usage/install/installation.md)
 
 #### [Install Desktop](usage/install/desktop.md)
 
 #### [Install Web Application](usage/install/web.md)
 
-#### [Install Docker](usage/install/installation.md)
+#### [Install Docker](usage/install/docker.md)
 
 #### [Configure environment](usage/config/environment.md)
 
