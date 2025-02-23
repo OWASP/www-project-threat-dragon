@@ -3,7 +3,7 @@
 title: Translations
 layout: col-document
 tags: threatdragon
-document: OAWSP Threat Dragon version 2.x
+document: OWASP Threat Dragon version 2.4
 permalink: /docs-2/internationalization/
 
 ---
@@ -31,7 +31,10 @@ The following translations are available:
 - Suomi; (fin-FI)
 - français (fra-CA)
 - मानक हिन्दी (hin-IN)
+- Bahasa Indonesia (ind-ID)
+- 日本語 (jpn)
 - português (por-BR)
+- Malay (ms)
 - 中文 (zho-CN)
 
 By default, if a translation key cannot be found, it will fall-back to the default locale (`eng-US`).

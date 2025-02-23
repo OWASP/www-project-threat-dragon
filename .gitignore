@@ -43,13 +43,10 @@
 !docs-1/assets/downloads/*
 !docs-2/
 !docs-2/development/
-!docs-2/development/actions/
-!docs-2/development/schema/
 !docs-2/development/testing/
-!docs-2/home/
-!docs-2/home/about/
-!docs-2/home/trust/
+!docs-2/trust/
 !docs-2/usage/
+!docs-2/usage/config/
 !docs-2/usage/install/
 !docs-2/usage/modeling/
 !docs-2/**/*.md

@@ -3,7 +3,7 @@
 title: Development
 layout: col-document
 tags: threatdragon
-document: OAWSP Threat Dragon version 2.x
+document: OWASP Threat Dragon version 2.4
 permalink: /docs-2/local-development/
 
 ---

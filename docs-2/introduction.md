@@ -3,7 +3,7 @@
 title: Introduction
 layout: col-document
 tags: threatdragon
-document: OAWSP Threat Dragon version 2.x
+document: OWASP Threat Dragon version 2.4
 permalink: /docs-2/introduction/
 
 ---
@@ -24,6 +24,8 @@ permalink: /docs-2/introduction/
   float: right;
 }
 </style>
+
+![cupcake logo](/assets/images/cupcake-128x128.png){: .image-right }
 
 [Threat Dragon][td] is an open-source threat modelling tool from [OWASP][owasp].
 Threat Dragon provides an environment to create threat models as
@@ -50,7 +52,6 @@ Threat Dragon seeks to provide:
 - Accessibility - different types of teams can benefit from Threat Dragon's simplicity and flexibility
 
 ![OWASP logo](/assets/images/owasp.png){: .image-left }
-![cupcake logo](/assets/images/cupcake-128x128.png){: .image-right }
 
 You can find the source code for Threat Dragon on [GitHub][repo],
 where you can also ask for changes or report any issues.

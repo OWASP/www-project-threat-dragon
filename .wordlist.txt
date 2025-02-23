@@ -131,6 +131,7 @@ hostname
 html
 http
 https
+ind
 ini
 installable
 io

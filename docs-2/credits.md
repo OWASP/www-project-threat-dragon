@@ -3,7 +3,7 @@
 title: Credits
 layout: col-document
 tags: threatdragon
-document: Threat Dragon version 2.4
+document: OWASP Threat Dragon version 2.4
 permalink: /docs-2/credits/
 
 ---
@@ -27,7 +27,7 @@ so [Leo Reading](mailto:leo.reading@owasp.org) migrated the project to Vue/Expre
 
 ### Cupcake
 
-![Cupcake Image]({{ '/docs-2/assets/images/threatdragonx128.png' | relative_url }}){: .image-left }
+![Cupcake image](/assets/images/cupcake-128x128.png){: .image-right }
 
 Our logo is called Cupcake, and provides a friendly face when entering the world of threat modeling.
 We think that Cupcake makes threat modeling less threatening.

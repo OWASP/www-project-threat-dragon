@@ -13,7 +13,7 @@ docs:
 - title: 'Install Desktop'
   url: install-desktop
 
-- title: 'Install Web App'
+- title: 'Install Web Application'
   url: install-webapp
 
 - title: 'Install Docker'
@@ -40,7 +40,7 @@ docs:
 - title: 'Diagrams'
   url: diagrams
 
-- title: 'Threat generation'
+- title: 'Threats'
   url: threats
 
 - title: 'Development'

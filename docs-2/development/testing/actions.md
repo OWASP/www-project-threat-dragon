@@ -3,7 +3,7 @@
 title: CI pipeline
 layout: col-document
 tags: threatdragon
-document: Threat Dragon version 2.4
+document: OWASP Threat Dragon version 2.4
 permalink: /docs-2/pipeline-actions/
 
 ---

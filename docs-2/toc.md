@@ -3,7 +3,7 @@
 title: Table of Contents
 layout: col-document
 tags: threatdragon
-document: OAWSP Threat Dragon version 2.x
+document: OWASP Threat Dragon version 2.4
 permalink: /docs-2/
 
 ---
@@ -20,7 +20,7 @@ permalink: /docs-2/
 
 #### [Install Desktop](usage/install/desktop.md)
 
-#### [Install Web App](usage/install/web.md)
+#### [Install Web Application](usage/install/web.md)
 
 #### [Install Docker](usage/install/options.md)
 
@@ -38,7 +38,7 @@ permalink: /docs-2/
 
 #### [Diagrams](usage/modeling/diagrams.md)
 
-#### [Threat generation](usage/modeling/threats.md)
+#### [Threats](usage/modeling/threats.md)
 
 ### [Development](development/local-development.md)
 
@@ -56,13 +56,13 @@ permalink: /docs-2/
 
 #### [Collaboration](development/collaboration.md)
 
-### [Testing](testing/adhoc.md)
+### [Testing](development/testing/adhoc.md)
 
-#### [Unit testing](testing/unit.md)
+#### [Unit testing](development/testing/unit.md)
 
-#### [End to end testing](testing/e2e.md)
+#### [End to end testing](development/testing/e2e.md)
 
-#### [CI pipeline](testing/actions.md)
+#### [CI pipeline](development/testing/actions.md)
 
 ### [Trust](trust/incidents.md)
 
