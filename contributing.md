@@ -47,3 +47,7 @@ and include as much information as you can so that we can fully understand your 
 
 There is always lots of coding to be done! Threat Dragon welcomes contributions and issues:
 [TD github repo](https://github.com/OWASP/threat-dragon/issues)
+
+----
+
+Threat Dragon: _making threat modeling less threatening_

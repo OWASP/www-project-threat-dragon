@@ -57,6 +57,10 @@ you may need to [subscribe](https://owasp.org/slack/invite) first.
 * [Threat Modeling OWASP Cheat Sheet][tmcs]
 * [Threagile - Agile Threat Modeling][threagile], an (non-OWASP) open source project
 
+----
+
+Threat Dragon: _making threat modeling less threatening_
+
 [demo]: https://youtu.be/n6JGcZGFq5o
 [docs-1]: https://owasp.org/www-project-threat-dragon/docs-1/
 [docs-2]: https://owasp.org/www-project-threat-dragon/docs-2/

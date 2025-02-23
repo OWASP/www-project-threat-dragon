@@ -2,15 +2,16 @@
 title: Roadmap
 layout: null
 tab: true
-order: 4
+order: 3
 tags: threatdragon
 ---
 
-### Version 2.3: in progress
+### Version 2.5: in progress
 
 - [ ] provide an API for CI/CD pipelines
 - [ ] provide a CLI for scripting based on TD's existing [use of yargs](https://github.com/yargs/yargs)
-- [ ] provide multiple methods of authentication and access similar to [draw.io](https://app.diagrams.net) login page
+
+### Version 2.3: released December 2024
 - [x] automated threats (both by element and by OATS)
 
 ### Version 2.2: released February 2024
@@ -98,3 +99,7 @@ The original roadmap had various milestones, most of which were achieved by late
 **Milestone 1**: Alpha release - Basic threat modelling experience
 
 - achieved October 2015
+
+----
+
+Threat Dragon: _making threat modeling less threatening_

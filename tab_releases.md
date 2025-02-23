@@ -2,7 +2,7 @@
 title: Releases
 layout: null
 tab: true
-order: 5
+order: 1
 tags: threatdragon
 ---
 
@@ -38,6 +38,10 @@ v0.1.27-alpha | 28 Jul 2019 | [Desktop][0127-desk] | Windows desktop only
 v0.1.26 | 16 May 2017 | [Desktop][0126-desk] | MacOS and Windows desktop only
 0.3.0  | 14 Mar 2017 | [Web app][030] | alpha release
 v0.1.1-alpha | 14 Mar 2016 | [Web app][011] | alpha release
+
+----
+
+Threat Dragon: _making threat modeling less threatening_
 
 [011]: https://github.com/mike-goodwin/owasp-threat-dragon/releases/tag/v0.1.1-alpha
 [030]: https://github.com/mike-goodwin/owasp-threat-dragon/releases/tag/0.3.0

@@ -7,7 +7,7 @@
     "version": {
       "description": "Threat Dragon version used in the model",
       "type": "string",
-      "maxLength": 5
+      "maxLength": 10
     },
     "summary": {
       "description": "Threat model project meta-data",
@@ -85,7 +85,7 @@
               "version": {
                 "description": "Threat Dragon version used in the diagram",
                 "type": "string",
-                "maxLength": 5
+                "maxLength": 10
               },
               "cells": {
                 "description": "The individual diagram components",
@@ -246,7 +246,7 @@
                           "type": "boolean"
                         }
                       },
-                      "required": [ "description", "hasOpenThreats", "name", "type" ]
+                      "required": [ "hasOpenThreats", "name", "type" ]
                     },
                     "id": {
                       "description": "The component unique identifier (UUID)",

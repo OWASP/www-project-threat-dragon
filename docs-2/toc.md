@@ -3,7 +3,7 @@
 title: Table of Contents
 layout: col-document
 tags: threatdragon
-document: Threat Dragon version 2.0
+document: Threat Dragon version 2.4
 permalink: /docs-2/
 
 ---
@@ -12,17 +12,13 @@ permalink: /docs-2/
 
 ## OWASP Threat Dragon
 
-## [Introduction](introduction.md)
+### [Introduction](introduction.md)
 
-### [About](usage/about.md)
+#### [About](usage/about.md)
 
-### [Credits](usage/credits.md)
+#### [Credits](usage/credits.md)
 
-## Usage
-
-### Installation
-
-#### [Installation options](usage/install/options.md)
+### [Installation](usage/install/options.md)
 
 #### [Desktop installation](usage/install/desktop.md)
 
@@ -38,9 +34,7 @@ permalink: /docs-2/
 
 #### [GitLab repo access](development/testing/gitlab.md)
 
-### Modeling
-
-#### [Getting started](usage/modeling/getting-started.md)
+### [Getting started](usage/modeling/getting-started.md)
 
 #### [Diagrams](usage/modeling/diagrams.md)
 
@@ -85,3 +79,7 @@ permalink: /docs-2/
 #### [Container scanning](development/trust/container.md)
 
 #### [Incidents](development/trust/incidents.md)
+
+----
+
+Threat Dragon: _making threat modeling less threatening_
