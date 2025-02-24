@@ -1,42 +1,43 @@
 ---
 
-title: Configure local access
+title: Configure Google Drive access
 layout: col-document
 tags: threatdragon
 document: OWASP Threat Dragon version 2.4
-permalink: /docs-2/local-file/
+permalink: /docs-2/google-drive/
 
 ---
 
 {% include breadcrumb.html %}
 
-[Threat Dragon](http://owasp.org/www-project-threat-dragon) can be run as a web application.
-The threat models can be stored on the file system local to the client / browser,
-and some configuration of environment variables is needed to do this.
-These environment variables are described in
+[Threat Dragon](http://owasp.org/www-project-threat-dragon) can be run as a web application and
+if Google Drive access is required then some configuration is needed
+for the necessary environment variables.
+The Google Drive specific environment variables are listed at the [end of this page](#google-drive-environment-variables),
+other variables are described in
 the [installation instructions]({{ '/docs-2/install-environment/#environment-variables-reference' | relative_url }}).
 
-## Local file access
+## Google Drive access
 
-This page is a step by step explanation of how to configure the Threat Dragon Web Application for local file system access.
-These steps assume that the Threat Dragon web application is being used for learning or testing purposes,
+This page is a step by step explanation of how to configure the Threat Dragon web application for access to a Google Drive.
+Most of these steps assume that the web application is being used for learning or testing purposes,
 if it is in a production environment then ensure that full security controls
-are in place for any publicly accessible or sensitive use.
+are in place for any public accessible or sensitive use.
 
 ### Decide on configuration
 
-There are a couple of configuration parameters that need to be determined at the outset.
+There are various configuration parameters that need to be determined at the outset.
 
 The Node environment - is it 'test', 'production' or 'development'?
-Going with 'development' because using 'production' enforces secure cookies that is not needed here,
+Go with 'development' because using 'production' enforces secure cookies that is not needed here,
 and 'test' alters the functionality from what is being tested.
 
 - `NODE_ENV='development'`
 
-Application port number: this defaults to 3000 and can be mapped to another port when running the docker command.
+Application port number - this defaults to 3000, and it can be mapped to another port when running the docker command.
 So leave the server port at 3000 by not defining it, and it can then be mapped to external port 8080 using docker.
 
-Server API protocol: this would be set to HTTPS in production, but as we are in development mode define it as HTTP.
+Server API protocol - this would be set to HTTPS in production, but during development define it as HTTP.
 
 - `SERVER_API_PROTOCOL='http'`
 
@@ -47,9 +48,12 @@ Do not actually use these keys as shown, but here are examples:
 - `ENCRYPTION_JWT_SIGNING_KEY='deadbeef112233445566778899aabbcc'`
 - `ENCRYPTION_KEYS='[{"isPrimary": true, "id": 0, "value": "0123456789abcdef0123456789abcdef"}]'`
 
+### Web App access to Google Drive
+
+
 ### Run from command line
 
-With this minimal set of configuration now available, download the docker image from [DockerHub][dockerhub]:
+With a minimal set of configuration now available, download the docker image from [DockerHub][dockerhub]:
 
 - `docker pull owasp/threat-dragon:stable`
 
@@ -69,6 +73,8 @@ and also have the server logs printed to the console, so the docker parameters `
 ```text
 docker run -it --rm \
 -p 8080:3000 \
+-e GITHUB_CLIENT_ID='deadbeef0123456789ab' \
+-e GITHUB_CLIENT_SECRET='deadbeef0123456789abcdef01234567deadbeef' \
 -e ENCRYPTION_JWT_REFRESH_SIGNING_KEY='00112233445566778899aabbccddeeff' \
 -e ENCRYPTION_JWT_SIGNING_KEY='deadbeef112233445566778899aabbcc' \
 -e ENCRYPTION_KEYS='[{"isPrimary": true, "id": 0, "value": "0123456789abcdef0123456789abcdef"}]' \
@@ -80,7 +86,7 @@ owasp/threat-dragon:stable
 Note that values for the keys need to be replaced with the values obtained in the previous sections.
 
 If the server container starts up correctly then navigate to `http://localhost:8080/#/` to get the main page.
-The 'Login to Local Session' button should be present.
+With a `GOOGLE_CLIENT_ID` set then the 'Login with GitHub' button is made visible.
 
 If the container does not start then view the logs being dumped to the console,
 for example if `ENCRYPTION_JWT_REFRESH_SIGNING_KEY` has not been defined then there will be a log entry:
@@ -91,7 +97,21 @@ Please see docs/development/environment.md for more information
 2023-12-16 08:08:18 OWASP Threat Dragon failed to start
 ```
 
-Login to Threat Dragon and access files to and from the local filesystem to ensure the web server is running correctly.
+### Accessing Google Drive
+
+From the main Threat Dragon page click on the 'Login with GitHub' button.
+If you are not logged in already then GitHub will prompt for the user account credentials before allowing access to the repo:
+
+![Sign in to GitHub]({{ '/docs-2/assets/images/github-sign-in.png' | relative_url }})
+
+Once you are logged in then github will ask if the Threat Dragon GitHub OAuth Application is allowed to access the repo:
+
+![Authorize GitHub OAuth Application]({{ '/docs-2/assets/images/github-authorize.png' | relative_url }})
+
+If access is permitted then the main Threat Dragon page is displayed and threat models can be
+read from and written to the user's public repositories.
+
+The Threat Dragon web server is now running correctly.
 
 ### Use environment file
 
@@ -99,6 +119,10 @@ Once the parameters are correct for running the Threat Dragon server,
 it is useful to provide a file for (most) of the parameters. Here a test environment file `test.env` has been created:
 
 ```text
+GOOGLE_CLIENT_ID=01234567890123456789
+GOOGLE_CLIENT_SECRET=0123456789abcdef0123456789abcdef0123456
+GOOGLE_SCOPE=openid email profile
+GOOGLE_REDIRECT_URI=http://localhost:3000/api/oauth/return
 ENCRYPTION_JWT_REFRESH_SIGNING_KEY='00112233445566778899aabbccddeeff'
 ENCRYPTION_JWT_SIGNING_KEY='deadbeef112233445566778899aabbcc'
 ENCRYPTION_KEYS='[{"isPrimary": true, "id": 0, "value": "0123456789abcdef0123456789abcdef"}]'
@@ -115,19 +139,16 @@ or if using Windows:
 
 - `docker run -it --rm -p 8080:3000 -v %CD%/test.env:/app/.env owasp/threat-dragon:stable`
 
-Ensure that Threat Dragon is running on `http://localhost:8080/#/` as expected, and that the filesystem is accessible.
+Ensure that Threat Dragon is running on `http://localhost:8080/#/` as expected, and that the Google Drive is accessible.
 
-### Logging to Docker desktop
+### Google Drive environment variables
 
-Once the container is successfully configured it is useful to to run the docker container as a background process
-and inspect the logs using Docker desktop, rather than have the server logs printed to the console.
-This is achieved using docker parameter `-d` :
-
-- `docker run -d -p 8080:3000 -v $(pwd)/test.env:/app/.env owasp/threat-dragon:stable`
-
-or if using Windows:
-
-- `docker run -d -p 8080:3000 -v %CD%/test.env:/app/.env owasp/threat-dragon:stable`
+| Google Drive specifics | Description | Default |
+| --- | --- | --- |
+| `GOOGLE_CLIENT_ID` | Required | |
+| `GOOGLE_CLIENT_SECRET` | Required | |
+| `GOOGLE_SCOPE` | Required | `openid email profile` |
+| `GOOGLE_REDIRECT_URI` | Required | |
 
 ----
 

@@ -15,19 +15,35 @@ a desktop application and a web application.
 If the web application variant is being used then some configuration is needed
 to provide the necessary environment variables.
 
-## Quickstart
+## Quick-start
 
-1. [Generate Keys](#generating-keys) for encryption and JWT signing
-2. Copy `example.env` to `.env`
-3. Update the values in `.env`
-4. `npm install`
-5. `npm run serve`
-6. Follow the step by step [local file access]({{ '/docs-2/local-file/' | relative_url }}) setup
+These are the quick steps to running a demo of the Threat Dragon web application:
 
-This will provide a minimal web application configured to store models in the file system local to the client/browser.
-For repository access refer to the appropriate [step by step guide](#repository-specific-environments).
+1. Download the [Threat Dragon source][releases] and expand the archive
+2. From the top directory, copy `minimal.env` to `.env`
+3. [Generate Keys](#generating-keys) for encryption and JWT signing
+4. Update the encryption values in `.env`
+5. From the top directory run `npm install` and then `npm start`
+6. Threat Dragon can then be accessed from a browser URL `http://localhost:8080`
 
-----
+This will provide a __demo__ web application configured to store models
+only in the file system local to the client/browser.
+
+## Environment configuration
+
+In practice Threat Dragon should be properly secured and configured, see the instructions to
+[configure local access]({{ '/docs-2/local-file/' | relative_url }}) for an example.
+
+The web application can be configured for various repository / drive access:
+
+- GitHub
+- Github Enterprise
+- Google Drive
+- Bitbucket
+- Bitbucket Enterprise
+- GitLab
+
+Refer to the appropriate [step by step guide](#repository-specific-environments).
 
 ### Generating Keys
 
@@ -40,8 +56,6 @@ This command can also be used to generate JWT signing keys.
 The Express server documentation on [express-session](https://github.com/expressjs/session#readme)
 has advice on managing and rotating encryption keys.
 
-----
-
 ### Environment errors
 
 The application will throw an error if a required environment variable is missing during application start. For example:
@@ -51,9 +65,7 @@ ENCRYPTION_KEYS is a required property.  Threat Dragon server cannot start witho
 Refer to development/environment.md for more information
 ```
 
-----
-
-## Config using DotEnv
+## Configuration using DotEnv
 
 Environment variables are configured via [dotenv](https://github.com/motdotla/dotenv#readme).
 By default, Threat Dragon attempts to read key/value pairs from a `.env` file at the root of this repository.
@@ -80,8 +92,6 @@ ENCRYPTION_JWT_REFRESH_SIGNING_KEY=00112233445566778899aabbccddeeff
 Note that the environment variable SERVER_API_PROTOCOL defaults to 'https',
 and in a production environment the server will need valid certificates to run HTTPS.
 
-----
-
 ## Config using command Line
 
 The environment variables can be set from the command line.
@@ -90,8 +100,6 @@ Export the variables from the terminal where you will start Threat dragon.
 For example to set the `GITHUB_CLIENT_ID` on MacOS / Linux use: `export GITHUB_CLIENT_ID=deadbeef0123456789ab`
 
 Or on Windows systems: `set GITHUB_CLIENT_ID=deadbeef0123456789ab`
-
-----
 
 ## Config using file-based secrets
 
@@ -151,8 +159,6 @@ secrets:
     external: true
 ```
 
-----
-
 ## Environment variables reference
 
 Not all environment variables need to be defined,
@@ -198,7 +204,7 @@ for example `http://localhost:3000/`, but not in 'production' mode.
 | `REPO_ROOT_DIRECTORY` | Optional path where saved models are stored in the repo | |
 | `SERVER_API_PROTOCOL` | Protocol between server and front-end: `http` / `https` | `https` |
 
-**Note**: the JWT refresh signing key should be different from the JWT signing key as they are different tokens.
+__Note__ : the JWT refresh signing key should be different from the JWT signing key as they are different tokens.
 A JWT is used as the refresh token because it is tamper resistant and provides user context.
 
 ### Repository specific environments
@@ -218,3 +224,5 @@ lists and explains the setting up of GitLab
 ----
 
 Threat Dragon: _making threat modeling less threatening_
+
+[releases]: https://github.com/OWASP/threat-dragon/releases/

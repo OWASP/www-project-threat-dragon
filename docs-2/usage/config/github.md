@@ -19,10 +19,11 @@ the [installation instructions]({{ '/docs-2/install-environment/#environment-var
 
 ## Github repository access
 
-This page is a step by step explanation of how to configure the Threat Dragon Web App for github access.
-Most of these steps assume that the Threat Dragon web application is being used for learning
-or testing purposes, if it is in a production environment then ensure that full security controls are in place
-for any public accessible or sensitive use.
+This page is a step by step explanation of how to configure the Threat Dragon web application for github access.
+Most of these steps assume that the web application is being used for learning
+or testing purposes,
+if it is in a production environment then ensure that full security controls
+are in place for any public accessible or sensitive use.
 
 ### Decide on configuration
 
@@ -35,7 +36,7 @@ and 'test' alters the functionality from what is being tested.
 - `NODE_ENV='development'`
 
 Application port number - this defaults to 3000, and it can be mapped to another port when running the docker command.
-So leave the port at 3000 by not defining it, and then map it to port 8080 using docker.
+So leave the server port at 3000 by not defining it, and it can then be mapped to external port 8080 using docker.
 
 Server API protocol - this would be set to HTTPS in production, but during development define it as HTTP.
 
@@ -68,7 +69,7 @@ then the domain will probably be 'localhost'.
     4. Authorization callback URL: for localhost and port 8080 use `http://localhost:8080/api/oauth/return`
 3. Proceed by agreeing to Register the application
 4. Initially there will be no Client secret; create a client secret via the 'Generate a new client secret' button
-5. Note the values for both the Client ID and the Client Secret, **save these somewhere secure**
+5. Note the values for both the Client ID and the Client Secret, __save these somewhere secure__
     1. Client ID will be 20 hexadecimal (10 byte) characters, for example `deadbeef0123456789aa`
     2. Client Secret will be 40 hexadecimal characters, for example `deadbeef0123456789abcdef01234567deadbeef`
     3. Treat these values with the same security as a password; they provide access to your GitHub account
@@ -97,7 +98,7 @@ then try:
 
 All the information is now ready to try running the server from the command line.
 Defining the environment variables on the command line is handy for development and debugging,
-but using the file based configuration is easier (which will be discussed later on).
+but using the dotenv file configuration is easier (which will be discussed later on).
 
 To use the docker command the [Docker daemon][dockerinstall] must be installed and running on the local machine.
 During development it is useful to be able to stop the docker container from the command line,

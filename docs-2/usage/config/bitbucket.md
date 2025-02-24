@@ -37,7 +37,7 @@ and 'test' alters the functionality from what is being tested.
 - `NODE_ENV='development'`
 
 Application port number - this defaults to 3000, and it can be mapped to another port when running the docker command.
-So leave the port at 3000 by not defining it, and then map it to port 8080 using docker.
+So leave the server port at 3000 by not defining it, and it can then be mapped to external port 8080 using docker.
 
 Server API protocol - this would be set to HTTPS in production, but during development define it as HTTP.
 
@@ -80,8 +80,8 @@ Fill out the form with the following suggested content:
 - Permissions: as a minimum Read-Only for the Account and Read/Write for Repositories, Projects and Workplace Membership
 - Proceed by saving the OAuth consumer
 
-Note the displayed values for both the Key and the Secret and **save these somewhere secure**.
-Treat these values with the same security as a password; they provide access to your Bitbucket account
+Note the displayed values for both the Key and the Secret and __save these somewhere secure__ .
+Treat these values with the same security as a password; they provide access to your Bitbucket account.
 
 - Key will be 20 hexadecimal (10 byte) characters, for example `deadbeef0123456789ab` used for `BITBUCKET_CLIENT_ID`
 - Secret will be 32 hexadecimal characters, for example `deadbeef0123456789abcdefdeadbeef` used for `BITBUCKET_CLIENT_SECRET`
@@ -114,7 +114,7 @@ then try:
 
 All the information is now ready to try running the server from the command line.
 Defining the environment variables on the command line is handy for development and debugging,
-but using the file based configuration is easier (which will be discussed later on).
+but using the dotenv file configuration is easier (which will be discussed later on).
 
 To use the docker command the [Docker daemon][dockerinstall] must be installed and running on the local machine.
 During development it is useful to be able to stop the docker container from the command line,

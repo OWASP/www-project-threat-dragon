@@ -34,6 +34,8 @@ permalink: /docs-2/
 
 #### [Configure GitLab access](usage/config/gitlab.md)
 
+#### [Configure Google Drive access](usage/config/google.md)
+
 ### [Getting started](usage/modeling/getting-started.md)
 
 #### [Diagrams](usage/modeling/diagrams.md)
