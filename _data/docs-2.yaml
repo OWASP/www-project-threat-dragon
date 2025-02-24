@@ -34,6 +34,9 @@ docs:
 - title: 'Configure GitLab access'
   url: gitlab-repo
 
+- title: 'Configure Google Drive access'
+  url: google-drive
+
 - title: 'Getting started'
   url: getting-started
 

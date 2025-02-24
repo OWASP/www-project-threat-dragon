@@ -29,7 +29,10 @@ Various installers can be downloaded from the Threat Dragon [releases area][rele
 
 * Windows (64 bit) executable / installer
 * MacOS installers (.dmg) for X86 and Apple silicon
-* Linux snap, AppImage, debian and rpm installers
+* Linux AppImage used for most Linux distributions and hardware platforms
+* Linux Snap image is available from the [official snapcraft distribution][snap]
+* Package `.rpm` for Red Hat Linux, AIX, CentOS, Fedora
+* Package `.deb` for debian based Linux such as Ubuntu, Trisqel and Debian itself
 
 See the desktop [install instructions]({{ '/docs-2/install-desktop/' | relative_url }}).
 
@@ -39,3 +42,4 @@ Threat Dragon: _making threat modeling less threatening_
 
 [docker]: https://hub.docker.com/r/owasp/threat-dragon/tags
 [releases]: https://github.com/OWASP/threat-dragon/releases
+[snap]: https://snapcraft.io/threat-dragon

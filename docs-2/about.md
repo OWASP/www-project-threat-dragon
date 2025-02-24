@@ -58,9 +58,10 @@ The application comes in two variants:
     Depending on the configuration the web application can store threat model files on :
     * local filesystem
     * GitHub
-    * Bitbucket
-    * GitLab
     * Github Enterprise
+    * Bitbucket
+    * Bitbucket Enterprise
+    * GitLab
   
 2. **Desktop application**: There are [installers][releases] available for Windows, Mac OSX and Linux.
     The model files are stored on the local file system only;

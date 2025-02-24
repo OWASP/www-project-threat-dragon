@@ -1,3 +1,4 @@
+AIX
 APIs
 AdHoc
 AntV
@@ -12,6 +13,7 @@ BrowserStack
 CLI
 CN
 CVE
+CentOS
 CodeQL
 DAST
 Dependabot
@@ -25,6 +27,7 @@ ENV
 ESLint
 El
 FI
+FQDN
 Faqs
 Gamification
 GitLab
@@ -64,11 +67,13 @@ Sinon
 Styran
 Suomi
 TD's
+TLS
 TMF
 TMT
 TSV
 Threagile
 ThreatDragonModels
+Trisqel
 Trivy
 UI
 URI

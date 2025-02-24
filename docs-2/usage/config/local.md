@@ -1,6 +1,6 @@
 ---
 
-title: Configure Local access
+title: Configure local access
 layout: col-document
 tags: threatdragon
 document: OWASP Threat Dragon version 2.4
@@ -10,16 +10,33 @@ permalink: /docs-2/local-file/
 
 {% include breadcrumb.html %}
 
+<style type="text/css">
+.image-left {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+}
+.image-right {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  float: right;
+}
+</style>
+
 [Threat Dragon](http://owasp.org/www-project-threat-dragon) can be run as a web application.
-If local file access is needed then some configuration is necessary.
+The threat models can be stored on the file system local to the client / browser,
+and some configuration of environment variables is needed to do this.
+These environment variables are described in
+the [installation instructions]({{ '/docs-2/install-environment/#environment-variables-reference' | relative_url }}).
 
 ## Local file access
 
-This page is a step by step explanation of how to configure the Threat Dragon Web Application
-for local file system access only.
-Most of these steps assume that the Threat Dragon web application is being used for learning
-or testing purposes, if it is in a production environment then ensure that full security controls are in place
-for any public accessible or sensitive use.
+This page is a step by step explanation of how to configure the Threat Dragon Web Application for local file system access.
+These steps assume that the Threat Dragon web application is being used for learning or testing purposes,
+if it is in a production environment then ensure that full security controls
+are in place for any publicly accessible or sensitive use.
 
 ### Decide on configuration
 
@@ -32,7 +49,7 @@ and 'test' alters the functionality from what is being tested.
 - `NODE_ENV='development'`
 
 Application port number: this defaults to 3000 and can be mapped to another port when running the docker command.
-So leave the port at 3000 by not defining it, and then map it to port 8080 using docker.
+So leave the server port at 3000 by not defining it, and it can then be mapped to external port 8080 using docker.
 
 Server API protocol: this would be set to HTTPS in production, but as we are in development mode define it as HTTP.
 
@@ -58,7 +75,7 @@ then try:
 
 All the information is now ready to try running the server from the command line.
 Defining the environment variables on the command line is handy for development and debugging,
-but using the file based configuration is easier (which will be discussed later on).
+but using the dotenv file configuration is easier (which will be discussed later on).
 
 To use the docker command the [Docker daemon][dockerinstall] must be installed and running on the local machine.
 During development it is useful to be able to stop the docker container from the command line,
@@ -126,6 +143,10 @@ This is achieved using docker parameter `-d` :
 or if using Windows:
 
 - `docker run -d -p 8080:3000 -v %CD%/test.env:/app/.env owasp/threat-dragon:stable`
+
+----
+
+Threat Dragon: _making threat modeling less threatening_
 
 [dockerhub]: https://hub.docker.com/r/owasp/threat-dragon
 [dockerinstall]: https://docs.docker.com/engine/install/
