@@ -35,7 +35,7 @@ and 'test' alters the functionality from what is being tested.
 
 - `NODE_ENV='development'`
 
-Application port number - this defaults to 3000, and it can be mapped to another port when running the docker command.
+Server port number - this defaults to 3000, and it can be mapped to another port when running the docker command.
 So leave the server port at 3000 by not defining it, and it can then be mapped to external port 8080 using docker.
 
 Server API protocol - this would be set to HTTPS in production, but during development define it as HTTP.
@@ -49,7 +49,7 @@ Do not actually use these keys as shown, but here are examples:
 - `ENCRYPTION_JWT_SIGNING_KEY='deadbeef112233445566778899aabbcc'`
 - `ENCRYPTION_KEYS='[{"isPrimary": true, "id": 0, "value": "0123456789abcdef0123456789abcdef"}]'`
 
-### Web App GitHub Access
+### GitHub Access
 
 The Threat Dragon web application uses [GitHub OAuth Applications][githuboauth] as the mechanism to access
 the GitHub API of the users repositories.
@@ -79,7 +79,8 @@ The GitHub OAuth Application is now ready for use by the Threat Dragon server wi
 - `GITHUB_CLIENT_ID='deadbeef0123456789ab'`
 - `GITHUB_CLIENT_SECRET='deadbeef0123456789abcdef01234567deadbeef'`
 
-Clearly these values are *not to be used* for a real application.
+Clearly these values shown here are _not to be used_ for a real application,
+they are merely for illustrative purposes.
 
 Example of registering a new OAuth application:
 
@@ -117,7 +118,9 @@ docker run -it --rm \
 owasp/threat-dragon:stable
 ```
 
-Note that values for the keys need to be replaced with the values obtained in the previous sections.
+Note that values for the keys need to be replaced with the values obtained in the previous sections, and also note the use of quotation marks.
+
+![Github button](/assets/images/github-button.png){: .image-left }
 
 If the server container starts up correctly then navigate to `http://localhost:8080/#/` to get the main page.
 With a `GITHUB_CLIENT_ID` set then the 'Login with GitHub' button is made visible.
@@ -131,7 +134,7 @@ Please see docs/development/environment.md for more information
 2023-12-16 08:08:18 OWASP Threat Dragon failed to start
 ```
 
-### Accessing github
+### Login to Github
 
 From the main Threat Dragon page click on the 'Login with GitHub' button.
 If you are not logged in already then GitHub will prompt for the user account credentials before allowing access to the repo:
@@ -153,16 +156,18 @@ Once the parameters are correct for running the Threat Dragon server,
 it is useful to provide a file for (most) of the parameters. Here a test environment file `test.env` has been created:
 
 ```text
-GITHUB_CLIENT_ID='deadbeef0123456789ab'
-GITHUB_CLIENT_SECRET='deadbeef0123456789abcdef01234567deadbeef'
-ENCRYPTION_JWT_REFRESH_SIGNING_KEY='00112233445566778899aabbccddeeff'
-ENCRYPTION_JWT_SIGNING_KEY='deadbeef112233445566778899aabbcc'
+GITHUB_CLIENT_ID=deadbeef0123456789ab
+GITHUB_CLIENT_SECRET=deadbeef0123456789abcdef01234567deadbeef
+ENCRYPTION_JWT_REFRESH_SIGNING_KEY=00112233445566778899aabbccddeeff
+ENCRYPTION_JWT_SIGNING_KEY=deadbeef112233445566778899aabbcc'
 ENCRYPTION_KEYS='[{"isPrimary": true, "id": 0, "value": "0123456789abcdef0123456789abcdef"}]'
-NODE_ENV='development'
-SERVER_API_PROTOCOL='http'
+NODE_ENV=development
+SERVER_API_PROTOCOL=http
 ```
 
-This has the added benefit of keeping secrets out of the command line history.
+Note that quotation marks are only needed for the `ENCRYPTION_KEYS` object.
+
+The use of an environment file has the added benefit of keeping secrets out of the command line history.
 The command to run the docker container now becomes:
 
 - `docker run -it --rm -p 8080:3000 -v $(pwd)/test.env:/app/.env owasp/threat-dragon:stable`

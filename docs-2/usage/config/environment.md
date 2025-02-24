@@ -10,6 +10,15 @@ permalink: /docs-2/install-environment/
 
 {% include breadcrumb.html %}
 
+<style type="text/css">
+.image-right {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  float: right;
+}
+</style>
+
 [Threat Dragon](http://owasp.org/www-project-threat-dragon) comes in two variants,
 a desktop application and a web application.
 If the web application variant is being used then some configuration is needed
@@ -18,6 +27,8 @@ to provide the necessary environment variables.
 ## Quick-start
 
 These are the quick steps to running a demo of the Threat Dragon web application:
+
+![Quick start demo](/assets/images/quick-demo.png){: .image-right }
 
 1. Download the [Threat Dragon source][releases] and expand the archive
 2. From the top directory, copy `minimal.env` to `.env`
@@ -36,14 +47,12 @@ In practice Threat Dragon should be properly secured and configured, see the ins
 
 The web application can be configured for various repository / drive access:
 
-- GitHub
-- Github Enterprise
 - Google Drive
-- Bitbucket
-- Bitbucket Enterprise
+- GitHub and Github Enterprise
+- Bitbucket and Bitbucket Enterprise
 - GitLab
 
-Refer to the appropriate [step by step guide](#repository-specific-environments).
+Refer to the appropriate [step by step guide](#remote-environments).
 
 ### Generating Keys
 
@@ -74,11 +83,11 @@ For example, on MacOS/Linux: `export ENV_FILE=/home/myawesomeuser/mydir/somefile
 
 To get started, copy `example.env` to `.env` at the root of the project and update the variables as appropriate.
 
-**Note**: Do not use the `export` or `set` keywords inside your `.env` file,
+Note: Do not use the `export` or `set` keywords inside your `.env` file,
 as this will not work from within a docker context.
 The `dotenv` package will automatically export the variables for you.
 
-Alternatively, you can also set your environment variables via [command line](#config-using-command-line) if you'd prefer.
+Alternatively, you can also set your environment variables via [command line](#configuration-using-command-line) if you'd prefer.
 
 Here is an example of a minimal DotEnv file, note that real keys would need to be generated :
 
@@ -92,7 +101,7 @@ ENCRYPTION_JWT_REFRESH_SIGNING_KEY=00112233445566778899aabbccddeeff
 Note that the environment variable SERVER_API_PROTOCOL defaults to 'https',
 and in a production environment the server will need valid certificates to run HTTPS.
 
-## Config using command Line
+## Configuration using command Line
 
 The environment variables can be set from the command line.
 Export the variables from the terminal where you will start Threat dragon.  
@@ -101,7 +110,7 @@ For example to set the `GITHUB_CLIENT_ID` on MacOS / Linux use: `export GITHUB_C
 
 Or on Windows systems: `set GITHUB_CLIENT_ID=deadbeef0123456789ab`
 
-## Config using file-based secrets
+## Configuration using file-based secrets
 
 If using file based secrets, add `_FILE` to the end of the secret name, and the value should point to the file location.
 This is particularly useful if you are running Threat Dragon in docker context,
@@ -207,19 +216,18 @@ for example `http://localhost:3000/`, but not in 'production' mode.
 __Note__ : the JWT refresh signing key should be different from the JWT signing key as they are different tokens.
 A JWT is used as the refresh token because it is tamper resistant and provides user context.
 
-### Repository specific environments
+### Remote environments
 
-Refer to the step by step [GitHub configuration]({{ '/docs-2/github-repo/' | relative_url }}) page
-for an example of setting up Github specific variables and a listing of these
-[specific variables]({{ '/docs-2/github-repo/#github-environment-variables' | relative_url }}).
+Refer to the step by step guide pages for setting the environment variables specific for these technologies:
 
-There is a step by step [Bitbucket configuration]({{ '/docs-2/bitbucket-repo/' | relative_url }}) page
-with an example of setting up Bitbucket
-[specific variables]({{ '/docs-2/bitbucket-repo/#bitbucket-environment-variables' | relative_url }}).
-
-The step by step [GitLab configuration]({{ '/docs-2/gitlab-repo/' | relative_url }}) page
-lists and explains the setting up of GitLab
-[specific variables]({{ '/docs-2/gitlab-repo/#gitlab-environment-variables' | relative_url }}).
+- [Google Drive]({{ '/docs-2/google-drive/' | relative_url }}) and
+    [specific variables]({{ '/docs-2/google-drive/#google-drive-environment-variables' | relative_url }})
+- [GitHub repository]({{ '/docs-2/github-repo/' | relative_url }}) and
+    [specific variables]({{ '/docs-2/github-repo/#github-environment-variables' | relative_url }})
+- [Bitbucket repository]({{ '/docs-2/bitbucket-repo/' | relative_url }})and
+    [specific variables]({{ '/docs-2/bitbucket-repo/#bitbucket-environment-variables' | relative_url }})
+- [GitLab repository]({{ '/docs-2/gitlab-repo/' | relative_url }}) and
+    [specific variables]({{ '/docs-2/gitlab-repo/#gitlab-environment-variables' | relative_url }})
 
 ----
 
