@@ -79,7 +79,8 @@ localhost, but in practice this may well be a different URL/URI:
 - `GOOGLE_REDIRECT_URI=http://localhost:3000/api/oauth/return`
 
 Threat Dragon is being set up to use OAuth 2.0 to access Google APIs,
-and so must have authorization credentials that identify it to Google's OAuth 2.0 server. To do this open the [Google Drive Clients][gclients] dashboard.
+and so must have authorization credentials that identify it to Google's OAuth 2.0 server.
+To do this open the [Google Drive Clients][gclients] dashboard.
 
 - select the Google Drive project, if more than one
 - click on the `+ CREAT CLIENT` button
@@ -129,7 +130,8 @@ docker run -it --rm \
 owasp/threat-dragon:stable
 ```
 
-Note that values for the keys need to be replaced with the values obtained in the previous sections, and also note the use of quotation marks.
+Note that values for the keys need to be replaced with the values obtained in the previous sections,
+and also note the use of quotation marks.
 
 ![Google Drive button](/assets/images/google-drive-button.png){: .image-left }
 

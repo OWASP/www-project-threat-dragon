@@ -136,7 +136,8 @@ docker run -it --rm \
 owasp/threat-dragon:stable
 ```
 
-Note that values for the keys need to be replaced with the values obtained in the previous sections, and also note the use of quotation marks.
+Note that values for the keys need to be replaced with the values obtained in the previous sections,
+and also note the use of quotation marks.
 
 ![Bitbucket button](/assets/images/bitbucket-button.png){: .image-left }
 

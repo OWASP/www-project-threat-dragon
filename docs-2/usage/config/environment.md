@@ -87,18 +87,19 @@ Note: Do not use the `export` or `set` keywords inside your `.env` file,
 as this will not work from within a docker context.
 The `dotenv` package will automatically export the variables for you.
 
-Alternatively, you can also set your environment variables via [command line](#configuration-using-command-line) if you'd prefer.
+Alternatively the environment variables can be set using the [command line](#configuration-using-command-line).
 
 Here is an example of a minimal DotEnv file, note that real keys would need to be generated :
 
 ```text
-NODE_ENV=production
-ENCRYPTION_KEYS='[{"isPrimary": true, "id": 0, "value": "0123456789abcdef0123456789abcdef"}]'
-ENCRYPTION_JWT_SIGNING_KEY=deadbeef112233445566778899aabbcc
-ENCRYPTION_JWT_REFRESH_SIGNING_KEY=00112233445566778899aabbccddeeff
+ENCRYPTION_KEYS='[{"isPrimary": true, "id": 0, "value": "11223344556677889900aabbccddeeff"}]'
+ENCRYPTION_JWT_SIGNING_KEY=asdfasdfasdf
+ENCRYPTION_JWT_REFRESH_SIGNING_KEY=fljasdlfkjadf
+NODE_ENV=development
+SERVER_API_PROTOCOL=http
 ```
 
-Note that the environment variable SERVER_API_PROTOCOL defaults to 'https',
+Note that the environment variable `SERVER_API_PROTOCOL` defaults to 'https',
 and in a production environment the server will need valid certificates to run HTTPS.
 
 ## Configuration using command Line
