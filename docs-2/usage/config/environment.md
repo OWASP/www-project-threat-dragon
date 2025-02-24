@@ -12,7 +12,8 @@ permalink: /docs-2/install-environment/
 
 [Threat Dragon](http://owasp.org/www-project-threat-dragon) comes in two variants,
 a desktop application and a web application.
-If the web application variant is being used then some configuration is necessary.
+If the web application variant is being used then some configuration is needed
+to provide the necessary environment variables.
 
 ## Quickstart
 
@@ -21,8 +22,12 @@ If the web application variant is being used then some configuration is necessar
 3. Update the values in `.env`
 4. `npm install`
 5. `npm run serve`
+6. Follow the step by step [local file access]({{ '/docs-2/local-file/' | relative_url }}) setup
 
-___
+This will provide a minimal web application configured to store models in the file system local to the client/browser.
+For repository access refer to the appropriate [step by step guide](#repository-specific-environments).
+
+----
 
 ### Generating Keys
 
@@ -35,9 +40,20 @@ This command can also be used to generate JWT signing keys.
 The Express server documentation on [express-session](https://github.com/expressjs/session#readme)
 has advice on managing and rotating encryption keys.
 
-___
+----
 
-## Config Via DotEnv
+### Environment errors
+
+The application will throw an error if a required environment variable is missing during application start. For example:
+
+```text
+ENCRYPTION_KEYS is a required property.  Threat Dragon server cannot start without it.
+Refer to development/environment.md for more information
+```
+
+----
+
+## Config using DotEnv
 
 Environment variables are configured via [dotenv](https://github.com/motdotla/dotenv#readme).
 By default, Threat Dragon attempts to read key/value pairs from a `.env` file at the root of this repository.
@@ -50,7 +66,7 @@ To get started, copy `example.env` to `.env` at the root of the project and upda
 as this will not work from within a docker context.
 The `dotenv` package will automatically export the variables for you.
 
-Alternatively, you can also set your environment variables via [command line](#command-line) if you'd prefer.
+Alternatively, you can also set your environment variables via [command line](#config-using-command-line) if you'd prefer.
 
 Here is an example of a minimal DotEnv file, note that real keys would need to be generated :
 
@@ -64,20 +80,20 @@ ENCRYPTION_JWT_REFRESH_SIGNING_KEY=00112233445566778899aabbccddeeff
 Note that the environment variable SERVER_API_PROTOCOL defaults to 'https',
 and in a production environment the server will need valid certificates to run HTTPS.
 
-___
+----
 
-## Environment Errors
+## Config using command Line
 
-The application will throw an error if a required environment variable is missing during application start:
+The environment variables can be set from the command line.
+Export the variables from the terminal where you will start Threat dragon.  
 
-```text
-ENCRYPTION_KEYS is a required property.  Threat Dragon server cannot start without it.
-Refer to development/environment.md for more information
-```
+For example to set the `GITHUB_CLIENT_ID` on MacOS / Linux use: `export GITHUB_CLIENT_ID=deadbeef0123456789ab`
 
-___
+Or on Windows systems: `set GITHUB_CLIENT_ID=deadbeef0123456789ab`
 
-## File Based Secrets
+----
+
+## Config using file-based secrets
 
 If using file based secrets, add `_FILE` to the end of the secret name, and the value should point to the file location.
 This is particularly useful if you are running Threat Dragon in docker context,
@@ -135,96 +151,70 @@ secrets:
     external: true
 ```
 
-___
+----
 
-## Command Line
+## Environment variables reference
 
-Export all of the your variables from the terminal where you will start Threat dragon.  
+Not all environment variables need to be defined,
+it depends on what repository access is required and whether running the desktop or not.
 
-### MacOS / Linux
+### Front-end specific environment
 
-`export GITHUB_CLIENT_ID=deadbeef0123456789ab`
-
-`export ...`
-
-### Windows
-
-`set GITHUB_CLIENT_ID=deadbeef0123456789ab`
-
-`set ...`
-
-___
-
-## Environment variable reference
-
-| Threat Dragon general variables | Description | Default |
+| Variable | Description | Default |
 | --- | --- | --- |
+| `APP_HOSTNAME` | Optional FQDN hostname, required if using TLS | |
+| `APP_USE_TLS` | Enables use of TLS if set true | false |
+| `APP_PORT` | Optional connection port | 8080 |
+| `APP_TLS_CERT_PATH` | Locates the TLS certificate if TLS used | |
+| `APP_TLS_KEY_PATH` | Locates the TLS key if TLS used | |
 | `ENV_FILE` | The location of a dotenv file, if dotenv is used. Exported as it needs to be accessed before the dotenv file is read | `.env` |
-| `LOG_LEVEL` | The server logging level: `audit` / `error` / `warn` / `info` / `debug` / `silly` | `warn` |
-| `LOG_MAX_FILE_SIZE` | Maximum size of the back-end express server log file, in MB | `24` |
-| `NODE_ENV` | Optional run mode; typically 'test', 'production' or 'development' | `production` |
-| `PORT` | Defines the listening port for Threat Dragon's server, and used by Heroku | `3000`|
-| `SERVER_API_PROTOCOL` | The protocol used between Threat Dragon's server and frontend, used by Heroku: `http` / `https` | `https` |
-| `REPO_USE_SEARCH` | | |
-| `REPO_SEARCH_QUERY` | | |
-| `REPO_ROOT_DIRECTORY` | Optional path where saved models are stored in the repo | |
+| `NODE_ENV` | Optional run mode such as 'test', 'production' or 'development' | `production` |
 
 The secure cookie flag is set only if running in 'production' mode.
 
-| Desktop specific variables | Description | Default |
+### Desktop specific environment
+
+| Desktop/Electron specifics | Description | Default |
 | --- | --- | --- |
 | `IS_TEST` | Enabled during automated testing | false |
 | `WEBPACK_DEV_SERVER_URL` | Electron load URL when in development mode | |
 
-The desktop environment variable WEBPACK_DEV_SERVER_URL determines the mode for webpack;
-either development/test mode if defined (for example `http://localhost:3000/`) or production mode if not defined.
+The desktop environment variable `WEBPACK_DEV_SERVER_URL` is used by electron
+if either `NODE_ENV` 'development' or 'test' modes are defined,
+for example `http://localhost:3000/`, but not in 'production' mode.
 
-| Back-end specific variables | Description | Default |
+### Server side specific environment
+
+| Back-end specifics | Description | Default |
 | --- | --- | --- |
-| `ENCRYPTION_KEYS` | The encryption keys used to encrypt any high risk data | |
-| `ENCRYPTION_JWT_SIGNING_KEY` | The key used to sign JWTs | |
-| `ENCRYPTION_JWT_REFRESH_SIGNING_KEY` | The key used to sign refresh tokens | |
+| `ENCRYPTION_KEYS` | Required encryption keys used to encrypt any high risk data | |
+| `ENCRYPTION_JWT_SIGNING_KEY` | Required key used to sign JWTs | |
+| `ENCRYPTION_JWT_REFRESH_SIGNING_KEY` | Required key used to sign refresh tokens | |
+| `LOG_LEVEL` | The server logging level: `audit` / `error` / `warn` / `info` / `debug` / `silly` | `warn` |
+| `LOG_MAX_FILE_SIZE` | Maximum size of the back-end express server log file, in MB | `24` |
+| `PORT` | Server-side listening port | `3000`|
+| `REPO_USE_SEARCH` | Enables filtering for repository accesses | false |
+| `REPO_SEARCH_QUERY` | Provides search string if repo search enabled | |
+| `REPO_ROOT_DIRECTORY` | Optional path where saved models are stored in the repo | |
+| `SERVER_API_PROTOCOL` | Protocol between server and front-end: `http` / `https` | `https` |
 
 **Note**: the JWT refresh signing key should be different from the JWT signing key as they are different tokens.
-A JWT is used as a refresh token because it is tamper resistant and provides user context.
+A JWT is used as the refresh token because it is tamper resistant and provides user context.
+
+### Repository specific environments
 
 Refer to the step by step [GitHub configuration]({{ '/docs-2/github-repo/' | relative_url }}) page
-for an example of setting up Github specific variables.
-
-| Github specific variables | Description | Default |
-| --- | --- | --- |
-| `GITHUB_CLIENT_ID` | Provided by the GitHub OAuth app used for authentication | |
-| `GITHUB_CLIENT_SECRET` | Secret generated by the GitHub OAuth authentication app | |
-| `GITHUB_SCOPE` | Optional definition of scope: `repo` to access both private and public repos or `public_repo` to access public repos only | `public_repo` |
-| `GITHUB_ENTERPRISE_HOSTNAME` | Optional fully qualified github enterprise instance hostname, e.g. github.example.com | |
-| `GITHUB_ENTERPRISE_PORT` | Optional if your github enterprise instance uses a nonstandard port | `443` |
-| `GITHUB_ENTERPRISE_PROTOCOL` | Optional if your github enterprise instance uses a nonstandard protocol | `https` |
-| `GITHUB_USE_SEARCH` | Optional, if true it will only display the github repos matching the search query below| `false`|
-| `GITHUB_SEARCH_QUERY` | Optionally specifies the search query to use when searching for Threat Dragon github repos | |
-| `GITHUB_REPO_ROOT_DIRECTORY` | Optional path where saved models are stored in a Github repo | |
+for an example of setting up Github specific variables and a listing of these
+[specific variables]({{ '/docs-2/github-repo/#github-environment-variables' | relative_url }}).
 
 There is a step by step [Bitbucket configuration]({{ '/docs-2/bitbucket-repo/' | relative_url }}) page
-with an example of setting up Bitbucket specific variables.
+with an example of setting up Bitbucket
+[specific variables]({{ '/docs-2/bitbucket-repo/#bitbucket-environment-variables' | relative_url }}).
 
-| Bitbucket specific variables | Description | Default |
-| --- | --- | --- |
-| `BITBUCKET_CLIENT_ID` | Provided by the Bitbucket OAuth app used for authentication | |
-| `BITBUCKET_CLIENT_SECRET` | Secret generated by the Bitbucket OAuth authentication app | |
-| `BITBUCKET_WORKSPACE` | The workspace name provided by the Bitbucket repo |  |
-| `BITBUCKET_SCOPE` | Optional definition of scope, set to `repository:write` for write permissions to the repo | `repository:read` |
-| `BITBUCKET_ENTERPRISE_HOSTNAME` | Optional fully qualified Bitbucket enterprise instance hostname, e.g. bitbucket.example.com | |
-| `BITBUCKET_ENTERPRISE_PORT` | Optional if your Bitbucket enterprise instance uses a nonstandard port | `443` |
-| `BITBUCKET_ENTERPRISE_PROTOCOL` | Optional if your Bitbucket enterprise instance uses a nonstandard protocol | `https` |
-| `BITBUCKET_REPO_ROOT_DIRECTORY` | Optional path where saved models are stored in a Bitbucket repo | |
+The step by step [GitLab configuration]({{ '/docs-2/gitlab-repo/' | relative_url }}) page
+lists and explains the setting up of GitLab
+[specific variables]({{ '/docs-2/gitlab-repo/#gitlab-environment-variables' | relative_url }}).
 
-There is also a step by step [Gitlab configuration]({{ '/docs-2/gitlab-repo/' | relative_url }}) page
-to explain the setting up of Gitlab specific variables.
+----
 
-| GitLab specific variables | Description | Default |
-| --- | --- | --- |
-| `GITLAB_CLIENT_ID` | The 'Application ID' provided by the Gitlab OAuth app used for authentication | |
-| `GITLAB_CLIENT_SECRET` | The 'Application Secret' generated by the Gitlab OAuth authentication app | |
-| `GITLAB_SCOPE` | The scope provided to the Gitlab OAuth app, for example 'api' provides maximum scope | `read_user read_repository` |
-| `GITLAB_HOST` | The URL of Gitlab server, for example `https://gitlab.com/` | |
-| `GITLAB_REDIRECT_URI` | The redirect provided to the Gitlab OAuth app, for example `<URL of Threat Dragon app>/api/oauth/return` | |
-| `GITLAB_REPO_ROOT_DIRECTORY` | Optional path where saved models are stored in a Gitlab repo | |
+Threat Dragon: _making threat modeling less threatening_

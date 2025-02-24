@@ -11,15 +11,17 @@ permalink: /docs-2/local-file/
 {% include breadcrumb.html %}
 
 [Threat Dragon](http://owasp.org/www-project-threat-dragon) can be run as a web application.
-If local file access is needed then some configuration is necessary.
+The threat models can be stored on the file system local to the client / browser,
+and some configuration of environment variables is needed to do this.
+These environment variables are described in
+the [installation instructions]({{ '/docs-2/install-environment/#environment-variables-reference' | relative_url }}).
 
 ## Local file access
 
-This page is a step by step explanation of how to configure the Threat Dragon Web Application
-for local file system access only.
-Most of these steps assume that the Threat Dragon web application is being used for learning
-or testing purposes, if it is in a production environment then ensure that full security controls are in place
-for any public accessible or sensitive use.
+This page is a step by step explanation of how to configure the Threat Dragon Web Application for local file system access.
+These steps assume that the Threat Dragon web application is being used for learning or testing purposes,
+if it is in a production environment then ensure that full security controls
+are in place for any publicly accessible or sensitive use.
 
 ### Decide on configuration
 
@@ -126,6 +128,10 @@ This is achieved using docker parameter `-d` :
 or if using Windows:
 
 - `docker run -d -p 8080:3000 -v %CD%/test.env:/app/.env owasp/threat-dragon:stable`
+
+----
+
+Threat Dragon: _making threat modeling less threatening_
 
 [dockerhub]: https://hub.docker.com/r/owasp/threat-dragon
 [dockerinstall]: https://docs.docker.com/engine/install/

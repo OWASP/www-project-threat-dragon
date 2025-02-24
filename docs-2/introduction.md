@@ -38,9 +38,11 @@ Threat Dragon can be run as a containerized web application or as a desktop appl
 The web application can store threat model files on the local file system; in addition access can be configured for :
 
 - GitHub
-- Bitbucket
-- GitLab
 - Github Enterprise
+- Google Drive
+- Bitbucket
+- Bitbucket Enterprise
+- GitLab
 
 The desktop application saves the threat model files locally
 with installers provided for MacOS, Windows and Linux.
