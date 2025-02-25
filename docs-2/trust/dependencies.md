@@ -17,7 +17,7 @@ The following controls are in place to assist with dependency management of the 
 - Dependabot alerts
 - `npm` for dependency resolution and auditing
 
-The documentation pages are scanned on every commit using [OWASP ZAP][zap] (Zed Attack Proxy).
+The documentation pages are scanned on every commit using [ZAP][zap] (Zed Attack Proxy).
 
 ## Fixing a vulnerable dependency
 
