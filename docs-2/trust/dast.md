@@ -14,7 +14,7 @@ permalink: /docs-2/dast/
 
 Dynamic application security testing is the process of testing code that is running to identify
 potential vulnerabilities and misconfigurations.
-This is provided by [OWASP ZAP](https://www.zaproxy.org/docs/docker/about/) and is run as part of every commit.
+This is provided by [ZAP](https://www.zaproxy.org/docs/docker/about/) and is run as part of every commit.
 
 ZAP scan results are attached to the output of an action.
 An ignore-list is maintained as a TSV (tab separated values, careful what editor you use).
