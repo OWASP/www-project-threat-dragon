@@ -58,9 +58,6 @@ docs:
 - title: 'API'
   url: api
 
-- title: 'CLI'
-  url: cli
-
 - title: 'Translations'
   url: internationalization
 

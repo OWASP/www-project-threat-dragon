@@ -50,8 +50,6 @@ permalink: /docs-2/
 
 #### [API](development/api.md)
 
-#### [CLI](development/cli.md)
-
 #### [Translations](development/internationalization.md)
 
 #### [Schema](development/schema.md)
