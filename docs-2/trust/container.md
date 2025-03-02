@@ -17,5 +17,9 @@ It is also run as a nightly cron job against the default branch.
 The GitHub action will fail if Trivy identifies _any_ vulnerabilities; this is strict by design.
 If vulnerabilities are discovered then the maintainers are alerted via GitHub's security tab.
 
-A `.trivyignore` file is maintained at the root of this repo.
-A comment with a justification should live above the ignored CVE.
+A `.trivyignore` file is maintained at the root of this repo that allows CVEs to be ignored.
+A comment with a justification should be added above any ignored CVE.
+
+----
+
+Threat Dragon: _making threat modeling less threatening_

@@ -10,6 +10,8 @@ permalink: /docs-2/dependencies/
 
 {% include breadcrumb.html %}
 
+## Dependency management
+
 The following controls are in place to assist with dependency management of the web application:
 
 - Trivy scanning per commit for SCA and OS dependency management within docker
@@ -17,9 +19,7 @@ The following controls are in place to assist with dependency management of the 
 - Dependabot alerts
 - `npm` for dependency resolution and auditing
 
-The documentation pages are scanned on every commit using [ZAP][zap] (Zed Attack Proxy).
-
-## Fixing a vulnerable dependency
+### Fixing a vulnerable dependency
 
 If your build fails due to a trivy alert, try to find the part of the application that has the vulnerable component.
 In the root directory of that component (where the `package.json` lives), run `npm audit`.
@@ -30,4 +30,6 @@ To obtain the updated package run `npm install`.
 This should be done at the package level and the root level when possible to protect developers
 as well as production environments.
 
-[zap]: https://www.zaproxy.org/docs/
+----
+
+Threat Dragon: _making threat modeling less threatening_
