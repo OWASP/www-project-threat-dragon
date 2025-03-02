@@ -10,8 +10,6 @@ permalink: /docs-2/unit/
 
 {% include breadcrumb.html %}
 
-## Running Unit Tests
-
 The complete suite of unit tests can be run locally using command `npm test` from the top directory.
 
 ### Jest frontend testing
@@ -36,3 +34,7 @@ There will be an HTML report generated as well that you can view to
 dig deeper into what sections may be missing coverage.
 
 We hope to keep the code coverage as high as possible.  If you need help writing or updating tests, please just ask!
+
+----
+
+Threat Dragon: _making threat modeling less threatening_

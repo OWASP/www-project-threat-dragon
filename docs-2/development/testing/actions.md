@@ -10,22 +10,20 @@ permalink: /docs-2/pipeline-actions/
 
 {% include breadcrumb.html %}
 
-## GitHub Actions
-
 [GitHub Actions](https://docs.github.com/en/actions/reference) are used to test, build and deploy Threat Dragon.
 These actions live in the `.github/workflows` directory.
 
-## CI Action
+## PR Pipeline
 
 The CI Action is Threat Dragon's continuous integration pipeline.
-This pipeline is run on all branches and serves as a sanity check.
+This pipeline is run on all branches and serves as a quality check.
 When a pull request is opened, each step of this pipeline is added as a check to the pull request.
 This gives the author and reviewers an opportunity to understand the state of the code.
 
 Because this action uses a docker image that is pushed to a remote repository for testing,
 there is a concurrency group that prevents concurrent runs of the same action.
 
-## BrowserStack
+## BrowserStack End to End Tests
 
 [BrowserStack](https://www.browserstack.com/) offers its services
 [for free to open-source projects](https://www.browserstack.com/open-source),
@@ -44,7 +42,7 @@ The house-keeping workflow runs a nightly workflow, and will:
 * run Trivy container scans to identify unpatched vulnerabilities in the docker image
 * run the [CodeQL](https://securitylab.github.com/tools/codeql/) is a static analysis scanner provided by GitHub
 
-## Deploy
+## CI Pipeline
 
 The deploy action is run on any "push" to the main branch (this includes merged pull requests),
 and serves as Threat Dragon's continuous delivery pipeline.
@@ -58,7 +56,11 @@ and serves as Threat Dragon's continuous delivery pipeline.
 * Smokes: Smoke tests are run against the deployed image to ensure the deployment succeeded.
 * Rollback: If the smokes fail, the deployment is rolled back.
 
-## Release desktop and docker
+## Release Pipeline
 
 This action is performed when a tag is created with a v2.x.x format.
 It will perform all tests and then build and publish the install images and the Docker image.
+
+----
+
+Threat Dragon: _making threat modeling less threatening_

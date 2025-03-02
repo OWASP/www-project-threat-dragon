@@ -19,7 +19,8 @@ The web application express server can be run locally using command `npm run sta
 The server will need access to environment variables as shown in
 [environment setup]({{ '/docs-2/install-environment/' | relative_url }}).
 
-When running locally it may be that HTTPS certificates are not present; consider using these environment variables:
+When running locally it may be that HTTPS certificates are not present,
+so consider using these environment variables that use HTTP:
 
 ```text
 NODE_ENV=development
@@ -45,3 +46,7 @@ it will rebuild and launch when source files are changed.
 The front end application can be tested in most browsers along with the browser supplied developer tools.
 If the application is being tested in the desktop environment then electron uses
 chrome as the renderer, with chrome developer tools being available.
+
+----
+
+Threat Dragon: _making threat modeling less threatening_

@@ -14,13 +14,6 @@ Internationalization is enabled by [vue-i18n](https://kazupon.github.io/vue-i18n
 This feature enables our community members to translate Threat Dragon,
 increasing the diversity of the Threat Dragon community.
 
-To add a new language:
-
-- Add a new file with the ISO 639-2 code as the name (eg "deu" or "eng") in the `td.vue/src/i18n` directory
-- Copy the contents of the `en.js` file to your new file and translation the application messages
-- Import your file to `td.vue/src/i18n/index.js` and add it to the `messages` object in the `get` method
-- Choose your new locale from the dropdown to test your translations
-
 The following translations are available:
 
 - العربية (ara-SY)
@@ -38,3 +31,14 @@ The following translations are available:
 - 中文 (zho-CN)
 
 By default, if a translation key cannot be found, it will fall-back to the default locale (`eng-US`).
+
+To add a new language:
+
+- Add a new file with the ISO 639-2 code as the name (eg "deu" or "eng") in the `td.vue/src/i18n` directory
+- Copy the contents of the `en.js` file to the new file and translate the application messages
+- Import the file to `td.vue/src/i18n/index.js` and add it to the `messages` object in the `get` method
+- Choose the new locale from the dropdown to test your translations
+
+----
+
+Threat Dragon: _making threat modeling less threatening_

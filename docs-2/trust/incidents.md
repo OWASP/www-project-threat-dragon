@@ -10,8 +10,6 @@ permalink: /docs-2/incidents/
 
 {% include breadcrumb.html %}
 
-## Trust
-
 The automated security scans of Threat Dragon are run on every commit:
 
 * [Dependency management]({{ '/docs-2/dependencies/' | relative_url }})

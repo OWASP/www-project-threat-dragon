@@ -40,10 +40,7 @@ npm run test:vue
 If you find a vulnerability in this project please let us know ASAP and we will fix it as a priority.
 For secure disclosure, please see the [security policy](https://github.com/OWASP/threat-dragon/blob/main/security.md).
 
-### Project leaders
+----
 
-[Mike Goodwin](mailto:mike.goodwin@owasp.org)
+Threat Dragon: _making threat modeling less threatening_
 
-[Jon Gadsden](mailto:jon.gadsden@owasp.org)
-
-[Leo Reading](mailto:leo.reading@owasp.org)

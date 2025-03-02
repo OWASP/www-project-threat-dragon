@@ -54,8 +54,6 @@ permalink: /docs-2/
 
 #### [Schema](development/schema.md)
 
-#### [Collaboration](development/collaboration.md)
-
 ### [Testing](development/testing/adhoc.md)
 
 #### [Unit testing](development/testing/unit.md)

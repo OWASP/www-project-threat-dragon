@@ -64,9 +64,6 @@ docs:
 - title: 'Schema'
   url: schema
 
-- title: 'Collaboration'
-  url: collaboration
-
 - title: 'Testing'
   url: adhoc
 

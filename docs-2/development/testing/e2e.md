@@ -10,9 +10,7 @@ permalink: /docs-2/e2e/
 
 {% include breadcrumb.html %}
 
-## Running e2e tests
-
-End to end testing is done using [cypress](https://www.cypress.io/).
+Running e2e tests is done using [cypress](https://www.cypress.io/).
 The full test suite is in `td.vue/tests/e2e/specs`
 and this is where most of the functional e2e tests should live.
 
@@ -182,3 +180,7 @@ Note that
 ## Running Desktop e2e tests
 
 The desktop application has end-to-end tests that can be run using `npm run test:e2e:desktop` from `td.vue` directory.
+
+----
+
+Threat Dragon: _making threat modeling less threatening_

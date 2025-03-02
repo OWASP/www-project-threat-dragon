@@ -35,3 +35,7 @@ ajv validate -s ~/owasp.threat-dragon.schema.V1.json  --all-errors  --verbose \
 ajv validate --allow-union-types -s ~/owasp.threat-dragon.schema.V2.json  --all-errors  --verbose \
     -d ThreatDragonModels/v2-threat-model.json
 ```
+
+----
+
+Threat Dragon: _making threat modeling less threatening_
