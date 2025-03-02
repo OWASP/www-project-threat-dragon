@@ -28,7 +28,7 @@ to provide the necessary environment variables.
 
 These are the quick steps to running a demo of the Threat Dragon web application:
 
-![Quick start demo](/assets/images/quick-demo.png){: .image-right }
+![Quick start demo]({{ '/docs-2/assets/images/quick-demo.png' | relative_url }}){: .image-right }
 
 1. Download the [Threat Dragon source][releases] and expand the archive
 2. From the top directory, copy `minimal.env` to `.env`

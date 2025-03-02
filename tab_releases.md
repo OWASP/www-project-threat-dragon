@@ -10,6 +10,7 @@ tags: threatdragon
 
 Release | Date | Location | Comments
 ------- | ---- | -------- | --------
+v2.4   | Mar 2025 | [github][240] | Additional threat priorities, TLS credentials, export model diagrams, create new repo branches
 v2.3   | Dec 2024 | [github][230] | suggest threats by element and threats by context, builds for ARM64 platforms and google sign-in feature
 v2.2   | Feb 2024 | [github][220] | add GitLab support and user prompt to save model when quitting
 v2.1.3 | Jan 2024 | [github][213] | bug fix for desktop menu discarding diagram edits, add schema for Open Threat Modeling (OTM)
@@ -74,5 +75,6 @@ Threat Dragon: _making threat modeling less threatening_
 [213]: https://github.com/OWASP/threat-dragon/releases/tag/v2.1.3
 [220]: https://github.com/OWASP/threat-dragon/releases/tag/v2.2.0
 [230]: https://github.com/OWASP/threat-dragon/releases/tag/v2.3.0
+[240]: https://github.com/OWASP/threat-dragon/releases/tag/v2.4.0
 [ant]: https://www.npmjs.com/package/@antv/g6
 [snap]: https://snapcraft.io/threat-dragon

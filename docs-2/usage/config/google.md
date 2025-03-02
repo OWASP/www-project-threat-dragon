@@ -133,7 +133,7 @@ owasp/threat-dragon:stable
 Note that values for the keys need to be replaced with the values obtained in the previous sections,
 and also note the use of quotation marks.
 
-![Google Drive button](/assets/images/google-drive-button.png){: .image-left }
+![Google Drive button]({{ '/docs-2/assets/images/google-drive-button.png' | relative_url }}){: .image-right }
 
 If the server container starts up correctly then navigate to `http://localhost:8080/#/` to get the main page.
 With a `GOOGLE_CLIENT_ID` set then the 'Login with Google' button is made visible.

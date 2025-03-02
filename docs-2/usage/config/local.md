@@ -10,21 +10,6 @@ permalink: /docs-2/local-file/
 
 {% include breadcrumb.html %}
 
-<style type="text/css">
-.image-left {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  float: left;
-}
-.image-right {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  float: right;
-}
-</style>
-
 [Threat Dragon](http://owasp.org/www-project-threat-dragon) can be run as a web application.
 The threat models can be stored on the file system local to the client / browser,
 and some configuration of environment variables is needed to do this.
