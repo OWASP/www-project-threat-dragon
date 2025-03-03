@@ -71,7 +71,7 @@ These tests are run by the CI pipeline after a successful deploy.
 
 ### BrowserStack test:e2e-nightly
 
-The online BrowserStack nightly tests use various browsers to run the tests
+The online [BrowserStack][browserstack]  nightly tests use various browsers to run the tests
 listed in configuration file `browserstack.nightly.json`.
 The BrowserStack configuration uses cypress configuration file `e2e.nightly.config.js`
 and the suite of tests from is loaded from `tests/e2e/specs`.
@@ -184,3 +184,5 @@ The desktop application has end-to-end tests that can be run using `npm run test
 ----
 
 Threat Dragon: _making threat modeling less threatening_
+
+[browserstack]: https://www.browserstack.com/

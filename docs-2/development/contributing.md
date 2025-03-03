@@ -43,4 +43,3 @@ For secure disclosure, please see the [security policy](https://github.com/OWASP
 ----
 
 Threat Dragon: _making threat modeling less threatening_
-

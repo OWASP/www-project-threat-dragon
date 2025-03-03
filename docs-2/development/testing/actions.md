@@ -1,6 +1,6 @@
 ---
 
-title: CI pipeline
+title: Pipeline actions
 layout: col-document
 tags: threatdragon
 document: OWASP Threat Dragon version 2.4
@@ -25,8 +25,7 @@ there is a concurrency group that prevents concurrent runs of the same action.
 
 ## BrowserStack End to End Tests
 
-[BrowserStack](https://www.browserstack.com/) offers its services
-[for free to open-source projects](https://www.browserstack.com/open-source),
+[BrowserStack][browserstack] offers its services [for free to open-source projects][browserstack-os],
 and has graciously provided Threat Dragon with their services.
 BrowserStack provides automated, cross-browser testing for web and mobile applications.
 
@@ -64,3 +63,6 @@ It will perform all tests and then build and publish the install images and the 
 ----
 
 Threat Dragon: _making threat modeling less threatening_
+
+[browserstack]: https://www.browserstack.com/
+[browserstack-os]: https://www.browserstack.com/open-source

@@ -60,7 +60,7 @@ permalink: /docs-2/
 
 #### [End to end testing](development/testing/e2e.md)
 
-#### [CI pipeline](development/testing/actions.md)
+#### [Pipeline actions](development/testing/actions.md)
 
 ### [Trust](trust/incidents.md)
 

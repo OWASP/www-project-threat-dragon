@@ -69,8 +69,8 @@ in the format `<command>:<vue|server|desktop>`. As an example run from top-level
 | Command | Description |
 | ------- | ----------- |
 | `npm build` | Builds the web-based project(s). |
-| `npm run dev` | Starts the development version of the project and watches for changes. *This requires using two different terminals.* Run `npm run dev:vue` and in another terminal, `npm run dev:server`. |
-| `npm start` | Starts the development version of the project(s) using [pm2](https://github.com/Unitech/pm2). *This only requires a single terminal*. |
+| `npm run dev` | Starts the development version of the project and watches for changes. _This requires using two different terminals._ Run `npm run dev:vue` and in another terminal, `npm run dev:server`. |
+| `npm start` | Starts the development version of the project(s) using [pm2](https://github.com/Unitech/pm2). _This only requires a single terminal_. |
 | `npm run start:desktop` | Starts the development desktop version. |
 | `npm run test:vue` | Runs the end-to-end tests in headless mode. |
 | `npm test` | Runs the unit tests for the project(s). |

@@ -73,7 +73,7 @@ docs:
 - title: 'End to end testing'
   url: e2e
 
-- title: 'CI pipeline'
+- title: 'Pipeline actions'
   url: pipeline-actions
 
 - title: 'Trust'
