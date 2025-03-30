@@ -84,10 +84,11 @@ Once you have entered all the details you need remember to click **Save**.
 You can also **Cancel** to exit without saving,
 or **Reload** to undo any changes and revert to your last save.
 
-In the web variant of Threat Dragon, models are saved in your chosen branch at a path like
-`ThreatDragonModels/[model name]/[model title].json`,
-Look at the [Demo Threat Model](https://github.com/mike-goodwin/owasp-threat-dragon-demo) for an example.
-Because of this, if you change title of your model it will delete the old model and replace it with one at the new path.
+In the web variant of Threat Dragon, models are saved in your chosen branch
+using the model title in the file path and file name:
+`ThreatDragonModels/[model name]/[model title].json`.
+This means that if you change title of your model it will delete the old model
+and replace it with one at the new file path and file name.
 This does not apply to the desktop variant.
 
 Congratulations! You have got the basics done. Next step ...
@@ -143,14 +144,20 @@ The demo models should give you some ideas on how to get started with your own m
 From the Threat Model details view you can see a summary report of your model listing the diagrams,
 elements and threats. Towards the bottom right of the page click on the **Report** button.
 
-You can then customise the report to show or hide:
+You can then customise the report to show :
 
-* Mitigated threats
 * Threat model diagrams
+* Mitigated threats
 * Out of scope model elements
 * Empty model elements
-* Threat Dragon logo
+* Threat Dragon logo, default is hidden
+* Element properties, not shown by default
 
-On the desktop variant of Threat Dragon you can **Print** the report or **Save** it as a PDF.
-On the web variant, you can **Print** the report and then on most browsers
-the print dialog allows you to save the report as a PDF.
+On the desktop variant of Threat Dragon you can **Print** the report or save it as a **PDF Report**.
+
+Using the web variant, you can **Print** the report to a printer.
+Most browsers will also allow you to save the report as a PDF from this print dialog.
+
+----
+
+Threat Dragon: _making threat modeling less threatening_

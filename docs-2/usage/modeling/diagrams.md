@@ -91,3 +91,8 @@ The toolbar on the diagram editing page supports some general diagramming featur
 * Toggle gridlines on/off, allowing for neater models
 * Close the diagram and return to the threat model details view
 * Save the threat model
+
+----
+
+Threat Dragon: _making threat modeling less threatening_
+
