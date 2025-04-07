@@ -9,12 +9,20 @@ permalink: /docs-2/getting-started/
 ---
 
 {% include breadcrumb.html %}
+
 <style type="text/css">
 .image-left {
   display: block;
   margin-left: auto;
   margin-right: 15px;
   float: left;
+}
+.image-right {
+  height: 180px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  float: right;
 }
 </style>
 
@@ -26,9 +34,12 @@ Getting started with [Threat Dragon](http://owasp.org/www-project-threat-dragon)
 
 ![Login image]({{ '/docs-2/assets/images/start.png' | relative_url }}){: .image-left }
 
-The Threat Dragon web applications stores its threat models in the configured repository or on your local drive.
+The Threat Dragon web applications stores its threat models on your local drive and, depending on configuration,
+it can also store the models in a source code repository such as GitHub.
+When getting started with Threat Dragon it is useful to test access to the configured repository,
+in which case click on 'Login with Github' for example.
 
-To get started with your threat model access the welcome page and start a new model by
+To create a new threat model access the welcome page and start a new model by
 clicking on the **plus** area of the Welcome page.
 
 ![New model image]({{ '/docs-2/assets/images/newmodel.png' | relative_url }}){: .image-left }
@@ -46,13 +57,16 @@ The name that you provide for the model will be used as the file name within the
 
 ### Using the Desktop application
 
-The Threat Dragon desktop variant stores its threat models on your local filesystem.
+![Login image]({{ '/docs-2/assets/images/start.png' | relative_url }}){: .image-left }
+
+The Threat Dragon desktop variant stores its threat models on your local filesystem only,
+so click on 'Start Threat Dragon' to access the Welcome screen.
+
+To get started with your threat model select the **plus** area of the Welcome page,
+or use the pull down menu 'File -> New Model'.
+You are then asked to save the model file; this ensures the model can be saved.
 
 ![New model image]({{ '/docs-2/assets/images/newmodel.png' | relative_url }}){: .image-left }
-
-To get started with your threat model start  the applications and from the welcome page
-select on the **plus** area, or pull down menu 'File -> New Model'. You will then need to save
-the model file - we did it this way so that you can be sure your model can be saved.
 
 You will then be taken straight to the threat model edit page where you
 can enter general information about your model.
@@ -72,7 +86,7 @@ Click on the **Edit** button to start editing the threat model details.
 You can add new contributors by entering their name and clicking on the 'Add' in the tag box.
 You can also add the contributor by entering their name and hitting the 'enter' or ',' or ';' keys.
 
-![Add Contributor image]({{ '/docs-2/assets/images/addcontributors.png' | relative_url }}){: .image-left }
+![Add Contributor image]({{ '/docs-2/assets/images/addcontributors.png' | relative_url }}){: .image-right }
 
 Add some diagrams to your model by clicking on 'Add a new diagram ...'
 
@@ -81,8 +95,7 @@ At this stage you are just listing the diagrams and naming them.
 You add all the diagram elements later.
 
 Once you have entered all the details you need remember to click **Save**.
-You can also **Cancel** to exit without saving,
-or **Reload** to undo any changes and revert to your last save.
+**Reload** will undo any changes and revert to your last save, **Close** gets back to the main page.
 
 In the web variant of Threat Dragon, models are saved in your chosen branch
 using the model title in the file path and file name:
@@ -157,6 +170,8 @@ On the desktop variant of Threat Dragon you can **Print** the report or save it 
 
 Using the web variant, you can **Print** the report to a printer.
 Most browsers will also allow you to save the report as a PDF from this print dialog.
+
+![Report buttons image]({{ '/docs-2/assets/images/reportbuttons.png' | relative_url }})
 
 ----
 

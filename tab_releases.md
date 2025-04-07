@@ -10,7 +10,7 @@ tags: threatdragon
 
 Release | Date | Location | Comments
 ------- | ---- | -------- | --------
-v2.4.1   | Mar 2025 | [github][241] | Bug fix for diagram labels, TBA renamed TBD 
+v2.4.1   | Mar 2025 | [github][241] | Bug fix for diagram labels, TBA renamed TBD
 v2.4   | Mar 2025 | [github][240] | Additional threat priorities, TLS credentials, export model diagrams, create new repo branches
 v2.3   | Dec 2024 | [github][230] | suggest threats by element and threats by context, builds for ARM64 platforms and google sign-in feature
 v2.2   | Feb 2024 | [github][220] | add GitLab support and user prompt to save model when quitting
