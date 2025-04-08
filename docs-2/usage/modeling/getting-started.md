@@ -91,8 +91,13 @@ You can also add the contributor by entering their name and hitting the 'enter' 
 Add some diagrams to your model by clicking on 'Add a new diagram ...'
 
 Name your diagram and then **Add** to confirm or **Cancel** if you change your mind.
-At this stage you are just listing the diagrams and naming them.
-You add all the diagram elements later.
+At this stage you are just listing the diagrams and naming them, the diagram elements are added later.
+
+![add diagrams]({{ '/docs-2/assets/images/add-diagram.png' | relative_url }})
+
+When adding a diagram there is a description field; this does not have to be filled out
+but if present it will be added to the bottom of the diagram icon and to any reports generated.
+Note that the diagram shown is not a thumbnail, it is an icon of a notional threat model according to the diagram type.
 
 Once you have entered all the details you need remember to click **Save**.
 **Reload** will undo any changes and revert to your last save, **Close** gets back to the main page.

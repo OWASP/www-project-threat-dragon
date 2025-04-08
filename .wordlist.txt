@@ -14,6 +14,7 @@ CLI
 CN
 CVE
 CVEs
+CVSS
 CentOS
 CodeQL
 DAST
