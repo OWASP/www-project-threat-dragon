@@ -20,81 +20,109 @@ permalink: /docs-2/threats/
 
 Threat generation for [Threat Dragon](http://owasp.org/www-project-threat-dragon)
 
-## Adding and editing threats
+![Add threat]({{ '/docs-2/assets/images/add-threat.png' | relative_url }})
 
-![New threat]({{ '/docs-2/assets/images/newthreat.png' | relative_url }}){: .image-left }
+## Adding threats
+
+![New threat]({{ '/docs-2/assets/images/new-threat.png' | relative_url }}){: .image-left }
 
 To add threats to elements in your diagram, select an element
 and click on 'New Threat' to the lower right of the diagram editor.
 Note that this button will be disabled if an out-of-scope element is selected.
 
 Enter the details for your threat in the threat dialog,
-such as the remediation applied or the reason it has been marked N/A.
+such as any remediation applied or the reasoning it has been marked N/A.
 Values for 'Title' and 'Threat Type' are always required.
 
-Note that some threat categorization methodologies restrict the threats that can be selected;
-see [Threats by Element](#threats-by-element) for a description of this feature.
+Note that some threat categorization types restrict the threats that can be selected for a given diagram element;
+see [Threats by element type](#threats-by-element-type) for a description of this feature.
 
 When you are done hit **Apply** and the new threat will be appear lower right.
+Otherwise hit **Remove** to exit editing without applying the threat.
 
-Click on the threat in the lower right collection to edit again or edit an existing threat.
+### Editing or deleting threats
 
-## STRIDE, LINDDUN, CIA, DIE, PLOT4ai and Generic
+To edit an existing threat, select the diagram element and then click on the threat in the lower right collection.
 
-The threat model can have different types of threats added to it according to the diagram methodology.
-Currently the supported methodologies are STRIDE, LINDDUN, CIA, DIE and PLOT4ai;
-these are selected as part of the diagram attributes when editing the model.
-A 'Generic' methodology is provided so that you can select any type of threat.
+![Edit threat]({{ '/docs-2/assets/images/edit-threat.png' | relative_url }}){: .image-left }
 
-Note that it is OK to select one methodology, enter some threats into the model,
-and then change the model methodology. No threats are removed when you do this,
-and your previous threats will still be retained in the model.
+The information for the threat can be edited as before.
+**Apply** will save any changes, **Cancel** will discard changes and **Delete** will remove the threat entirely.
 
-For example if a threat is added using CIA and the model type is then changed to LINDDUN,
-then the CIA threat is still in the model and can be edited as before.
-In addition if LINDDUN threats are added and then the model is changed back to CIA
-then both LINDDUN and CIA threats are in the model and both types can be edited.
-Of course, same goes for STRIDE and so on.
+### Threat properties
 
-### Threats by element
+All threats have the following properties:
 
-Some threat categories are associated with some diagram elements more than others.
-For example an Actor element is more likely to have Spoofing and Repudiation threats
-associated with it, and less likely to be vulnerable to
-Tampering, Information disclosure, Denial of service or Elevation of privileges.
+* Title is free form test, usually a short descriptive title
+* Type is a category selection determined by the diagram type (STRIDE / LINDDUN / PLOT4ai / CIA / CIA-DIE / Generic)
+* Status is one of N/A / Open / Mitigated
+* Score contains a free text field, often used to score the threat from 0.0 to 10.0 but can be any text or CVSS score
+* Priority is one of TBD / Low / Medium / High / Critical, similar to CVSS
+* Description of the threat and possible impact
+* Mitigations for the threat, probably a remediation from TAME (Transfer / Accept / Mitigate / Evade)
 
-According to the type of diagram (STRIDE, LINDDUN, CIA, DIE and PLOT4ai),
-Threat Dragon will restrict the threat type according to  the element chosen.
-If you find this too restrictive then change the diagram type to 'Generic'
-and this will allow you to select any threat type for any type of element;
-you can always change the diagram back to STRIDE, LINDDUN, CIA, DIE or PLOT4ai later on.
+Here N/A stands for Not Applicable and TBD for To Be Defined (or Determined)
 
-#### STRIDE threats by element
+## Threat categories
 
-```text
-          S | T | R | I | D | E
-ACTOR   | X |   | X |   |   |
-STORE   |   | X | X | X | X |
-PROCESS | X | X | X | X | X | X
-FLOW    |   | X |   | X | X |
-```
+The threat model can have [different types of threats]({{ '/docs-2/threat-categories/' | relative_url }})
+added to it according to the diagram type.
+Currently the supported types are STRIDE, LINDDUN, CIA, CIA-DIE and PLOT4ai;
+these are configured as part of the diagram attributes when editing the model.
+A 'Generic' type is provided so that you can select any type of threat from any of the categories.
 
-#### LINDDUN threats by element
+## Threats by element type
 
-```text
-          L | I | N | D | D | U | N
-ACTOR   | X | X |   |   |   | X |
-STORE   | X | X | X | X | X |   | X
-FLOW    | X | X | X | X | X |   | X
-PROCESS | X | X | X | X | X |   | X
-```
+![New threat by element]({{ '/docs-2/assets/images/threat-by-element.png' | relative_url }}){: .image-left }
 
-#### PLOT4ai threats by element
+Referring to the [threats by element tables]({{ '/docs-2/threat-categories/' | relative_url }}),
+it is useful to cycle through all the categories of threat for a given component.
+These categories can then be considered in turn and accepted if found useful.
 
-```text
-          T | A | I | S | S | U | E | N
-ACTOR   |   | X | X | X | X | X | X |
-STORE   | X | X | X | X |   |   |   | X
-FLOW    | X |   | X | X |   |   |   | X
-PROCESS | X | X | X | X |   |   |   | X
-```
+To help drive this discussion Threat Dragon provides a 'New Threat by Type'
+where a sequence of threats is presented in turn.
+
+The individual threat can be accepted using **Apply**, and the threats can be cycled through
+using the **Previous** and **Next** buttons.
+Use the **Cancel** button to exit the suggestion sequence.
+
+## Threats by context
+
+![New threat by context]({{ '/docs-2/assets/images/threat-by-context.png' | relative_url }}){: .image-left }
+
+The components on the diagram have type-specific properties,
+for example the Actor component has a property 'Provides Authentication' via a check-box.
+These properties are used to determine context specific threat suggestions using 'New Threat by Context'.
+
+At present the suggestions are based on the OWASP Automated Threats to Web Applications, commonly known as [OATS][oats].
+The threat suggestion can be accepted using **Apply**
+and cycle through the threats using the **Previous** and **Next** buttons.
+Use **Cancel** to exit the suggestion sequence.
+
+The properties that are used for contextual threat suggestions are:
+
+* Data flow
+  * Protocol
+  * Encrypted
+  * Public Network
+* Actor
+  * Provides Authentication
+* Process
+  * Privilege Level
+  * Card payment
+  * Goods or Services
+  * Web Application
+* Data store
+  * Is a Log
+  * Stores Credentials
+  * Encrypted
+  * Signed
+  * Stores Inventory
+
+If there is no suggestion available, usually when no properties have been selected, then a generic threat is shown instead.
+
+----
+
+Threat Dragon: _making threat modeling less threatening_
+
+[oats]: https://owasp.org/www-project-automated-threats-to-web-applications/

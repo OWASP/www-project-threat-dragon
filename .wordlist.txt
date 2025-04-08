@@ -14,6 +14,7 @@ CLI
 CN
 CVE
 CVEs
+CVSS
 CentOS
 CodeQL
 DAST
@@ -55,6 +56,7 @@ OWASP
 OneDrive
 OpenDocument
 PLOT4ai
+PNG
 PRs
 PWD
 Pythonic
@@ -62,11 +64,13 @@ Quickstart
 Roadmap
 SAST
 SCA
+SVG
 SY
 SeaSponge
 Sinon
 Styran
 Suomi
+TBD
 TD's
 TLS
 TMF

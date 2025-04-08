@@ -39,7 +39,7 @@ Note that these 'latest' builds are not guaranteed to be stable.
 
 ### Building
 
-If the docker image needs to be rebuilt then start by cloning the Threat Dragon github project.
+To rebuild the docker image start by cloning the Threat Dragon github project.
 Note that this provides the latest source code, rather than a released version:
 
 ```text
@@ -48,12 +48,15 @@ git clone https://github.com/owasp/threat-dragon.git
 cd threat-dragon
 ```
 
-The docker image can then be built from the top directory of the project
-which contains the `Dockerfile`. Use a command such as :
+Threat Dragon is an open source project and there may be a need to change functionality or documentation,
+in which case the docker image can be rebuilt and testing applied to the docs or application.
+
+Build the docker image from the top directory of the project, which contains the `Dockerfile`,
+using a docker command such as :
 
 `docker build -t owasp-threat-dragon:local .`
 
-Note that here tag `local` has been used, but it could be almost anything such as `dev`.
+Note that a tag 'local' has been used here, but it could be (almost) anything such as 'dev' or 007.
 
 ### Environment variables
 
@@ -82,6 +85,9 @@ and may need to substitute an absolute path instead of `$(pwd)`.
 In the example above the container internal port 3000 is mapped to external port 8080,
 and so Threat Dragon is accessible within a browser using URL `http://localhost:8080` .
 The external port number can be changed to suit the system environment.
+
+The documentation included in the docker image can be accessed from `http://localhost:8080/docs`
+again using the example port 8080.
 
 ### Debugging
 
