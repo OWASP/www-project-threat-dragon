@@ -11,12 +11,6 @@ permalink: /docs-2/google-drive/
 {% include breadcrumb.html %}
 
 <style type="text/css">
-.image-left {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  float: left;
-}
 .image-right {
   display: block;
   margin-left: auto;

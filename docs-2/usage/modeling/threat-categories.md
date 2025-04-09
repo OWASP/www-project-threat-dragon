@@ -9,14 +9,6 @@ permalink: /docs-2/threat-categories/
 ---
 
 {% include breadcrumb.html %}
-<style type="text/css">
-.image-left {
-  display: block;
-  margin-left: auto;
-  margin-right: 15px;
-  float: left;
-}
-</style>
 
 Threat categories for [Threat Dragon](http://owasp.org/www-project-threat-dragon)
 

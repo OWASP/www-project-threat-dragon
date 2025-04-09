@@ -16,6 +16,12 @@ permalink: /docs-2/threats/
   margin-right: 15px;
   float: left;
 }
+.image-right {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  float: right;
+}
 </style>
 
 Threat generation for [Threat Dragon](http://owasp.org/www-project-threat-dragon)
@@ -88,11 +94,11 @@ Use the **Cancel** button to exit the suggestion sequence.
 
 ## Threats by context
 
-![New threat by context]({{ '/docs-2/assets/images/threat-by-context.png' | relative_url }}){: .image-left }
-
 The components on the diagram have type-specific properties,
 for example the Actor component has a property 'Provides Authentication' via a check-box.
 These properties are used to determine context specific threat suggestions using 'New Threat by Context'.
+
+![New threat by context]({{ '/docs-2/assets/images/threat-by-context.png' | relative_url }}){: .image-right }
 
 At present the suggestions are based on the OWASP Automated Threats to Web Applications, commonly known as [OATS][oats].
 The threat suggestion can be accepted using **Apply**

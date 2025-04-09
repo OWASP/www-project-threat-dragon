@@ -18,7 +18,6 @@ permalink: /docs-2/getting-started/
   float: left;
 }
 .image-right {
-  height: 180px;
   display: block;
   margin-left: auto;
   margin-right: auto;

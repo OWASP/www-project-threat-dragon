@@ -9,12 +9,13 @@ permalink: /docs-2/credits/
 ---
 
 {% include breadcrumb.html %}
+
 <style type="text/css">
-.image-left {
+.image-right {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  float: left;
+  float: right;
 }
 </style>
 

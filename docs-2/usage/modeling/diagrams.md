@@ -17,13 +17,6 @@ permalink: /docs-2/diagrams/
   margin-right: 15px;
   float: left;
 }
-.image-right {
-  height: 180px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  float: right;
-}
 </style>
 
 Creating the [Threat Dragon](http://owasp.org/www-project-threat-dragon) diagrams

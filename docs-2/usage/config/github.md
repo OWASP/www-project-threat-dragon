@@ -10,6 +10,15 @@ permalink: /docs-2/github-repo/
 
 {% include breadcrumb.html %}
 
+<style type="text/css">
+.image-right {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  float: right;
+}
+</style>
+
 [Threat Dragon](http://owasp.org/www-project-threat-dragon) can be run as a web application and
 if Github repository access is required then some configuration is needed
 for the necessary environment variables.
