@@ -46,6 +46,9 @@ docs:
 - title: 'Threats'
   url: threats
 
+- title: 'Threats Categories'
+  url: threat-categories
+
 - title: 'Development'
   url: local-development
 

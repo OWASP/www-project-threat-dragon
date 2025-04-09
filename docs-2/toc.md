@@ -42,6 +42,8 @@ permalink: /docs-2/
 
 #### [Threats](usage/modeling/threats.md)
 
+#### [Threat Categories](usage/modeling/threat-categories.md)
+
 ### [Development](development/local-development.md)
 
 #### [Development environment](development/environment.md)
