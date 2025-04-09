@@ -17,6 +17,12 @@ permalink: /docs-2/diagrams/
   margin-right: 15px;
   float: left;
 }
+.image-right {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  float: right;
+}
 </style>
 
 Creating the [Threat Dragon](http://owasp.org/www-project-threat-dragon) diagrams
@@ -45,7 +51,7 @@ restrictive, but it is still possible to add any type of threat to any component
 
 To delete an element, first select it and then click on the red icon in the element's top left corner:
 
-![element delete tool]({{ '/docs-2/assets/images/delete.png' | relative_url }})
+![element delete tool]({{ '/docs-2/assets/images/delete.png' | relative_url }}){: .image-right }
 
 These components can be resized and can be dragged to change the aspect ratio.
 Multiple components can be selected using a mouse control-click or by dragging a selection box.

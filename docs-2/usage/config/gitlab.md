@@ -78,9 +78,9 @@ GITLAB_HOST=http://gitlab-instance
 Clearly these values shown here are _not to be used_ for a real application,
 they are merely for illustrative purposes.
 
-If Threat Dragon is successfully configured for GitLab access then the 'Login with GitLab' button is made visible.
-
 ![GitLab button]({{ '/docs-2/assets/images/gitlab-button.png' | relative_url }}){: .image-right }
+
+If Threat Dragon is successfully configured for GitLab access then the 'Login with GitLab' button is made visible.
 
 Refer to the [the GitHub configuration]({{ '/docs-2/github-repo/' | relative_url }}) guide for
 a similar example of setting up Github step by step.
