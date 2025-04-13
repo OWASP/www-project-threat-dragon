@@ -31,6 +31,8 @@
 # allow docs files
 !_data
 !_data/*.yaml
+!_layouts
+!_layouts/*.html
 !_includes
 !_includes/*.html
 !docs-1/
