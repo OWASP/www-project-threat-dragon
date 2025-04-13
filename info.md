@@ -11,7 +11,7 @@
 ### Documentation
 
 * [Version 1.6.x](docs-1)
-* [Version 2.x](docs-2)
+* [Version 2.x](https://www.threatdragon.com/docs)
 * [Demonstration](https://www.threatdragon.com/)
 
 ### Downloads

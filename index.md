@@ -63,7 +63,7 @@ Threat Dragon: _making threat modeling less threatening_
 
 [demo]: https://youtu.be/n6JGcZGFq5o
 [docs-1]: https://owasp.org/www-project-threat-dragon/docs-1/
-[docs-2]: https://owasp.org/www-project-threat-dragon/docs-2/
+[docs-2]: https://www.threatdragon.com/docs/
 [manifesto]: https://www.threatmodelingmanifesto.org/
 [pytm]: https://owasp.org/www-project-pytm/
 [threagile]: https://threagile.io

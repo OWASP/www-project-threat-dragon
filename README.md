@@ -33,4 +33,4 @@ Threat Dragon: _making threat modeling less threatening_
 
 [build]: https://github.com/OWASP/www-project-threat-dragon/actions/workflows/ci.yaml
 [docs1]: https://owasp.org/www-project-threat-dragon/docs-1/
-[docs2]: https://owasp.org/www-project-threat-dragon/docs-2/
+[docs2]: https://www.threatdragon.com/docs/
