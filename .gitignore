@@ -38,11 +38,6 @@
 !docs-1/
 !docs-1/install/
 !docs-1/**/*.md
-!docs-1/assets/
-!docs-1/assets/images/
-!docs-1/assets/images/*.png
-!docs-1/assets/downloads/
-!docs-1/assets/downloads/*
 !docs-2/
 !docs-2/development/
 !docs-2/development/testing/
@@ -52,7 +47,4 @@
 !docs-2/usage/install/
 !docs-2/usage/modeling/
 !docs-2/**/*.md
-!docs-2/assets/
-!docs-2/assets/images/
-!docs-2/assets/images/*.png
 
