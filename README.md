@@ -32,5 +32,5 @@ and you may need to [subscribe](https://owasp.org/slack/invite) first.
 Threat Dragon: _making threat modeling less threatening_
 
 [build]: https://github.com/OWASP/www-project-threat-dragon/actions/workflows/ci.yaml
-[docs1]: https://owasp.org/www-project-threat-dragon/docs-1/
+[docs1]: https://threatdragon.github.io/
 [docs2]: https://www.threatdragon.com/docs/

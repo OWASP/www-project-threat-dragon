@@ -62,7 +62,7 @@ you may need to [subscribe](https://owasp.org/slack/invite) first.
 Threat Dragon: _making threat modeling less threatening_
 
 [demo]: https://youtu.be/n6JGcZGFq5o
-[docs-1]: https://owasp.org/www-project-threat-dragon/docs-1/
+[docs-1]: https://threatdragon.github.io/
 [docs-2]: https://www.threatdragon.com/docs/
 [manifesto]: https://www.threatmodelingmanifesto.org/
 [pytm]: https://owasp.org/www-project-pytm/
