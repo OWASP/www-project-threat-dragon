@@ -10,7 +10,8 @@ tags: threatdragon
 
 Release | Date | Location | Comments
 ------- | ---- | -------- | --------
-v2.4.1   | Mar 2025 | [github][241] | Bug fix for diagram labels, TBA renamed TBD
+v2.5   | Aug 2025 | [github][250] | Add demo models from the Threat Model Cookbook,<br>copy diagrams from the edit page and extend DIE to be CIA-DIE
+v2.4.1 | Mar 2025 | [github][241] | Bug fix for diagram labels, TBA renamed TBD
 v2.4   | Mar 2025 | [github][240] | Additional threat priorities, TLS credentials, export model diagrams, create new repo branches
 v2.3   | Dec 2024 | [github][230] | suggest threats by element and threats by context, builds for ARM64 platforms and google sign-in feature
 v2.2   | Feb 2024 | [github][220] | add GitLab support and user prompt to save model when quitting
@@ -24,7 +25,7 @@ v2.0.7 | Sep 2023 | [github][207] | fix bug when selecting trust boundary curves
 v2.0.6 | Sep 2023 | [github][206] | ability to filter Github repos; translation for Finnish; improve data flow selection and handling
 v2.0.4 | Aug 2023 | [github][204] | various bug fixes;
 v2.0.2 | Apr 2023 | [github][202] | collection of bug fixes; PDF report button, threat IDs fixed, reporting expanded
-v2.0   | Feb 2023 | [github][200] | substantial rewrite for new drawing library [@antv/g6][ant]
+v2.0   | Feb 2023 | [github][200] | substantial rewrite for new drawing library [@antv/x6][ant]
 v1.6.1 | Mar 2022 | [github][161] | Docs now moved to the new site<br>Last release of 1.x before version 2.0
 v1.6   | Dec 2021 | [github][160] | Automated threat and context threat generation
 v1.5.8 | Sep 2021 | [github][158] | Shows 'NA' threats as completed/ mitigated<br>Fixes bug in threat engine (web app only)<br>Signed binaries for Windows
@@ -78,5 +79,6 @@ Threat Dragon: _making threat modeling less threatening_
 [230]: https://github.com/OWASP/threat-dragon/releases/tag/v2.3.0
 [240]: https://github.com/OWASP/threat-dragon/releases/tag/v2.4.0
 [241]: https://github.com/OWASP/threat-dragon/releases/tag/v2.4.1
-[ant]: https://www.npmjs.com/package/@antv/g6
+[250]: https://github.com/OWASP/threat-dragon/releases/tag/v2.5.0
+[ant]: https://www.npmjs.com/package/@antv/x6
 [snap]: https://snapcraft.io/threat-dragon
