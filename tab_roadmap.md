@@ -6,10 +6,14 @@ order: 3
 tags: threatdragon
 ---
 
-### Version 2.5: in progress
+### Version 2.6: in progress
 
 - [ ] provide an API for CI/CD pipelines
 - [ ] provide a CLI for scripting based on TD's existing [use of yargs](https://github.com/yargs/yargs)
+
+### Version 2.5: released August 2025
+
+- [x] add demo models from the Threat Model Cookbook
 
 ### Version 2.3: released December 2024
 
@@ -38,7 +42,7 @@ Stable version of 2.x.x with bug fixes and usable diagram tools. Still not featu
 
 - [x] be strictly open source
 - [x] use [Vue](https://v3.vuejs.org/guide/introduction.html#what-is-vue-js) for frontend application
-- [x] use [@antv/g6](https://www.npmjs.com/package/@antv/g6) for the drawing library
+- [x] use @antv/g6 for the drawing library
 - [x] frontend logging using [bunyan](https://github.com/trentm/node-bunyan)
     and optional logging to the console during development
 - [x] use [electron](https://www.electronjs.org/) to wrap webapp for desktop

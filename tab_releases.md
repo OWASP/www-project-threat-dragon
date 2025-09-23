@@ -25,11 +25,11 @@ v2.0.7 | Sep 2023 | [github][207] | fix bug when selecting trust boundary curves
 v2.0.6 | Sep 2023 | [github][206] | ability to filter Github repos; translation for Finnish; improve data flow selection and handling
 v2.0.4 | Aug 2023 | [github][204] | various bug fixes;
 v2.0.2 | Apr 2023 | [github][202] | collection of bug fixes; PDF report button, threat IDs fixed, reporting expanded
-v2.0   | Feb 2023 | [github][200] | substantial rewrite for new drawing library [@antv/x6][ant]
+v2.0   | Feb 2023 | [github][200] | substantial rewrite for new drawing library @antv/x6
 v1.6.1 | Mar 2022 | [github][161] | Docs now moved to the new site<br>Last release of 1.x before version 2.0
 v1.6   | Dec 2021 | [github][160] | Automated threat and context threat generation
 v1.5.8 | Sep 2021 | [github][158] | Shows 'NA' threats as completed/ mitigated<br>Fixes bug in threat engine (web app only)<br>Signed binaries for Windows
-v1.5.5 | Sep 2021 | [github][155] | MacOS images are signed and notarized <br> Linux Snap image available as [snapcraft distribution][snap]
+v1.5.5 | Sep 2021 | [github][155] | MacOS images are signed and notarized <br> Linux Snap image available as a snapcraft distribution
 v1.4   | 5 May 2021  | [github][140] | Provides dotenv for environment variables <br> updates to docker image <br> substantial code reorganisation
 v1.3.1 | 26 Oct 2020 | [Web app][131] <br> [Desktop][131-desk] | update documentation link to point to new docs page
 v1.3   | 3 Sep 2020  | [Web app][130] <br> [Desktop][130-desk] | support for LINDDUN and CIA as well as STRIDE <br> and desktop command line interface
@@ -80,5 +80,3 @@ Threat Dragon: _making threat modeling less threatening_
 [240]: https://github.com/OWASP/threat-dragon/releases/tag/v2.4.0
 [241]: https://github.com/OWASP/threat-dragon/releases/tag/v2.4.1
 [250]: https://github.com/OWASP/threat-dragon/releases/tag/v2.5.0
-[ant]: https://www.npmjs.com/package/@antv/x6
-[snap]: https://snapcraft.io/threat-dragon
