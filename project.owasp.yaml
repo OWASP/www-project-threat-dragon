@@ -1,0 +1,36 @@
+audience:
+  - builder
+  - defender
+community:
+  - name: project-threat-dragon
+    platform: slack
+    url: https://owasp.slack.com/archives/CURE8PQ68
+    description: ':threatdragon:  the Threat Dragon project'
+leaders:
+  - name: Mike Goodwin
+    email: mike.goodwin@owasp.org
+    github: mike-goodwin
+  - name: Jon Gadsden
+    email: jon.gadsden@owasp.org
+    github: jgadsden
+  - name: Leo Reading
+    email: leo.reading@owasp.org
+    github: lreading
+level: 3
+license:
+  - Apache-2.0
+name: OWASP Threat Dragon
+pitch: OWASP Threat Dragon is a threat modeling tool for both developers and defenders alike. Run it as a local application or as a web application.
+repositories:
+  - name: www-project-threat-dragon
+    url: https://github.com/OWASP/www-project-threat-dragon
+    description: OWASP Foundation Threat Dragon Project Web Repository
+  - name: threat-dragon
+    url: https://github.com/OWASP/threat-dragon
+    description: An open source threat modeling tool from OWASP
+tags:
+  - threatdragon
+  - custom-tag-1
+  - custom-tag-2
+type: tool
+website: https://owasp.org/www-project-threat-dragon
