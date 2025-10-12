@@ -31,5 +31,6 @@ repositories:
 tags:
   - threatdragon
   - threat-modeling
+  - threat-model-tool
 type: tool
 website: https://owasp.org/www-project-threat-dragon
