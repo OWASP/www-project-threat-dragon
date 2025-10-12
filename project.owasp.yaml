@@ -5,7 +5,7 @@ community:
   - name: project-threat-dragon
     platform: slack
     url: https://owasp.slack.com/archives/CURE8PQ68
-    description: ':threatdragon:  the Threat Dragon project'
+    description: 'Threat Modeling with OWASP Threat Dragon'
 leaders:
   - name: Mike Goodwin
     email: mike.goodwin@owasp.org
@@ -30,7 +30,6 @@ repositories:
     description: An open source threat modeling tool from OWASP
 tags:
   - threatdragon
-  - custom-tag-1
-  - custom-tag-2
+  - threat-modeling
 type: tool
 website: https://owasp.org/www-project-threat-dragon
