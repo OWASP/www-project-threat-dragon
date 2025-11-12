@@ -29,7 +29,7 @@ It can be used to record possible threats and decide on their mitigations, as we
 of the threat model components and threat surfaces.
 Threat Dragon runs either as a web application or as a desktop application.
 
-Threat Dragon supports STRIDE / [LINDDUN](https://www.linddun.org/) / CIA / DIE / [PLOT4ai](https://plot4.ai/),
+Threat Dragon supports STRIDE / [LINDDUN](https://linddun.org/) / CIA / DIE / [PLOT4ai](https://plot4.ai/),
 provides modeling diagrams and implements a rule engine to auto-generate threats and their mitigations.
 
 ### Resources

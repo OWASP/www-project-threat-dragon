@@ -64,7 +64,7 @@ Stable version of 2.x.x with bug fixes and usable diagram tools. Still not featu
 
 - [x] written in javascript ES6 / ECMAScript 2015 or compatible
 - [x] run on [node.js](https://nodejs.org/en/) server
-- [x] use [express](http://expressjs.com/en/starter/installing.html) for backend application
+- [x] use [express](https://expressjs.com/en/starter/installing.html) for backend application
 - [x] provide a dockerfile for running in docker,
     similar to [existing TD](https://github.com/OWASP/threat-dragon/blob/main/Dockerfile)
 - [x] static code analysis using [ESLint](https://eslint.org)

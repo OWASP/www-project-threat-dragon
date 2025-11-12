@@ -24,7 +24,7 @@
 ### Source
 
 * Threat Dragon [github repo](https://github.com/OWASP/threat-dragon)
-* [![OpenSSF Best Practices](https://www.bestpractices.dev/projects/9266/badge)](https://www.bestpractices.dev/projects/9266)
+* [![OpenSSF Best Practices](https://www.bestpractices.dev/projects/9266/badge)](https://www.bestpractices.dev/en/projects/9266)
 
 ### Licensing
 
