@@ -36,7 +36,7 @@ and is overseen by the [CycloneDX][cyclone] organization.
 
 The proof of concept [TM-BOM schema][tm-library-schema] is provided
 by the OWASP [Threat Model Library][tm-library] project.
-An [overview of TM-BOM][tm-bom] is available in the Threat Dragon documentation. 
+An [overview of TM-BOM][tm-bom] is available in the Threat Dragon documentation.
 
 [cyclone]: https://owasp.org/www-project-cyclonedx/
 [discussion]: https://github.com/OWASP/threat-dragon/discussions/1152
