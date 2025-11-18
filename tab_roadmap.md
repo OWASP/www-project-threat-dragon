@@ -6,7 +6,7 @@ order: 3
 tags: threatdragon
 ---
 
-### Version 2.6: in progress
+## Version 2.6: in progress
 
 - [ ] provide an API for CI/CD pipelines
 - [ ] provide a CLI for scripting based on TD's existing [use of yargs](https://github.com/yargs/yargs)
