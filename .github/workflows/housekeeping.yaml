@@ -33,7 +33,7 @@ jobs:
 
     steps:
       - name: Checkout markdown
-        uses: actions/checkout@v5.0.0
+        uses: actions/checkout@v6
 
       - name: Link Checker
         uses: lycheeverse/lychee-action@v2.7.0
