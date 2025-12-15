@@ -23,7 +23,7 @@ jobs:
           keep_minimum_runs: 10
 
       - name: Delete unused workflows
-        uses: otto-de/purge-deprecated-workflow-runs@v4.0.1
+        uses: otto-de/purge-deprecated-workflow-runs@v4.0.2
         with:
           token: ${{ github.token }}
 
@@ -33,7 +33,7 @@ jobs:
 
     steps:
       - name: Checkout markdown
-        uses: actions/checkout@v5.0.0
+        uses: actions/checkout@v6.0.1
 
       - name: Link Checker
         uses: lycheeverse/lychee-action@v2.7.0
