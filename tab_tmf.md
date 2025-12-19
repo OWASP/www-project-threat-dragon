@@ -1,9 +1,12 @@
 ---
+
 title: TMF
+displaytext: Threat Model Format
 layout: null
 tab: true
-order: 4
+order: 5
 tags: threatdragon
+
 ---
 
 ## Threat model file format

@@ -1,13 +1,17 @@
 ---
+
 title: Roadmap
+displaytext: Road Map
 layout: null
 tab: true
-order: 3
+order: 4
 tags: threatdragon
+
 ---
 
 ## Version 2.6: in progress
 
+- [x] provide diagrams of type 'EoP Game'
 - [ ] provide an API for CI/CD pipelines
 - [ ] provide a CLI for scripting based on TD's existing [use of yargs](https://github.com/yargs/yargs)
 

@@ -1,9 +1,12 @@
 ---
+
 title: Releases
+displaytext: Releases
 layout: null
 tab: true
 order: 1
 tags: threatdragon
+
 ---
 
 ## Releases
