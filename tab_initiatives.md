@@ -24,15 +24,15 @@ In addition they made it extensible so that other EoP-type cards can be integrat
 
 We are very grateful and look forward to more contributions to the open-source community:
 
-* Ana Bulla ([bbulla](https://github.com/bbulla))
 * Anthony Pereira ([Clarensedor](https://github.com/Clarensedor))
+* Belén Bulla ([bbulla](https://github.com/bbulla))
+* Belén de Oliveira Madeira Ferreyra ([beldomadeira](https://github.com/beldomadeira))
 * Chris Bentancor ([ChrisBentancor](https://github.com/ChrisBentancor))
 * Diego Gamarra ([gamarradiego](https://github.com/gamarradiego))
 * Emanuel Fraga ([FragaEmanuel](https://github.com/FragaEmanuel))
 * Gaspar Lamas ([gasparlamas](https://github.com/gasparlamas))
-* Guille Guerrico ([GuilleGuerrico098](https://github.com/GuilleGuerrico098))
+* Guillermo Guerrico ([GuilleGuerrico098](https://github.com/GuilleGuerrico098))
 * Javier Moreno ([javiermorenov1203](https://github.com/javiermorenov1203))
-* María Belén de Oliveira Madeira Ferreyra ([beldomadeira](https://github.com/beldomadeira))
 
 and many thanks to Gerardo Canedo ([gerardocanedoUCU](https://github.com/gerardocanedoUCU)) for making this happen.
 
