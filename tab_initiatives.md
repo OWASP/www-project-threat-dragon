@@ -26,7 +26,7 @@ We are very grateful and look forward to more contributions to the open-source c
 
 * Anthony Pereira ([Clarensedor](https://github.com/Clarensedor))
 * Belén Bulla ([bbulla](https://github.com/bbulla))
-* Belén de Oliveira Madeira Ferreyra ([beldomadeira](https://github.com/beldomadeira))
+* Belén de Oliveira Madeira ([beldomadeira](https://github.com/beldomadeira))
 * Chris Bentancor ([ChrisBentancor](https://github.com/ChrisBentancor))
 * Diego Gamarra ([gamarradiego](https://github.com/gamarradiego))
 * Emanuel Fraga ([FragaEmanuel](https://github.com/FragaEmanuel))

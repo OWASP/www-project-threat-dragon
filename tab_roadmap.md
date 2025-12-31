@@ -9,6 +9,10 @@ tags: threatdragon
 
 ---
 
+### Version 3.0: future initiatives
+
+- [ ] TM-BOM / [Threat model file format](https://owasp.org/www-project-threat-dragon/#div-tmf)
+
 ## Version 2.6: in progress
 
 - [x] provide diagrams of type 'EoP Game'
