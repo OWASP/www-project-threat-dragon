@@ -23,7 +23,7 @@ jobs:
           keep_minimum_runs: 10
 
       - name: Delete unused workflows
-        uses: otto-de/purge-deprecated-workflow-runs@v4.0.2
+        uses: otto-de/purge-deprecated-workflow-runs@v4.0.3
         with:
           token: ${{ github.token }}
 
@@ -33,10 +33,10 @@ jobs:
 
     steps:
       - name: Checkout markdown
-        uses: actions/checkout@v6.0.1
+        uses: actions/checkout@v6.0.2
 
       - name: Link Checker
-        uses: lycheeverse/lychee-action@v2.7.0
+        uses: lycheeverse/lychee-action@v2.8.0
         with:
           # skip the jekyll files
           args: --verbose --no-progress --max-retries 1 --exclude-path './_includes/*.html' '**/*.md' '*.md'
@@ -53,7 +53,7 @@ jobs:
 
     steps:
       - name: Tidy stale PRs and issues
-        uses: actions/stale@v10.1.1
+        uses: actions/stale@v10.2.0
         with:
           days-before-issue-stale: 183
           days-before-issue-close: -1

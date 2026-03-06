@@ -16,6 +16,14 @@ We appreciate greatly all our contributors: without their open-source contributi
 There are some individuals and teams that have come forward to make an 'above and beyond' difference to Threat Dragon,
 and here they are:
 
+### Threat model templates
+
+With the support of [Gallagher Security](https://security.gallagher.com/en),
+Ajith Penmatsa ([Ajith-Penmatsa-GGL](https://github.com/Ajith-Penmatsa-GGL))
+created a new feature which allows reusable threat-model templates.
+This is the first step towards providing a set of reusable threats and mitigations,
+which will provide the sharing of effort and ideas within the global Threat Dragon community.
+
 ### Integration with EoP Games
 
 A team from the Universidad Católica del Uruguay ([UCU](https://www.ucu.edu.uy/)) took part in a Coding Challenge

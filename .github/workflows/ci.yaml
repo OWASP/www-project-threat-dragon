@@ -16,10 +16,10 @@ jobs:
 
     steps:
       - name: Checkout markdown
-        uses: actions/checkout@v6.0.1
+        uses: actions/checkout@v6.0.2
 
       - name: Link Checker
-        uses: lycheeverse/lychee-action@v2.7.0
+        uses: lycheeverse/lychee-action@v2.8.0
         with:
           # skip the jekyll files
           args: --verbose --no-progress --max-retries 1 --exclude-path './_includes/*.html' '**/*.md' '*.md'
@@ -32,7 +32,7 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout markdown
-        uses: actions/checkout@v6.0.1
+        uses: actions/checkout@v6.0.2
 
       - name: Lint markdown
         uses: DavidAnson/markdownlint-cli2-action@v22.0.0
@@ -47,7 +47,7 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - name: Checkout markdown
-        uses: actions/checkout@v6.0.1
+        uses: actions/checkout@v6.0.2
 
       - name: spell_checker
-        uses: rojopolis/spellcheck-github-actions@0.55.0
+        uses: rojopolis/spellcheck-github-actions@0.58.0

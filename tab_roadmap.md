@@ -13,11 +13,14 @@ tags: threatdragon
 
 - [ ] TM-BOM / [Threat model file format](https://owasp.org/www-project-threat-dragon/#div-tmf)
 
-## Version 2.6: in progress
+## Version 2.6.1: in progress
+
+- [ ] provide an API for CI/CD pipelines
+- [ ] provide a CLI for scripting based on TD version 1.x [use of yargs](https://github.com/yargs/yargs)
+
+## Version 2.6
 
 - [x] provide diagrams of type 'EoP Game'
-- [ ] provide an API for CI/CD pipelines
-- [ ] provide a CLI for scripting based on TD's existing [use of yargs](https://github.com/yargs/yargs)
 
 ### Version 2.5: released August 2025
 
