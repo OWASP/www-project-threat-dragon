@@ -19,7 +19,7 @@ pitch: OWASP Threat Dragon is a threat modeling tool for both developers and def
 }
 </style>
 
-![cupcake logo](/assets/images/cupcake-256x256.png){: .image-right }
+![cupcake logo](assets/images/cupcake-256x256.png){: .image-right }
 
 ## What is Threat Dragon?
 

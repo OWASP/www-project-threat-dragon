@@ -112,3 +112,8 @@ webapp
 webpack
 www
 yargs
+assignees
+changelog
+md
+bugfixes
+OpenSSF
