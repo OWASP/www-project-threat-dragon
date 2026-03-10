@@ -4,96 +4,61 @@ title: Roadmap
 displaytext: Road Map
 layout: null
 tab: true
-order: 4
+order: 3
 tags: threatdragon
 
 ---
 
+## Strategic Roadmap
+
+Threat Dragon maintains a strategic roadmap in a public
+[GitHub Discussion](https://github.com/OWASP/threat-dragon/discussions/1480).
+Please join us in defining the direction for Threat Dragon!
+
+## Release Log
+
+Threat Dragon creates [GitHub Releases](https://github.com/OWASP/threat-dragon/releases/)
+for each release. Each release contains the artifacts and the change log.
+
+The latest release is always available
+[on GitHub](https://github.com/OWASP/threat-dragon/releases/latest)
+
+### Versioning & Release Cadence
+
+Threat Dragon adheres to [semantic versioning](https://www.semver.org) for all releases.
+In practice, this means:
+
+- Patch versions include bug/security fixes, with no breaking changes
+- Minor versions include new features or functionality, with no breaking changes
+- Major versions include breaking changes, major upgrades, etc.
+
+There is no official release cadence at this time.  Threat Dragon maintainers create
+new releases for new features and bugfixes when appropriate.
+
+## Major Version Releases
+
 ### Version 3.0: future initiatives
 
-- [ ] TM-BOM / [Threat model file format](https://owasp.org/www-project-threat-dragon/#div-tmf)
+Version 3 is not well defined at this time. The following features may
+be included in this future release.
 
-## Version 2.6.1: in progress
+- TM-BOM / [Threat model file format](https://owasp.org/www-project-threat-dragon/#div-tmf)
 
-- [ ] provide an API for CI/CD pipelines
-- [ ] provide a CLI for scripting based on TD version 1.x [use of yargs](https://github.com/yargs/yargs)
+### Version 2.0: Modernization
 
-## Version 2.6
+Version 2.0 of Threat Dragon was largely done to exist technical debt and improve
+the overall maturity of Threat Dragon.  Some highlights from this major version:
 
-- [x] provide diagrams of type 'EoP Game'
+- Migration from angular to Vue
+- Upgraded the diagram library
+- [Met OpenSSF Best Practices](https://www.bestpractices.dev/en/projects/9266/passing#analysis)
+- Combined frontend with desktop application
+- Updated threat model schema
+- Implemented end to end testing
+- DAST scanning via Zap
+- Public [demo instance](https://www.threatdragon.com/)
 
-### Version 2.5: released August 2025
-
-- [x] add demo models from the Threat Model Cookbook
-
-### Version 2.3: released December 2024
-
-- [x] automated threats (both by element and by OATS)
-
-### Version 2.2: released February 2024
-
-Threat model access for web app:
-
-- [x] load models from various repos :
-  - [x]  github enterprise
-  - [x]  gitlab
-  - [x]  github enterprise
-  - [x]  BitBucket
-
-### Version 2.1: released October 2023
-
-Stable version of 2.x.x with bug fixes and usable diagram tools. Still not feature complete:
-
-- missing CLI for scripting based
-- missing automated threats (both by element and by OATS)
-
-### Version 2.0: released February 2023
-
-**migrate to a combined application for both desktop and webapp**:
-
-- [x] be strictly open source
-- [x] use [Vue](https://v3.vuejs.org/guide/introduction.html#what-is-vue-js) for frontend application
-- [x] use @antv/g6 for the drawing library
-- [x] frontend logging using [bunyan](https://github.com/trentm/node-bunyan)
-    and optional logging to the console during development
-- [x] use [electron](https://www.electronjs.org/) to wrap webapp for desktop
-- [X] provide auto-update using [electron](https://www.electronjs.org/)
-- [X] expand electron unit tests using
-    [WDIO Electron Service](https://github.com/webdriverio-community/wdio-electron-service)
-- [x] webapp unit test framework [Jest](https://jestjs.io/)
-- [x] component test [Vue testing library](https://github.com/testing-library/vue-testing-library)
-- [x] end-to-end test [cypress](https://github.com/cypress-io/cypress)
-- [x] set up ZAP to provide security testing on commit
-- [x] design files are to be backwardly compatible to Threat Dragon json
-
-**demonstration pages**:
-
-- [x] an online demonstration to be provided on [threat dragon's site](https://www.threatdragon.com)
-- [x] demo should either be a snapshot or a release version
-
-### Version 1.4: released May 2021
-
-- [x] written in javascript ES6 / ECMAScript 2015 or compatible
-- [x] run on [node.js](https://nodejs.org/en/) server
-- [x] use [express](https://expressjs.com/en/starter/installing.html) for backend application
-- [x] provide a dockerfile for running in docker,
-    similar to [existing TD](https://github.com/OWASP/threat-dragon/blob/main/Dockerfile)
-- [x] static code analysis using [ESLint](https://eslint.org)
-- [x] webapp test runner [Karma](http://karma-runner.github.io/6.3/intro/installation.html)
-with [Jasmine](https://jasmine.github.io)
-for [Vue Test Utils](https://vue-test-utils.vuejs.org/installation/#using-other-test-runners)
-- [x] backend unit test framework
-    [MochaJS](https://mochajs.org) and assertions from [chai](https://github.com/chaijs/chai)
-- [x] bundle the application and api for production using [webpack](https://webpack.js.org/)
-- [x] be strictly open source, avoiding using languages or frameworks maintained outside the open source community
-
-**documentation**:
-
-- [x] documentation should be updated at the [threat dragon github pages](https://threatdragon.github.io/)
-- [x] version 1.x docs are preserved and migrated to version 2.0
-- [x] docs should be static pages based on [Jekyll](https://jekyllrb.com) and markdown
-
-### Previous versions
+### Version 1.0: Initial Release
 
 Mike Goodwin's initial roadmap for the project is
 [archived here](https://github.com/OWASP/www-project-threat-dragon/wiki/Original-Roadmap).

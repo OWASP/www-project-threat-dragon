@@ -4,7 +4,7 @@ title: Initiatives
 displaytext: Initiatives
 layout: null
 tab: true
-order: 3
+order: 2
 tags: threatdragon
 
 ---

@@ -4,7 +4,7 @@ title: TMF
 displaytext: Threat Model Format
 layout: null
 tab: true
-order: 5
+order: 4
 tags: threatdragon
 
 ---
