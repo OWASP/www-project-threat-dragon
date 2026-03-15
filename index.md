@@ -51,11 +51,12 @@ The easiest way to get in contact with the Threat Dragon community is via the OW
 [#project-threat-dragon](https://owasp.slack.com/messages/CURE8PQ68) project channel,
 you may need to [subscribe](https://owasp.org/slack/invite) first.
 
-### Related Projects
+### Related OWASP projects
 
-* [OWASP pytm (Pythonic Threat Modeling)][pytm]
-* [Threat Modeling OWASP Cheat Sheet][tmcs]
-* [Threagile - Agile Threat Modeling][threagile], an (non-OWASP) open source project
+* [pytm (Pythonic Threat Modeling)][pytm]
+* [Threat Modeling Cheat Sheet][tmcs]
+* [Threat Modeling Project][tmproject]
+* [Threat Model Library][tm-library]
 
 ----
 
@@ -66,5 +67,6 @@ Threat Dragon: _making threat modeling less threatening_
 [docs-2]: https://www.threatdragon.com/docs/
 [manifesto]: https://www.threatmodelingmanifesto.org/
 [pytm]: https://owasp.org/www-project-pytm/
-[threagile]: https://threagile.io
 [tmcs]: https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html
+[tmproject]: https://owasp.org/www-project-threat-modeling/
+[tm-library]: https://github.com/OWASP/www-project-threat-model-library
