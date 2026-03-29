@@ -25,7 +25,7 @@ The latest release is always available
 
 ### Versioning & Release Cadence
 
-Threat Dragon adheres to [semantic versioning](https://www.semver.org) for all releases.
+Threat Dragon adheres to [semantic versioning](https://semver.org/) for all releases.
 In practice, this means:
 
 - Patch versions include bug/security fixes, with no breaking changes
