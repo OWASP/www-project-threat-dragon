@@ -1,6 +1,6 @@
 ### Classification
 
-* <i class="fas fa-flask fa-2x" style="color:#f7b73c"></i> Lab Project
+* <i class="fas fa-city fa-2x" style="color:#FFA500"></i> Production Project
 * <i class="fas fa-tools fa-2x" style="color:#233e81;"></i> Tool
 
 ### Audience
