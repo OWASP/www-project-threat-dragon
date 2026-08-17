@@ -15,3 +15,7 @@ hub.docker.com/repository/docker/threatdragon/owasp-threat-dragon/tags
 
 # false complain
 www.contributor-covenant.org/
+
+# slack needs to be logged in
+owasp.slack.com/
+
