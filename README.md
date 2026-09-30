@@ -1,3 +1,5 @@
+## Archived, this repo no longer is used to create the project page content
+
 <p align="center">
   <img src="https://raw.githubusercontent.com/owasp/threat-dragon/main/td.vue/src/assets/threatdragon_logo_solid_image.svg"
   width="200" alt="Threat Dragon Logo"/>
